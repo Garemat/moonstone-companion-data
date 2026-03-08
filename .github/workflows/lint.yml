@@ -17,7 +17,7 @@ jobs:
         run: |
           echo "Validating PR description..."
 
-          if ! echo "$PR_BODY" | grep -qEi '- \[x\] (💥 Breaking change|✨ New character or card|🐛 Data fix|🖼️ Image update|🧹 Chore)'; then
+          if ! echo "$PR_BODY" | sed -n '/## Type of Change/,/## Checklist/p' | grep -q '- \[x\]'; then
             echo "::error::Validation Failed: Please select at least one 'Type of Change' in your PR description."
             exit 1
           fi
