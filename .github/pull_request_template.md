@@ -10,8 +10,5 @@
 
 ## Checklist
 - [ ] I have verified the affected JSON files are valid and parse correctly
-- [ ] Character `id` values are unique and match the expected numeric format
-- [ ] Any new characters include all required fields: `id`, `name`, `factions`, `health`
 - [ ] Any new portrait images are named to match the character's `imageName` field
-- [ ] Dual-faction characters are placed in `characters/dual-faction/`
 - [ ] I have performed a self-review of my changes
