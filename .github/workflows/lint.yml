@@ -14,20 +14,7 @@ jobs:
       - name: Validate PR template
         env:
           PR_BODY: ${{ github.event.pull_request.body }}
-        run: |
-          echo "Validating PR description..."
-
-          if ! echo "$PR_BODY" | sed -n '/## Type of Change/,/## Checklist/p' | grep -q '- \[x\]'; then
-            echo "::error::Validation Failed: Please select at least one 'Type of Change' in your PR description."
-            exit 1
-          fi
-
-          if echo "$PR_BODY" | sed -n '/## Checklist/,$p' | grep -q '\[ \]'; then
-            echo "::error::Validation Failed: Please ensure all items in the 'Checklist' are completed."
-            exit 1
-          fi
-
-          echo "PR template validation passed."
+        run: python3 scripts/validate_pr.py
 
       - name: Aggregate JSON files
         run: python3 scripts/aggregate.py
