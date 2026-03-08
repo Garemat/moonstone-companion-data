@@ -1,0 +1,67 @@
+{
+  "id": "116",
+  "name": "Morag",
+  "version": "",
+  "factions": ["LESHAVULT", "SHADES"],
+  "tags": ["Faun", "Spirit"],
+  "melee": 3,
+  "meleeRange": 1,
+  "arcane": 4,
+  "evade": -1,
+  "health": 7,
+  "energyTrack": [1, 2, 4, 7],
+  "passiveAbilities": [
+    {
+      "name": "Eclipse",
+      "description": "When an enemy targets this character with an Arcane Ability you may reveal a G2 or P2 from your resist hand before any cards are played. If you do, this character reduces all Dmg suffered to W whilst resolving the current action"
+    },
+    {
+      "name": "Slow",
+      "description": "This model's Jog actions are limited to 2\"."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Reclaim Life",
+      "cost": 0,
+      "range": "4\"",
+      "description": "Target friendly character suffers 2 Wds or, if at least one friendly model was slain or reduced to 0 Wds this turn, it may restore 2 Wds instead.",
+      "oncePerTurn": true
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Shadow Stride",
+      "cost": 2,
+      "range": "",
+      "description": "Place this model within X+1\". \nCatastrophe: This character suffers 3 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Hunting Ritual",
+      "cost": 3,
+      "range": "8\"",
+      "description": "Target suffers an amount of Wds equal to half the number of Wds they currently have remaining, rounded up. \nCatastrophe: The target may be moved 4\" by the resisting player.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Shadow Form",
+    "upgradeFrom": "High Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "Reduce Dmg suffered by -1. If the enemy has 4 Wds or fewer remaining, instead reduce Dmg suffered to W."
+  },
+  "baseSize": "30mm",
+  "imageName": "116_morag.json",
+  "shareCode": "AAB"
+}

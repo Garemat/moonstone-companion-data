@@ -1,0 +1,65 @@
+{
+  "id": "132",
+  "name": "Prof. Boffinsworth",
+  "version": "",
+  "factions": ["COMMONWEALTH"],
+  "tags": ["Gnome", "Cleric"],
+  "melee": 3,
+  "meleeRange": 1,
+  "arcane": 4,
+  "evade": 0,
+  "health": 8,
+  "energyTrack": [1, 2, 3],
+  "passiveAbilities": [
+    {
+      "name": "Conservation",
+      "description": "If a friendly Animal within 4\" and LoS suffers Dmg, you may have this character suffer all that Dmg instead.",
+      "oncePerTurn": true
+    },
+    {
+      "name": "Explorer's Handbook",
+      "description": "When this character uses an Arcane Ability targetting a friendly Animal that is not at full health, you may reduce the energy cost by -1.",
+      "oncePerTurn": true
+    },
+    {
+      "name": "The Faculty",
+      "description": "If Old Polly, Prof. Boffinsworth and Flinder Memphis were taken in this troupe at the start of the game, this character gains Rogue, Animal and Machine Keywords."
+    }
+  ],
+  "activeAbilities": [],
+  "arcaneAbilities": [
+    {
+      "name": "Healing",
+      "cost": 2,
+      "range": "8\"",
+      "description": "Target restores X+1 Wds.\nCatastrophe: This model suffers 2 Wds",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Symbiosis",
+      "cost": 4,
+      "range": "8\"",
+      "description": "Target or this model gains [Protection: the first time this character would suffer Dmg, reduce that Dmg to W], until end of the turn.\nTarget and this model gain Protection until end of turn.\nCatastrophe: Target and this model suffer 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Boff's Bestiary",
+    "upgradeFrom": "Low Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "Reduce Dmg suffered by -1 for each Animal within 4\"."
+  },
+  "baseSize": "30mm",
+  "imageName": "132_prof_boffinsworth.json",
+  "shareCode": "AAB"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "010",
+  "name": "Billy",
+  "version": "",
+  "factions": ["COMMONWEALTH"],
+  "tags": ["Gnome", "Militia", "Animal"],
+  "melee": 4,
+  "meleeRange": 1,
+  "arcane": 4,
+  "evade": -1,
+  "health": 8,
+  "energyTrack": [1, 2, 4],
+  "passiveAbilities": [
+    {
+      "name": "Arming Sword",
+      "description": " If this character deals Slicing Melee Dmg, increase the Dmg dealt by +1. "
+    },
+    {
+      "name": "Quilted Armour",
+      "description": "Reduce Slicing Dmg suffered by -1."
+    }
+  ],
+  "activeAbilities": [  
+    {
+      "name": "Ramming Speed",
+      "cost": 3,
+      "range": "6\"",
+      "description": "Move this model 6” directly towards target enemy model. If base contact is made with the target, flip an arcane card. The target suffers X+1 Impact Dmg then is moved X” directly away, where X is the value of the flipped card.\nCatastrophe: The target model suffers no damage and may move up to 3”."
+    }],
+  "arcaneAbilities": [
+    {
+      "name": "High-ho Silver",
+      "cost": 2,
+      "range": "",
+      "description": "[G]X or [P]X: Move this model 2X”.\nCatastrophe: This model cannot move or be moved until end of turn."
+    }
+  ],
+  "signatureMove": {
+    "name": "Wild Swing",
+    "upgradeFrom": "Falling Swing",
+    "damageType": "Slicing",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "2"},
+      {"opponentPlay": "Thrust", "deal": "2"},
+      {"opponentPlay": "Sweeping Cut", "deal": "3"},
+      {"opponentPlay": "Rising Attack", "deal": "3"},
+      {"opponentPlay": "Low Guard", "deal": "2"}
+    ],
+    "endStepEffect": "Move the enemy model 1\" directly away from this model."
+  },
+  "baseSize": "30mm",
+  "imageName": "billy",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 1,
+  "slicingDamageMitigation": 1
+}

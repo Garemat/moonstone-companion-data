@@ -1,0 +1,65 @@
+{
+  "id": "099",
+  "name": "Portly Pete",
+  "version": "",
+  "factions": ["DOMINION"],
+  "tags": ["Goblin", "Soldier"],
+  "melee": 3,
+  "meleeRange": 2,
+  "arcane": 0,
+  "evade": 0,
+  "health": 8,
+  "energyTrack": [1, 3, 6],
+  "passiveAbilities": [
+    {
+      "name": "Asleep on the Job",
+      "description": "This model may not be chosen to be the player's first activation unless it is the only model which can activate. When this character activates it gets +1 Melee Stat and reduces it's Evade Stat by -1 until end of turn."
+    },
+    {
+      "name": "Halberd",
+      "description": "If this character deals Piercing or Impact Melee Dmg, increase the Dmg dealt by +1."
+    },
+    {
+      "name": "Ramshackle Armour",
+      "description": "Reduce all non-Magical Dmg suffered by -1."
+    },
+    {
+      "name": "Secret Stash",
+      "description": "This character cannot lose possession of a Moonstone due to an enemy model unless slain."
+    },
+    {
+      "name": "Goblin City Guard",
+      "description": "If a Goblin in possession of a Moonstone within 4\" and LoS suffers Dmg, you may have this character suffer all that Dmg instead.",
+      "oncePerTurn": true
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Stand to Attention!",
+      "cost": 2,
+      "range": "4\"",
+      "description": "Target other friendly Goblin gains +1 energy. If the target is a Soldier it may also move 2\".",
+      "oncePerTurn": true
+    }
+  ],
+  "arcaneAbilities": [],
+  "signatureMove": {
+    "name": "Crowd Control",
+    "upgradeFrom": "Thrust",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "1"},
+      {"opponentPlay": "Thrust", "deal": "0"},
+      {"opponentPlay": "Sweeping Cut", "deal": "0"},
+      {"opponentPlay": "Rising Attack", "deal": "1"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "If the enemy is within 1\" it is moved 1\" directly away from this model."
+  },
+  "baseSize": "30mm",
+  "imageName": "099_portly_pete.json",
+  "shareCode": "AAB",
+  "piercingDamageBuff": 1,
+  "allNonMagicalDamageMitigation": 1
+}

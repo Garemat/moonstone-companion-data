@@ -1,0 +1,61 @@
+{
+  "id": "041",
+  "name": "Joanna, Nordic Princess",
+  "version": "v.4",
+  "factions": ["COMMONWEALTH"],
+  "tags": ["Gnome", "Noble", "Norse"],
+  "melee": 5,
+  "meleeRange": 2,
+  "arcane": 3,
+  "evade": 0,
+  "health": 7,
+  "energyTrack": [2, 1, 4],
+  "passiveAbilities": [
+    {
+      "name": "Glaive",
+      "description": "If this character deals Slicing or Piercing Melee Dmg, increase the Dmg dealt by +1. "
+    },
+    {
+      "name": "Älskling",
+      "description": "Reduce all Dmg this character would suffer by -1 for each other friendly Gnome or Animal within 4”, to a maximum of -2."
+    }
+  ],
+  "activeAbilities": [],
+  "arcaneAbilities": [
+    {
+      "name": "Pixie-Elf Elixer",
+      "cost": 2,
+      "range": "",
+      "description": "This character gains X+1 energy.\nCatastrophe: This character suffers 3 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": true
+    },
+    {
+      "name": "Revenge of the Forest Friends",
+      "cost": 2,
+      "range": "18\"",
+      "description": "This attack is not modified by Cover.\nTarget within 3” of a Tree or Wooded Patch terrain suffers X Magical Dmg.\nCatastrophe: Target gains [Protection: The first time this character would suffer Dmg, reduce that Dmg to W], until end of turn.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Valkyrie Cyclone",
+    "upgradeFrom": "Sweeping Cut",
+    "damageType": "Slicing",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "2"},
+      {"opponentPlay": "Thrust", "deal": "1"},
+      {"opponentPlay": "Sweeping Cut", "deal": "1"},
+      {"opponentPlay": "Rising Attack", "deal": "2"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "Deal 2 Slicing Dmg to all models within 2” that did not participate in this round of melee. This does not count as Melee Dmg."
+  },
+  "baseSize": "30mm",
+  "imageName": "joanna",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 1,
+  "piercingDamageBuff": 1
+}

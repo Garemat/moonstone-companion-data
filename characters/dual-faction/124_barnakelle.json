@@ -1,0 +1,64 @@
+{
+  "id": "124",
+  "name": "Barnakelle",
+  "version": "",
+  "factions": ["DOMINION", "SHADES"],
+  "tags": ["Troll", "Spirit", "Pirate"],
+  "melee": 2,
+  "meleeRange": 2,
+  "arcane": 4,
+  "evade": 2,
+  "health": 12,
+  "energyTrack": [1, 6],
+  "passiveAbilities": [
+    {
+      "name": "Rusty Anchor",
+      "description": "If this character deals Impact Melee Dmg, increase the Dmg dealt by +2."
+    },
+    {
+      "name": "Bedeviled Seas",
+      "description": "At the start of the Replenish Step this model gains +1 energy if there is a Water Feature within 4\"."
+    },
+    {
+      "name": "Rise From The Deep",
+      "description": "When this character uses Reanimate it may place the model entering play within a Water Feature within 4\" instead of base contact. When this model or another friendly model enters play via Reanimate within a Water Feature it gains +1 energy and may Jog freely over Water Features until end of turn."
+    }
+  ],
+  "activeAbilities": [],
+  "arcaneAbilities": [
+    {
+      "name": "Reanimate",
+      "cost": 3,
+      "range": "",
+      "description": "Place a friendly model in base contact with this model. Restore half its health rounding up. It has no energy but may activate this turn.\nCatastrophe: This model suffers 4 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Dead Troll's Finger",
+      "cost": 2,
+      "range": "4\"",
+      "description": "Target Pirate or Troll gains X energy and suffers -X Arcane Stat until end of turn.\nCatastrophe: This character suffers 3 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": true
+    }
+  ],
+  "signatureMove": {
+    "name": "Keelhaul",
+    "upgradeFrom": "Thrust",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "1"},
+      {"opponentPlay": "Falling Swing", "deal": "2"},
+      {"opponentPlay": "Thrust", "deal": "2"},
+      {"opponentPlay": "Sweeping Cut", "deal": "0"},
+      {"opponentPlay": "Rising Attack", "deal": "2"},
+      {"opponentPlay": "Low Guard", "deal": "1"}
+    ],
+    "endStepEffect": "If the enemy suffered 1 or more Wds during this round of melee, place the enemy in base contact with this model."
+  },
+  "baseSize": "40mm",
+  "imageName": "124_barnakelle.json",
+  "shareCode": "AAB",
+  "impactDamageBuff": 2
+}

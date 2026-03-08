@@ -1,0 +1,61 @@
+{
+  "id": "061",
+  "name": "Kavanagh, the Jongler",
+  "version": "",
+  "factions": ["LESHAVULT"],
+  "tags": ["Gnome", "Cultist", "Rogue"],
+  "melee": 3,
+  "meleeRange": 1,
+  "arcane": 4,
+  "evade": 0,
+  "health": 8,
+  "energyTrack": [1, 2, 3],
+  "passiveAbilities": [
+    {
+      "name": "Roley-Poley",
+      "description": "Move 2\" then reduce this character's Evade Stat by -2 until end of turn."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Black Comedy",
+      "cost": 0,
+      "range": "6\"",
+      "description": "Target other friendly character suffers 2 Wds and gains +1 energy",
+      "oncePerTurn": true
+    },
+    {
+      "name": "Juggling fate",
+      "cost": 4,
+      "range": "",
+      "description": "Gain +2 energy. Draw the top 3 cards of the Arcane Deck, look then place them face down: one on the top of the deck, one on the bottom of the deck and one besides this character card. At any point you can add the removed card to your Arcane or Arcane Resist Hand. If you do then at the end of the action, or if this character is slain, shuffle the card back into the Arcane Deck."
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Butterfingers",
+      "cost": 2,
+      "range": "6\"",
+      "description": " Target loses possession of 1 Moonstone they are carrying. Place it in base contact with the target with a depth value of ‘1’.\nCatastrophe: This model discards all energy.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Vanishing Balls Trick",
+    "upgradeFrom": "Rising Attack",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "2"},
+      {"opponentPlay": "Falling Swing", "deal": "1"},
+      {"opponentPlay": "Thrust", "deal": "1"},
+      {"opponentPlay": "Sweeping Cut", "deal": "2"},
+      {"opponentPlay": "Rising Attack", "deal": "1"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "The enemy discards 1 energy if able. Target friendly character within 6\" gains +1 energy"
+  },
+  "baseSize": "30mm",
+  "imageName": "kavanagh",
+  "shareCode": "AAB"
+}

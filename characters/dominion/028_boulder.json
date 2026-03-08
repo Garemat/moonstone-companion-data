@@ -1,0 +1,58 @@
+{
+  "id": "030",
+  "name": "Boulder",
+  "version": "",
+  "factions": ["DOMINION"],
+  "tags": ["Troll"],
+  "melee": 2,
+  "meleeRange": 2,
+  "arcane": 3,
+  "evade": 2,
+  "health": 12,
+  "energyTrack": [1, 7],
+  "passiveAbilities": [
+    {
+      "name": "Granite Fists",
+      "description": "If this character deals Impact Melee\nDmg, increase the Dmg dealt by +2."
+    },
+    {
+      "name": "Tough Skin",
+      "description": "Reduce all Dmg suffered by -1."
+    },
+    {
+      "name": "Calcify",
+      "description": "Models engaged by this character during the Replenish Step generate -1 energy."
+    }
+  ],
+  "activeAbilities": [],
+  "arcaneAbilities": [
+    {
+      "name": "Stone Song",
+      "cost": 1,
+      "range": "6\"",
+      "description": "This ability is not modified by Cover\nDecrease target Moonstone's depth value by X, to a minimum of 1.\nCatastrophe: The resisting player sets the depth value of the target Moonstone to a number of their choice.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Crushing Embrace",
+    "upgradeFrom": "Thrust",
+    "damageType": "Impact",
+    "passiveEffect": "This attack deals W damage against models which are further than 1” away. ",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "2"},
+      {"opponentPlay": "Falling Swing", "deal": "2"},
+      {"opponentPlay": "Thrust", "deal": "2"},
+      {"opponentPlay": "Sweeping Cut", "deal": "2"},
+      {"opponentPlay": "Rising Attack", "deal": "2"},
+      {"opponentPlay": "Low Guard", "deal": "2"}
+    ],
+    "endStepEffect": "If the enemy suffered 1 or more Wds during this round of Melee, they must discard half their energy, rounding up."
+  },
+  "baseSize": "40mm",
+  "imageName": "boulder",
+  "shareCode": "AAB",
+  "allDamageMitigation": 1,
+  "impactDamageBuff": 2
+}

@@ -1,0 +1,64 @@
+{
+  "id": "063",
+  "name": "Loubard",
+  "version": "",
+  "factions": ["COMMONWEALTH", "LESHAVULT"],
+  "tags": ["Giant", "Cultist"],
+  "melee": 3,
+  "meleeRange": 3,
+  "arcane": 3,
+  "evade": 2,
+  "health": 14,
+  "energyTrack": [1, 6],
+  "passiveAbilities": [
+    {
+      "name": "Blind Faith",
+      "description": "This character may not take Harvest or Jog actions unless there is a friendly model within 4\"."
+    },
+    {
+      "name": "Censer Chain",
+      "description": "If this character deals Impact Melee Dmg, increase the Dmg dealt by +2."
+    },
+    {
+      "name": "Predictable Combatant",
+      "description": " During a round of combat, before each player selects their combat card, you must reveal your hand to your opponent."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Righteous Fury",
+      "cost": 3,
+      "range": "",
+      "description": "This character gains +3 energy, +1 Melee Stat, +1 Arcane Stat and +1 to Melee Dmg until end of turn.",
+      "oncePerTurn": true
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Haul In",
+      "cost": 1,
+      "range": "3\"",
+      "description": "Move target 2\" directly towards this model.\nCatastrophe: This character suffers 3 Wds. Then if this character is not slain all other models within 3\" are moved 2\" directly towards this model.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Entangle",
+    "upgradeFrom": "Sweeping Cut",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "2"},
+      {"opponentPlay": "Falling Swing", "deal": "2"},
+      {"opponentPlay": "Thrust", "deal": "0"},
+      {"opponentPlay": "Sweeping Cut", "deal": "2"},
+      {"opponentPlay": "Rising Attack", "deal": "0"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "If the enemy is within 1” then it cannot play End Step Effects. If the enemy is within 1\" it suffers 1 Wd, loses 1 energy and suffers -2 Melee Stat until end of turn."
+  },
+  "baseSize": "40mm",
+  "imageName": "loubard",
+  "shareCode": "AAB",
+  "impactDamageBuff": 2
+}

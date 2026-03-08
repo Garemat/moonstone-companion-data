@@ -1,0 +1,64 @@
+{
+  "id": "060",
+  "name": "Brother Daniel",
+  "version": "",
+  "factions": ["COMMONWEALTH", "LESHAVULT"],
+  "tags": ["Human", "Cultist", "Cleric"],
+  "melee": 2,
+  "meleeRange": 2,
+  "arcane": 4,
+  "evade": 0,
+  "health": 7,
+  "energyTrack": [1, 2, 4],
+  "passiveAbilities": [
+    {
+      "name": "Slightly Maddening",
+      "description": "You may make one opponent re-roll their die when determining who activates first.",
+      "oncePerGame": true
+    },
+    {
+      "name": "Look at the Shiny Thing",
+      "description": "f this character is in possession of one or more Moonstones during the Replenish Step, you may have another friendly character within 4\" and LoS gain +1 energy."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Plant the Placard",
+      "cost": 2,
+      "range": "6\"",
+      "description": "Move all other friendly characters within the pulse up to 1\". This character cannot take Jog or Step actions, or make a Reaction Step until end of turn.",
+      "oncePerTurn": true
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Bell Ringer",
+      "cost": 2,
+      "range": "4\"",
+      "description": "All friendly characters within the pulse restore X Wds.\nCatastrophe: All characters within the pulse suffer 1 Wd."
+    },
+    {
+      "name": "The End is Nigh",
+      "cost": 4,
+      "range": "",
+      "description": "Choose a model within 3\" and LoS of this character. Then choose another model within 3X\" and LoS of this character. Place the first model within 3\" of the second model.\nCatastrophe: This character's controller must choose either to have him suffer 4 Wds, or be Removed from Play."
+    }
+  ],
+  "signatureMove": {
+    "name": "Thwack!",
+    "upgradeFrom": "Sweeping Cut",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "1"},
+      {"opponentPlay": "Falling Swing", "deal": "2"},
+      {"opponentPlay": "Thrust", "deal": "2"},
+      {"opponentPlay": "Sweeping Cut", "deal": "1"},
+      {"opponentPlay": "Rising Attack", "deal": "0"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "The opponent suffers -1 Melee Stat until end of turn."
+  },
+  "baseSize": "30mm",
+  "imageName": "daniel",
+  "shareCode": "AAB"
+}

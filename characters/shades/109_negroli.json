@@ -1,0 +1,57 @@
+{
+  "id": "109",
+  "name": "Negroli",
+  "version": "",
+  "factions": ["SHADES"],
+  "tags": ["Risen", "Soldier", "Noble"],
+  "melee": 5,
+  "meleeRange": 2,
+  "arcane": 4,
+  "evade": 0,
+  "health": 8,
+  "energyTrack": [1, 3, 5],
+  "passiveAbilities": [
+    {
+      "name": "Ancient Armour",
+      "description": "Reduce all Dmg suffered by -1."
+    },
+    {
+      "name": "Longsword",
+      "description": "If this character deals Slicing or Piercing Melee Dmg, increase the Dmg dealt by +1."
+    },
+    {
+      "name": "A Bone to Pick with You",
+      "description": "Friendly Soldiers and Risen within 6\" gain +1 Arcane Stat if targeting an enemy character that is not at full health and +1 Melee Stat if involved in a round of melee with an enemy character that is not at full health."
+    }
+  ],
+  "activeAbilities": [],
+  "arcaneAbilities": [
+    {
+      "name": "Summon Reinforcements",
+      "cost": 2,
+      "range": "",
+      "description": "Place a new Solder Psychopomp in base contact with this character.\nCatastrophe: This character suffers 3 Wds or, if there is a friendly Psychopomp within 6\", you may choose a friendly Psychopomp within 6\" to be slain instead.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Fracture",
+    "upgradeFrom": "Falling Swing",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "0"},
+      {"opponentPlay": "Falling Swing", "deal": "1"},
+      {"opponentPlay": "Thrust", "deal": "1"},
+      {"opponentPlay": "Sweeping Cut", "deal": "3"},
+      {"opponentPlay": "Rising Attack", "deal": "3"},
+      {"opponentPlay": "Low Guard", "deal": "2"}
+    ],
+    "endStepEffect": "If the enemy suffered 1 or more Wds during this round of Melee, you may choose another character within 4\" of the enemy model to suffer 1 Wd."
+  },
+  "baseSize": "30mm",
+  "imageName": "109_negroli.json",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 1,
+  "piercingDamageBuff": 1
+}

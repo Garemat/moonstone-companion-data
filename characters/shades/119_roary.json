@@ -1,0 +1,63 @@
+{
+  "id": "119",
+  "name": "Roary",
+  "version": "",
+  "factions": ["SHADES"],
+  "tags": ["Spirit"],
+  "melee": 3,
+  "meleeRange": 1,
+  "arcane": 0,
+  "evade": 0,
+  "health": 8,
+  "energyTrack": [1, 3, 5],
+  "passiveAbilities": [
+    {
+      "name": "Summon the Choir",
+      "description": "When this model is deployed or enters play, you may place a new friendly Musician Psychopomp in base contact. If deployed, this must be in the deployment zone as normal. This cannot bring a character into play if it is already in play"
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Conductor",
+      "cost": 1,
+      "range": "6\"",
+      "description": "Target friendly Psychopomp immediately takes any action available to them irrespective of energy cost, excluding Jog. Increase the Psychopomp's Melee & Arcane Stat by +1 for each friendly Psychopomp in play for the duration of the action.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Summon an Encore!",
+      "cost": 1,
+      "range": "",
+      "description": "This action cannot bring a character into play if it is already in play. Place a new friendly Psychopomp, which was slain earlier this turn, in base contact with this model.",
+      "oncePerGame": false,
+      "oncePerTurn": true
+    },
+    {
+      "name": "Psychopomp Parade",
+      "cost": 1,
+      "range": "6\" Pulse",
+      "description": "Flip an Arcane Card then move all friendly Psychopomps within the pulse up to X\", where X is the value of the card. Catastrophe : The player to the left may move this model 2\". ",
+      "oncePerGame": false,
+      "oncePerTurn": true
+    }
+  ],
+  "arcaneAbilities": [],
+  "signatureMove": {
+    "name": "Deafening Blare",
+    "upgradeFrom": "High Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "Move the enemy 2\" directly away. This effect takes place even if the enemy is outside your Melee Range"
+  },
+  "baseSize": "30mm",
+  "imageName": "119_roary.json",
+  "shareCode": "AAB"
+}

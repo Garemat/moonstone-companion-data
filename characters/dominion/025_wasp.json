@@ -1,0 +1,70 @@
+{
+  "id": "027",
+  "name": "Wasp",
+  "version": "v.2",
+  "factions": ["DOMINION"],
+  "tags": ["Faerie", "Soldier"],
+  "melee": 5,
+  "meleeRange": 2,
+  "arcane": 3,
+  "evade": -2,
+  "health": 6,
+  "energyTrack": [1, 2, 3, 4, 6],
+  "passiveAbilities": [
+    {
+      "name": "Buckler",
+      "description": "Enemy characters cannot count Critical Hits against this character."
+    },
+    {
+      "name": "Javelin",
+      "description": "If this character deals Piercing Melee Dmg, increase the Dmg dealt by +2."
+    },
+    {
+      "name": "Spiteful",
+      "description": "When this model causes 1 or more Wds to an enemy, it restores 1 Wd."
+    },
+    {
+      "name": "Weakling",
+      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy"
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Rage",
+      "cost": 3,
+      "range": "8\"",
+      "description": "Target Faerie loses Weakling until end of turn.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Throw Javelin",
+      "cost": 2,
+      "range": "6\"",
+      "description": "Target suffers X Piercing Dmg.\nCatastrophe: This character suffers 1 Wd.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Diving Attack",
+    "upgradeFrom": "Falling Swing",
+    "damageType": "Piercing",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "3"},
+      {"opponentPlay": "Thrust", "deal": "2"},
+      {"opponentPlay": "Sweeping Cut", "deal": "3"},
+      {"opponentPlay": "Rising Attack", "deal": "1"},
+      {"opponentPlay": "Low Guard", "deal": "0"}
+    ]
+  },
+  "baseSize": "30mm",
+  "imageName": "wasp",
+  "shareCode": "AAB",
+  "piercingDamageBuff": 1,
+  "slicingDamageBuff": -1,
+  "impactDamageBuff": -1
+}

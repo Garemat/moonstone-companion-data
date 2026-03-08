@@ -1,0 +1,68 @@
+{
+  "id": "096",
+  "name": "Gump",
+  "version": "",
+  "factions": ["LESHAVULT"],
+  "tags": ["Treefolk", "Spirit"],
+  "melee": 3,
+  "meleeRange": 2,
+  "arcane": 4,
+  "evade": 2,
+  "health": 12,
+  "energyTrack": [1, 6],
+  "passiveAbilities": [
+    {
+      "name": "Woodfoot",
+      "description": "This character may jog over Wooded Patches."
+    },
+    {
+      "name": "Ponderous",
+      "description": "This character cannot take Reaction Steps."
+    },
+    {
+      "name": "Knotted Branches",
+      "description": "If this character deals Impact Melee Dmg, increase the Dmg dealt by +2."
+    },
+    {
+      "name": "Bark Skin",
+      "description": "If this character suffers Piercing or Slicing Dmg, reduce the Dmg suffered by -1."
+    },
+    {
+      "name": "Forest",
+      "description": "After this character suffers Dmg, it may restore 1 Wd for each Wooded Patch within 4\".",
+      "oncePerTurn": true
+    }
+  ],
+  "activeAbilities": [],
+  "arcaneAbilities": [
+    {
+      "name": "Call of the Woods",
+      "cost": 2,
+      "range": "8\"",
+      "description": "Move target enemy X+2\" directly towards any friendly Treefolk. Then target suffers 1 Wd for each Wooded Patch within 4\" of it.\nCatastrophe: This model cannot move or be moved and has its melee range increased to 3\" until end of turn.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Rooted",
+    "upgradeFrom": "Low Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "If this character was not slain then it restores 1 Wd.",
+    "extraText": "This model cannot be move of be moved and has its Melee Range increased to 3\" until end of the current activation."
+  },
+  "baseSize": "40mm",
+  "imageName": "096_gump.json",
+  "shareCode": "AAB",
+  "impactDamageBuff": 2,
+  "piercingDamageMitigation": 1,
+  "slicingDamageMitigation": 1
+}

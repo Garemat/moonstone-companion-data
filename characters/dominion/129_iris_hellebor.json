@@ -1,0 +1,60 @@
+{
+  "id": "129",
+  "name": "Iris & Hellebore",
+  "version": "",
+  "factions": ["DOMINION"],
+  "tags": ["Faerie", "Noble"],
+  "melee": 5,
+  "meleeRange": 1,
+  "arcane": 0,
+  "evade": -1,
+  "health": 7,
+  "energyTrack": [1, 2, 4, 6],
+  "passiveAbilities": [
+    {
+      "name": "Weakling",
+      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy."
+    },
+    {
+      "name": "Storm of Fae Blades",
+      "description": "If this character deals Slicing or Piercing Melee Dmg, increase the Dmg dealt by +2."
+    },
+    {
+      "name": "Dance in Concert",
+      "description": "When another friendly Faerie within 6\" makes a Reaction Step whilst engaged by an enemy model, this character may spend the energy instead of the Faerie performing the Reaction Step."
+    },
+    {
+      "name": "Perfect Form",
+      "description": "After a friendly Faerie within 6\" reveals a Melee Card, it may discard 1 energy then swap the revealed card with a Melee Card in hand.",
+      "oncePerGame": true
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Perplex",
+      "cost": 3,
+      "range": "6\"",
+      "description": "Target loses 1 energy. Then another friendly Faerie within 6\" of the target gains that much energy."
+    }
+  ],
+  "arcaneAbilities": [],
+  "signatureMove": {
+    "name": "From Below & Above",
+    "upgradeFrom": "Rising Attack",
+    "damageType": "Slicing or Piercing",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "2"},
+      {"opponentPlay": "Falling Swing", "deal": "1"},
+      {"opponentPlay": "Thrust", "deal": "2"},
+      {"opponentPlay": "Sweeping Cut", "deal": "2"},
+      {"opponentPlay": "Rising Attack", "deal": "0"},
+      {"opponentPlay": "Low Guard", "deal": "0"}
+    ],
+    "endStepEffect": "After upgrading to this signature, this character may place down any Falling Swing melee cards from their melee hand treating them as Critical Hits. (Resolve those cards as exact copies of this signature.)"
+  },
+  "baseSize": "40mm",
+  "imageName": "129_iris_hellebor.json",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 2,
+  "piercingDamageBuff": 2
+}

@@ -1,0 +1,62 @@
+{
+  "id": "002",
+  "name": "Eric, the Squire",
+  "version": "",
+  "factions": ["COMMONWEALTH"],
+  "tags": ["Human", "Soldier"],
+  "melee": 3,
+  "meleeRange": 1,
+  "arcane": 3,
+  "evade": -1,
+  "health": 7,
+  "energyTrack": [1, 2, 5],
+  "passiveAbilities": [
+    {
+      "name": "Squire",
+      "description": "Other friendly Soldiers within 4” get +1 Melee stat. Friendly Nobles within 4” get +2 Melee stat."
+    },
+    {
+      "name": "Leather Jerkin",
+      "description": "Reduce Slicing and Piercing Dmg suffered by -1."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "My Hero",
+      "cost": 2,
+      "range": "4\"",
+      "description": "Target Soldier gains 1 energy or, target Noble gains 2 energy.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Field Medic",
+      "cost": 1,
+      "range": "4\"",
+      "description": "[B]X: target Soldier or Noble restores X Wds.\nCatastrophe: This model suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "You’ll Regret That",
+    "upgradeFrom": "Low Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "If this model is not slain, swap the positions of this model and a friendly model within 4”."
+  },
+  "baseSize": "30mm",
+  "imageName": "eric",
+  "shareCode": "AAB",
+  "slicingDamageMitigation": 1,
+  "piercingDamageMitigation": 1
+}

@@ -1,0 +1,67 @@
+{
+  "id": "028",
+  "name": "Silvertongue",
+  "version": "",
+  "factions": ["DOMINION"],
+  "tags": ["Faerie", "Rogue"],
+  "melee": 4,
+  "meleeRange": 1,
+  "arcane": 5,
+  "evade": -2,
+  "health": 6,
+  "energyTrack": [1, 2, 3, 4, 6],
+  "passiveAbilities": [
+    {
+      "name": "Concealed Dagger",
+      "description": "If this character deals Piercing Melee Dmg, increase the Dmg dealt by +1. If this character plays a Rising Attack increase the Dmg dealt by +1."
+    },
+    {
+      "name": "Feeble",
+      "description": "Reduce all Melee Dmg this character deals by -2. Harvest actions cost this model +1 energy"
+    },
+    {
+      "name": "Faerie Mischief",
+      "description": "Whenever a friendly Faerie within 6” bluffs successfully, you may reveal the card and this character gains 2 energy and restores all Wds."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Mind Control",
+      "cost": 3,
+      "range": "6\"",
+      "description": "Target model immediately takes any action available to them that would normally have an energy cost of (1). This action is controlled by you even if the target is an enemy (they count as a friendly model for the duration of the action).",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Whispered Secrets",
+      "cost": 2,
+      "range": "6\"",
+      "description": "Target friendly Faerie gains X energy and restores 1 Wd.\nCatastrophe: This character suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": true
+    }
+  ],
+  "signatureMove": {
+    "name": "Threats & Promises",
+    "upgradeFrom": "Rising Attack",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "Reduce Dmg suffered by -3. The enemy character gains 3 energy and may not target this model with an action for the remainder of the turn. This effect takes place even if the enemy is outside this character's Melee Range."
+  },
+  "baseSize": "30mm",
+  "imageName": "silvertongue",
+  "shareCode": "AAB",
+  "piercingDamageBuff": -1,
+  "impactDamageBuff": -2,
+  "slicingDamageBuff": -2
+}

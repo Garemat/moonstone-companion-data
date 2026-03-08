@@ -1,0 +1,65 @@
+{
+  "id": "086",
+  "name": "Swash",
+  "version": "",
+  "factions": ["DOMINION"],
+  "tags": ["Human", "Pirate"],
+  "melee": 5,
+  "meleeRange": 2,
+  "arcane": 3,
+  "evade": 0,
+  "health": 8,
+  "energyTrack": [1, 3, 7],
+  "passiveAbilities": [
+    {
+      "name": "Buckler",
+      "description": "Enemy characters cannot count Critical Hits against this character."
+    },
+    {
+      "name": "Cutlass",
+      "description": "If this character deals Slicing Melee Dmg, increase the Dmg dealt by +1."
+    },
+    {
+      "name": "Inferiority Complex",
+      "description": "If this character deals Melee Dmg to a Noble, increase the Dmg dealt by +1."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Reload [Shoot Pistol]",
+      "cost": 2,
+      "range": "",
+      "description": "The named ability can be used again. This ability cannot be used while this model is engaged.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Shoot Pistol",
+      "cost": 1,
+      "range": "8\"",
+      "description": "Target suffers X+1 Impact Dmg.\nCatastrophe: This character suffers 3 Wds.",
+      "oncePerGame": true,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Flashing Blades",
+    "upgradeFrom": "Sweeping Cut",
+    "damageType": "Slicing",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "2"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "2"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "If the enemy is within 1\" it is moved 1\" directly away from this model."
+  },
+  "baseSize": "30mm",
+  "imageName": "086_swash.json",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 1
+}

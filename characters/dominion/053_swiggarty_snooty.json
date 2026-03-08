@@ -1,0 +1,65 @@
+{
+  "id": "053",
+  "name": "Swiggarty Swooty",
+  "version": "",
+  "factions": ["DOMINION"],
+  "tags": ["Goblin", "Pirate"],
+  "melee": 3,
+  "meleeRange": 2,
+  "arcane": 3,
+  "evade": -1,
+  "health": 7,
+  "energyTrack": [1, 3, 6],
+  "passiveAbilities": [],
+  "activeAbilities": [
+    {
+      "name": "Luv'a da booty",
+      "cost": 0,
+      "range": "",
+      "description": " If a friendly Pirate makes a Melee Attack action while within 6” of this model, you may have them gain +1 energy for each Moonstone that this character is in possession of.",
+      "oncePerTurn": true
+    },
+    {
+      "name": "Reload [Shoot Pistol]",
+      "cost": 2,
+      "range": "",
+      "description": "The named ability can be used again. This ability cannot be used while this model is engaged.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Shoot Pistol",
+      "cost": 1,
+      "range": "8\"",
+      "description": "Target suffers X+1 Impact Dmg.\nCatastrophe: This character suffers 3 Wds.",
+      "oncePerGame": true,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Plunder",
+      "cost": 1,
+      "range": "2\"",
+      "description": "Target loses 1 Passive Ability of your choice until the end of turn and this model gains that ability.\nCatastrophe: The resisting player may move this model 2\".",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Tentai Surprise!",
+    "upgradeFrom": "Rising Attack",
+    "damageType": "Piercing",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "2"},
+      {"opponentPlay": "Falling Swing", "deal": "1"},
+      {"opponentPlay": "Thrust", "deal": "2"},
+      {"opponentPlay": "Sweeping Cut", "deal": "1"},
+      {"opponentPlay": "Rising Attack", "deal": "2"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ]
+  },
+  "baseSize": "30mm",
+  "imageName": "swiggarty",
+  "shareCode": "AAB"
+}

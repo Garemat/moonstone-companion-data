@@ -1,0 +1,61 @@
+{
+  "id": "064",
+  "name": "Boris, The Bunny Summoner",
+  "version": "",
+  "factions": ["COMMONWEALTH", "LESHAVULT"],
+  "tags": ["Faun", "Wizard"],
+  "melee": 2,
+  "meleeRange": 2,
+  "arcane": 4,
+  "evade": 0,
+  "health": 8,
+  "energyTrack": [1, 2, 4, 7],
+  "passiveAbilities": [
+    {
+      "name": "Herd Master",
+      "description": "This character gains +1 energy during the Replenish Step for each friendly Murder Bunny in play."
+    },
+    {
+      "name": "Shepherd's Crook",
+      "description": "If this character deals Slicing or Piercing Melee Dmg, reduce the Dmg dealt to W. If this character deals Impact Melee Dmg, increase the Dmg dealt by +1."
+    }
+  ],
+  "activeAbilities": [],
+  "arcaneAbilities": [
+    {
+      "name": "Summon a Murder Bunny",
+      "cost": 3,
+      "range": "",
+      "description": "Place a new friendly Murder Bunny in base contact with this character.\nCatastrophe: This character suffers 3 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Summon the Jackalope",
+      "cost": 5,
+      "range": "",
+      "description": "This character suffers 3 Wds. Place a new Jackalope in base contact. It has no energy but is considered a permanent additional character in your troupe and may activate this turn.\nCatastrophe: This character suffers 3 Wds. Place a new friendly Murder Bunny in base contact.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Rabbit Punch",
+    "upgradeFrom": "Thrust",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "0"},
+      {"opponentPlay": "Falling Swing", "deal": "1"},
+      {"opponentPlay": "Thrust", "deal": "1"},
+      {"opponentPlay": "Sweeping Cut", "deal": "1"},
+      {"opponentPlay": "Rising Attack", "deal": "1"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "This attack deals +1 Dmg for each Animal within 4\"."
+  },
+  "baseSize": "30mm",
+  "imageName": "boris",
+  "shareCode": "AAB",
+  "impactDamageBuff": 1,
+  "summonsCharacterIds": [65, 65, 65, 74]
+}

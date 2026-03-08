@@ -1,0 +1,60 @@
+{
+  "id": "087",
+  "name": "Powder Monkey",
+  "version": "",
+  "factions": ["DOMINION"],
+  "tags": ["Animal", "Pirate"],
+  "melee": 3,
+  "meleeRange": 1,
+  "arcane": 4,
+  "evade": -1,
+  "health": 7,
+  "energyTrack": [1, 3, 5, 7],
+  "passiveAbilities": [
+    {
+      "name": "Pirate Mascot",
+      "description": "When another friendly Pirate within 8\" makes a Melee Attack they may gain +2 Melee Stat for the action, or if they are targeted by an Arcane Ability, they may gain -1 Evade Stat for the action.",
+      "oncePerTurn": true
+    },
+    {
+      "name": "Agility",
+      "description": "This character may move freely over Obstacles and Wooded Patches during Jog actions. Traverse actions cost this character 1 less energy."
+    }
+  ],
+  "activeAbilities": [],
+  "arcaneAbilities": [
+    {
+      "name": "Swig o' rum",
+      "cost": 2,
+      "range": "2\"",
+      "description": "Target restores X+1 Wds and suffers -2 Arcane Stat until end of turn.\nCatastrophe: This model suffers 2 Wds and -2 Arcane Stat until end of turn.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Black Powder Bomb",
+      "cost": 3,
+      "range": "4\"",
+      "description": "This attack is not modified by Evade Stat.\nTarget suffers X+1 Magical Dmg. Other models within 2\" of the target suffer X Magical Dmg\nCatastrophe: All models within 2\" suffer 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Drunken Monkey Stance",
+    "upgradeFrom": "Low Guard",
+    "damageType": "Piercing",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "1"},
+      {"opponentPlay": "Thrust", "deal": "2"},
+      {"opponentPlay": "Sweeping Cut", "deal": "2"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "Move this character 1\"."
+  },
+  "baseSize": "30mm",
+  "imageName": "087_powder_monkey.json",
+  "shareCode": "AAB"
+}

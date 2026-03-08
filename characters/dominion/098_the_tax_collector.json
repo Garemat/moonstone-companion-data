@@ -1,0 +1,63 @@
+{
+  "id": "098",
+  "name": "The Tax Collector",
+  "version": "",
+  "factions": ["DOMINION"],
+  "tags": ["Goblin"],
+  "melee": 3,
+  "meleeRange": 1,
+  "arcane": 0,
+  "evade": -1,
+  "health": 7,
+  "energyTrack": [1, 3, 5],
+  "passiveAbilities": [
+    {
+      "name": "Inheritance Tax",
+      "description": "When a friendly Goblin character within 4\" and LoS is slain, you may place one Moonstone the character was in possession of in base contact with this model at depth value of ‘1’. ",
+      "oncePerGame": true
+    },
+    {
+      "name": "Friskal Stimulus",
+      "description": "When this character is involved in a round of melee it gains +X Melee Stat and reduces all Melee Dmg suffered by -X, where X is the number of Moonstones the enemy character is in possession of."
+    },
+    {
+      "name": "Swift",
+      "description": "When making a Reaction Step while engaged by an enemy, this model may move 2” instead of the usual 1”."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Rebate",
+      "cost": 3,
+      "range": "8\"",
+      "description": "Target other character restores X+2 Wds or moves X+2\" directly towards this character, where X is the number of Moonstones the target is in possession of. (For characters without Moonstones X is 0).",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Income Tax",
+      "cost": 0,
+      "range": "8\"",
+      "description": "Target enemy character in possession of at least one Moonstone cannot take the Jog or Step Action or take Reaction Steps until end of turn. The enemy character may immediately spend X energy to cancel this effect, where X is the number of Moonstones they are in possession of. If they do, this character gains that much energy.",
+      "oncePerTurn": true
+    }
+  ],
+  "arcaneAbilities": [],
+  "signatureMove": {
+    "name": "Pay Up",
+    "upgradeFrom": "High Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "If this character was not slain it may take possession of up to one Moonstone carried by the enemy. The enemy character may spend 1 energy to cancel this effect. If they do, this model gains 1 energy."
+  },
+  "baseSize": "30mm",
+  "imageName": "098_the_tax_collector.json",
+  "shareCode": "AAB"
+}

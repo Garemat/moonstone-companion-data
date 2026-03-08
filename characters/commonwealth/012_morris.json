@@ -1,0 +1,63 @@
+{
+  "id": "012",
+  "name": "Morris",
+  "version": "",
+  "factions": ["COMMONWEALTH"],
+  "tags": ["Gnome", "Militia"],
+  "melee": 3,
+  "meleeRange": 1,
+  "arcane": 3,
+  "evade": "0",
+  "health": 8,
+  "energyTrack": [1,2],
+  "passiveAbilities": [
+    {
+      "name": "Pick",
+      "description": "If this character deals Slicing Melee Dmg, reduce the Dmg dealt by {Null}. If this character deals Imapct Melee Dmg, increase the Dmg dealt by +2."
+    },
+    {
+      "name": "Miner",
+      "description": "When this model makes a Harvest action, gain possession of the Moonstone regardless of its depth value. This model ignores the Slow Carry rule whilst in possession of exactly one moonstone"
+    },
+    {
+      "name": "Tough as Old Boots",
+      "description": "At the start of the Replenish Step this model recovers 2 Wds."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Shove",
+      "cost": 0,
+      "range": "1\"",
+      "description": "Move target other model 2\" directly away.",
+      "oncePerTurn": true
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Sink Hole",
+      "cost": 2,
+      "range": "8\"",
+      "description": "[P]X: Target suffers X Wds and gains [Slow. This model's jog actions are limited to 2\"] until end of turn. \nCatastrophe: This character suffers 2 Wds."
+    }
+  ],
+  "signatureMove": {
+    "name": "Pick a fight",
+    "upgradeFrom": "Falling Swing",
+    "damageType": "Impact",
+    "passiveEffect": "Damagre from this attack cannot be reduced by passive abilities",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "2"},
+      {"opponentPlay": "Thrust", "deal": "2"},
+      {"opponentPlay": "Sweeping Cut", "deal": "2"},
+      {"opponentPlay": "Rising Attack", "deal": "2"},
+      {"opponentPlay": "Low Guard", "deal": "2"}
+    ]
+  },
+  "baseSize": "30mm",
+  "imageName": "morris",
+  "shareCode": "AAB",
+  "impactDamageBuff": 2,
+  "slicingDamageBuff": "Null"
+}

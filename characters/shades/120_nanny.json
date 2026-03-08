@@ -1,0 +1,63 @@
+{
+  "id": "120",
+  "name": "Nanny",
+  "version": "",
+  "factions": ["SHADES"],
+  "tags": ["Risen"],
+  "melee": 3,
+  "meleeRange": 1,
+  "arcane": 4,
+  "evade": 1,
+  "health": 9,
+  "energyTrack": [1, 3, 6],
+  "passiveAbilities": [
+    {
+      "name": "You Protect Me Like the Babe",
+      "description": "Reduce all Dmg this character would suffer by -1 for each friendly Babeling within 6\"."
+    }
+  ],
+  "activeAbilities": [],
+  "arcaneAbilities": [
+    {
+      "name": "Milkies",
+      "cost": 2,
+      "range": "6\"",
+      "description": "Target friendly character restores X Wds.\nTarget friendly character gains +1 energy. \nCatastrophe: The target suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Summon the Nursery",
+      "cost": 1,
+      "range": "",
+      "description": "Place a new Sprog in base contact with this character.\nPlace a new Pookie in base contact with this character.\nPlace a new Urchin in base contact with this character.\nCatastrophe: This model and Babelings within 6\" suffer 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": true
+    },
+    {
+      "name": "Lullaby",
+      "cost": 1,
+      "range": "6\"",
+      "description": "Target model must discard half its energy rounding up, then it restores 2 Wds. \nCatastrophe: This model suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": true
+    }
+  ],
+  "signatureMove": {
+    "name": "Nap Time!",
+    "upgradeFrom": "Falling Swing",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "2"},
+      {"opponentPlay": "Falling Swing", "deal": "2"},
+      {"opponentPlay": "Thrust", "deal": "2"},
+      {"opponentPlay": "Sweeping Cut", "deal": "2"},
+      {"opponentPlay": "Rising Attack", "deal": "2"},
+      {"opponentPlay": "Low Guard", "deal": "2"}
+    ],
+    "endStepEffect": "If the enemy suffered 1 or more Wds during this round of Melee, they lose 1 energy."
+  },
+  "baseSize": "30mm",
+  "imageName": "120_nanny.json",
+  "shareCode": "AAB"
+}

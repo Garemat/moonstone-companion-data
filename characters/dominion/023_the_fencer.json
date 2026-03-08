@@ -1,0 +1,66 @@
+{
+  "id": "025",
+  "name": "The Fencer",
+  "version": "",
+  "factions": ["DOMINION"],
+  "tags": ["Faerie", "Rogue"],
+  "melee": 6,
+  "meleeRange": 1,
+  "arcane": 5,
+  "evade": "-2",
+  "health": 6,
+  "energyTrack": [1, 2, 3, 4, 6],
+  "passiveAbilities": [
+    {
+      "name": "Volta",
+      "description": "Reduce Piercing Dmg suffered by -2."
+    },
+    {
+      "name": "Weakling",
+      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy."
+    },
+    {
+      "name": "Swift",
+      "description": "When making a Reaction Step while engaged by an enemy, this model may move 2” instead of the usual 1”.",
+      "oncePerTurn": true
+    },
+    {
+      "name": "Needle",
+      "description": "If this character deals Piercing Melee Dmg, increase the Dmg dealt by +1."
+    },
+    {
+      "name": "Spiteful",
+      "description": "When this model causes 1 or more Wds to an enemy, it restores 1 Wd."
+    }
+  ],
+  "activeAbilities": [],
+  "arcaneAbilities": [
+    {
+      "name": "Enfeeble",
+      "cost": 3,
+      "range": "4\"",
+      "description": "Reduce all Melee Dmg dealt by target by -X until the end of the turn.\nCatastrophe: The target gains +1 energy."
+    }
+  ],
+  "signatureMove": {
+    "name": "Needlepoint",
+    "upgradeFrom": "Thrust",
+    "damageType": "Piercing",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "1"},
+      {"opponentPlay": "Falling Swing", "deal": "2"},
+      {"opponentPlay": "Thrust", "deal": "2"},
+      {"opponentPlay": "Sweeping Cut", "deal": "1"},
+      {"opponentPlay": "Rising Attack", "deal": "2"},
+      {"opponentPlay": "Low Guard", "deal": "2"}
+    ],
+    "endStepEffect": "Damage from this attack cannot be reduced by passive abilities."
+  },
+  "baseSize": "30mm",
+  "imageName": "fencer",
+  "shareCode": "AAB",
+  "piercingDamageBuff": 0,
+  "slicingDamageBuff": -1,
+  "impactDamageBuff": -1,
+  "piercingDamageMitigation": 2
+}

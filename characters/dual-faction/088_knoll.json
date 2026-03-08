@@ -1,0 +1,65 @@
+{
+  "id": "088",
+  "name": "Knoll",
+  "version": "",
+  "factions": ["DOMINION", "LESHAVULT"],
+  "tags": ["Troll", "Wizard"],
+  "melee": 2,
+  "meleeRange": 3,
+  "arcane": 4,
+  "evade": 2,
+  "health": 12,
+  "energyTrack": [1, 6],
+  "passiveAbilities": [
+    {
+      "name": "Tough as Old Boots",
+      "description": "At the start of the Replenish Step this model recovers 2 Wds."
+    },
+    {
+      "name": "Recluse",
+      "description": "At the start of the Replenish Step this model gains +1 energy if there are no other models within 3\"."
+    },
+    {
+      "name": "Old Staff",
+      "description": " If this character deals Piercing or Impact Melee Dmg, increase the Dmg dealt by +1."
+    }
+  ],
+  "activeAbilities": [],
+  "arcaneAbilities": [
+    {
+      "name": "Healing",
+      "cost": 2,
+      "range": "8\"",
+      "description": "Target restores X+1 Wds.\nCatastrophe: This model suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Trollish Remedies",
+      "cost": 3,
+      "range": "8\"",
+      "description": "Target Troll gains [Tough as Old Boots: At the start of the Replenish Step this model recovers 2 Wds.], until end of game.\nTarget suffers X Wds, then gains +1 energy.\nTarget restores 3X-1 Wds.\nCatastrophe: The target suffers 2 Wds and loses 1 energy.",
+      "oncePerGame": false,
+      "oncePerTurn": true
+    }
+  ],
+  "signatureMove": {
+    "name": "Bog Off!",
+    "upgradeFrom": "Thrust",
+    "damageType": "Piercing",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "1"},
+      {"opponentPlay": "Falling Swing", "deal": "3"},
+      {"opponentPlay": "Thrust", "deal": "4"},
+      {"opponentPlay": "Sweeping Cut", "deal": "3"},
+      {"opponentPlay": "Rising Attack", "deal": "1"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "Move the enemy model 1\" directly away from this model."
+  },
+  "baseSize": "40mm",
+  "imageName": "088_knoll.json",
+  "shareCode": "AAB",
+  "impactDamageBuff": 1,
+  "piercingDamageBuff": 1
+}

@@ -1,0 +1,64 @@
+{
+  "id": "125",
+  "name": "Commodore Delahaye",
+  "version": "",
+  "factions": ["DOMINION", "SHADES"],
+  "tags": ["Spirit", "Pirate"],
+  "melee": 3,
+  "meleeRange": 2,
+  "arcane": 3,
+  "evade": -1,
+  "health": 7,
+  "energyTrack": [1, 3, 5],
+  "passiveAbilities": [
+    {
+      "name": "Worlds Old & New",
+      "description": "If you faction is Shades, when this model is deployed, place a 50mm Water Feature within 6\" and LoS on open ground. If your faction is Dominion, when a friendly Pirate within 6\" Jogs it may ignore the effects of Slow (and Slow Carry). Once per turn."
+    },
+    {
+      "name": "Cutlass",
+      "description": "If this model deals Slicing Melee Dmg, increase the Dmg dealt by +1."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Old Pirate Curse",
+      "cost": 1,
+      "range": "8\"",
+      "description": "Target without The Black Spot gains [The Black Spot: Enemy Pirates gain +1 Arcane Stat when targeting this character with an action. This character suffers 1 Wd during the Discard Step], until end of game. Then other enemies with The Black Spot lost it.",
+      "oncePerTurn": true
+    },
+    {
+      "name": "Reload [Shoot Pistol]",
+      "cost": 2,
+      "range": "",
+      "description": "The named ability can be used again. This ability cannot be used while this model is engaged."
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Shoot Pistol",
+      "cost": 1,
+      "range": "8\"",
+      "description": "Target suffers X+1 Impact Dmg.\nCatastrophe: This character suffers 3 Wds.",
+      "oncePerGame": true
+    }
+  ],
+  "signatureMove": {
+    "name": "21 Ghoul Salute",
+    "upgradeFrom": "Thrust",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "0"},
+      {"opponentPlay": "Falling Swing", "deal": "1"},
+      {"opponentPlay": "Thrust", "deal": "1"},
+      {"opponentPlay": "Sweeping Cut", "deal": "0"},
+      {"opponentPlay": "Rising Attack", "deal": "1"},
+      {"opponentPlay": "Low Guard", "deal": "0"}
+    ],
+    "endStepEffect": "This attack can damage models outside this character's Melee Range and deals +1 Dmg for each other friendly Pirate with the Reload [...] ability within 4\"."
+  },
+  "baseSize": "30mm",
+  "imageName": "125_commodore_delahaye.json",
+  "shareCode": "AAB"
+}

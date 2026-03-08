@@ -1,0 +1,72 @@
+{
+  "id": "071",
+  "name": "Chubs",
+  "version": "",
+  "factions": ["LESHAVULT"],
+  "tags": ["Faun"],
+  "melee": 3,
+  "meleeRange": 1,
+  "arcane": 4,
+  "evade": -1,
+  "health": 6,
+  "energyTrack": [1, 3, 4, 6],
+  "passiveAbilities": [
+    {
+      "name": "Weakling",
+      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Rouse",
+      "cost": 3,
+      "range": "6\"",
+      "description": "Target Faun or Animal restores 1 Wd and gains +2 energy.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Misdirection",
+      "cost": 4,
+      "range": "6\"",
+      "description": "Move target enemy model 3”.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Shoot Shortbow",
+      "cost": 3,
+      "range": "8\"",
+      "description": "This ability cannot be used while this model is engaged.\nTarget suffers X Piercing Dmg.\nCatastrophe: This ability cannot be used for the remainder of the game.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Healing",
+      "cost": 2,
+      "range": "8\"",
+      "description": "Target restores X+1 Wds.\nCatastrophe: This model suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Love Potion",
+    "upgradeFrom": "Low Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "Reduce Melee Dmg suffered by -1. Choose a character you control. Move the enemy 3\" directly towards that character. The enemy cannot target that character with an action until end of turn."
+  },
+  "baseSize": "30mm",
+  "imageName": "chubs",
+  "shareCode": "AAB"
+}

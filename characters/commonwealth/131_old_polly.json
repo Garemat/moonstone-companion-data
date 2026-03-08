@@ -1,0 +1,61 @@
+{
+  "id": "131",
+  "name": "Old Polly",
+  "version": "",
+  "factions": ["COMMONWEALTH"],
+  "tags": ["Gnome", "Rogue"],
+  "melee": 3,
+  "meleeRange": 1,
+  "arcane": 4,
+  "evade": "0",
+  "health": 8,
+  "energyTrack": [1, 2],
+  "passiveAbilities": [
+    {
+      "name": "The Faculty",
+      "description": "If Old Polly, Prof. Boffinsworth and Flinders Memphis were taken in this troupe at the start of the game, this character gains Rogue, Animal and Machine Keywords"
+    },
+    {
+      "name": "Prognosication",
+      "description": "Friendly Rogues within 4\" gain [Seen It All Before: If this character is attacker or defender in a round of Melee, before each player selects a Melee Card, your opponent must reveal their hand]"
+    },
+    {
+      "name": "Cockatrice Companion",
+      "description": "When targetting an enemy character that has no energy with a Melee Attack or Petrifying Gaze action, increase any Dmg dealt by +1."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Wily Old Weasel",
+      "cost": 0,
+      "range": "6\"",
+      "description": "If a friendly Rogue takes an Arcane action within 6\" you may reduce its energy cost by -1.",
+      "oncePerTurn": true
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Petrifying Gaze",
+      "cost": 2,
+      "range": "4\"",
+      "description": "Taget suffers X Magical Dmg then loses X energy\nCatastrophe: This character suffers 3 Wds"
+    }
+  ],
+  "signatureMove": {
+    "name": "Cockatrice Stare",
+    "upgradeFrom": "",
+    "damageType": "Magical",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "0"},
+      {"opponentPlay": "Falling Swing", "deal": "2"},
+      {"opponentPlay": "Thrust", "deal": "3"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "3"},
+      {"opponentPlay": "Low Guard", "deal": "0"}
+    ],
+    "endStepEffect": "This may deal Dmg to characters outside Melee Range. If the enemy suffered 1 or more Wds during this round of melee, they must discard 1 energy."
+  },
+  "baseSize": "30mm",
+  "imageName": "131_old_polly.json",
+  "shareCode": "AAB"
+}

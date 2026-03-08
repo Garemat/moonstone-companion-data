@@ -1,0 +1,61 @@
+{
+  "id": "095",
+  "name": "Snag",
+  "version": "",
+  "factions": ["LESHAVULT", "SHADES"],
+  "tags": ["Treefolk", "Spirit"],
+  "melee": 4,
+  "meleeRange": 2,
+  "arcane": 3,
+  "evade": 2,
+  "health": 11,
+  "energyTrack": [1, 4, 10],
+  "passiveAbilities": [
+    {
+      "name": "Windfoot",
+      "description": "This character may jog over Wooded Patches."
+    },
+    {
+      "name": "Accursed",
+      "description": "When an enemy targets this character with an arcane action you may reveal a Green:X from your resist hand before any cards are played. After resolving the current action, the enemy model suffers X-1 Wds where X is the value of the revealed card."
+    },
+    {
+      "name": "Splintered Branches",
+      "description": "If this character deals Impact or Piercing Melee dmg, increase the dmg dealt by +1."
+    },
+    {
+      "name": "Vengeance",
+      "description": "If a friendly character is slain or reduced to - Wds, the fist time this model uses an Arcane Ability this turn it doesn't need to spend any energy."
+    }
+  ],
+  "activeAbilities": [],
+  "arcaneAbilities": [
+    {
+      "name": "Deadwood Curse",
+      "cost": 3,
+      "range": "8\"",
+      "description": "Target gains [Deadwood Cursed: During the Discard Step, this character and all models friendly to this character within 3\" suffer 1 Wd.], until this character is slain.\nCatastrophe: This character suffers 2 Wds. All other models within 3\" suffer 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Crowd Control",
+    "upgradeFrom": "Rising Attack",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "0"},
+      {"opponentPlay": "Falling Swing", "deal": "0"},
+      {"opponentPlay": "Thrust", "deal": "0"},
+      {"opponentPlay": "Sweeping Cut", "deal": "1"},
+      {"opponentPlay": "Rising Attack", "deal": "1"},
+      {"opponentPlay": "Low Guard", "deal": "2"}
+    ],
+    "endStepEffect": "This attack deals W damage against models which are further than 1\" away. If the enemy is within 1\" it is moved 1\" directly away from this model."
+  },
+  "baseSize": "40mm",
+  "imageName": "095_snag.json",
+  "shareCode": "AAB",
+  "impactDamageBuff": 1,
+  "piercingDamageBuff": 1
+}

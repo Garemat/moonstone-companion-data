@@ -1,0 +1,56 @@
+{
+  "id": "078",
+  "name": "Striga Anya",
+  "version": "",
+  "factions": ["DOMINION", "LESHAVULT"],
+  "tags": ["Spirit"],
+  "melee": 5,
+  "meleeRange": 1,
+  "arcane": 0,
+  "evade": 1,
+  "health": 7,
+  "energyTrack": [1, 2, 4],
+  "passiveAbilities": [
+    {
+      "name": "Summoned Being",
+      "description": "You cannot choose this character for your Troupe."
+    },
+    {
+      "name": "Supernatural Strength",
+      "description": " Increase all Melee Dmg dealt by +2. Melee Dmg caused by this character counts as Magical instead of the listed type."
+    },
+    {
+      "name": "Blood Drinker",
+      "description": "If an enemy is slain during a round of melee by this character, then this character gains +3 energy."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Replace Necklace",
+      "cost": 4,
+      "range": "",
+      "description": "This character gains +1 energy. Then it is Removed from Play and replaced by Anya Bartol. Anya Bartol gains energy and suffers Wds equal to those already on this character along with all Moonstones it's carrying and any stat modifications or abilities it has gained. Continue Striga Anya's activation with Anya Bartol; she may not Jog if Striga Anya already did this turn.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [],
+  "signatureMove": {
+    "name": "Regain Control",
+    "upgradeFrom": "High Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "If this character was not slain then it is Removed from Play and replaced with Anya Bartol. Anya Bartol gains energy and suffers Wds equal to those already on this character along with all Moonstones it's carrying and any stat modifications or abilities it has gained. If this character was the active character, continue the current activation with Anya Bartol; she may not Jog if Striga Anya already did this turn."
+  },
+  "baseSize": "30mm",
+  "imageName": "anya_striga",
+  "shareCode": "AAB",
+  "meleeDamageBuff": 2
+}

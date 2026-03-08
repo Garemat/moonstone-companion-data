@@ -1,0 +1,67 @@
+{
+  "id": "050",
+  "name": "The Mortician",
+  "version": "",
+  "factions": ["DOMINION"],
+  "tags": ["Goblin", "Wizard"],
+  "melee": 2,
+  "meleeRange": 1,
+  "arcane": 4,
+  "evade": -1,
+  "health": 7,
+  "energyTrack": [1, 4],
+  "passiveAbilities": [
+    {
+      "name": "Slow",
+      "description": "This model's Jog actions are limited to 2”."
+    },
+    {
+      "name": "Spirit Link",
+      "description": "During the Replenish Step, this character gains +1 energy for each friendly slain character."
+    }
+  ],
+  "activeAbilities": [],
+  "arcaneAbilities": [
+    {
+      "name": "Healing",
+      "cost": 2,
+      "range": "8\"",
+      "description": "Target restores X+1 Wds.\nCatastrophe: This model suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Rigor Mortis",
+      "cost": 3,
+      "range": "6\"",
+      "description": "Target discards all energy and suffers 1 Wd.\nCatastrophe:  This model suffers 4 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Reanimate",
+      "cost": 3,
+      "range": "",
+      "description": "Place a friendly slain model in base contact with this model. Restore half its health rounding up. It has no energy but may activate this turn.\nCatastrophe: This model suffers 4 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Play Dead",
+    "upgradeFrom": "Low Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": " Enemy characters cannot target this model with actions until this model next performs an action or the end of turn, whichever comes first."
+  },
+  "baseSize": "30mm",
+  "imageName": "mortician",
+  "shareCode": "AAB"
+}

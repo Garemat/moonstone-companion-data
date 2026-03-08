@@ -1,0 +1,60 @@
+{
+  "id": "074",
+  "name": "Jackalope",
+  "version": "",
+  "factions": ["COMMONWEALTH", "LESHAVULT"],
+  "tags": ["Animal"],
+  "melee": 3,
+  "meleeRange": 2,
+  "arcane": 0,
+  "evade": 1,
+  "health": 10,
+  "energyTrack": [1, 4, 8],
+  "passiveAbilities": [
+    {
+      "name": "Razor Sharp Antlers",
+      "description": "If this character deals Piercing Melee Dmg increase the Dmg dealt by +2."
+    },
+    {
+      "name": "Hippity",
+      "description": "You may move freely over intervening obstacles and models during Jog actions provided bases do not overlap at the end of the move."
+    },
+    {
+      "name": "Fluffy",
+      "description": "Reduce Impact Dmg suffered by -1."
+    },
+    {
+      "name": "Burrowing Claws",
+      "description": "This model gains posession of one Moonstone it is in base contact with regardless of its depth value. This ability cannot be used while this model is engaged."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Hop",
+      "cost": 2,
+      "range": "",
+      "description": "Move this model 4\". You may move freely over intervening obstacles and models provided bases do not overlap at the end of the move.",
+      "oncePerTurn": true
+    }
+  ],
+  "arcaneAbilities": [],
+  "signatureMove": {
+    "name": "Gore",
+    "upgradeFrom": "Rising Attack",
+    "damageType": "Piercing",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "2"},
+      {"opponentPlay": "Falling Swing", "deal": "2"},
+      {"opponentPlay": "Thrust", "deal": "2"},
+      {"opponentPlay": "Sweeping Cut", "deal": "1"},
+      {"opponentPlay": "Rising Attack", "deal": "2"},
+      {"opponentPlay": "Low Guard", "deal": "0"}
+    ],
+    "endStepEffect": "Move the enemy model 1”."
+  },
+  "baseSize": "40mm",
+  "imageName": "jackalope",
+  "shareCode": "AAB",
+  "piercingDamageBuff": 2,
+  "impactDamageMitigation": 1
+}

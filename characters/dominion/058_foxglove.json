@@ -1,0 +1,63 @@
+{
+  "id": "058",
+  "name": "Foxglove",
+  "version": "",
+  "factions": ["DOMINION"],
+  "tags": ["Faerie", "Rogue", "Wizard"],
+  "melee": 3,
+  "meleeRange": 1,
+  "arcane": 3,
+  "evade": -2,
+  "health": 6,
+  "energyTrack": [1, 2, 3, 5, 6],
+  "passiveAbilities": [
+    {
+      "name": "Weakling",
+      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Trickster",
+      "cost": 0,
+      "range": "",
+      "description": " When this model successfully bluffs, after resolving the effect you may reveal the bluff and gain +3 energy.",
+      "oncePerTurn": true
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Shelter of the Shadowglade",
+      "cost": 3,
+      "range": "6\"",
+      "description": "Target gains [Protection: The first time this character would suffer Dmg, reduce that Dmg to W], until end of turn.\nCatastrophe: This model suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Atrophy",
+      "cost": 3,
+      "range": "6\"",
+      "description": "Target suffers 2X Magical Dmg.\nCatastrophe: This model suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Mirror of Mischief",
+    "upgradeFrom": "Low Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "When played, choose a Faerie or Rogue within 6\". This becomes a copy of that character's Signature Move. It is still considered a Low Guard when calculating your opponent’s Dmg dealt to you. If there is no Faerie or Rogue characters within 6\" then this card deals W Dmg."
+  },
+  "baseSize": "30mm",
+  "imageName": "foxglove",
+  "shareCode": "AAB"
+}

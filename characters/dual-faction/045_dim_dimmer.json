@@ -1,0 +1,52 @@
+{
+  "id": "045",
+  "name": "Dim & Dimmer",
+  "version": "",
+  "factions": ["COMMONWEALTH", "DOMINION"],
+  "tags": ["Giant", "Mercenary"],
+  "melee": 2,
+  "meleeRange": 2,
+  "arcane": 0,
+  "evade": "2",
+  "health": 14,
+  "energyTrack": [6],
+  "passiveAbilities": [
+    {
+      "name": "Two Heads are Better than One",
+      "description": "During a round of Melee, after cards are drawn but before they are revealed, you may discard 1 energy to play 2 different cards. If you do, after cards are revealed you may choose which card is used. The other card is discarded."
+    },
+    {
+      "name": "Natural Padding",
+      "description": "Reduce Impact Dmg suffered by -2."
+    },
+    {
+      "name": "Cleaver & Club",
+      "description": "If this character deals Impact or Slicing Melee Dmg, increase the Dmg dealt by +2."
+    },
+    {
+      "name": "Constant Bickering",
+      "description": "When this character activates, flip an Arcane card. This character gains X energy, where X is the value on the flipped card. Catastrophe: This character suffers 3 Wds."
+    }
+  ],
+  "activeAbilities": [],
+  "arcaneAbilities": [],
+  "signatureMove": {
+    "name": "Packed Lunch",
+    "upgradeFrom": "Rising Attack",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "1"},
+      {"opponentPlay": "Falling Swing", "deal": "1"},
+      {"opponentPlay": "Thrust", "deal": "1"},
+      {"opponentPlay": "Sweeping Cut", "deal": "1"},
+      {"opponentPlay": "Rising Attack", "deal": "0"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "If the enemy suffered 1 or more Wds during this round of Melee and has an Evade Stat of -1 or lower, then it is Removed From Play."
+  },
+  "baseSize": "40mm",
+  "imageName": "dim_dimmer",
+  "shareCode": "AAB",
+  "impactDamageBuff": 2,
+  "impactDamageMitigation": 2
+}
