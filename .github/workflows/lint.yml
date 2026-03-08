@@ -30,21 +30,7 @@ jobs:
           echo "PR template validation passed."
 
       - name: Aggregate JSON files
-        run: |
-          mkdir -p build
-          python3 - <<'EOF'
-          import json, glob
-
-          for kind, pattern in [
-              ("characters", "characters/**/*.json"),
-              ("upgrades",   "upgrades/**/*.json"),
-              ("campaign",   "campaign/**/*.json"),
-          ]:
-              files = sorted(glob.glob(pattern, recursive=True))
-              data  = [json.load(open(f)) for f in files]
-              json.dump(data, open(f"build/{kind}.json", "w"), indent=2)
-              print(f"{kind}: {len(data)} entries")
-          EOF
+        run: python3 scripts/aggregate.py
 
       - name: Lint produced JSON files
         run: python3 scripts/lint_data.py
