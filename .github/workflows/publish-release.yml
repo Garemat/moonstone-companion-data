@@ -1,18 +1,47 @@
 name: Publish Data Release
 
 on:
-  push:
+  pull_request:
     branches: [main]
+    types: [closed]
   workflow_dispatch:
 
 jobs:
   release:
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     permissions:
       contents: write
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Determine Version Bump
+        id: bump_type
+        run: |
+          BODY="${{ github.event.pull_request.body }}"
+          if [[ "$BODY" == *"[x] 💥 Breaking change"* ]]; then
+            echo "type=major" >> $GITHUB_OUTPUT
+          elif [[ "$BODY" == *"[x] ✨ New character or card"* ]]; then
+            echo "type=minor" >> $GITHUB_OUTPUT
+          elif [[ "$BODY" == *"[x] 🐛 Data fix"* ]]; then
+            echo "type=patch" >> $GITHUB_OUTPUT
+          elif [[ "$BODY" == *"[x] 🖼️ Image update"* ]]; then
+            echo "type=patch" >> $GITHUB_OUTPUT
+          else
+            # workflow_dispatch or chore-only — default to patch
+            echo "type=patch" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create Tag
+        id: tag_version
+        uses: anothrNick/github-tag-action@1.64.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEFAULT_BUMP: ${{ steps.bump_type.outputs.type }}
+          WITH_V: true
 
       - name: Aggregate JSON files
         run: |
@@ -32,115 +61,7 @@ jobs:
           EOF
 
       - name: Lint produced JSON files
-        run: |
-          python3 - <<'EOF'
-          import json, sys
-
-          VALID_FACTIONS = {"COMMONWEALTH", "DOMINION", "LESHAVULT", "SHADES"}
-
-          def error(path, msg):
-              errors.append(f"  [{path}] {msg}")
-
-          errors = []
-
-          # ── characters.json ──────────────────────────────────────────────
-          with open("build/characters.json") as f:
-              characters = json.load(f)
-
-          seen_ids = {}
-          for i, c in enumerate(characters):
-              p = f"characters[{i}] id={c.get('id','?')} name={c.get('name','?')!r}"
-
-              for field in ("id", "name", "factions", "health"):
-                  if field not in c:
-                      error(p, f"missing required field '{field}'")
-
-              cid = c.get("id")
-              if cid is not None:
-                  if not isinstance(cid, int):
-                      error(p, f"'id' must be an integer, got {type(cid).__name__}")
-                  elif cid in seen_ids:
-                      error(p, f"duplicate id {cid} (also at index {seen_ids[cid]})")
-                  else:
-                      seen_ids[cid] = i
-
-              factions = c.get("factions", [])
-              if not isinstance(factions, list) or len(factions) == 0:
-                  error(p, "'factions' must be a non-empty list")
-              else:
-                  bad = [f for f in factions if f not in VALID_FACTIONS]
-                  if bad:
-                      error(p, f"unknown faction(s): {bad}")
-
-              health = c.get("health")
-              if health is not None and (not isinstance(health, int) or health <= 0):
-                  error(p, f"'health' must be a positive integer, got {health!r}")
-
-              sig = c.get("signatureMove")
-              if sig is not None:
-                  for sf in ("name",):
-                      if sf not in sig:
-                          error(p, f"signatureMove missing '{sf}'")
-
-          print(f"characters.json: {len(characters)} entries, {len(seen_ids)} unique ids")
-
-          # ── upgrades.json ─────────────────────────────────────────────────
-          with open("build/upgrades.json") as f:
-              upgrades = json.load(f)
-
-          seen_upgrade_ids = {}
-          for i, u in enumerate(upgrades):
-              p = f"upgrades[{i}] id={u.get('id','?')} name={u.get('name','?')!r}"
-              for field in ("id", "name", "factions"):
-                  if field not in u:
-                      error(p, f"missing required field '{field}'")
-              uid = u.get("id")
-              if isinstance(uid, int):
-                  if uid in seen_upgrade_ids:
-                      error(p, f"duplicate id {uid}")
-                  else:
-                      seen_upgrade_ids[uid] = i
-              factions = u.get("factions", [])
-              if isinstance(factions, list):
-                  bad = [f for f in factions if f not in VALID_FACTIONS]
-                  if bad:
-                      error(p, f"unknown faction(s): {bad}")
-
-          print(f"upgrades.json: {len(upgrades)} entries")
-
-          # ── campaign.json ─────────────────────────────────────────────────
-          with open("build/campaign.json") as f:
-              campaign = json.load(f)
-
-          seen_campaign_ids = {}
-          for i, card in enumerate(campaign):
-              p = f"campaign[{i}] id={card.get('id','?')} name={card.get('name','?')!r}"
-              for field in ("id", "name", "factions"):
-                  if field not in card:
-                      error(p, f"missing required field '{field}'")
-              cid = card.get("id")
-              if isinstance(cid, int):
-                  if cid in seen_campaign_ids:
-                      error(p, f"duplicate id {cid}")
-                  else:
-                      seen_campaign_ids[cid] = i
-              factions = card.get("factions", [])
-              if isinstance(factions, list):
-                  bad = [f for f in factions if f not in VALID_FACTIONS]
-                  if bad:
-                      error(p, f"unknown faction(s): {bad}")
-
-          print(f"campaign.json: {len(campaign)} entries")
-
-          # ── Report ────────────────────────────────────────────────────────
-          if errors:
-              print(f"\n{len(errors)} lint error(s) found:")
-              for e in errors:
-                  print(e)
-              sys.exit(1)
-          else:
-              print("\nAll lint checks passed.")
-          EOF
+        run: python3 scripts/lint_data.py
 
       - name: Zip character images
         run: zip -j build/character_images.zip character_images/*
@@ -148,10 +69,13 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v${{ github.run_number }}
-          name: "Data release v${{ github.run_number }}"
+          tag_name: ${{ steps.tag_version.outputs.new_tag }}
+          name: "Data release ${{ steps.tag_version.outputs.new_tag }}"
+          generate_release_notes: true
           files: |
             build/characters.json
             build/upgrades.json
             build/campaign.json
             build/character_images.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

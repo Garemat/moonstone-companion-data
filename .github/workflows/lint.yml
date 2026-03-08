@@ -1,0 +1,50 @@
+name: Lint and Validate
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate PR template
+        env:
+          PR_BODY: ${{ github.event.pull_request.body }}
+        run: |
+          echo "Validating PR description..."
+
+          if ! echo "$PR_BODY" | grep -qEi '- \[x\] (💥 Breaking change|✨ New character or card|🐛 Data fix|🖼️ Image update|🧹 Chore)'; then
+            echo "::error::Validation Failed: Please select at least one 'Type of Change' in your PR description."
+            exit 1
+          fi
+
+          if echo "$PR_BODY" | sed -n '/## Checklist/,$p' | grep -q '\[ \]'; then
+            echo "::error::Validation Failed: Please ensure all items in the 'Checklist' are completed."
+            exit 1
+          fi
+
+          echo "PR template validation passed."
+
+      - name: Aggregate JSON files
+        run: |
+          mkdir -p build
+          python3 - <<'EOF'
+          import json, glob
+
+          for kind, pattern in [
+              ("characters", "characters/**/*.json"),
+              ("upgrades",   "upgrades/**/*.json"),
+              ("campaign",   "campaign/**/*.json"),
+          ]:
+              files = sorted(glob.glob(pattern, recursive=True))
+              data  = [json.load(open(f)) for f in files]
+              json.dump(data, open(f"build/{kind}.json", "w"), indent=2)
+              print(f"{kind}: {len(data)} entries")
+          EOF
+
+      - name: Lint produced JSON files
+        run: python3 scripts/lint_data.py
