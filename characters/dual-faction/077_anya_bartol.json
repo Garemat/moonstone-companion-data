@@ -1,0 +1,63 @@
+{
+  "id": "077",
+  "name": "Anya Bartol",
+  "version": "",
+  "factions": ["DOMINION", "LESHAVULT"],
+  "tags": ["Human", "Noble"],
+  "melee": 2,
+  "meleeRange": 1,
+  "arcane": 4,
+  "evade": -1,
+  "health": 7,
+  "energyTrack": [1, 2, 4],
+  "passiveAbilities": [
+    {
+      "name": "Weakling",
+      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy"
+    },
+    {
+      "name": "Look of Innocence",
+      "description": "When an enemy targets this character with an action, the active enemy model must discard 1 energy or the action is cancelled."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Swift",
+      "cost": 0,
+      "range": "",
+      "description": "When making a Reaction Step while engaged by an enemy, this model may move 2” instead of the usual 1”.",
+      "oncePerTurn": true
+    },
+    {
+      "name": "Remove Necklace",
+      "cost": 4,
+      "range": "",
+      "description": "This character gains +4 energy. Then it is Removed from Play and replaced by Striga Anya. Striga Anya gains energy and suffers Wds equal to those already on this character along with all Moonstones this character is carrying and any stat modifications or abilities it has gained. Continue Anya Bartol's activation with Striga Anya; it may not Jog if Anya Bartol already did this turn."
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Healing",
+      "cost": 2,
+      "range": "8\"",
+      "description": "Target restores X+1 Wds.\nCatastrophe: This model suffers 2 Wds."
+    }
+  ],
+  "signatureMove": {
+    "name": "Lose Control",
+    "upgradeFrom": "High Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "If this character was not slain then it is Removed from Play and replaced with Striga Anya. Striga Anya gains energy and suffers Wds equal to those already on this character along with all Moonstones she was carrying and any stat modifications or abilities she has gained. If this character was the active character, continue the current activation with Striga Anya; it may not Jog if Anya Bartol already did this turn."
+  },
+  "baseSize": "30mm",
+  "imageName": "anya_bartol",
+  "shareCode": "AAB"
+}

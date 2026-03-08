@@ -1,0 +1,70 @@
+{
+  "id": "035",
+  "name": "Old Calders",
+  "version": "",
+  "factions": ["COMMONWEALTH"],
+  "tags": ["Human", "Soldier"],
+  "melee": 3,
+  "meleeRange": 2,
+  "arcane": 4,
+  "evade": 0,
+  "health": 8,
+  "energyTrack": [1, 3, 7],
+  "passiveAbilities": [
+    {
+      "name": "Longsword",
+      "description": "If this character deals Slicing or Piercing Melee Dmg, increase the Dmg dealt by +1."
+    },
+    {
+      "name": "Quilted Armour",
+      "description": "Reduce Slicing Dmg suffered by -1."
+    },
+    {
+      "name": "Sage Advice",
+      "description": "Friendly models within 4” may ignore Catastrophe effects."
+    },
+    {
+      "name": "Seen It All Before",
+      "description": "If this character is attacker or defender in a round of melee, before each player selects their combat card, your opponent must reveal their hand."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "\"Look out!\"",
+      "cost": 1,
+      "range": "6\"",
+      "description": "Target friendly character’s Evade stat is reduced by -1 until end of turn.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Field Medic",
+      "cost": 1,
+      "range": "4\"",
+      "description": "Target Soldier or Noble restores X Wds.\nCatastrophe: This model suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Tactical Retreat",
+    "upgradeFrom": "High Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": " This model may move 2”."
+  },
+  "baseSize": "30mm",
+  "imageName": "035_old_calders.json",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 1,
+  "slicingDamageMitigation": 1
+}

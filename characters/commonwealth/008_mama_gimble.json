@@ -1,0 +1,72 @@
+{
+  "id": "008",
+  "name": "Mama Gimble",
+  "version": "v.3",
+  "factions": ["COMMONWEALTH"],
+  "tags": ["Gnome"],
+  "melee": 2,
+  "meleeRange": 1,
+  "arcane": 6,
+  "evade": 0,
+  "health": 6,
+  "energyTrack": [1, 2, 3],
+  "passiveAbilities": [
+    {
+      "name": "Slow",
+      "description": "This model's Jog actions are limited to 2”. "
+    },
+    {
+      "name": "My Boys",
+      "description": "Reduce all Dmg this character would suffer by -1 for each other friendly Gnome within 4”, to a maximum of -2."
+    },
+    {
+      "name": "Luck Charms",
+      "description": "Other friendly Gnomes within 4” gain +1 Melee stat, +1 Arcane stat."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Mother's Wrath",
+      "cost": 1,
+      "range": "3\"",
+      "description": "Other friendly Gnomes within the pulse gain 1 energy. Enemy models within the pulse suffer 2 Wds.",
+      "oncePerGame": true,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Mother's Love",
+      "cost": 1,
+      "range": "10\"",
+      "description": "Move 2” directly towards target Gnome, then the target moves 2” directly towards this model and restores 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": true
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Healing",
+      "cost": 2,
+      "range": "8\"",
+      "description": "[B]X: Target restores X+1 Wds.\nCatastrophe: This model suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "You'll Regret That",
+    "upgradeFrom": "Low Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": " If this model is still alive, swap the positions of this model and a friendly model within 4”."
+  },
+  "baseSize": "30mm",
+  "imageName": "mama_gimble",
+  "shareCode": "AAB"
+}

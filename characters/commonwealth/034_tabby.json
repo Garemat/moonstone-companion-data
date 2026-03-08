@@ -1,0 +1,63 @@
+{
+  "id": "034",
+  "name": "Tabby, the Librarian",
+  "version": "",
+  "factions": ["COMMONWEALTH"],
+  "tags": ["Human", "Cleric"],
+  "melee": 3,
+  "meleeRange": 3,
+  "arcane": 5,
+  "evade": 1,
+  "health": 8,
+  "energyTrack": [1, 4],
+  "passiveAbilities": [
+    {
+      "name": "Poking Stick",
+      "description": "If this character deals Slicing Melee Dmg, reduce the Dmg dealt to W."
+    }
+  ],
+  "activeAbilities": [],
+  "arcaneAbilities": [
+    {
+      "name": "Librarian's Scorn",
+      "cost": 1,
+      "range": "6\"",
+      "description": "Move target X” directly away, then it suffers X-1 Wds. \nCatastrophe:  This model suffers 3 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Caustic Contract",
+      "cost": 1,
+      "range": "6\"",
+      "description": "Target model suffers X-1 Wds, then it gains [Protection: The first time this character would suffer Dmg, reduce that Dmg to W], until end of turn. \nCatastrophe: This model suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Energy Syphon",
+      "cost": 0,
+      "range": "8\"",
+      "description": "Target a friendly model. Flip an Arcane card and redistribute up to X energy from that model to any combination of models within 8”, where X is the value on the card.\nCatastrophe: The target loses 2 energy and this character suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": true
+    }
+  ],
+  "signatureMove": {
+    "name": "Shhhhh!",
+    "upgradeFrom": "Thrust",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "1"},
+      {"opponentPlay": "Falling Swing", "deal": "1"},
+      {"opponentPlay": "Thrust", "deal": "1"},
+      {"opponentPlay": "Sweeping Cut", "deal": "1"},
+      {"opponentPlay": "Rising Attack", "deal": "1"},
+      {"opponentPlay": "Low Guard", "deal": "0"}
+    ],
+    "endStepEffect": "If the enemy suffered 1 or more Wds during this round of Melee then it must discard 1 energy, if able."
+  },
+  "baseSize": "40mm",
+  "imageName": "036_tabby.json",
+  "shareCode": "AAB"
+}

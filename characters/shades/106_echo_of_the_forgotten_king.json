@@ -1,0 +1,62 @@
+{
+  "id": "106",
+  "name": "Echo of the Forgotten King",
+  "version": "",
+  "factions": ["SHADES"],
+  "tags": ["Spirit", "Elrich", "Noble"],
+  "melee": 4,
+  "meleeRange": 2,
+  "arcane": 4,
+  "evade": 2,
+  "health": 11,
+  "energyTrack": [999],
+  "passiveAbilities": [
+    {
+      "name": "Unholy Toughness",
+      "description": "Reduce all Dmg suffered by -1."
+    },
+    {
+      "name": "A Busy Tyrant",
+      "description": "This character may not enter play via Reanimate."
+    },
+    {
+      "name": "Unholy Strength",
+      "description": " Increase all Melee Dmg dealt by +3. Melee Dmg caused by this character counts as Magical instead of the listed Dmg type."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Fleeting Presence",
+      "cost": 0,
+      "range": "",
+      "description": "This action may only be used whilst this model is active and may not be removed from this card by any abilities. This model suffers 2 Wds. Then, if this character wasn't slain, it may immediately take an action available to it costing (1) or (2) energy without spending energy."
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Terrorblast",
+      "cost": 2,
+      "range": "8\"",
+      "description": "Target suffers X+1 Magical Dmg or X+2 Magical damage if the target is not at full health. \nCatastrophe: This character suffers an amount of Wds equal to the number of Wds it has currently suffered.",
+      "oncePerTurn": true
+    }
+  ],
+  "signatureMove": {
+    "name": "Torrent of Power",
+    "upgradeFrom": "Sweeping Cut",
+    "damageType": "Magical",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "0"},
+      {"opponentPlay": "Falling Swing", "deal": "2"},
+      {"opponentPlay": "Thrust", "deal": "2"},
+      {"opponentPlay": "Sweeping Cut", "deal": "1"},
+      {"opponentPlay": "Rising Attack", "deal": "2"},
+      {"opponentPlay": "Low Guard", "deal": "0"}
+    ],
+    "endStepEffect": "Deal 2 Magical Dmg to all models within 2\" that did not participate in this round of melee. This does not count as Melee Dmg. Then all models within 2\" are moved 2\" directly away."
+  },
+  "baseSize": "40mm",
+  "imageName": "106_echo_of_the_forgotten_king.json",
+  "shareCode": "AAB",
+  "meleeDamageBuff": 3
+}

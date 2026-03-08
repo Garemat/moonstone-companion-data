@@ -1,0 +1,55 @@
+{
+  "id": "072",
+  "name": "Wendigo",
+  "version": "",
+  "factions": ["LESHAVULT"],
+  "tags": ["Faun", "Spirit"],
+  "melee": 4,
+  "meleeRange": 1,
+  "arcane": 0,
+  "evade": 0,
+  "health": 8,
+  "energyTrack": [1, 3, 5, 7],
+  "passiveAbilities": [
+    {
+      "name": "Rending Claws",
+      "description": "If this character deals Melee Dmg, increase the Dmg dealt by +1. Melee Dmg from this character counts as Magical instead of the listed type."
+    },
+    {
+      "name": "Sure Footed",
+      "description": "This character may Jog over Water Features and Wooded Patches and pays 1 less energy for Traverse actions."
+    },
+    {
+      "name": "Quite Terrifying",
+      "description": "Whenever a non-Giant, non-Troll enemy character ends a move engaged by this model, for the first time this turn, it must discard 1 energy, if able."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Mind Control",
+      "cost": 3,
+      "range": "6\"",
+      "description": "Target model immediately takes any action available to them that would normally have an energy cost of (1). This action is controlled by you even if the target is an enemy (they count as a friendly model for the duration of the action).",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [],
+  "signatureMove": {
+    "name": "Insatiable Hunger",
+    "upgradeFrom": "Rising Attack",
+    "damageType": "Magical",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "2"},
+      {"opponentPlay": "Falling Swing", "deal": "3"},
+      {"opponentPlay": "Thrust", "deal": "3"},
+      {"opponentPlay": "Sweeping Cut", "deal": "2"},
+      {"opponentPlay": "Rising Attack", "deal": "1"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "If the enemy is slain, and this character is not slain, then this character recovers all Wds and all energy."
+  },
+  "baseSize": "40mm",
+  "imageName": "wendigo",
+  "shareCode": "AAB"
+}

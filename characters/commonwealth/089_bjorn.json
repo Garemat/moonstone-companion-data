@@ -1,0 +1,64 @@
+{
+  "id": "089",
+  "name": "Bjørn",
+  "version": "",
+  "factions": ["COMMONWEALTH"],
+  "tags": ["Gnome", "Norse", "Mercenary"],
+  "melee": 4,
+  "meleeRange": 1,
+  "arcane": 2,
+  "evade": 0,
+  "health": 8,
+  "energyTrack": [1, 2, 3],
+  "passiveAbilities": [
+    {
+      "name": "Bearskin",
+      "description": "Reduce non-Piercing Dmg suffered by -1."
+    },
+    {
+      "name": "Skål",
+      "description": "When this character activates, you may flip an Arcane Card. This model suffers X Wds where X is the value of the card. Catastrophe: This character restores all Wds and loses Berserk Fury until end of turn."
+    },
+    {
+      "name": "Berserk Fury",
+      "description": " Increase all Melee Dmg dealt by half the number of Wds, rounded up, this character has currently suffered. Ignore any Wds suffered during the current action for this Dmg increase."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Bear Charge",
+      "cost": 1,
+      "range": "4\"",
+      "description": "Move this model 3\" directly towards target enemy model. The target cannot play Signature Moves until end of this character's activation.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Throwing Axe",
+      "cost": 2,
+      "range": "4\"",
+      "description": "Target suffers 2X Impact Dmg.\nCatastrophe: This character suffers 3 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Thrash",
+    "upgradeFrom": "Falling Swing",
+    "damageType": "Impact or Slicing",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "0"},
+      {"opponentPlay": "Falling Swing", "deal": "0"},
+      {"opponentPlay": "Thrust", "deal": "0"},
+      {"opponentPlay": "Sweeping Cut", "deal": "0"},
+      {"opponentPlay": "Rising Attack", "deal": "0"},
+      {"opponentPlay": "Low Guard", "deal": "0"}
+    ],
+    "endStepEffect": "Move this model 2” directly towards the enemy"
+  },
+  "baseSize": "30mm",
+  "imageName": "089_bjorn.json",
+  "shareCode": "AAB"
+}

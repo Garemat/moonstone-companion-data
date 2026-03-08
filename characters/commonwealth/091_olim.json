@@ -1,0 +1,53 @@
+{
+  "id": "091",
+  "name": "Olim",
+  "version": "",
+  "factions": ["COMMONWEALTH"],
+  "tags": ["Gnome", "Animal", "Norse", "Noble"],
+  "melee": 3,
+  "meleeRange": 1,
+  "arcane": 4,
+  "evade": "0",
+  "health": 8,
+  "energyTrack": [1, 2, 4],
+  "passiveAbilities": [
+    {
+      "name": "Valhalla!!",
+      "description": "When another friendly Norse or a friendly Young Jack within 6\" starts a Jog action, it may move +2\", provided the move ends with the character engaging an enemy. (Models with Slow are still limited to 2\" as normal)."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Fortunate",
+      "cost": 1,
+      "range": "",
+      "description": "Look at the top 3 cards of the Arcane Deck. Put any number on the top of the deck in any order and put the remainder on the bottom of the deck in any order.",
+      "oncePerTurn": true
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Buttermilk Elixir",
+      "cost": 2,
+      "range": "6\"",
+      "description": "Target Norse or Gnome gains +1 energy.\nTarget restores X+1 Wds.\nCatastrophe: This character suffers 3 Wds."
+    }
+  ],
+  "signatureMove": {
+    "name": "Fetch!",
+    "upgradeFrom": "Low Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "Choose a friendly Norse or friendly Young Jack within 4\" of the enemy model. Move the chosen friendly character 3\" directly towards the enemy. If the chosen friendly character is now engaging the enemy then this model may move 3\" directly away from the enemy model."
+  },
+  "baseSize": "40mm",
+  "imageName": "count_de_candies",
+  "shareCode": "AAB"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "022",
+  "name": "Fraya",
+  "version": "",
+  "factions": ["DOMINION"],
+  "tags": ["Faerie", "Wizard"],
+  "melee": 2,
+  "meleeRange": 1,
+  "arcane": 5,
+  "evade": -2,
+  "health": 5,
+  "energyTrack": [1, 2, 3, 4, 5],
+  "passiveAbilities": [
+    {
+      "name": "Feeble",
+      "description": "Reduce all Melee Dmg this character deals by -2. Harvest actions cost this model +1 energy."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Trickster",
+      "cost": 0,
+      "range": "",
+      "description": " When this model successfully bluffs, after resolving the effect you may reveal the bluff and gain +3 energy",
+      "oncePerGame": false,
+      "oncePerTurn": true
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Dizzy Spell",
+      "cost": 2,
+      "range": "6\"",
+      "description": "Target loses one Active Ability of your choice until end of turn.\nCatastrophe: This model suffers 1 Wd.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Fizzle-Pop",
+      "cost": 2,
+      "range": "6\"",
+      "description": "Target suffers X Magical Dmg then is moved 1” directly away.\nCatastrophe: This model suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Healing",
+      "cost": 2,
+      "range": "8\"",
+      "description": "Target restores X+1 Wds.\nCatastrophe: This model suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Can’t Hit Me!",
+    "upgradeFrom": "High Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "Your opponent’s attack deals W damage to you this round."
+  },
+  "baseSize": "30mm",
+  "imageName": "fraya",
+  "shareCode": "AAB",
+  "impactDamageBuff": -2,
+  "slicingDamageBuff": -2,
+  "piercingDamageBuff": -2
+}

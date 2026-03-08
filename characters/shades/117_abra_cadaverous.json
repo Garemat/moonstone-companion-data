@@ -1,0 +1,65 @@
+{
+  "id": "117",
+  "name": "Abra Cadaverous",
+  "version": "",
+  "factions": ["SHADES"],
+  "tags": ["Spirit"],
+  "melee": 4,
+  "meleeRange": 2,
+  "arcane": 5,
+  "evade": 1,
+  "health": 10,
+  "energyTrack": [1, 4],
+  "passiveAbilities": [
+    {
+      "name": "Claws and Stick",
+      "description": ": If this character deals Slicing or Impact Melee Dmg, increase the Dmg dealt by +2."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Fashion from Flesh",
+      "cost": 0,
+      "range": "",
+      "description": "When this model causes 1 or more Wds to an enemy in a round of melee, it may summon a new friendly Psychopomp as a bonus End Step Effect. Place the new friendly Psychopomp in base contact with this model. This cannot bring a character into play if it is already in play. If the enemy is slain this character may instead reduce the energy cost of the next Arcane Ability it uses this turn to (0).",
+      "oncePerTurn": true
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Spare Parts",
+      "cost": 2,
+      "range": "4\"",
+      "description": "Target restores X Wds.\nCatastrophe: This model suffers 3 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Reanimate",
+      "cost": 3,
+      "range": "",
+      "description": "Place a friendly slain model in base contact with this model. Restore half its health rounding up. It has no energy but may activate this turn.\nCatastrophe: This model suffers 4 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Frenzy",
+    "upgradeFrom": "Rising Attack",
+    "damageType": "Slicing",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "1"},
+      {"opponentPlay": "Falling Swing", "deal": "0"},
+      {"opponentPlay": "Thrust", "deal": "0"},
+      {"opponentPlay": "Sweeping Cut", "deal": "1"},
+      {"opponentPlay": "Rising Attack", "deal": "0"},
+      {"opponentPlay": "Low Guard", "deal": "0"}
+    ],
+    "endStepEffect": " If this character is the attacker and causes 1 or more Wds during this round of Melee, reduce the energy cost of its next action this turn to (0) if it is a Melee Attack action."
+  },
+  "baseSize": "40mm",
+  "imageName": "117_abra_cadaverous.json",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 2,
+  "impactDamageBuff": 2
+}

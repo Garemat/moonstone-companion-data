@@ -1,0 +1,55 @@
+{
+  "id": "044",
+  "name": "Gnomish Airship",
+  "version": "",
+  "factions": ["COMMONWEALTH"],
+  "tags": ["Gnome", "Machine", "Militia"],
+  "melee": 0,
+  "meleeRange": 0,
+  "arcane": 3,
+  "evade": 1,
+  "health": 8,
+  "energyTrack": [1, 2, 3],
+  "passiveAbilities": [
+    {
+      "name": "Up, Up & Away",
+      "description": "This character may move freely over all terrain and other miniatures during Jog and Step actions, provided it does not end the move with the base overlapping another model or barrier terrain. It cannot take the Harvest action or the Melee Attack action, cannot be targeted by Melee Attack actions and does not engage enemy models or become engaged by enemy models. It does not block LoS, provide Cover, or suffer from Falling. When targeted by Arcane actions, this character does not benefit from Cover."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Reload [Bolt Thrower]",
+      "cost": 2,
+      "range": "",
+      "description": "The named ability can be used again."
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Dropping Bombs",
+      "cost": 2,
+      "range": "2\"",
+      "description": "All other models within the pulse suffer X+1 Magical Dmg then are moved X\" directly away.\nCatastrophe: This model suffers 4 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Bolt Thrower",
+      "cost": 1,
+      "range": "10\"",
+      "description": "This attack is not modified by Cover.\nTarget suffers X+2 Piercing Dmg then is moved 1\" directly away\nCatastrophe: This model suffers 2 Wds and this action cannot be used for the remainder of the game.",
+      "oncePerGame": true,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "None",
+    "upgradeFrom": "",
+    "damageType": "",
+    "results": [],
+    "endStepEffect": ""
+  },
+  "baseSize": "40mm",
+  "imageName": "gnome_airship",
+  "shareCode": "AAB"
+}

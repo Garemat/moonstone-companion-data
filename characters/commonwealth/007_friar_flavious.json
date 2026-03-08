@@ -1,0 +1,63 @@
+{
+  "id": "007",
+  "name": "Friar Flavious",
+  "version": "v.2",
+  "factions": ["COMMONWEALTH"],
+  "tags": ["Human", "Cleric"],
+  "melee": 4,
+  "meleeRange": 2,
+  "arcane": 3,
+  "evade": 1,
+  "health": 9,
+  "energyTrack": [1, 3, 5],
+  "passiveAbilities": [
+    {
+      "name": "Bludgeon",
+      "description": "If this character deals Slicing or Piercing Melee Dmg, reduce the Dmg to W. If this character deals Impact Melee Dmg, increase the Dmg dealt by +1."
+    },
+    {
+      "name": "Rub It Better",
+      "description": "When this model causes 1 or more Wds to an enemy, a friendly Human or Cleric within 4\" of this model may restore 1 Wd."
+    },
+    {
+      "name": "Natural Padding",
+      "description": " Reduce Impact Dmg suffered by -2."
+    },
+    {
+      "name": "Divine Intervention",
+      "description": "When an enemy targets this character with an Arcane Ability, or uses an Arcane Ability within 4” of this model, if your resist hand includes two or more Catastrophe cards, you may reveal them to cancel the ability and inflict the catastrophe result on the active character."
+    }
+  ],
+  "activeAbilities": [],
+  "arcaneAbilities": [
+    {
+      "name": "Healing",
+      "cost": 2,
+      "range": "8\"",
+      "description": "[B]X: Target restores X+1 Wds.\nCatastrophe: This model suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Spank",
+    "upgradeFrom": "Sweeping Cut",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "1"},
+      {"opponentPlay": "Falling Swing", "deal": "1"},
+      {"opponentPlay": "Thrust", "deal": "1"},
+      {"opponentPlay": "Sweeping Cut", "deal": "0"},
+      {"opponentPlay": "Rising Attack", "deal": "0"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "If this character was not slain then it restores 1 Wd."
+  },
+  "baseSize": "30mm",
+  "imageName": "friar",
+  "shareCode": "AAB",
+  "impactDamageMitigation": 2,
+  "impactDamageBuff": 1,
+  "slicingDamageBuff": "Null",
+  "piercingDamageBuff": "Null"
+}

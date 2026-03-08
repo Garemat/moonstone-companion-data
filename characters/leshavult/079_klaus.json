@@ -1,0 +1,60 @@
+{
+  "id": "079",
+  "name": "Klaus",
+  "version": "",
+  "factions": ["LESHAVULT"],
+  "tags": ["Faun", "Cultist"],
+  "melee": 3,
+  "meleeRange": 2,
+  "arcane": 0,
+  "evade": 0,
+  "health": 8,
+  "energyTrack": [1, 3, 6],
+  "passiveAbilities": [
+    {
+      "name": "Flail",
+      "description": "If this character deals Slicing or Piercing Melee Dmg, reduce the Dmg dealt to W. If this character deals Impact Melee Dmg increase the Dmg dealt by +2. If this character plays a High Guard or Low Guard during Melee then it suffers 2 Wds during the End Step."
+    },
+    {
+      "name": "Egged-On",
+      "description": "This character gains +1 Melee Stat for each other friendly Cultist within 6\"."
+    },
+    {
+      "name": "Kinship [Raegan, Leshavult Priestess]",
+      "description": " If the friendly named character is within 6\" during the Replenish Step, this character gains [Protection: The first time this character would suffer Dmg each turn, reduce that Dmg to W], until end of turn."
+    },
+    {
+      "name": "Tubthumping",
+      "description": "The first time this game this character is reduced to 0 health boxes remaining, flip an Arcane Card. If the result is a Catastrophe, then this character is slain, otherwise it remains in play with X health boxes remaining, where X is the value on the flipped card. "
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Hold my Beer",
+      "cost": 4,
+      "range": "4\" Pulse",
+      "description": "All characters within the Pulse suffer 1 Catastrophe printed on their card. The Klaus player chooses the catastrophe if a character has several, the targets if required and the order in which all effects occur.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [],
+  "signatureMove": {
+    "name": "Flail Around Madly",
+    "upgradeFrom": "Sweeping Cut",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "0"},
+      {"opponentPlay": "Falling Swing", "deal": "2"},
+      {"opponentPlay": "Thrust", "deal": "2"},
+      {"opponentPlay": "Sweeping Cut", "deal": "1"},
+      {"opponentPlay": "Rising Attack", "deal": "1"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": " This character suffers 1 Impact Dmg. This does not count as Melee Dmg."
+  },
+  "baseSize": "30mm",
+  "imageName": "079_klaus.json",
+  "shareCode": "AAB",
+  "impactDamageBuff": 1
+}

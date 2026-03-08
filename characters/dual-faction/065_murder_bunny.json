@@ -1,0 +1,27 @@
+{
+  "id": "065",
+  "name": "Murder Bunny",
+  "version": "",
+  "factions": ["COMMONWEALTH", "LESHAVULT"],
+  "tags": ["Animal"],
+  "melee": 2,
+  "meleeRange": 1,
+  "arcane": 0,
+  "evade": -1,
+  "health": 4,
+  "energyTrack": [999],
+  "passiveAbilities": [],
+  "activeAbilities": [],
+  "arcaneAbilities": [],
+  "signatureMove": {
+    "name": "No Signature",
+    "upgradeFrom": "",
+    "damageType": "",
+    "results": [],
+    "endStepEffect": ""
+  },
+  "baseSize": "40mm",
+  "imageName": "murder_bunny_1",
+  "shareCode": "AAB",
+  "isUnselectableInTroupe": true
+}

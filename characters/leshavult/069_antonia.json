@@ -1,0 +1,63 @@
+{
+  "id": "069",
+  "name": "Antonia, Noonday Witch",
+  "version": "",
+  "factions": ["LESHAVULT"],
+  "tags": ["Spirit"],
+  "melee": 3,
+  "meleeRange": 1,
+  "arcane": 4,
+  "evade": 0,
+  "health": 8,
+  "energyTrack": [1, 2, 4],
+  "passiveAbilities": [
+    {
+      "name": "Link to the Past",
+      "description": " If a friendly Danica, Dusk Witch was taken in this troupe at the start of the game then this character gains +1 Arcane Stat and reduces the energy cost of the first Arcane Ability targeting a friendly Witch in a turn by -1."
+    }
+  ],
+  "activeAbilities": [],
+  "arcaneAbilities": [
+    {
+      "name": "Candy Apples",
+      "cost": 3,
+      "range": "8\"",
+      "description": "Move target 2X\" directly towards this character. Then, if the target is within 2\" of this character they suffer 4 Wds.\nCatastrophe: All models within 4\" suffer 2 Magical Dmg.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Healing",
+      "cost": 2,
+      "range": "8\"",
+      "description": "Target restores X+1 Wds.\nCatastrophe: This model suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Visions of the Present",
+      "cost": 3,
+      "range": "6\"",
+      "description": "Target suffers an amount of Wds equal to the number of Wds they have currently suffered.\nCatastrophe: This character suffers an amount of Wds equal to the number of Wd's they have currently suffered",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Deception",
+    "upgradeFrom": "Falling Swing",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "Reduce Dmg suffered by -2."
+  },
+  "baseSize": "30mm",
+  "imageName": "antonia",
+  "shareCode": "AAB"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "048",
+  "name": "Ribald",
+  "version": "",
+  "factions": ["DOMINION"],
+  "tags": ["Goblin", "Troll"],
+  "melee": 2,
+  "meleeRange": 2,
+  "arcane": 3,
+  "evade": 2,
+  "health": 11,
+  "energyTrack": [1, 7],
+  "passiveAbilities": [
+    {
+      "name": "Slow",
+      "description": "This model's Jog actions are limited to 2”"
+    },
+    {
+      "name": "Ironclad Knuckles",
+      "description": "If this character deals Piercing or Slicing Melee Dmg, reduce the Dmg dealt to W. If this character deals Impact Melee Dmg, increase the Dmg dealt by +2. "
+    },
+    {
+      "name": "Ramshackle Armour",
+      "description": "Reduce all non-Magical Dmg suffered by -1."
+    }
+  ],
+  "activeAbilities": [],
+  "arcaneAbilities": [
+    {
+      "name": "Fire Cannon!",
+      "cost": 2,
+      "range": "8\"",
+      "description": "Target character suffers 3X-1 Impact Dmg then is moved X\" directly away.\nCatastrophe: This model suffers 3 Wds. All other models within 2” suffer 3 Magical Dmg then are moved 1\" directly away.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Short Fuse",
+    "upgradeFrom": "High Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "This model suffers 3 Wds. All other models within 2” suffer 3 Magical Dmg then are moved 1\" directly away."
+  },
+  "baseSize": "40mm",
+  "imageName": "ribald",
+  "shareCode": "AAB",
+  "impactDamageBuff": 2,
+  "piercingDamageReduction": 1,
+  "slicingDamageReduction": 1,
+  "allNonMagicalDamageMitigation": 1
+}

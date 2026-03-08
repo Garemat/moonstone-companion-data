@@ -1,0 +1,66 @@
+{
+  "id": 9,
+  "name": "Quarrel",
+  "version": "3",
+  "factions": ["COMMONWEALTH"],
+  "tags": ["Gnome", "Soldier", "Militia"],
+  "melee": 3,
+  "meleeRange": 1,
+  "arcane": 3,
+  "evade": "0",
+  "health": 8,
+  "energyTrack": [1,2,3],
+  "passiveAbilities": [
+    {
+      "name": "Slow",
+      "description": "This model's jog actions are limited to 2\"."
+    },
+    {
+      "name": "Dirk",
+      "description": "If this character deals Slicing Melee Dmg, increase the Dmg dealt by +1."
+    }
+  ],
+  "activeAbilities": [   
+    {
+      "name": "Reload [Shoot Crossbow]",
+      "cost": 2,
+      "range": "",
+      "description": "The named ability can be used again. This ability cannot be used while this model is engaged."
+    },
+    {
+      "name": "Brothers in Arms",
+      "cost": 1,
+      "range": "4\"",
+      "description": "Target other friendly Militia gains +1 Arcane stat and +2 Melee stat until end of turn. Then, the target may discard 1 energy to give this character +1 Arcane stat and +2 Melee stat until end of turn. TYou may only target each characters once per turn."
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Shoot Crossbow",
+      "cost": 1,
+      "range": "14",
+      "description": "[G]X: Target suffers 2X piercing Dmg then is moved 1\" directly away. \nCatastrophe: The Reload ability cannot be used for the remainder of the game.",
+      "oncePerGame": true,
+      "reloadable": true
+    }
+  ],
+  "signatureMove": {
+    "name": "Tactical Retreat",
+    "upgradeFrom": "High Guard",
+    "damageType": null,
+    "passiveEffect": "Reduce Dmg suffered by -1.",
+    "endStepEffect": "This model may move 2”.",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ]
+  },
+  "baseSize": "30mm",
+  "imageName": "quarrel",
+  "shareCode": "AAJ",
+  "slicingDamageBuff": 1
+}

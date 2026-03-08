@@ -1,0 +1,62 @@
+{
+  "id": "110",
+  "name": "Angerboda",
+  "version": "",
+  "factions": ["COMMONWEALTH", "SHADES"],
+  "tags": ["Risen", "Soldier", "Giant", "Norse"],
+  "melee": 3,
+  "meleeRange": 2,
+  "arcane": 4,
+  "evade": 2,
+  "health": 12,
+  "energyTrack": [1, 7],
+  "passiveAbilities": [
+    {
+      "name": "Ice Shard Armour",
+      "description": "If this character suffers Piercing or Slicing Dmg, reduce the Dmg suffered by -1."
+    },
+    {
+      "name": "Frostbite",
+      "description": "If this character deals Impact Melee Dmg, increase the Dmg dealt by +2. If at least one friendly model was slain this turn, Melee Dmg dealt by this character cannot be reduced by passive abilities."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Ice in the Veins",
+      "cost": 1,
+      "range": "",
+      "description": "Flip an Arcane Card. If the card is Blue X,  restore X+1 Wds.",
+      "oncePerTurn": true
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Eternal Chill",
+      "cost": 2,
+      "range": "6\"",
+      "description": "Target suffers X Magical Dmg and gains [Slow: This model's Jog actions are limited to 2\"], until end of turn.\nCatastrophe: This character restores 1 Wd. The target restores 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Cleave",
+    "upgradeFrom": "Sweeping Cut",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "1"},
+      {"opponentPlay": "Falling Swing", "deal": "2"},
+      {"opponentPlay": "Thrust", "deal": "0"},
+      {"opponentPlay": "Sweeping Cut", "deal": "0"},
+      {"opponentPlay": "Rising Attack", "deal": "2"},
+      {"opponentPlay": "Low Guard", "deal": "2"}
+    ],
+    "endStepEffect": "If the enemy suffered 1 or more Wds during this round of Melee, the next time the enemy would restore Wds this turn, reduce Wds restored to W. If the enemy has an ability which restores or otherwise regains Wds after being reduced to 0 Wds, it does not and is slain instead"
+  },
+  "baseSize": "40mm",
+  "imageName": "110_angerboda.json",
+  "shareCode": "AAB",
+  "impactDamageBuff": 2,
+  "piercingDamageMitigation": 1,
+  "slicingDamageMitigation": 1
+}

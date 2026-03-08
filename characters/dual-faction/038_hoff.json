@@ -1,0 +1,61 @@
+{
+  "id": "038",
+  "name": "Hoff",
+  "version": "",
+  "factions": ["COMMONWEALTH", "LESHAVULT"],
+  "tags": ["Faun", "Soldier"],
+  "melee": 4,
+  "meleeRange": 2,
+  "arcane": 4,
+  "evade": 0,
+  "health": 9,
+  "energyTrack": [1, 3, 6],
+  "passiveAbilities": [
+    {
+      "name": "Guerilla Tactician",
+      "description": "Other friendly Fauns within 6\" gain +1 Melee Stat and [Swift: When making a Reaction Step while engaged by an enemy, this model may move 2” instead of the usual 1”. Once per turn.]"
+    },
+    {
+      "name": "Felling Axe",
+      "description": "If this character deals Impact Melee Dmg, increase the Dmg dealt by +2. "
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Furious Charge",
+      "cost": 1,
+      "range": "4\"",
+      "description": "Move this model 3” directly towards target enemy model. If this character’s next action this turn is a Melee Attack against the same target then it deals +1 Dmg.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Hunting Horn",
+      "cost": 1,
+      "range": "8\"",
+      "description": "Move target other friendly Faun X+1\".\nCatastrophe: The target is moved up to 3\" by the resisting player.",
+      "oncePerGame": false,
+      "oncePerTurn": true
+    }
+  ],
+  "signatureMove": {
+    "name": "Head Butt",
+    "upgradeFrom": "Falling Swing",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "0"},
+      {"opponentPlay": "Falling Swing", "deal": "1"},
+      {"opponentPlay": "Thrust", "deal": "1"},
+      {"opponentPlay": "Sweeping Cut", "deal": "1"},
+      {"opponentPlay": "Rising Attack", "deal": "1"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "Move the enemy model 1” directly away from this model."
+  },
+  "baseSize": "30mm",
+  "imageName": "hoff",
+  "shareCode": "AAB",
+  "impactDamageBuff": 2
+}

@@ -1,0 +1,67 @@
+{
+  "id": "020",
+  "name": "Boom Boom Mc Boom",
+  "version": "",
+  "factions": ["DOMINION"],
+  "tags": ["Goblin"],
+  "melee": 3,
+  "meleeRange": 1,
+  "arcane": 4,
+  "evade": -2,
+  "health": 7,
+  "energyTrack": [1, 2, 4, 6],
+  "passiveAbilities": [],
+  "activeAbilities": [
+    {
+      "name": "Suckerpunch",
+      "cost": 2,
+      "range": "8\"",
+      "description": "Target Goblin’s next Melee Attack this turn deals +2 Dmg.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Reload [Blunderbuss] ",
+      "cost": 2,
+      "range": "",
+      "description": "The named ability can be used again. This ability cannot be used while this model is engaged.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Blunderbuss",
+      "cost": 1,
+      "range": "4\"",
+      "description": "Target suffers X Impact Dmg.\nCatastrophe: This model suffers 2 Wds.",
+      "oncePerGame": true,
+      "oncePerTurn": false
+    },
+    {
+      "name": "You’ll never get this! Nah-na-na-na!",
+      "cost": 2,
+      "range": "10\"",
+      "description": "Move target enemy model 2X” directly towards this model.\nCatastrophe: Target model is moved by your opponent 4”.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Now you see me...",
+    "upgradeFrom": "Low Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "Place this model anywhere within 6”"
+  },
+  "baseSize": "30mm",
+  "imageName": "boom_boom",
+  "shareCode": "AAB"
+}

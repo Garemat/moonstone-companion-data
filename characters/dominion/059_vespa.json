@@ -1,0 +1,64 @@
+{
+  "id": "059",
+  "name": "Vespa",
+  "version": "",
+  "factions": ["DOMINION"],
+  "tags": ["Faerie", "Animal", "Soldier"],
+  "melee": 3,
+  "meleeRange": 2,
+  "arcane": 4,
+  "evade": 0,
+  "health": 8,
+  "energyTrack": [1, 4, 7],
+  "passiveAbilities": [
+    {
+      "name": "Stinger",
+      "description": "If this character deals Piercing Melee Dmg, increase the Dmg dealt by +2."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Antagonise",
+      "cost": 1,
+      "range": "6\"",
+      "description": "Target gains +1 Melee Stat and +1 Evade Stat until end of turn.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Out of Reach",
+      "cost": 1,
+      "range": "",
+      "description": "This character cannot be targeted by a Melee Attack action and does not benefit from cover until end of turn.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Throw Javelin",
+      "cost": 2,
+      "range": "6\"",
+      "description": "Target suffers X Piercing Dmg.\nCatastrophe: This character suffers 1 Wd.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Strike from Above",
+    "upgradeFrom": "Falling Swing",
+    "damageType": "Piercing",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "2"},
+      {"opponentPlay": "Thrust", "deal": "2"},
+      {"opponentPlay": "Sweeping Cut", "deal": "1"},
+      {"opponentPlay": "Rising Attack", "deal": "0"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ]
+  },
+  "baseSize": "40mm",
+  "imageName": "vespa",
+  "shareCode": "AAB",
+  "piercingDamageBuff": 2
+}

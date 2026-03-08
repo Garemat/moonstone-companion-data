@@ -1,0 +1,57 @@
+{
+  "id": "046",
+  "name": "Brunhilde",
+  "version": "",
+  "factions": ["COMMONWEALTH"],
+  "tags": ["Giant", "Mercenary", "Norse"],
+  "melee": 4,
+  "meleeRange": 2,
+  "arcane": 0,
+  "evade": 2,
+  "health": 13,
+  "energyTrack": [1, 6],
+  "passiveAbilities": [
+    {
+      "name": "Giant-Forged Blades",
+      "description": "If this character deals Piercing or Slicing Dmg, increase the Dmg dealt by +2."
+    },
+    {
+      "name": "Bodyguard",
+      "description": " If a friendly Noble within 4” and LoS suffers Dmg, you may have this character suffer all that Dmg instead.",
+      "oncePerTurn": true
+    },
+    {
+      "name": "Loyalty",
+      "description": "If this character takes a Reaction Step it may move 3\" directly towards the nearest friendly Noble instead of the normal 1\" move."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Epic Ballads of Giant Heros!",
+      "cost": 1,
+      "range": "6\"",
+      "description": "Other Giants within the pulse gain +1 energy. ",
+      "oncePerTurn": true
+    }
+  ],
+  "arcaneAbilities": [],
+  "signatureMove": {
+    "name": "Shattering Oathstone",
+    "upgradeFrom": "Falling Swing",
+    "damageType": "Slicing",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "0"},
+      {"opponentPlay": "Thrust", "deal": "3"},
+      {"opponentPlay": "Sweeping Cut", "deal": "3"},
+      {"opponentPlay": "Rising Attack", "deal": "2"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "If this character was slain, all other models within 8\", excluding friendly Giants and friendly Nobles, suffer 1 Wd. Other friendly Giants and friendly Nobles within 8\" restore all Wds instead. "
+  },
+  "baseSize": "40mm",
+  "imageName": "brunhilde",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 2,
+  "piercingDamageBuff": 2
+}

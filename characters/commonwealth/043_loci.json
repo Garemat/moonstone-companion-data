@@ -1,0 +1,66 @@
+{
+  "id": "043",
+  "name": "Loci, Nordic Shipwright",
+  "version": "",
+  "factions": ["COMMONWEALTH"],
+  "tags": ["Gnome", "Rogue", "Norse"],
+  "melee": 4,
+  "meleeRange": 1,
+  "arcane": 3,
+  "evade": 0,
+  "health": 8,
+  "energyTrack": [1, 3, 2],
+  "passiveAbilities": [
+    {
+      "name": "Hammer",
+      "description": "If this character deals Piercing or Slicing Melee Dmg, reduce the Dmg dealt to W. If this character deals Impact Melee Dmg, increase the Dmg dealt by +1. "
+    },
+    {
+      "name": "Favour of the Old Gods",
+      "description": "When this character suffers Dmg you\nmay flip the top card of the Arcane Deck and reduce the Dmg suffered by -X where X is the value on the flipped card. Catastrophe reduces the Dmg suffered by 0",
+      "oncePerTurn": true
+    },
+    {
+      "name": "Trickster",
+      "description": "When this model successfully bluffs, after resolving the effect you may reveal the bluff and gain +3 energy.",
+      "oncePerTurn": true
+    }
+  ],
+  "activeAbilities": [],
+  "arcaneAbilities": [
+    {
+      "name": "Verdant Growth",
+      "cost": 2,
+      "range": "",
+      "description": " Place a 50mm Diameter Wooded Patch within 3X\" and LoS on open ground. This remains in place until end of game. A maximum of 3 Wooded Patches may be placed by this troupe, if a fourth is placed you must choose and remove a Wooded Patch you created earlier this game.\nCatastrophe: This model suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "One with the Wind",
+      "cost": 2,
+      "range": "8\"",
+      "description": "Move target model X+1\".\nCatastrophe: This model suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Strong Arm",
+    "upgradeFrom": "Falling Swing",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "0"},
+      {"opponentPlay": "Falling Swing", "deal": "1"},
+      {"opponentPlay": "Thrust", "deal": "1"},
+      {"opponentPlay": "Sweeping Cut", "deal": "3"},
+      {"opponentPlay": "Rising Attack", "deal": "3"},
+      {"opponentPlay": "Low Guard", "deal": "2"}
+    ],
+    "endStepEffect": "You may move the enemy model 1\"."
+  },
+  "baseSize": "30mm",
+  "imageName": "loci",
+  "shareCode": "AAB",
+  "impactDamageBuff": 1
+}

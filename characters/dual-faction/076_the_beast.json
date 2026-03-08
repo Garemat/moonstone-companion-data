@@ -1,0 +1,57 @@
+{
+  "id": "076",
+  "name": "The Beast",
+  "version": "",
+  "factions": ["DOMINION", "LESHAVULT"],
+  "tags": ["Human", "Noble", "Animal"],
+  "melee": 5,
+  "meleeRange": 2,
+  "arcane": 0,
+  "evade": 1,
+  "health": 9,
+  "energyTrack": [1, 3],
+  "passiveAbilities": [
+    {
+      "name": "Razor Claws",
+      "description": "If this character deals Slicing Melee Dmg, increase the Dmg dealt by +2. If this character deals Impact or Piercing Melee Dmg, increase the Dmg dealt by +1."
+    },
+    {
+      "name": "Awake the Beast",
+      "description": "The first time an enemy targets this character with a Melee Attack Action or an Arcane Action in a turn, this character restores 1 Wd and gains +2 energy."
+    },
+    {
+      "name": "Quite Terrifying",
+      "description": "Whenever a non-Giant, non-Troll enemy character ends a move engaged by this model, for the first time this turn, it must discard 1 energy, if able."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Intimidate",
+      "cost": 2,
+      "range": "4\"",
+      "description": "Target Human or Goblin suffers -2 Arcane Stat and gains [Predictable Combatant: During a round of combat, before each player selects their combat card, you must reveal your hand to your opponent.] until end of the turn.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [],
+  "signatureMove": {
+    "name": "Bellow",
+    "upgradeFrom": "High Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": " Move the enemy 2\" directly away"
+  },
+  "baseSize": "30mm",
+  "imageName": "beast",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 2,
+  "impactDamageBuff": 1
+}

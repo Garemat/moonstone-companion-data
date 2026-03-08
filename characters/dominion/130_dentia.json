@@ -1,0 +1,58 @@
+{
+  "id": "130",
+  "name": "Dentia",
+  "version": "",
+  "factions": ["DOMINION"],
+  "tags": ["Faerie", "Rogue"],
+  "melee": 4,
+  "meleeRange": 1,
+  "arcane": 4,
+  "evade": "-2",
+  "health": 6,
+  "energyTrack": [1, 2, 3, 5, 6],
+  "passiveAbilities": [
+    {
+      "name": "Weakling",
+      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy."
+    },
+    {
+      "name": "The Bigger They Are...",
+      "description": "During a round of melee with an enemy that has Evade Stat +1 or higher, this character ignores Weakling, deals +X Melee Dmg and reduces all Melee Dmg suffered by -X, where X is the Evade Stat of the enemy."
+    },
+    {
+      "name": "Faerie Mischief",
+      "description": "Whenever a friendly Faerie within 6\" bluffs successfully, you may reveal the card and this character gains 2 energy and restores all Wds."
+    },
+    {
+      "name": "Sedatives",
+      "description": "Whilst this model is in play, the first time each enemy gains Weakling in a turn, they lose 1 energy."
+    }
+  ],
+  "activeAbilities": [],
+  "arcaneAbilities": [
+    {
+      "name": "Sleepy Time",
+      "cost": 3,
+      "range": "6\"",
+      "description": "Target gains Weakling until end of turn.\nTarget with Weakling or Feeble loses all energy and gains +X Evade Stat until end of turn.\nCatastrophe: This character suffers 2 Wds.",
+      "oncePerTurn": true
+    }
+  ],
+  "signatureMove": {
+    "name": "Extraction",
+    "upgradeFrom": "Thrust",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "0"},
+      {"opponentPlay": "Falling Swing", "deal": "2"},
+      {"opponentPlay": "Thrust", "deal": "1"},
+      {"opponentPlay": "Sweeping Cut", "deal": "0"},
+      {"opponentPlay": "Rising Attack", "deal": "1"},
+      {"opponentPlay": "Low Guard", "deal": "1"}
+    ],
+    "endStepEffect": "Damage from this attack cannot be reduced by enemy passive abilities. If the enemy suffered 1 or more Wds during this round of melee, then this character gains +1 Melee Stat until end of game."
+  },
+  "baseSize": "30mm",
+  "imageName": "130_dentia.json",
+  "shareCode": "AAB"
+}

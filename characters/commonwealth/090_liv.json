@@ -1,0 +1,58 @@
+{
+  "id": "090",
+  "name": "Liv",
+  "version": "",
+  "factions": ["COMMONWEALTH"],
+  "tags": ["Gnome", "Norse", "Cleric"],
+  "melee": 2,
+  "meleeRange": 1,
+  "arcane": 4,
+  "evade": 0,
+  "health": 8,
+  "energyTrack": [1, 2, 3],
+  "passiveAbilities": [],
+  "activeAbilities": [
+    {
+      "name": "Manipulate the Runes",
+      "cost": 0,
+      "range": "",
+      "description": "After resolving an Arcane action this model initiated but before shuffling the Arcane Deck, you may set aside any cards from your hand that weren't played. After shuffling the Arcane Deck, put any number of the set aside cards on the top of the deck in any order and put the remainder on the bottom of the deck in any order. ",
+      "oncePerTurn": true
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Runes of Power",
+      "cost": 1,
+      "range": "8\"",
+      "description": "Target restores X Wds.\nTarget suffers X-1 Magical Dmg.\nCatastrophe: This character suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Reading the Runes",
+      "cost": 0,
+      "range": "",
+      "description": "When this character activates, you may guess a card (colour and number, or Catastrophe) then flip an Arcane Card. If you guessed correctly, apply the following effect:\nChoose a friendly Norse model within 8\" to gain [Protection: The first time this character would suffer Dmg, reduce that Dmg to W], until end of turn.\nChoose a model within 8\" to restore X+1 Wds.\nChoose a model within 8\" to suffer X Magical Dmg.\nCatastrophe: All models within 2\" suffer 2 Magical Dmg.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Rune Shield",
+    "upgradeFrom": "Low Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "Reduce Dmg suffered by -2."
+  },
+  "baseSize": "30mm",
+  "imageName": "090_liv.json",
+  "shareCode": "AAB"
+}

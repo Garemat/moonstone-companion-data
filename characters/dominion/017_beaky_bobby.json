@@ -1,0 +1,71 @@
+{
+  "id": "017",
+  "name": "Beaky Bobby",
+  "version": "",
+  "factions": ["DOMINION"],
+  "tags": ["Goblin", "Wizard"],
+  "melee": 2,
+  "meleeRange": 1,
+  "arcane": 5,
+  "evade": -1,
+  "health": 7,
+  "energyTrack": [1, 2, 4, 6],
+  "passiveAbilities": [
+    {
+      "name": "Weakling",
+      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy."
+    },
+    {
+      "name": "Magic Resistance",
+      "description": "Reduce Magical Dmg suffered by -1."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Foul Gases",
+      "cost": 2,
+      "range": "2\"",
+      "description": "All models within the pulse suffer 2 Magical Dmg.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Stand Back!",
+      "cost": 1,
+      "range": "2\"",
+      "description": "All other models within the pulse move 1” directly away.",
+      "oncePerGame": false,
+      "oncePerTurn": true
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Healing",
+      "cost": 2,
+      "range": "8\"",
+      "description": "Target restores X+1 Wds.\nCatastrophe: This model suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Take your medicine",
+    "upgradeFrom": "Thrust",
+    "damageType": "Magical",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "3"},
+      {"opponentPlay": "Falling Swing", "deal": "3"},
+      {"opponentPlay": "Thrust", "deal": "3"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "3"},
+      {"opponentPlay": "Low Guard", "deal": "3"}
+    ]
+  },
+  "baseSize": "30mm",
+  "imageName": "bobby",
+  "shareCode": "AAB",
+  "magicalDamageMitigation": 1,
+  "slicingDamageBuff": -1,
+  "piercingDamageBuff": -1,
+  "impactDamageBuff": -1
+}

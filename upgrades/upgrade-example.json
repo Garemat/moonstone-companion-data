@@ -1,0 +1,16 @@
+{
+  "id": 1,
+  "name": "Armed to th' Teeth",
+  "version": "",
+  "factions": ["COMMONWEALTH", "DOMINION"],
+  "tags": ["Rogue", "Pirate", "Noble"],
+  "abilities": [
+    {
+      "name": "Brace of Pistols",
+      "description": "This character may use the [Reload] ability without paying the energy cost",
+      "oncePerGame": true}
+
+  ],
+  "shareCode": "AAB",
+  "imageName": "armedtotheteeth"
+}

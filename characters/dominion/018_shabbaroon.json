@@ -1,0 +1,66 @@
+{
+  "id": "018",
+  "name": "Shabbaroon",
+  "version": "",
+  "factions": ["DOMINION"],
+  "tags": ["Goblin", "Wizard"],
+  "melee": 1,
+  "meleeRange": 1,
+  "arcane": 7,
+  "evade": -1,
+  "health": 6,
+  "energyTrack": [1, 2, 3, 6],
+  "passiveAbilities": [
+    {
+      "name": "Weakling",
+      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy."
+    }
+  ],
+  "activeAbilities": [],
+  "arcaneAbilities": [
+    {
+      "name": "Transconbobulate",
+      "cost": 3,
+      "range": "8\"",
+      "description": "Restore all wounds and energy of target Goblin, then place it within 8” of this model.\nCatastrophe: This character suffers 4 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Goblin Luck",
+      "cost": 2,
+      "range": "8\"",
+      "description": "Target enemy or Goblin immediately suffers one Catastrophe printed on their card. If it requires a target, you may choose any target that meets the ability’s requirements.\nCatastrophe: This character suffers 3 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Goblin Mischief",
+      "cost": 2,
+      "range": "6\" Pulse",
+      "description": "Deal an Arcane Card to each Goblin within the Pulse. They receive the following effects, then shuffle the cards back into the Arcane Deck.\nGain +X energy.\nGain +1 energy.\nCatastrophe: Suffer 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": true
+    }
+  ],
+  "signatureMove": {
+    "name": "Fuddlemuddle",
+    "upgradeFrom": "High Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "If this model was the defender and was not slain, restore all wounds and energy and place it within 8” of its current location."
+  },
+  "baseSize": "30mm",
+  "imageName": "shabbaroon",
+  "shareCode": "AAB",
+  "impactDamageBuff": -1,
+  "slicingDamageBuff": -1,
+  "piercingDamageBuff": -1
+}

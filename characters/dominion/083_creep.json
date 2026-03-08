@@ -1,0 +1,65 @@
+{
+  "id": "083",
+  "name": "Creep",
+  "version": "",
+  "factions": ["DOMINION"],
+  "tags": ["Human", "Rogue"],
+  "melee": 2,
+  "meleeRange": 1,
+  "arcane": 3,
+  "evade": -1,
+  "health": 7,
+  "energyTrack": [1, 3, 6],
+  "passiveAbilities": [
+    {
+      "name": "Concealed Dagger",
+      "description": " If this character deals Piercing Melee Dmg, increase the Dmg dealt by +1. If this character plays a Rising Attack increase the Dmg dealt by +1."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Victimise",
+      "cost": 2,
+      "range": "8\"",
+      "description": "Target gets +2 Evade Stat until end of turn.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Vitality Draw",
+      "cost": 2,
+      "range": "8\"",
+      "description": "Target loses X energy. A friendly model within 8\" and LoS of this model gains that much energy.\nCatastrophe: This model suffers 3 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": true
+    },
+    {
+      "name": "Incubus",
+      "cost": 2,
+      "range": "8\"",
+      "description": "Target enemy suffers X Wds. A friendly model within 8\" and LoS of this model restores that many Wds.\nCatastrophe: This model suffers 3 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Slip into Shadows",
+    "upgradeFrom": "Low Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "Place this model within 4\"."
+  },
+  "baseSize": "30mm",
+  "imageName": "083_creep.json",
+  "shareCode": "AAB",
+  "piercingDamageBuff": 1
+}

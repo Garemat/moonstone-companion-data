@@ -1,0 +1,68 @@
+{
+  "id": "033",
+  "name": "Gertrude, the Faerie Hunter",
+  "version": "",
+  "factions": ["COMMONWEALTH"],
+  "tags": ["Human", "Mercenary"],
+  "melee": 4,
+  "meleeRange": 1,
+  "arcane": 5,
+  "evade": 0,
+  "health": 8,
+  "energyTrack": [1, 2, 5],
+  "passiveAbilities": [
+    {
+      "name": "Protection Charm",
+      "description": "Reduce Magical Dmg suffered by -1."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Natural Order",
+      "cost": 1,
+      "range": "4\" Pulse",
+      "description": "All models within the pulse suffer 1 WD for each energy token they have over 3",
+      "oncePerTurn": true
+    },
+    {
+      "name": "Reload [Blunderbuss]",
+      "cost": 2,
+      "range": "",
+      "description": "The named ability can be used again. This ability cannot be used while the model is engaged. "
+    },
+    {
+      "name": "Hunting Party",
+      "cost": 1,
+      "range": "6\"",
+      "description": "Target enemy that has activated this turn must discard half of its remaining energy rounded up. Then friendly Humas and Fauns gain +1 Arcane and +2 Melee Stat when targetting that enemy with actions until end of turn.",
+      "oncePerTurn": true
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Blunderbuss",
+      "cost": 1,
+      "range": "4\"",
+      "description": "Target suffers X Impact DMG.\nCatastrophe: This model suffers 2 Wds.",
+      "oncePerGame": true
+    }
+  ],
+  "signatureMove": {
+    "name": "Spin-Kick",
+    "upgradeFrom": "Sweeping Cut",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "1"},
+      {"opponentPlay": "Falling Swing", "deal": "2"},
+      {"opponentPlay": "Thrust", "deal": "2"},
+      {"opponentPlay": "Sweeping Cut", "deal": "1"},
+      {"opponentPlay": "Rising Attack", "deal": "1"},
+      {"opponentPlay": "Low Guard", "deal": "0"}
+    ],
+    "endStepEffect": "Move the enemy model 1\". You may immediately play the Reload ability even if engaged, and without spending energy."
+  },
+  "baseSize": "30mm",
+  "imageName": "gertrude",
+  "shareCode": "AAB",
+  "magicalDamageMitigation": 1
+}

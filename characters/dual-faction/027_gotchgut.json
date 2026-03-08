@@ -1,0 +1,62 @@
+{
+  "id": "029",
+  "name": "Gotchgut",
+  "version": "",
+  "factions": ["COMMONWEALTH", "DOMINION"],
+  "tags": ["Giant", "Mercenary"],
+  "melee": 3,
+  "meleeRange": 2,
+  "arcane": 0,
+  "evade": 2,
+  "health": 14,
+  "energyTrack": [1, 6],
+  "passiveAbilities": [
+    {
+      "name": "Brute Strength",
+      "description": "Increase all Melee Dmg dealt by +2."
+    },
+    {
+      "name": "Ramshackle Armour",
+      "description": " Reduce all non-Magical Dmg suffered by -1."
+    },
+    {
+      "name": "Bodyguard",
+      "description": " If a friendly Noble within 4” and LoS suffers Dmg, you may have this character suffer all that Dmg instead.",
+      "oncePerTurn": true
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Ooga-booga!",
+      "cost": 1,
+      "range": "4\"",
+      "description": "Move target enemy Goblin 2” directly away.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [],
+  "signatureMove": {
+    "name": "Kick to the Guts",
+    "upgradeFrom": "Rising Attack",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "0"},
+      {"opponentPlay": "Falling Swing", "deal": "1"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "1"},
+      {"opponentPlay": "Rising Attack", "deal": "1"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "If the enemy suffered 1 or more Wds during this round of Melee, then it loses 1 energy and is moved 1” directly away from this model."
+  },
+  "baseSize": "40mm",
+  "imageName": "gotchgut",
+  "shareCode": "AAB",
+  "piercingDamageMitigation": 1,
+  "impactDamageMitigation": 1,
+  "slicingDamageMitigation": 1,
+  "slicingDamageBuff": 2,
+  "piercingDamageBuff": 2,
+  "impactDamageBuff": 2
+}

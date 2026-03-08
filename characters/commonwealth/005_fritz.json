@@ -1,0 +1,58 @@
+{
+  "id": "005",
+  "name": "Fritz",
+  "version": "v.3",
+  "factions": ["COMMONWEALTH"],
+  "tags": ["Human", "Mercenary", "Soldier"],
+  "melee": 4,
+  "meleeRange": 2,
+  "arcane": 0,
+  "evade": 1,
+  "health": 9,
+  "energyTrack": [1, 3, 5],
+  "passiveAbilities": [
+    {
+      "name": "Great Sword",
+      "description": ": If this character deals Slicing Melee Dmg, increase the Dmg dealt by +3. If this character deals Impact or Piercing Melee Dmg, increase the Dmg dealt by +1. "
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Stand Back!",
+      "cost": 1,
+      "range": "2\"",
+      "description": "All other models within the pulse move 1” directly away.",
+      "oncePerGame": false,
+      "oncePerTurn": true
+    },
+    {
+      "name": "Intimidate",
+      "cost": 1,
+      "range": "4\"",
+      "description": "Target Human or Goblin suffers -2 Arcane stat and gains [Predictable Combatant: During a round of combat, before each player selects their combat card, you must reveal your hand to your opponent.] until end of the turn.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [],
+  "signatureMove": {
+    "name": "Corn Cutter",
+    "upgradeFrom": "Rising Attack",
+    "damageType": "Slicing",
+    "results": [
+      {"opponentPlay": "High Guard","deal": "2"},
+      {"opponentPlay": "Falling Swing","deal": "1"},
+      {"opponentPlay": "Thrust","deal": "1"},
+      {"opponentPlay": "Sweeping Cut","deal": "2"},
+      {"opponentPlay": "Rising Attack","deal": "1"},
+      {"opponentPlay": "Low Guard","deal": "Null"}
+    ],
+    "endStepEffect": "Deal 2 Slicing Dmg to all models within 2” that did not participate in this round of melee. This does not count as Melee Dmg."
+  },
+  "baseSize": "30mm",
+  "imageName": "fritz",
+  "shareCode": "AAF",
+  "slicingDamageBuff": 3,
+  "impactDamageBuff": 1,
+  "piercingDamageBuff": 1
+}

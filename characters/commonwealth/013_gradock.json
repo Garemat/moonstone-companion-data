@@ -1,0 +1,69 @@
+{
+  "id": "013",
+  "name": "Gradock",
+  "version": "",
+  "factions": ["COMMONWEALTH"],
+  "tags": ["Gnome", "Militia"],
+  "melee": 4,
+  "meleeRange": 1,
+  "arcane": 2,
+  "evade": 0,
+  "health": 8,
+  "energyTrack": [1, 2],
+  "passiveAbilities": [
+    {
+      "name": "Sage Advice",
+      "description": "Friendly models within 4” may ignore Catastrophe effects."
+    },
+    {
+      "name": "Tough as Old Boots",
+      "description": "At the start of the Replenish Step this model recovers 2 Wds."
+    },
+    {
+      "name": "Smell a Lie",
+      "description": "Enemy models targeting this model, or a model within 2”, must reveal the arcane card as it is played."
+    },
+    {
+      "name": "Quilted Armour",
+      "description": "Reduce Slicing Dmg suffered by -1."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Forgetfulness",
+      "cost": 1,
+      "range": "8\"",
+      "description": "Remove one Arcane or Active Ability from target character until the end of the turn. ",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Snare Traps",
+      "cost": 2,
+      "range": "14\"",
+      "description": "This attack is not modified by Evade Stat or Cover.\n[G]X: Targets suffers X Piercing Dmg\nCatastrophe: This character suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "The Old Slip-Step",
+    "upgradeFrom": "High Guard",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "1"},
+      {"opponentPlay": "Thrust", "deal": "1"},
+      {"opponentPlay": "Sweeping Cut", "deal": "1"},
+      {"opponentPlay": "Rising Attack", "deal": "1"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "This model may move 1”"
+  },
+  "baseSize": "30mm",
+  "imageName": "gradock",
+  "shareCode": "AAB",
+  "slicingDamageMitigation": 1
+}

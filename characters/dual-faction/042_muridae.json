@@ -1,0 +1,82 @@
+{
+  "id": "042",
+  "name": "Muridae",
+  "version": "",
+  "factions": ["COMMONWEALTH", "DOMINION"],
+  "tags": ["Gnome", "Rogue"],
+  "melee": 4,
+  "meleeRange": 1,
+  "arcane": 0,
+  "evade": 0,
+  "health": 8,
+  "energyTrack": [1, 2, 4],
+  "passiveAbilities": [
+    {
+      "name": "Dagger",
+      "description": "If this character deals Piercing Melee Dmg, increase the Dmg dealt by +1."
+    },
+    {
+      "name": "Flea Infested Pelt",
+      "description": "Reduce Magical and Slicing Dmg suffered by -1."
+    },
+    {
+      "name": "Honour Amongst Thieves",
+      "description": "Friendly Rogues within 6\" gain +1 Arcane Stat."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Sneaking",
+      "cost": 1,
+      "range": "",
+      "description": "This character gets -2 Evade Stat until end of turn.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Squeaking",
+      "cost": 1,
+      "range": "6\"",
+      "description": "Move target enemy 1\". Reaction Steps cannot be declared in response to this action.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Robbery",
+      "cost": 2,
+      "range": "1\"",
+      "description": "Target model with less Wds remaining than this character, loses possession of one Moonstone and this character gains possession of that Moonstone.",
+      "oncePerGame": false,
+      "oncePerTurn": true
+    },
+    {
+      "name": "Sewer Rat",
+      "cost": 1,
+      "range": "",
+      "description": "You may only play this ability if Muridae is inside a building. This character is Removed From Play. At the start of the next Replenish Step, return this character to play inside any building.",
+      "oncePerGame": true,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [],
+  "signatureMove": {
+    "name": "Hamstring",
+    "upgradeFrom": "Sweeping Cut",
+    "damageType": "Slicing",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "1"},
+      {"opponentPlay": "Falling Swing", "deal": "2"},
+      {"opponentPlay": "Thrust", "deal": "1"},
+      {"opponentPlay": "Sweeping Cut", "deal": "1"},
+      {"opponentPlay": "Rising Attack", "deal": "0"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "If the enemy suffered 1 or more Wds during this round of Melee, they gain Slow and cannot take Step Actions or Reaction Steps until end of turn."
+  },
+  "baseSize": "30mm",
+  "imageName": "muridae",
+  "shareCode": "AAB",
+  "piercingDamageBuff": 1,
+  "magicalDamageMitigation": 1,
+  "slicingDamageMitigation": 1
+}

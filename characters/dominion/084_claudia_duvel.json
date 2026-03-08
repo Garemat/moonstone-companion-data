@@ -1,0 +1,70 @@
+{
+  "id": "084",
+  "name": "Claudia Duvel",
+  "version": "",
+  "factions": ["DOMINION"],
+  "tags": ["Human", "Rogue"],
+  "melee": 4,
+  "meleeRange": 1,
+  "arcane": 3,
+  "evade": -1,
+  "health": 8,
+  "energyTrack": [1, 3, 7],
+  "passiveAbilities": [
+    {
+      "name": "Sure Footed",
+      "description": "This character may Jog over Water Features and Wooded Patches and pays 1 less energy for Traverse actions."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Brace of Pistols",
+      "cost": 0,
+      "range": "",
+      "description": "This character may use the [Reload] ability without paying the energy cost.",
+      "oncePerGame": true,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Robbery",
+      "cost": 2,
+      "range": "1\"",
+      "description": "Target model with less Wds remaining than this character, loses possession of one Moonstone and this character gains possession of that Moonstone.",
+      "oncePerGame": false,
+      "oncePerTurn": true
+    },
+    {
+      "name": "Reload [Shoot Pistol]",
+      "cost": 2,
+      "range": "",
+      "description": "The named ability can be used again. This ability cannot be used while this model is engaged."
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Shoot Pistol",
+      "cost": 1,
+      "range": "8\"",
+      "description": "Target suffers X+1 Impact Dmg.\nCatastrophe: This character suffers 3 Wds.",
+      "oncePerGame": true,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Stand & Deliver",
+    "upgradeFrom": "Sweeping Cut",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "If this character was not slain, and the enemy is in possession of a Moonstone, then they must choose: Suffer 3 Wds or, lose possession of one Moonstone and this character gains possession of that Moonstone."
+  },
+  "baseSize": "30mm",
+  "imageName": "084_claudia_duvel.json",
+  "shareCode": "AAB"
+}

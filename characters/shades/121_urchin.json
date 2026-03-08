@@ -1,0 +1,54 @@
+{
+  "id": "121",
+  "name": "Urchin",
+  "version": "",
+  "factions": ["SHADES"],
+  "tags": ["Psychopomp", "Babeling"],
+  "melee": 1,
+  "meleeRange": 1,
+  "arcane": 0,
+  "evade": -1,
+  "health": 2,
+  "energyTrack": [999],
+  "passiveAbilities": [
+    {
+      "name": "Summoner's Delight",
+      "description": "If the character that summoned this model is Slain or Removed from Play then this character is immediately considered to be Slain."
+    },
+    {
+      "name": "Feeble",
+      "description": "Reduce all Melee Dmg this character deals by -2. Harvest actions cost this model +1 energy."
+    },
+    {
+      "name": "Thrall",
+      "description": "This character can only enter play when summoned. It does not activate and can never gain energy. Instead, while the character that summoned it is active, this character can take actions, including Jog, by discarding the required energy on the character that summoned it. Reaction Steps and Go For It's can be taken in the same way."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "He Hit Me!",
+      "cost": 1,
+      "range": "2\"",
+      "description": "Target character suffers 1 Wd.",
+      "oncePerTurn": true
+    },
+    {
+      "name": "I Want My Nanny!",
+      "cost": 0,
+      "range": "",
+      "description": "When an enemy character declares this model as a target of an action, you may interupt the action to move this model 2\" directly towards a friendly Nanny. If you do, the enemy must complete the action if possible and may not choose a new target.",
+      "oncePerTurn": true
+    }
+  ],
+  "arcaneAbilities": [],
+  "signatureMove": {
+    "name": "No Signature",
+    "upgradeFrom": "",
+    "damageType": "",
+    "results": [],
+    "endStepEffect": ""
+  },
+  "baseSize": "30mm",
+  "imageName": "121_urchin.json",
+  "shareCode": "AAB"
+}

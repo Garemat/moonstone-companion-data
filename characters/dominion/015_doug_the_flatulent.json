@@ -1,0 +1,71 @@
+{
+  "id": "015",
+  "name": "Doug, the Flatulent",
+  "version": "v.2",
+  "factions": ["DOMINION"],
+  "tags": ["Goblin", "Soldier", "Animal"],
+  "melee": 4,
+  "meleeRange": 3,
+  "arcane": 0,
+  "evade": 0,
+  "health": 8,
+  "energyTrack": [1, 3, 5, 7],
+  "passiveAbilities": [
+    {
+      "name": "Lance",
+      "description": " If this character deals Slicing Melee Dmg, reduce the Dmg dealt to W. If this character deals Piercing Dmg, increase the Dmg dealt by +1."
+    },
+    {
+      "name": "Jousting Shield",
+      "description": " Reduce Piercing and Impact Dmg suffered by -1."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Chaaarge!!",
+      "cost": 2,
+      "range": "",
+      "description": "Move this model 4” directly towards target enemy model. If this character’s next action this turn is a Melee Attack against the same target it deals +2 Dmg.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Foul Gases",
+      "cost": 2,
+      "range": "2\"",
+      "description": "All models within the pulse suffer 2 Magical Dmg.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Digger",
+      "cost": 0,
+      "range": "",
+      "description": "When this model takes a Harvest action, flip an Arcane Card and reduce the Depth Value by X, where X is the value of the card.\nCatastrophe: All models within a 3” pulse suffer 2 Magical Dmg.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Ankle Biter",
+    "upgradeFrom": "Rising Attack",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "3"},
+      {"opponentPlay": "Falling Swing", "deal": "3"},
+      {"opponentPlay": "Thrust", "deal": "3"},
+      {"opponentPlay": "Sweeping Cut", "deal": "3"},
+      {"opponentPlay": "Rising Attack", "deal": "2"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "passiveEffect": "This attack deals W damage against models which are further than 1” away. "
+  },
+  "baseSize": "40mm",
+  "imageName": "doug",
+  "piercingDamageBuff": 1,
+  "slicingDamageBuff": "Null",
+  "piercingDamageMitigation": 1,
+  "impactDamageMitigation": 1
+}

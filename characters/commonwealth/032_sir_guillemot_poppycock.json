@@ -1,0 +1,61 @@
+{
+  "id": "032",
+  "name": "Sir Guillemot Poppycock",
+  "version": "",
+  "factions": ["COMMONWEALTH"],
+  "tags": ["Human", "Noble"],
+  "melee": 4,
+  "meleeRange": 2,
+  "arcane": 0,
+  "evade": 1,
+  "health": 9,
+  "energyTrack": [1, 4],
+  "passiveAbilities": [
+    {
+      "name": "arhammer",
+      "description": "If this character deals Slicing or Piercing Melee Dmg, reduce the Dmg to W. If this character deals Impact Melee Dmg, increase the Dmg dealt by +2."
+    },
+    {
+      "name": "Plate Armour",
+      "description": "Reduce all non-Magical Dmg suffered by -2."
+    },
+    {
+      "name": "Ornithophobia",
+      "description": "Whenever a Goblin character ends a move engaged by this model, for the first time this turn, it must discard 1 energy, if able."
+    },
+    {
+      "name": "The Governor",
+      "description": " Friendly Soldiers within 6” gain +1 Melee stat."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Yell Out Commands",
+      "cost": 1,
+      "range": "6\"",
+      "description": "Move target friendly non-Noble 1”. If the target is a friendly Soldier move it 2” instead. You may only target each character once per turn.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [],
+  "signatureMove": {
+    "name": "Knee Smasher",
+    "upgradeFrom": "Sweeping Cut",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "2"},
+      {"opponentPlay": "Falling Swing", "deal": "2"},
+      {"opponentPlay": "Thrust", "deal": "2"},
+      {"opponentPlay": "Sweeping Cut", "deal": "2"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "If the enemy suffered 1 or more Wds during this round of Melee then it cannot take a Jog action until end of turn."
+  },
+  "baseSize": "30mm",
+  "imageName": "034_sir_guillemot_poppycock.json",
+  "shareCode": "AAB",
+  "impactDamageBuff": 2,
+  "allNonMagicalDamageMitigation": 2
+}

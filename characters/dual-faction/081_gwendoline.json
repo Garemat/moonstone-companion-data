@@ -1,0 +1,62 @@
+{
+  "id": "081",
+  "name": "Gwendoline, Leshavult Priestess",
+  "version": "",
+  "factions": ["DOMINION", "LESHAVULT"],
+  "tags": ["Faerie", "Cultist"],
+  "melee": 2,
+  "meleeRange": 1,
+  "arcane": 5,
+  "evade": -2,
+  "health": 6,
+  "energyTrack": [1, 2, 3, 5, 6],
+  "passiveAbilities": [
+    {
+      "name": "Feeble",
+      "description": "Reduce all Melee Dmg this character deals by -2. Harvest actions cost this model +1 energy."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Scry",
+      "cost": 4,
+      "range": "",
+      "description": "Draw the top card of the Arcane Deck, look then place it face down besides this character card. At any point you can add the card to your Arcane or Arcane Resist hand. If you do then at the end of the action, or if this character is slain, shuffle the card back into the Arcane Deck."
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Rejuvenate",
+      "cost": 3,
+      "range": "8\"",
+      "description": "Target friendly model restores X+1 Wds, then move it X\".\nCatastrophe: The target suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Ethereal Allure",
+      "cost": 3,
+      "range": "8\"",
+      "description": "Move target X+2\" directly towards this character.\nCatastrophe: This model suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Dreamglade Glamour",
+    "upgradeFrom": "High Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "The enemy cannot make a Melee Attack action targeting this character until end of turn."
+  },
+  "baseSize": "30mm",
+  "imageName": "gwendoline",
+  "shareCode": "AAB"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "114",
+  "name": "Marley",
+  "version": "",
+  "factions": ["SHADES"],
+  "tags": ["Spirit"],
+  "melee": 2,
+  "meleeRange": 1,
+  "arcane": 3,
+  "evade": -1,
+  "health": 7,
+  "energyTrack": [1, 2, 4, 6],
+  "passiveAbilities": [
+    {
+      "name": "Resonance",
+      "description": "Friendly Spirits within 8\" have a resist hand of +2 cards when targeted by an enemy Arcane Ability. "
+    },
+    {
+      "name": "Incorporeal Form",
+      "description": "When this character activates it may discard 1 energy. If it does, this character cannot take Harvest actions but reduces all non-Magical Dmg dealt and suffered to W and may move freely over models and terrain during Jog actions, provided bases do not overlap at the end of the movement, until end of turn."
+    },
+    {
+      "name": "Slip through the Deadlands",
+      "description": " Friendly Spirits within 8\" gain [Blink: When making a Step action, this model may be placed within 1\" of itself instead of moving 1\". Once per turn]."
+    }
+  ],
+  "activeAbilities": [],
+  "arcaneAbilities": [
+    {
+      "name": "Reanimate",
+      "cost": 3,
+      "range": "",
+      "description": "Place a friendly slain model in base contact with this model. Restore half its health rounding up. It has no energy but may activate this turn.\nCatastrophe: This model suffers 4 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Horror",
+      "cost": 3,
+      "range": "8\"",
+      "description": "Target gains [Horrified: During the Discard Step, this character suffers 2 Wds.], until this character is slain.\nCatastrophe: This model suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Boooo!",
+    "upgradeFrom": "High Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "Move the enemy 2\" directly away. If the enemy is in possession of at least one Moonstone, it loses possession of one Moonstone before moving. Place it in base contact with the enemy at depth '1'."
+  },
+  "baseSize": "30mm",
+  "imageName": "114_marley.json",
+  "shareCode": "AAB"
+}

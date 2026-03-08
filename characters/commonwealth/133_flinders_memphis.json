@@ -1,0 +1,65 @@
+{
+  "id": "133",
+  "name": "Flinders Memphis",
+  "version": "",
+  "factions": ["COMMONWEALTH"],
+  "tags": ["Gnome", "Machine"],
+  "melee": 2,
+  "meleeRange": 1,
+  "arcane": 3,
+  "evade": 0,
+  "health": 8,
+  "energyTrack": [1, 2],
+  "passiveAbilities": [
+    {
+      "name": "Augments",
+      "description": "Friendly charactres with Reload[...] gain the Machine keyword."
+    },
+    {
+      "name": "The Faculty",
+      "description": "If Old Polly, Prod. Boffinsworth and Flinders Memphis were taken in this troupe at the start of the game, this character gains Rogue, Animal and Machine keywords."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Overclock",
+      "cost": 1,
+      "range": "4\"",
+      "description": "Target other friendly machine suffers 1 Wd, then may take any action available to them which would normally have an energy cost of (2). You may only target each character once per turn."
+    },
+    {
+      "name": "Have You Tired Turning it Off and On Again?",
+      "cost": 0,
+      "range": "",
+      "description": "After a friendly Machine draws an Arcane Hand, they may suffer 1 Wd, shuffle the hand back into the Arcane deck and redraw the same number of cards (Resist Hand is unchanged).",
+      "oncePerTurn": true
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Gnomish Air Rifle",
+      "cost": 2,
+      "range": "14\"",
+      "description": "Target suffers X+1 Impact Dmg\nCatastrophe: This character suffers 4 Wds",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Compressed Air",
+    "upgradeFrom": "High Guard",
+    "damageType": "Impact",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "This model suffers 1 Wd. All other models within 1\" suffer 1 Wd then are moved 2\" directly away."
+  },
+  "baseSize": "30mm",
+  "imageName": "133_flinders_memphis.json",
+  "shareCode": "AAB"
+}

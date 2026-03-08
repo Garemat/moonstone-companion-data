@@ -1,0 +1,63 @@
+{
+  "id": "006",
+  "name": "Agatha",
+  "version": "",
+  "factions": ["COMMONWEALTH"],
+  "tags": ["Human"],
+  "melee": 3,
+  "meleeRange": 1,
+  "arcane": 3,
+  "evade": 0,
+  "health": 8,
+  "energyTrack": [1, 3, 6],
+  "passiveAbilities": [
+    {
+      "name": "Concealed Dagger",
+      "description": " If this character deals Piercing Melee\nDmg, increase the Dmg dealt by +1. If this character plays a\nRising Attack increase the Dmg dealt by +1. "
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Deutsche Courage",
+      "cost": 0,
+      "range": "",
+      "description": "If a friendly Soldier or Mercenary makes\na Melee Attack action while within 6” of this model, you\nmay have them gain 1 energy.",
+      "oncePerTurn": true
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Enticing Offer",
+      "cost": 2,
+      "range": "10\"",
+      "description": "Move target 4” directly towards this model\nCatastrophe: This model suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Drink Your Fill",
+      "cost": 1,
+      "range": "2\"",
+      "description": "[G]X: Target loses X energy.\n[P]X: Target’s Melee stat is increased by +X until end of turn.\n[B]X: Target gains X energy and its Arcane stat is reduced by -X until end of turn.\nCatastrophe: The target loses possession of up to one Moonstone they are carrying (place it in base contact with them with a depth value of '1').",
+      "oncePerGame": false,
+      "oncePerTurn": true
+    }
+  ],
+  "signatureMove": {
+    "name": "Hell hath no fury...",
+    "upgradeFrom": "High Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null", "isFollowUp": true},
+      {"opponentPlay": "Thrust", "deal": "Null", "isFollowUp": true},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null", "isFollowUp": true},
+      {"opponentPlay": "Rising Attack", "deal": "Null", "isFollowUp": true},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ]
+  },
+  "baseSize": "30mm",
+  "imageName": "agatha",
+  "shareCode": "AAB",
+  "piercingDamageBuff": 1
+}

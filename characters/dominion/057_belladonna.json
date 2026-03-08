@@ -1,0 +1,64 @@
+{
+  "id": "057",
+  "name": "Belladonna",
+  "version": "",
+  "factions": ["DOMINION"],
+  "tags": ["Faerie", "Rogue"],
+  "melee": 4,
+  "meleeRange": 1,
+  "arcane": 3,
+  "evade": -2,
+  "health": 6,
+  "energyTrack": [1, 2, 3, 4, 5],
+  "passiveAbilities": [
+    {
+      "name": "Weakling",
+      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy"
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "Faerie Tricks",
+      "cost": 2,
+      "range": "8\"",
+      "description": "Swap places with target friendly Rogue.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Acid Flask",
+      "cost": 3,
+      "range": "4\"",
+      "description": "Target suffers X+1 Magical Dmg.\nCatastrophe: This model suffers 2 Wds.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Drop of Nightshade",
+      "cost": 3,
+      "range": "1\"",
+      "description": "Target enemy loses X energy.\nTarget enemy suffers X Wds.\nMove target enemy up to 2X”. Then you may have the target take a Melee Attack action controlled by you. They count as friendly during the Melee attack action.\nCatastrophe: The target and this character are both slain.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Drop of Delirium",
+    "upgradeFrom": "High Guard",
+    "damageType": "",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "Null"},
+      {"opponentPlay": "Falling Swing", "deal": "Null"},
+      {"opponentPlay": "Thrust", "deal": "Null"},
+      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
+      {"opponentPlay": "Rising Attack", "deal": "Null"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "Move the enemy model 2”, then it loses 1 energy and suffers 1 Wd."
+  },
+  "baseSize": "30mm",
+  "imageName": "belladonna",
+  "shareCode": "AAB"
+}

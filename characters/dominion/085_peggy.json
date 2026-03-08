@@ -1,0 +1,72 @@
+{
+  "id": "085",
+  "name": "Peggy",
+  "version": "",
+  "factions": ["DOMINION"],
+  "tags": ["Human", "Pirate"],
+  "melee": 3,
+  "meleeRange": 2,
+  "arcane": 4,
+  "evade": 0,
+  "health": 8,
+  "energyTrack": [1, 3, 7],
+  "passiveAbilities": [
+    {
+      "name": "Slow",
+      "description": "This model's Jog actions are limited to 2”."
+    },
+    {
+      "name": "Cutlass",
+      "description": "If this character deals Slicing Melee Dmg, increase the Dmg dealt by +1."
+    },
+    {
+      "name": "Treasure Map",
+      "description": "Immediately after models have been deployed but before turn 1 begins, you may have a friendly Pirate take a free bonus Jog action."
+    }
+  ],
+  "activeAbilities": [
+    {
+      "name": "X Marks The Spot",
+      "cost": 2,
+      "range": "8\"",
+      "description": "Target Moonstone or enemy in possession of a Moonstone. All friendly Pirates within 4\" of the target move 1\" directly towards it.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    },
+    {
+      "name": "Reload [Shoot Pistol]",
+      "cost": 2,
+      "range": "",
+      "description": "The named ability can be used again. This ability cannot be used while this model is engaged.",
+      "oncePerGame": false,
+      "oncePerTurn": false
+    }
+  ],
+  "arcaneAbilities": [
+    {
+      "name": "Shoot Pistol",
+      "cost": 1,
+      "range": "8\"",
+      "description": "Target suffers X+1 Impact Dmg.\nCatastrophe: This character suffers 3 Wds.",
+      "oncePerGame": true,
+      "oncePerTurn": false
+    }
+  ],
+  "signatureMove": {
+    "name": "Run 'em Through",
+    "upgradeFrom": "Thrust",
+    "damageType": "Piercing",
+    "results": [
+      {"opponentPlay": "High Guard", "deal": "1"},
+      {"opponentPlay": "Falling Swing", "deal": "3"},
+      {"opponentPlay": "Thrust", "deal": "4"},
+      {"opponentPlay": "Sweeping Cut", "deal": "3"},
+      {"opponentPlay": "Rising Attack", "deal": "1"},
+      {"opponentPlay": "Low Guard", "deal": "Null"}
+    ],
+    "endStepEffect": "Move 2\" directly towards the enemy model."
+  },
+  "baseSize": "30mm",
+  "imageName": "085_peggy.json",
+  "shareCode": "AAB"
+}
