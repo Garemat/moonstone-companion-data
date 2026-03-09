@@ -28,14 +28,13 @@ jobs:
             echo "type=minor" >> $GITHUB_OUTPUT
           elif [[ "$BODY" == *"[x] 🐛 Data fix"* ]]; then
             echo "type=patch" >> $GITHUB_OUTPUT
-          elif [[ "$BODY" == *"[x] 🖼️ Image update"* ]]; then
-            echo "type=patch" >> $GITHUB_OUTPUT
           else
             # workflow_dispatch or chore-only — default to patch
-            echo "type=patch" >> $GITHUB_OUTPUT
+            echo "type=none" >> $GITHUB_OUTPUT
           fi
 
       - name: Create Tag
+        if: steps.bump_type.outputs.type != 'none'
         id: tag_version
         uses: anothrNick/github-tag-action@1.64.0
         env:
@@ -44,15 +43,19 @@ jobs:
           WITH_V: true
 
       - name: Aggregate JSON files
+        if: steps.bump_type.outputs.type != 'none'
         run: python3 scripts/aggregate.py
 
       - name: Lint produced JSON files
+        if: steps.bump_type.outputs.type != 'none'
         run: python3 scripts/lint_data.py
 
       - name: Zip character images
+        if: steps.bump_type.outputs.type != 'none'
         run: zip -j build/character_images.zip character_images/*
 
       - name: Create GitHub Release
+        if: steps.bump_type.outputs.type != 'none'
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.tag_version.outputs.new_tag }}
