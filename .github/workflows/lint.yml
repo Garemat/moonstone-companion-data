@@ -6,34 +6,6 @@ on:
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Validate PR Template
-        env:
-          PR_BODY: ${{ github.event.pull_request.body }}
-        run: |
-          echo "Validating PR description..."
-          
-          # 1. Check if at least one Type of Change is selected
-          if ! echo "$PR_BODY" | grep -qEi "(- \[x\] (🐛 Bug fix|✨ New feature|💥 Breaking change|🧹 Chore))"; then
-            echo "::error::Validation Failed: Please select at least one 'Type of Change' in your PR description."
-            exit 1
-          fi
-
-          # 2. Check if all items in the Checklist are checked
-          # This looks at everything after the '## Checklist' header for any unchecked boxes '[ ]'
-          if echo "$PR_BODY" | sed -n '/## Checklist/,$p' | grep -q "\[ \]"; then
-            echo "::error::Validation Failed: Please ensure all items in the 'Checklist' are completed and checked."
-            exit 1
-          fi
-          
-          echo "PR Template validation passed!"
-
-      - name: Aggregate JSON files
-        run: python3 scripts/aggregate.py
-
-      - name: Lint produced JSON files
-        run: python3 scripts/lint_data.py
+    uses: garemat/moonstone-companion-data/.github/workflows/validate.yml@main
+    with:
+      pr_body: ${{ github.event.pull_request.body }}
