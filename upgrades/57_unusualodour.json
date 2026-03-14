@@ -1,0 +1,21 @@
+{
+  "id": 57,
+  "name": "Unusual Odour",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Unusual Odour",
+      "description": "Other models within 2\" suffer -1 Melee Stat and -1 Arcane Stat."
+    },
+    {
+      "name": "Stand Back! (1) 2\" Pulse",
+      "description": "All other models within the pulse move 1\" directly away.",
+      "oncePerTurn": true
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "unusualodour"
+}

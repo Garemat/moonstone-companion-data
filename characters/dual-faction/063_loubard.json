@@ -1,64 +1,97 @@
 {
-  "id": "063",
+  "id": 63,
   "name": "Loubard",
-  "version": "",
+  "version": 2,
   "factions": ["COMMONWEALTH", "LESHAVULT"],
-  "tags": ["Giant", "Cultist"],
+  "health": 14,
+  "energyTrack": [1, 6],
+  "keywords": ["Giant", "Cultist"],
   "melee": 3,
   "meleeRange": 3,
   "arcane": 3,
   "evade": 2,
-  "health": 14,
-  "energyTrack": [1, 6],
-  "passiveAbilities": [
-    {
-      "name": "Blind Faith",
-      "description": "This character may not take Harvest or Jog actions unless there is a friendly model within 4\"."
-    },
-    {
-      "name": "Censer Chain",
-      "description": "If this character deals Impact Melee Dmg, increase the Dmg dealt by +2."
-    },
-    {
-      "name": "Predictable Combatant",
-      "description": " During a round of combat, before each player selects their combat card, you must reveal your hand to your opponent."
-    }
-  ],
-  "activeAbilities": [
-    {
-      "name": "Righteous Fury",
-      "cost": 3,
-      "range": "",
-      "description": "This character gains +3 energy, +1 Melee Stat, +1 Arcane Stat and +1 to Melee Dmg until end of turn.",
-      "oncePerTurn": true
-    }
-  ],
-  "arcaneAbilities": [
-    {
-      "name": "Haul In",
-      "cost": 1,
-      "range": "3\"",
-      "description": "Move target 2\" directly towards this model.\nCatastrophe: This character suffers 3 Wds. Then if this character is not slain all other models within 3\" are moved 2\" directly towards this model.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "signatureMove": {
-    "name": "Entangle",
-    "upgradeFrom": "Sweeping Cut",
-    "damageType": "Impact",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "2"},
-      {"opponentPlay": "Falling Swing", "deal": "2"},
-      {"opponentPlay": "Thrust", "deal": "0"},
-      {"opponentPlay": "Sweeping Cut", "deal": "2"},
-      {"opponentPlay": "Rising Attack", "deal": "0"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "If the enemy is within 1” then it cannot play End Step Effects. If the enemy is within 1\" it suffers 1 Wd, loses 1 energy and suffers -2 Melee Stat until end of turn."
-  },
   "baseSize": "40mm",
   "imageName": "loubard",
   "shareCode": "AAB",
-  "impactDamageBuff": 2
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 2,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Entangle",
+    "upgradeFor": "Sweeping Cut",
+    "possibleDamageTypes": ["Impact"],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "2", "isFollowUp": false},
+    "thrust": {"deal": "0", "isFollowUp": false},
+    "sweepingCut": {"deal": "0", "isFollowUp": false},
+    "risingAttack": {"deal": "2", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "If the enemy is within 1\" then it cannot play End Step Effects.",
+    "endStepEffect": "If the enemy is within 1\" it suffers 1 Wd, loses 1 energy and suffers -2 Melee Stat until end of turn."
+  },
+  "abilities": [
+    {
+      "name": "Blind Faith",
+      "description": "This character may not take Harvest or Jog actions unless there is a friendly model within 4\".",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Censer Chains",
+      "description": "If this character deals Impact Melee Dmg, increase the Dmg dealt by +2.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Predictable Combatant",
+      "description": "During a round of combat, before each player selects their combat card, you must reveal your hand to your opponent.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Righteous Fury",
+      "description": "This character gains +3 energy, +1 Melee Stat, +1 Arcane Stat and +1 to Melee Dmg until end of turn.",
+      "abilityType": "Active",
+      "energyCost": 3,
+      "range": "",
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Hail In",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 1,
+      "range": "3\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Move target 2\" directly towards this model.",
+          "validCards": [{"colour": "Green", "value": "2"}, {"colour": "Blue", "value": "2"}, {"colour": "Pink", "value": "2"}]
+        },
+        {
+          "text": "This character suffers 3 Wds. Then if this character is not slain all other models within 3\" are moved 2\" directly towards this model.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

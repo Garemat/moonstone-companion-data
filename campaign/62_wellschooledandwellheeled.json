@@ -1,0 +1,11 @@
+{
+  "id": 62,
+  "name": "Well Schooled and Well Heeled",
+  "version": 2,
+  "factions": [],
+  "tags": [],
+  "timing": "Play during the Activation Step, before or after any action.",
+  "description": "Friendly *Nobles* gain +1 Arcane Stat and +2 Melee Stat until end of turn.",
+  "shareCode": "AAB",
+  "imageName": "wellschooledandwellheeled"
+}

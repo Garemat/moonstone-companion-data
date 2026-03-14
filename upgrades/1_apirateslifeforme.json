@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "name": "A Pirate's life for me!",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [],
+  "extraDescription": "This character gains the Pirate keyword.",
+  "abilities": [],
+  "shareCode": "AAB",
+  "imageName": "apirateslifeforme"
+}

@@ -1,63 +1,94 @@
 {
-  "id": "113",
+  "id": 113,
   "name": "Viscount de Faulte",
-  "version": "",
+  "version": 1,
   "factions": ["DOMINION", "SHADES"],
-  "tags": ["Risen", "Animal", "Noble"],
+  "health": 11,
+  "energyTrack": [1, 4, 6],
+  "keywords": ["Risen", "Animal", "Noble"],
   "melee": 3,
   "meleeRange": 2,
   "arcane": 0,
   "evade": 1,
-  "health": 11,
-  "energyTrack": [1, 4, 6],
-  "passiveAbilities": [
-    {
-      "name": "Erosion",
-      "description": "Enemies within 4” suffer -1 Melee Stat when declaring a Melee Attack action or -2 Melee Stat if targeting this character with a Melee Attack action. "
-    },
+  "baseSize": "40mm",
+  "imageName": "viscount_de_faulte",
+  "shareCode": "AAB",
+  "slicingDamageBuff": null,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 1,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 1,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Impale",
+    "upgradeFor": "Thrust",
+    "possibleDamageTypes": ["Piercing"],
+    "highGuard": {"deal": "1", "isFollowUp": false},
+    "fallingSwing": {"deal": "3", "isFollowUp": false},
+    "thrust": {"deal": "4", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "3", "isFollowUp": false},
+    "lowGuard": {"deal": "2", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "Move this model 1\" directly towards the enemy."
+  },
+  "abilities": [
     {
       "name": "Cavalry Mace",
-      "description": "If this character deals Slicing Melee Dmg, reduce the Dmg to W. If this character deals Impact Melee Dmg, increase the Dmg dealt by +1. "
+      "description": "If this character deals Slicing Melee Dmg, reduce the Dmg to {0}. If this character deals Impact Melee Dmg, increase the Dmg dealt by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Concealed Armour",
-      "description": "If this character suffers Piercing Dmg, reduce the Dmg suffered by -1."
-    }
-  ],
-  "activeAbilities": [
+      "description": "If this character suffers Piercing Dmg, reduce the Dmg suffered by -1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Erosion",
+      "description": "Enemies within 1\" suffer -1 Melee Stat when declaring an Arcane Action or -2 Melee Stat if targeting this character with a Melee Attack action.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Intrusion",
-      "cost": 0,
-      "range": "",
-      "description": "After dice are rolled to determine who activates first, this model may spend 1 energy to reroll its die.",
-      "oncePerTurn": true
+      "description": "After dice are rolled to determine who activates first, this model may spend 1 energy to reroll its die. Once per turn.",
+      "abilityType": "Passive",
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Fear",
-      "cost": 2,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
       "range": "4\"",
-      "description": "Target other character loses 1 energy then a friendly model within 4\" of this character gains that much energy",
-      "oncePerTurn": true
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target other character loses X energy then a friendly character gains that much energy.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 3 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "arcaneAbilities": [],
-  "signatureMove": {
-    "name": "Impale",
-    "upgradeFrom": "Thrust",
-    "damageType": "Piercing",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "1"},
-      {"opponentPlay": "Falling Swing", "deal": "3"},
-      {"opponentPlay": "Thrust", "deal": "4"},
-      {"opponentPlay": "Sweeping Cut", "deal": "0"},
-      {"opponentPlay": "Rising Attack", "deal": "3"},
-      {"opponentPlay": "Low Guard", "deal": "2"}
-    ],
-    "endStepEffect": "Move this model 1\" directly towards the enemy"
-  },
-  "baseSize": "40mm",
-  "imageName": "113_viscount_de_faulte.json",
-  "shareCode": "AAB",
-  "impactDamageBuff": 1,
-  "piercingDamageMitigation": 1
+  ]
 }

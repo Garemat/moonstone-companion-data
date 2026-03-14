@@ -1,0 +1,17 @@
+{
+  "id": 39,
+  "name": "Psychopomp Tamer",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Get 'em! (0) 4\"",
+      "description": "Target Psychopomp suffers 1 Wd. Then, if the target Psychopomp was not slain, it may immediately take any action available to it irrespective of energy cost, excluding Jog.",
+      "oncePerTurn": true
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "psychopomptamer"
+}

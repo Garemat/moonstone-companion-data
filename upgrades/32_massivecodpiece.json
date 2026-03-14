@@ -1,0 +1,18 @@
+{
+  "id": 32,
+  "name": "Massive Codpiece",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [
+    "Giant"
+  ],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Massive Codpiece",
+      "description": "If this character suffers Melee Dmg from a Rising Attack (including Signature Moves using Rising Attacks) reduce the Dmg suffered by -2."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "massivecodpiece"
+}

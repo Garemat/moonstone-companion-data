@@ -1,0 +1,12 @@
+{
+  "id": 13,
+  "name": "Devastating Blow",
+  "version": 2,
+  "factions": [],
+  "tags": [],
+  "timing": "Interrupt a Melee Attack action.",
+  "description": "Add a **Critical Hit** to your melee result.",
+  "extraDescription": "e.g. A single Falling Swing is treated as two Falling Swings. Two Falling Swings are treated as three Falling Swings. Three Falling Swings are treated as four Falling Swings.",
+  "shareCode": "AAB",
+  "imageName": "devastatingblow"
+}

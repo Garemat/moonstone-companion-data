@@ -1,0 +1,19 @@
+{
+  "id": 53,
+  "name": "They Owed Me Money",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [
+    "Giant",
+    "Troll"
+  ],
+  "abilities": [
+    {
+      "name": "Bitter Debtor",
+      "description": "Nominate a friendly Non-Psychopomp character at the start of the game. Whilst the nominated character is slain or removed from play, this model gains +2 Melee Stat."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "theyowedmemoney"
+}

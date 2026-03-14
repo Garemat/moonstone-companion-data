@@ -1,63 +1,110 @@
 {
-  "id": "069",
+  "id": 69,
   "name": "Antonia, Noonday Witch",
-  "version": "",
+  "version": 3,
   "factions": ["LESHAVULT"],
-  "tags": ["Spirit"],
+  "health": 8,
+  "energyTrack": [1, 2, 4],
+  "keywords": ["Spirit", "Witch"],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 4,
   "evade": 0,
-  "health": 8,
-  "energyTrack": [1, 2, 4],
-  "passiveAbilities": [
+  "baseSize": "30mm",
+  "imageName": "antonia",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Deception",
+    "upgradeFor": "Falling Swing",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "Reduce Dmg suffered by -2.",
+    "endStepEffect": ""
+  },
+  "abilities": [
     {
       "name": "Link to the Past",
-      "description": " If a friendly Danica, Dusk Witch was taken in this troupe at the start of the game then this character gains +1 Arcane Stat and reduces the energy cost of the first Arcane Ability targeting a friendly Witch in a turn by -1."
-    }
-  ],
-  "activeAbilities": [],
-  "arcaneAbilities": [
-    {
-      "name": "Candy Apples",
-      "cost": 3,
-      "range": "8\"",
-      "description": "Move target 2X\" directly towards this character. Then, if the target is within 2\" of this character they suffer 4 Wds.\nCatastrophe: All models within 4\" suffer 2 Magical Dmg.",
+      "description": "If a friendly Danica, Dusk Witch was taken in this troupe at the start of the game then this character gains +1 Arcane Stat and reduces the energy cost of the first Arcane Ability targeting a friendly Witch in a turn by -1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": []
     },
     {
       "name": "Healing",
-      "cost": 2,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
       "range": "8\"",
-      "description": "Target restores X+1 Wds.\nCatastrophe: This model suffers 2 Wds.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Target restores X+1 Wds.",
+          "validCards": [{"colour": "Blue", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    },
+    {
+      "name": "Candy Apples",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 3,
+      "range": "8\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Move target 2X\" directly towards this character. Then if the target is within 2\" of this character they suffer 4 Wds.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "All models within 4\" suffer 2 Magical Dmg.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     },
     {
       "name": "Visions of the Present",
-      "cost": 3,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 3,
       "range": "6\"",
-      "description": "Target suffers an amount of Wds equal to the number of Wds they have currently suffered.\nCatastrophe: This character suffers an amount of Wds equal to the number of Wd's they have currently suffered",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers an amount of Wds equal to the number of Wds they have currently suffered.",
+          "validCards": [{"colour": "Blue", "value": "3"}, {"colour": "Pink", "value": "3"}]
+        },
+        {
+          "text": "This character suffers an amount of Wds equal to the number of Wds they have currently suffered.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Deception",
-    "upgradeFrom": "Falling Swing",
-    "damageType": "",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "Reduce Dmg suffered by -2."
-  },
-  "baseSize": "30mm",
-  "imageName": "antonia",
-  "shareCode": "AAB"
+  ]
 }

@@ -1,0 +1,19 @@
+{
+  "id": 54,
+  "name": "Towering Presence",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [
+    "Spirit"
+  ],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Growth Spurt (0)",
+      "description": "Increase this character's Melee Range by 1\" to a maximum of 3\", and it's Evade Stat by +1 until end of the turn.",
+      "oncePerGame": true
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "toweringpresence"
+}

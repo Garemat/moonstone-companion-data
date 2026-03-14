@@ -1,0 +1,11 @@
+{
+  "id": 80,
+  "name": "Nefarious Bargain",
+  "version": 2,
+  "factions": [],
+  "tags": [],
+  "timing": "Play at end of game.",
+  "description": "**Gain 1 Victory Point**.\n\nThen choose another player in the campaign. The chosen player **Gains 2 Machination Points**.",
+  "shareCode": "AAB",
+  "imageName": "nefariousbargain"
+}

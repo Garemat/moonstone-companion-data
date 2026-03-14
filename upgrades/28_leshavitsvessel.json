@@ -1,0 +1,20 @@
+{
+  "id": 28,
+  "name": "Leshavit's Vessel",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [
+    "Spirit",
+    "Cultist"
+  ],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Rebirth",
+      "description": "At the start of the Replenish Step, if this character is slain then restore half its Wds rounding up and return it to play following the usual deployment rules for the scenario.",
+      "oncePerGame": true
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "leshavitsvessel"
+}

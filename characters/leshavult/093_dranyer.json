@@ -1,59 +1,106 @@
 {
-  "id": "093",
+  "id": 93,
   "name": "Dranyer",
-  "version": "",
+  "version": 1,
   "factions": ["LESHAVULT"],
-  "tags": ["Spirit"],
+  "health": 8,
+  "energyTrack": [1, 3, 5],
+  "keywords": ["Spirit"],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 4,
   "evade": -1,
-  "health": 8,
-  "energyTrack": [1, 3, 5],
-  "passiveAbilities": [
+  "baseSize": "30mm",
+  "imageName": "dranyer",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Duplicity",
+    "upgradeFor": "Low Guard",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "If there is a model within 4\" that did not participate in this round of melee and shares a keyword with this character, reduce Dmg suffered to {Null}.",
+    "endStepEffect": "Swap positions with a model within 4\" that did not participate in this round of melee and shares a keyword with this character."
+  },
+  "abilities": [
     {
       "name": "Trickster",
-      "description": "When this model successfully bluffs, after resolving the effect you may reveal the bluff and gain +3 energy.",
-      "oncePerTurn": true
+      "description": "When this model successfully bluffs, after resolving the effect you may reveal the bluff and gain +3 energy. Once per turn.",
+      "abilityType": "Passive",
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Shifter",
-      "description": "This character may Jog over Water Features and Wooded Patches."
-    }
-  ],
-  "activeAbilities": [],
-  "arcaneAbilities": [
+      "description": "This character may Jog over Water Features and Wooded Patches.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Mimic",
-      "cost": 0,
-      "range": "",
-      "description": "Choose another model within 8\", this model gains one of its keywords until end of turn.\nThis character, or a model within 4\" which shares a keyword with this character, gains +1 energy.\nCatastrophe: This character suffers 2 Wds.",
-      "oncePerTurn": true
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 0,
+      "range": "8\"",
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Choose another model within 8\", this model gains one of its keywords until end of turn.",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "This character, or a model within 4\" that shares a keyword with this character, gains +1 energy.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     },
     {
       "name": "Cunning",
-      "cost": 3,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 3,
       "range": "8\"",
-      "description": "Target restores X+1 Wds, then if the target shares a keyword with this character move it X-1\".\nTarget suffers X Magical Dmg, then if the target shares a keyword with this character move it X\"\nCatastrophe: This character suffers 3 Wds.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Target restores X+1 Wds, then if the target shares a keyword with this character move it X-1\".",
+          "validCards": [{"colour": "Blue", "value": "X"}]
+        },
+        {
+          "text": "Target suffers X Magical Dmg, then if the target shares a keyword with this character, move it X\".",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 3 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Duplicity",
-    "upgradeFrom": "Low Guard",
-    "damageType": "",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "If there is a model within 4\" that did not participate in this round of melee and shares a keyword with this character, reduce Dmg suffered to W. Swap positions with a model within 4\" that did not participate in this round of melee and shares a keyword with this character."
-  },
-  "baseSize": "30mm",
-  "imageName": "093_dranyer.json",
-  "shareCode": "AAB"
+  ]
 }

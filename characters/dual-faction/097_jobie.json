@@ -1,60 +1,86 @@
 {
-  "id": "097",
+  "id": 97,
   "name": "Jobie",
-  "version": "",
+  "version": 1,
   "factions": ["DOMINION", "SHADES"],
-  "tags": ["Goblin", "Rogue"],
+  "health": 5,
+  "energyTrack": [1, 3, 5],
+  "keywords": ["Goblin", "Rogue"],
   "melee": 2,
   "meleeRange": 1,
   "arcane": 3,
   "evade": -1,
-  "health": 5,
-  "energyTrack": [1, 3, 5],
-  "passiveAbilities": [
-    {
-      "name": "The Bright Side of Death",
-      "description": "Immediately after models have been deployed but before turn 1 begins, friendly characters with Reanimate gain [Reanimate Jobie (0): Place a friendly slain Jobie in base contact with this model. Restore all it's health. It gains +2 energy. It may activate this turn. A friendly Jobie may only enter play via Reanimate Jobie once per turn], until end of game."
-    }
-  ],
-  "activeAbilities": [
-    {
-      "name": "A Cunning Plan",
-      "cost": 1,
-      "range": "",
-      "description": "This model may place one Moonstone it is in possession of, within 2\" of itself at depth value of ‘1’. Then it is immediately slain."
-    },
-    {
-      "name": "That's Mine, This is Mine",
-      "cost": 3,
-      "range": "",
-      "description": "This model gains possession of one Moonstone it is in base contact with, regardless of its depth value or enemy engagements."
-    }
-  ],
-  "arcaneAbilities": [
-    {
-      "name": "Second Hand Pistol",
-      "cost": 2,
-      "range": "6\"",
-      "description": "Target other model and this character suffer X Impact Dmg\nCatastrophe: This character is slain, then the target loses possession of one Moonstone they are carrying. Place it in base contact with the target at depth value of ‘1’.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
+  "baseSize": "30mm",
+  "imageName": "jobie",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
   "signatureMove": {
     "name": "Play Dead",
-    "upgradeFrom": "Low Guard",
-    "damageType": "",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
+    "upgradeFor": "Low Guard",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
     "endStepEffect": "Enemy characters cannot target this model with actions until this model next performs an action or the end of the turn, whichever comes first."
   },
-  "baseSize": "30mm",
-  "imageName": "097_jobie.json",
-  "shareCode": "AAB"
+  "abilities": [
+    {
+      "name": "The Bright Side of Death",
+      "description": "Immediately after models have been deployed but before turn 1 begins, friendly characters with Reanimate gain [Reanimate Jobie (0)]: Place a friendly slain Jobie in base contact with this model. Restore all its health. It gains +2 energy. It may activate this turn. A friendly troupe may only enter play via Reanimate Jobie once per turn, until end of game.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "A Cunning Plan",
+      "description": "This character places one Moonstone it is in possession of, within 2\" of itself at depth value of 1. Then it is immediately slain.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "That's Mine, This is Mine...",
+      "description": "This model gains possession of one Moonstone it is in base contact with, with a depth value of 0, unless it has no cards or enemy engagements.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Second Hand Pistol",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "6\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers X Impact Dmg. Regardless of its depth value or enemy engagements.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "If the target is slain, the target loses possession of one Moonstone they are carrying. Place it in base contact with the target at depth value of 1.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

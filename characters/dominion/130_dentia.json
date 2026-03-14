@@ -1,58 +1,98 @@
 {
-  "id": "130",
+  "id": 130,
   "name": "Dentia",
-  "version": "",
+  "version": 1,
   "factions": ["DOMINION"],
-  "tags": ["Faerie", "Rogue"],
+  "health": 6,
+  "energyTrack": [1, 2, 3, 5, 6],
+  "keywords": ["Faerie", "Rogue"],
   "melee": 4,
   "meleeRange": 1,
   "arcane": 4,
-  "evade": "-2",
-  "health": 6,
-  "energyTrack": [1, 2, 3, 5, 6],
-  "passiveAbilities": [
+  "evade": -2,
+  "baseSize": "30mm",
+  "imageName": "dentia",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Extraction",
+    "upgradeFor": "Thrust",
+    "possibleDamageTypes": ["Impact"],
+    "highGuard": {"deal": "0", "isFollowUp": false},
+    "fallingSwing": {"deal": "2", "isFollowUp": false},
+    "thrust": {"deal": "1", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "1", "isFollowUp": false},
+    "lowGuard": {"deal": "1", "isFollowUp": false},
+    "extraText": "Damage from this attack cannot be reduced by enemy passive abilities.",
+    "endStepEffect": "If the enemy suffered 1 or more Wds during this round of melee, this character gains +1 Melee Stat until end of game."
+  },
+  "abilities": [
     {
       "name": "Weakling",
-      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy."
+      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
-      "name": "The Bigger They Are...",
-      "description": "During a round of melee with an enemy that has Evade Stat +1 or higher, this character ignores Weakling, deals +X Melee Dmg and reduces all Melee Dmg suffered by -X, where X is the Evade Stat of the enemy."
+      "name": "The Big They Are...",
+      "description": "During a round of melee with an enemy that has Evade Stat of +1 or higher, this character ignores Weakling, deals +X Melee Dmg and reduces all Melee Dmg suffered by -X, where X is the Evade Stat of the enemy.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Faerie Mischief",
-      "description": "Whenever a friendly Faerie within 6\" bluffs successfully, you may reveal the card and this character gains 2 energy and restores all Wds."
+      "description": "Whenever a friendly Faerie within 6\" bluffs successfully, you may reveal the card and this character gains 2 energy and restores all Wds.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Sedatives",
-      "description": "Whilst this model is in play, the first time each enemy gains Weakling in a turn, they lose 1 energy."
-    }
-  ],
-  "activeAbilities": [],
-  "arcaneAbilities": [
+      "description": "Whilst this model is in play, the first time each enemy gains Weakling in a turn, they lose 1 energy.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Sleepy Time",
-      "cost": 3,
+      "description": "This attack is not inhibited by Evade Stat.",
+      "abilityType": "Arcane",
+      "energyCost": 3,
       "range": "6\"",
-      "description": "Target gains Weakling until end of turn.\nTarget with Weakling or Feeble loses all energy and gains +X Evade Stat until end of turn.\nCatastrophe: This character suffers 2 Wds.",
-      "oncePerTurn": true
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target gains Weakling until end of turn.",
+          "validCards": [{"colour": "Blue", "value": "X"}]
+        },
+        {
+          "text": "Target with Weakling or Feeble loses all energy and gains +X Evade Stat until end of turn.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Extraction",
-    "upgradeFrom": "Thrust",
-    "damageType": "Impact",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "0"},
-      {"opponentPlay": "Falling Swing", "deal": "2"},
-      {"opponentPlay": "Thrust", "deal": "1"},
-      {"opponentPlay": "Sweeping Cut", "deal": "0"},
-      {"opponentPlay": "Rising Attack", "deal": "1"},
-      {"opponentPlay": "Low Guard", "deal": "1"}
-    ],
-    "endStepEffect": "Damage from this attack cannot be reduced by enemy passive abilities. If the enemy suffered 1 or more Wds during this round of melee, then this character gains +1 Melee Stat until end of game."
-  },
-  "baseSize": "30mm",
-  "imageName": "130_dentia.json",
-  "shareCode": "AAB"
+  ]
 }

@@ -1,0 +1,16 @@
+{
+  "id": 36,
+  "name": "Pamphlet of the Recently Deceased",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Pamphlet of the Recently Deceased",
+      "description": "This character gains +1 Arcane Stat when using Reanimate."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "pamphletoftherecentlydeceased"
+}

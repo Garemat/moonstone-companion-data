@@ -1,0 +1,18 @@
+{
+  "id": 24,
+  "name": "Friend of the Trees",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [
+    "Treefolk"
+  ],
+  "abilities": [
+    {
+      "name": "Woodfriend",
+      "description": "This character may Jog over Wooded Patches. Whilst this character is within the Melee Range of a friendly Treefolk it may not be moved by enemy actions."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "friendofthetrees"
+}

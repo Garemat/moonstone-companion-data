@@ -1,57 +1,86 @@
 {
-  "id": "109",
+  "id": 109,
   "name": "Negroli",
-  "version": "",
+  "version": 1,
   "factions": ["SHADES"],
-  "tags": ["Risen", "Soldier", "Noble"],
+  "health": 8,
+  "energyTrack": [1, 3, 5],
+  "keywords": ["Risen", "Soldier", "Noble"],
   "melee": 5,
   "meleeRange": 2,
   "arcane": 4,
   "evade": 0,
-  "health": 8,
-  "energyTrack": [1, 3, 5],
-  "passiveAbilities": [
+  "baseSize": "30mm",
+  "imageName": "negroli",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 1,
+  "piercingDamageBuff": 1,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 1,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [100, 101],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Fracture",
+    "upgradeFor": "Falling Swing",
+    "possibleDamageTypes": ["Impact"],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "1", "isFollowUp": false},
+    "thrust": {"deal": "1", "isFollowUp": false},
+    "sweepingCut": {"deal": "3", "isFollowUp": false},
+    "risingAttack": {"deal": "3", "isFollowUp": false},
+    "lowGuard": {"deal": "2", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "If the enemy suffered 1 or more Wds during this round of Melee, you may choose another character within 4\" of the enemy model to suffer 1 Wd."
+  },
+  "abilities": [
     {
       "name": "Ancient Armour",
-      "description": "Reduce all Dmg suffered by -1."
+      "description": "Reduce all Dmg suffered by -1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Longsword",
-      "description": "If this character deals Slicing or Piercing Melee Dmg, increase the Dmg dealt by +1."
+      "description": "If this character deals Slicing or Piercing Melee Dmg, increase the Dmg dealt by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "A Bone to Pick with You",
-      "description": "Friendly Soldiers and Risen within 6\" gain +1 Arcane Stat if targeting an enemy character that is not at full health and +1 Melee Stat if involved in a round of melee with an enemy character that is not at full health."
-    }
-  ],
-  "activeAbilities": [],
-  "arcaneAbilities": [
+      "description": "Friendly Soldiers and Risen within 6\" gain +1 Arcane Stat if targeting an enemy character that is not at full health and +1 Melee Stat if involved in a round of melee with an enemy character that is not at full health.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Summon Reinforcements",
-      "cost": 2,
+      "description": "This action cannot bring a character into play if it is already in play.",
+      "abilityType": "Arcane",
+      "energyCost": 2,
       "range": "",
-      "description": "Place a new Solder Psychopomp in base contact with this character.\nCatastrophe: This character suffers 3 Wds or, if there is a friendly Psychopomp within 6\", you may choose a friendly Psychopomp within 6\" to be slain instead.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Place a new Soldier Psychopomp in base contact with this model.",
+          "validCards": [{"colour": "Green", "value": "1"}, {"colour": "Pink", "value": "1"}]
+        },
+        {
+          "text": "This character suffers 3 Wds or, if there is a friendly Psychopomp within 6\", you may choose a friendly Psychopomp within 6\" to be slain instead.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Fracture",
-    "upgradeFrom": "Falling Swing",
-    "damageType": "Impact",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "0"},
-      {"opponentPlay": "Falling Swing", "deal": "1"},
-      {"opponentPlay": "Thrust", "deal": "1"},
-      {"opponentPlay": "Sweeping Cut", "deal": "3"},
-      {"opponentPlay": "Rising Attack", "deal": "3"},
-      {"opponentPlay": "Low Guard", "deal": "2"}
-    ],
-    "endStepEffect": "If the enemy suffered 1 or more Wds during this round of Melee, you may choose another character within 4\" of the enemy model to suffer 1 Wd."
-  },
-  "baseSize": "30mm",
-  "imageName": "109_negroli.json",
-  "shareCode": "AAB",
-  "slicingDamageBuff": 1,
-  "piercingDamageBuff": 1
+  ]
 }

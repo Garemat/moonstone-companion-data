@@ -1,52 +1,73 @@
 {
-  "id": "100",
+  "id": 100,
   "name": "Brave Sir Pidge",
-  "version": "",
+  "version": 1,
   "factions": ["SHADES"],
-  "tags": ["Psychopomp", "Animal", "Soldier"],
+  "health": 1,
+  "energyTrack": [999],
+  "keywords": ["Psychopomp", "Animal", "Soldier"],
   "melee": 2,
   "meleeRange": 1,
   "arcane": 0,
   "evade": -1,
-  "health": 1,
-  "energyTrack": [999],
-  "passiveAbilities": [
+  "baseSize": "30mm",
+  "imageName": "brave_sir_pidge",
+  "shareCode": "AAB",
+  "slicingDamageBuff": -1,
+  "piercingDamageBuff": -1,
+  "impactDamageBuff": -1,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 2,
+  "impactDamageMitigation": 2,
+  "slicingDamageMitigation": 2,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": true,
+  "signatureMove": null,
+  "abilities": [
     {
       "name": "Thrall",
-      "description": "This character can only enter play when summoned. It does not activate and can never gain energy. Instead, while the character that summoned it is active, this character can take actions, including Jog, by discarding the required energy on the character that summoned it. Reaction Steps and Go For It's can be taken in the same way"
+      "description": "This character can only enter play when summoned. It does not activate and can never gain energy. Instead, while the character that summoned it is active, this character can take actions, including Jog, by discarding the required energy on the character that summoned it. Reaction Steps and Go For It's can be taken in the same way.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Summoner's Delight",
-      "description": "If the character that summoned this model is Slain or Removed from Play then this character is immediately considered to be Slain."
+      "description": "If the character that summoned this model is Slain or Removed from Play then this character is immediately considered to be Slain.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Weakling",
-      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy."
+      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Plate Armour",
-      "description": "Reduce all non-Magical Dmg suffered by -2. "
-    }
-  ],
-  "activeAbilities": [
+      "description": "Reduce all non-Magical Dmg suffered by -2.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "A Noble Challenge",
-      "cost": 0,
-      "range": "",
-      "description": "This character makes a Melee Attack action with +3 Melee Stat against target enemy character. If the target of this action is a Noble reduce Dmg suffered by this character to W for the duration of the action.",
-      "oncePerTurn": true
+      "description": "This character makes a Melee Attack action with +3 Melee Stat against target enemy character. If the target of this action is a Noble reduce Dmg suffered by this character to {Null} for the duration of the action.",
+      "abilityType": "Active",
+      "energyCost": 1,
+      "range": "1\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": true,
+      "arcaneOutcomes": []
     }
-  ],
-  "arcaneAbilities": [],
-  "signatureMove": {
-    "name": "No Signature",
-    "upgradeFrom": "",
-    "damageType": "",
-    "results": [],
-    "endStepEffect": ""
-  },
-  "baseSize": "30mm",
-  "imageName": "100_brave_sir_pidge.json",
-  "shareCode": "AAB",
-  "impactDamageMitigation": 2
+  ]
 }

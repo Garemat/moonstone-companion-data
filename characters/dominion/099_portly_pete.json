@@ -1,65 +1,93 @@
 {
-  "id": "099",
+  "id": 99,
   "name": "Portly Pete",
-  "version": "",
+  "version": 1,
   "factions": ["DOMINION"],
-  "tags": ["Goblin", "Soldier"],
+  "health": 8,
+  "energyTrack": [1, 3, 6],
+  "keywords": ["Goblin", "Soldier"],
   "melee": 3,
   "meleeRange": 2,
   "arcane": 0,
   "evade": 0,
-  "health": 8,
-  "energyTrack": [1, 3, 6],
-  "passiveAbilities": [
+  "baseSize": "30mm",
+  "imageName": "portly_pete",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 1,
+  "impactDamageBuff": 1,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 1,
+  "impactDamageMitigation": 1,
+  "slicingDamageMitigation": 1,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Crowd Control",
+    "upgradeFor": "Thrust",
+    "possibleDamageTypes": ["Impact"],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "1", "isFollowUp": false},
+    "thrust": {"deal": "0", "isFollowUp": false},
+    "sweepingCut": {"deal": "0", "isFollowUp": false},
+    "risingAttack": {"deal": "1", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "This attack deals {Null} damage against models which are further than 1\" away.",
+    "endStepEffect": "If the enemy is within 1\" it is moved 1\" directly away from this model."
+  },
+  "abilities": [
     {
       "name": "Asleep on the Job",
-      "description": "This model may not be chosen to be the player's first activation unless it is the only model which can activate. When this character activates it gets +1 Melee Stat and reduces it's Evade Stat by -1 until end of turn."
+      "description": "This model may not be chosen to be the player's first activation unless it is the only model which can activate. When this character activates it gets +1 Melee Stat and reduces its Evade Stat by -3 until end of turn.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Halberd",
-      "description": "If this character deals Piercing or Impact Melee Dmg, increase the Dmg dealt by +1."
+      "description": "If this character deals Piercing or Impact Melee Dmg, increase the Dmg dealt by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Ramshackle Armour",
-      "description": "Reduce all non-Magical Dmg suffered by -1."
+      "description": "Reduce all non-Magical Dmg suffered by -1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Secret Stash",
-      "description": "This character cannot lose possession of a Moonstone due to an enemy model unless slain."
+      "description": "This character cannot lose possession of a Moonstone due to an enemy model unless slain.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Goblin City Guard",
-      "description": "If a Goblin in possession of a Moonstone within 4\" and LoS suffers Dmg, you may have this character suffer all that Dmg instead.",
-      "oncePerTurn": true
-    }
-  ],
-  "activeAbilities": [
+      "description": "If a Goblin in possession of a Moonstone within 4\" and LoS suffers Dmg, you may use this character to suffer that Dmg instead. Once per turn.",
+      "abilityType": "Passive",
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Stand to Attention!",
-      "cost": 2,
+      "description": "Target other friendly Goblin gains 1 energy. If the target is a Soldier it may also move 2\".",
+      "abilityType": "Active",
+      "energyCost": 2,
       "range": "4\"",
-      "description": "Target other friendly Goblin gains +1 energy. If the target is a Soldier it may also move 2\".",
-      "oncePerTurn": true
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     }
-  ],
-  "arcaneAbilities": [],
-  "signatureMove": {
-    "name": "Crowd Control",
-    "upgradeFrom": "Thrust",
-    "damageType": "Impact",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "1"},
-      {"opponentPlay": "Thrust", "deal": "0"},
-      {"opponentPlay": "Sweeping Cut", "deal": "0"},
-      {"opponentPlay": "Rising Attack", "deal": "1"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "If the enemy is within 1\" it is moved 1\" directly away from this model."
-  },
-  "baseSize": "30mm",
-  "imageName": "099_portly_pete.json",
-  "shareCode": "AAB",
-  "piercingDamageBuff": 1,
-  "allNonMagicalDamageMitigation": 1
+  ]
 }

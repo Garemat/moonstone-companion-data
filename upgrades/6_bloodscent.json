@@ -1,0 +1,19 @@
+{
+  "id": 6,
+  "name": "Blood Scent",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [
+    "Animal",
+    "Faun"
+  ],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Blood Scent",
+      "description": "When this character takes a Jog action, it may move +2\", provided the move ends with this character engaging an enemy."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "bloodscent"
+}

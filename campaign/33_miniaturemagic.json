@@ -1,0 +1,11 @@
+{
+  "id": 33,
+  "name": "Miniature Magic",
+  "version": 2,
+  "factions": [],
+  "tags": [],
+  "timing": "Play during the Activation Step, before or after any action.",
+  "description": "Place target friendly *Goblin* or *Faerie* within 6\" of their current position.",
+  "shareCode": "AAB",
+  "imageName": "miniaturemagic"
+}

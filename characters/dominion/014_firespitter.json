@@ -1,64 +1,97 @@
 {
-  "id": "014",
+  "id": 14,
   "name": "Firespitter",
-  "version": "",
+  "version": 1,
   "factions": ["DOMINION"],
-  "tags": ["Goblin", "Soldier"],
+  "health": 8,
+  "energyTrack": [1, 3, 5],
+  "keywords": ["Goblin", "Soldier"],
   "melee": 2,
   "meleeRange": 1,
   "arcane": 5,
   "evade": 1,
-  "health": 8,
-  "energyTrack": [1, 3, 5],
-  "passiveAbilities": [
+  "baseSize": "40mm",
+  "imageName": "firespitter",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 1,
+  "impactDamageMitigation": 1,
+  "slicingDamageMitigation": 1,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Panic and Flee",
+    "upgradeFor": "Low Guard",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "Move this model 3\" directly away from the enemy. Discard all energy on this character."
+  },
+  "abilities": [
     {
       "name": "Slow",
-      "description": "This model's Jog actions are limited to 2”."
-    },
-    {
-      "name": "Ramshackle Armour",
-      "description": "Reduce all non-Magical Dmg suffered by -1."
+      "description": "This model's Jog actions are limited to 2\".",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Predictable Combatant",
-      "description": "During a round of combat, before each player selects their combat card, you must reveal your hand to your opponent."
-    }
-  ],
-  "activeAbilities": [
+      "description": "During a round of combat, before each player selects their combat card, you must reveal your hand to your opponent.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Ramshackle Armour",
+      "description": "Reduce all non-Magical Dmg suffered by -1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Two Goblins Walk into a Tavern",
-      "cost": 2,
-      "range": "8\"",
       "description": "Two other target Goblins each gain +1 energy and +2 Evade stat until end of turn. You must choose two different targets.",
+      "abilityType": "Active",
+      "energyCost": 2,
+      "range": "8\"",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "arcaneAbilities": [
+      "arcaneOutcomes": []
+    },
     {
       "name": "Fireblast",
-      "cost": 2,
-      "range": "8\"",
-      "description": "[B]X: Target character suffers 2X Magical Dmg.\nCatastrophe: This ability cannot be used for the remainder of the game. All models within a 3” pulse suffer 4 magical Dmg.",
+      "description": "This ability cannot be used while this model is engaged.",
+      "abilityType": "Arcane",
+      "energyCost": 1,
+      "range": "4\"",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Target character suffers 2X Magical Dmg.",
+          "validCards": [{"colour": "Blue", "value": "X"}]
+        },
+        {
+          "text": "This ability cannot be used for the remainder of the game. All models within a 3\" pulse suffer 4 Magical Dmg.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Panic and Flee",
-    "upgradeFrom": "Low Guard",
-    "damageType": "",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "Move this model 3” directly away from the enemy. Discard all energy on this character."
-  },
-  "baseSize": "30mm",
-  "imageName": "firespitter",
-  "shareCode": "AAB"
+  ]
 }

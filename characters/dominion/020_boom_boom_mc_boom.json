@@ -1,67 +1,105 @@
 {
-  "id": "020",
+  "id": 20,
   "name": "Boom Boom Mc Boom",
-  "version": "",
+  "version": 1,
   "factions": ["DOMINION"],
-  "tags": ["Goblin"],
+  "health": 7,
+  "energyTrack": [1, 2, 4, 6],
+  "keywords": ["Goblin"],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 4,
   "evade": -2,
-  "health": 7,
-  "energyTrack": [1, 2, 4, 6],
-  "passiveAbilities": [],
-  "activeAbilities": [
-    {
-      "name": "Suckerpunch",
-      "cost": 2,
-      "range": "8\"",
-      "description": "Target Goblin’s next Melee Attack this turn deals +2 Dmg.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    },
-    {
-      "name": "Reload [Blunderbuss] ",
-      "cost": 2,
-      "range": "",
-      "description": "The named ability can be used again. This ability cannot be used while this model is engaged.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "arcaneAbilities": [
-    {
-      "name": "Blunderbuss",
-      "cost": 1,
-      "range": "4\"",
-      "description": "Target suffers X Impact Dmg.\nCatastrophe: This model suffers 2 Wds.",
-      "oncePerGame": true,
-      "oncePerTurn": false
-    },
-    {
-      "name": "You’ll never get this! Nah-na-na-na!",
-      "cost": 2,
-      "range": "10\"",
-      "description": "Move target enemy model 2X” directly towards this model.\nCatastrophe: Target model is moved by your opponent 4”.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "signatureMove": {
-    "name": "Now you see me...",
-    "upgradeFrom": "Low Guard",
-    "damageType": "",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "Place this model anywhere within 6”"
-  },
   "baseSize": "30mm",
   "imageName": "boom_boom",
-  "shareCode": "AAB"
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Now you see me...",
+    "upgradeFor": "Low Guard",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "Place this model anywhere within 6\"."
+  },
+  "abilities": [
+    {
+      "name": "Reload [Blunderbuss]",
+      "description": "The named ability can be used again. This ability cannot be used while this model is engaged.",
+      "abilityType": "Active",
+      "energyCost": 2,
+      "range": null,
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Suckerpunch",
+      "description": "Target Goblin's next Melee Attack this turn deals +2 Dmg.",
+      "abilityType": "Active",
+      "energyCost": 2,
+      "range": "8\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Blunderbuss",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 1,
+      "range": "4\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": true,
+      "reloadable": true,
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers X Impact Dmg.",
+          "validCards": [{"colour": "Green", "value": "X"}, {"colour": "Blue", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    },
+    {
+      "name": "You'll never get this! Nah-na-na-na!",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "10\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Move target enemy model 2X\" directly towards this model.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "Target model is moved by your opponent 4\".",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

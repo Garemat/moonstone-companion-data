@@ -1,56 +1,86 @@
 {
-  "id": "094",
+  "id": 94,
   "name": "Ruwt",
-  "version": "",
+  "version": 1,
   "factions": ["LESHAVULT"],
-  "tags": ["Spirit", "Treefolk"],
+  "health": 7,
+  "energyTrack": [1, 4, 7],
+  "keywords": ["Treefolk", "Spirit"],
   "melee": 2,
   "meleeRange": 1,
   "arcane": 4,
   "evade": 0,
-  "health": 7,
-  "energyTrack": [1, 4, 7],
-  "passiveAbilities": [
+  "baseSize": "30mm",
+  "imageName": "ruwt",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Encroaching Roots",
+    "upgradeFor": "Rising Attack",
+    "possibleDamageTypes": ["Impact", "Piercing"],
+    "highGuard": {"deal": "2", "isFollowUp": false},
+    "fallingSwing": {"deal": "1", "isFollowUp": false},
+    "thrust": {"deal": "1", "isFollowUp": false},
+    "sweepingCut": {"deal": "2", "isFollowUp": false},
+    "risingAttack": {"deal": "1", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "If the enemy suffered 1 or more Wds during this round of Melee then it cannot take a Jog action until end of turn."
+  },
+  "abilities": [
     {
       "name": "Woodspirit",
-      "description": "This character may jog over Wooded Patches. Friendly Treefold within 12\" ignore Wooded Patches and other friendly Treefolk for determining cover when using Arcane Abilities."
+      "description": "This character may Jog over Wooded Patches. Friendly Treefolk within 12\" ignore Wooded Patches and other friendly Treefolk for determining cover when using Arcane Abilities.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "We are Ruwt",
-      "description": "Each time this character would be slain, it may instead drop any Moonstones as if it were slain and restore half it's health rounding up if it can be placed within a Wooded Patch created earlier this game within 12\". Then remove the Wooded Patch."
+      "description": "Each time this character would be slain it may instead drop any Moonstones as if it were slain and restore its health rounding up if it can be placed within a Wooded Patch created earlier this game. Doing this removes the Wooded Patch.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "New Growth",
-      "description": "When this character uses an Arcane Ability it may suffer 3 Wds instead of paying the energy cost. If this reduces it to 0 Wds the Arcane Ability is cancelled.",
-      "oncePerTurn": true
-    }
-  ],
-  "activeAbilities": [],
-  "arcaneAbilities": [
+      "description": "When this character uses an Arcane Ability it may suffer 3 Wds instead of paying the energy cost. If this reduces it to 0 Wds the Arcane Ability is cancelled. Once per turn.",
+      "abilityType": "Passive",
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Verdant Growth",
-      "cost": 2,
-      "range": "",
-      "description": "Place a 50mm Diameter Wooded Patch within 3X\" and LoS on open ground. This remains in place until the end of the game. A Maximum of 3 Wooded Patches may be placed by this troupe, if a fourth is placed you must choose and remove a Wooded Patch you created earlier this game.\nCatastrophe: This character suffers 2 Wds.",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "3\"",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Place a 50mm Diameter Wooded Patch within 3\" and LoS on open ground. This remains in place until end of game. A maximum of 3 Wooded Patches may be placed by this troupe; if a fourth is placed you must choose and remove a Wooded Patch created earlier this game.",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Encroaching Roots",
-    "upgradeFrom": "Rising Attack",
-    "damageType": "Impact or Piercing",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "2"},
-      {"opponentPlay": "Falling Swing", "deal": "1"},
-      {"opponentPlay": "Thrust", "deal": "1"},
-      {"opponentPlay": "Sweeping Cut", "deal": "2"},
-      {"opponentPlay": "Rising Attack", "deal": "1"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "If the enemy suffered 1 or more Wds during this round of Melee then it cannot take a Jog action until the end of turn."
-  },
-  "baseSize": "30mm",
-  "imageName": "094_ruunot.json",
-  "shareCode": "AAB"
+  ]
 }

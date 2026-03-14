@@ -1,64 +1,106 @@
 {
-  "id": "124",
+  "id": 124,
   "name": "Barnakelle",
-  "version": "",
+  "version": 1,
   "factions": ["DOMINION", "SHADES"],
-  "tags": ["Troll", "Spirit", "Pirate"],
+  "health": 12,
+  "energyTrack": [1, 6],
+  "keywords": ["Troll", "Spirit", "Pirate"],
   "melee": 2,
   "meleeRange": 2,
   "arcane": 4,
   "evade": 2,
-  "health": 12,
-  "energyTrack": [1, 6],
-  "passiveAbilities": [
+  "baseSize": "40mm",
+  "imageName": "barnakelle",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 1,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Keelhaul",
+    "upgradeFor": "Thrust",
+    "possibleDamageTypes": ["Impact"],
+    "highGuard": {"deal": "1", "isFollowUp": false},
+    "fallingSwing": {"deal": "2", "isFollowUp": false},
+    "thrust": {"deal": "2", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "2", "isFollowUp": false},
+    "lowGuard": {"deal": "1", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "If the enemy suffered 1 or more Wds during this round of melee, place the enemy in base contact with this model."
+  },
+  "abilities": [
     {
       "name": "Rusty Anchor",
-      "description": "If this character deals Impact Melee Dmg, increase the Dmg dealt by +2."
+      "description": "If this character deals Impact Melee Dmg, increase the Dmg dealt by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Bedeviled Seas",
-      "description": "At the start of the Replenish Step this model gains +1 energy if there is a Water Feature within 4\"."
+      "description": "At the start of the Replenish Step this model gains +3 energy if there is a Water Feature within 4\".",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Rise From The Deep",
-      "description": "When this character uses Reanimate it may place the model entering play within a Water Feature within 4\" instead of base contact. When this model or another friendly model enters play via Reanimate within a Water Feature it gains +1 energy and may Jog freely over Water Features until end of turn."
-    }
-  ],
-  "activeAbilities": [],
-  "arcaneAbilities": [
+      "description": "When this character uses Reanimate it may place the model entering play within a Water Feature within 4\" instead of base contact. When this model or a friendly model enters play via Reanimate within a Water Feature it gains +1 energy and may Jog freely over Water Features until end of turn.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Reanimate",
-      "cost": 3,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 3,
       "range": "",
-      "description": "Place a friendly model in base contact with this model. Restore half its health rounding up. It has no energy but may activate this turn.\nCatastrophe: This model suffers 4 Wds.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Place a friendly slain model in base contact with this model. Restore half its health rounding up. It has no energy but may activate this turn.",
+          "validCards": [{"colour": "Green", "value": "2"}, {"colour": "Blue", "value": "2"}, {"colour": "Pink", "value": "2"}]
+        },
+        {
+          "text": "This model suffers 4 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     },
     {
       "name": "Dead Troll's Finger",
-      "cost": 2,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
       "range": "4\"",
-      "description": "Target Pirate or Troll gains X energy and suffers -X Arcane Stat until end of turn.\nCatastrophe: This character suffers 3 Wds.",
+      "pulse": false,
+      "oncePerTurn": true,
       "oncePerGame": false,
-      "oncePerTurn": true
+      "arcaneOutcomes": [
+        {
+          "text": "Target Pirate or Troll gains X energy and suffers -X Arcane Stat until end of turn.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 3 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Keelhaul",
-    "upgradeFrom": "Thrust",
-    "damageType": "Impact",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "1"},
-      {"opponentPlay": "Falling Swing", "deal": "2"},
-      {"opponentPlay": "Thrust", "deal": "2"},
-      {"opponentPlay": "Sweeping Cut", "deal": "0"},
-      {"opponentPlay": "Rising Attack", "deal": "2"},
-      {"opponentPlay": "Low Guard", "deal": "1"}
-    ],
-    "endStepEffect": "If the enemy suffered 1 or more Wds during this round of melee, place the enemy in base contact with this model."
-  },
-  "baseSize": "40mm",
-  "imageName": "124_barnakelle.json",
-  "shareCode": "AAB",
-  "impactDamageBuff": 2
+  ]
 }

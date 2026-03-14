@@ -1,0 +1,16 @@
+{
+  "id": 29,
+  "name": "Little Trickster",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Little Trickster",
+      "description": "When this model successfully bluffs, after resolving the effect you may reveal the bluff and gain +1 energy. Max. 3 times per turn."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "littletrickster"
+}

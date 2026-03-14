@@ -1,0 +1,16 @@
+{
+  "id": 4,
+  "name": "Battle Hardened",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Tough as Old Boots",
+      "description": "At the start of the Replenish Step this model restores 2 Wds."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "battlehardened"
+}

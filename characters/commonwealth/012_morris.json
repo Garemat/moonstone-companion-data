@@ -1,63 +1,97 @@
 {
-  "id": "012",
+  "id": 12,
   "name": "Morris",
-  "version": "",
+  "version": 2,
   "factions": ["COMMONWEALTH"],
-  "tags": ["Gnome", "Militia"],
+  "health": 8,
+  "energyTrack": [1, 2],
+  "keywords": ["Gnome", "Militia"],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 3,
-  "evade": "0",
-  "health": 8,
-  "energyTrack": [1,2],
-  "passiveAbilities": [
-    {
-      "name": "Pick",
-      "description": "If this character deals Slicing Melee Dmg, reduce the Dmg dealt by {Null}. If this character deals Imapct Melee Dmg, increase the Dmg dealt by +2."
-    },
-    {
-      "name": "Miner",
-      "description": "When this model makes a Harvest action, gain possession of the Moonstone regardless of its depth value. This model ignores the Slow Carry rule whilst in possession of exactly one moonstone"
-    },
-    {
-      "name": "Tough as Old Boots",
-      "description": "At the start of the Replenish Step this model recovers 2 Wds."
-    }
-  ],
-  "activeAbilities": [
-    {
-      "name": "Shove",
-      "cost": 0,
-      "range": "1\"",
-      "description": "Move target other model 2\" directly away.",
-      "oncePerTurn": true
-    }
-  ],
-  "arcaneAbilities": [
-    {
-      "name": "Sink Hole",
-      "cost": 2,
-      "range": "8\"",
-      "description": "[P]X: Target suffers X Wds and gains [Slow. This model's jog actions are limited to 2\"] until end of turn. \nCatastrophe: This character suffers 2 Wds."
-    }
-  ],
-  "signatureMove": {
-    "name": "Pick a fight",
-    "upgradeFrom": "Falling Swing",
-    "damageType": "Impact",
-    "passiveEffect": "Damagre from this attack cannot be reduced by passive abilities",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "2"},
-      {"opponentPlay": "Thrust", "deal": "2"},
-      {"opponentPlay": "Sweeping Cut", "deal": "2"},
-      {"opponentPlay": "Rising Attack", "deal": "2"},
-      {"opponentPlay": "Low Guard", "deal": "2"}
-    ]
-  },
+  "evade": 0,
   "baseSize": "30mm",
   "imageName": "morris",
   "shareCode": "AAB",
+  "slicingDamageBuff": null,
+  "piercingDamageBuff": 0,
   "impactDamageBuff": 2,
-  "slicingDamageBuff": "Null"
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Pick a fight",
+    "upgradeFor": "Falling Swing",
+    "possibleDamageTypes": ["Impact"],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "2", "isFollowUp": false},
+    "thrust": {"deal": "2", "isFollowUp": false},
+    "sweepingCut": {"deal": "2", "isFollowUp": false},
+    "risingAttack": {"deal": "2", "isFollowUp": false},
+    "lowGuard": {"deal": "2", "isFollowUp": false},
+    "extraText": "Damage from this attack cannot be reduced by passive abilities.",
+    "endStepEffect": ""
+  },
+  "abilities": [
+    {
+      "name": "Pick",
+      "description": "If this character deals Slicing Melee Dmg, reduce the Dmg dealt to {Null}. If this character deals Impact Melee Dmg, increase the Dmg dealt by 2.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Miner",
+      "description": "When this model makes a Harvest action, gain possession of the Moonstone regardless of its depth value. This model ignores the Slow Carry rule whilst in possession of exactly one moonstone.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Tough as Old Boots",
+      "description": "At the start of the Replenish Step this model recovers 2 Wds.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Shove",
+      "description": "Move target other model 2\" directly away.",
+      "abilityType": "Active",
+      "energyCost": 0,
+      "range": "1\"",
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Sink Hole",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "8\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers X Wds and gains [Slow: This model's Jog actions are limited to 2\"].",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

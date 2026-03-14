@@ -1,0 +1,12 @@
+{
+  "id": 90,
+  "name": "Turn the Tables",
+  "version": 2,
+  "factions": [],
+  "tags": [],
+  "timing": "Play at end of game.",
+  "description": "If the placed Objective Marker is Active: **Gain 1 Victory Point** and your opponent, plus any players who *Sabotaged* you this week, each **Lose 1 Machination Point**.",
+  "extraDescription": "Before deployment place one Objective Marker 18\" away from your deployment Table Edge.",
+  "shareCode": "AAB",
+  "imageName": "turnthetables"
+}

@@ -1,0 +1,11 @@
+{
+  "id": 34,
+  "name": "Miraculous Recovery",
+  "version": 2,
+  "factions": [],
+  "tags": [],
+  "timing": "Play at the start of any Replenish Step.",
+  "description": "Target character restores all Wds.",
+  "shareCode": "AAB",
+  "imageName": "miraculousrecovery"
+}

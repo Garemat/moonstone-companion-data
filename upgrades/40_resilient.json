@@ -1,0 +1,19 @@
+{
+  "id": 40,
+  "name": "Resilient",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [
+    "Cleric"
+  ],
+  "abilities": [
+    {
+      "name": "Resilient",
+      "description": "This character may ignore the first 2 Wds suffered in a game.",
+      "oncePerGame": true
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "resilient"
+}

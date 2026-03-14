@@ -1,69 +1,114 @@
 {
-  "id": "128",
+  "id": 128,
   "name": "Banshee",
-  "version": "",
+  "version": 1,
   "factions": ["DOMINION", "SHADES"],
-  "tags": ["Faerie", "Spirit"],
+  "health": 6,
+  "energyTrack": [1, 2, 3, 5, 6],
+  "keywords": ["Faerie", "Spirit"],
   "melee": 4,
   "meleeRange": 1,
   "arcane": 4,
-  "evade": "-2",
-  "health": 6,
-  "energyTrack": [1, 2, 3, 5, 6],
-  "passiveAbilities": [
+  "evade": -2,
+  "baseSize": "30mm",
+  "imageName": "banshee",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Lacerate",
+    "upgradeFor": "Rising Attack",
+    "possibleDamageTypes": ["Slicing", "Magical"],
+    "highGuard": {"deal": "2", "isFollowUp": false},
+    "fallingSwing": {"deal": "1", "isFollowUp": false},
+    "thrust": {"deal": "2", "isFollowUp": false},
+    "sweepingCut": {"deal": "2", "isFollowUp": false},
+    "risingAttack": {"deal": "1", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "Reduce Dmg suffered by -2 if the enemy has at least one Bleed.",
+    "endStepEffect": "If the enemy suffered 1 or more Wds during this round of Melee, the enemy model gains [Bleed: During the Discard Step, this character suffers 1 Wd then loses this ability]."
+  },
+  "abilities": [
     {
       "name": "Weakling",
-      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy."
+      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Exsanguinating Claws",
-      "description": "If this character deals Slicing or Piercing Melee Dmg, increase the Dmg dealt by +1."
+      "description": "If this character deals Slicing or Piercing Melee Dmg, increase the Dmg dealt by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Leech",
-      "description": "At the end of the Discard Step this model restores 1 Wd for each Wd lost by enemies within 6\" during that Discard Step."
+      "description": "At the end of the Discard Step this model restores 1 Wd for each Wd lost by enemies within 6\" during that Discard Step.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Weeping Miasma",
-      "description": "Whilst this model is in play, friendly Faeries treat enemies with at least one Bleed as gaining +1 to their Evade Stat."
-    }
-  ],
-  "activeAbilities": [],
-  "arcaneAbilities": [
+      "description": "Whilst this model is in play, friendly Faeries treat enemies with at least one Bleed as gaining +1 to their Evade Stat.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Ghastly Scream",
-      "cost": 4,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 4,
       "range": "6\"",
-      "description": "Move target enemy X\" directly away. If the enemy is in possession of at least 1 Moonstone it loses possession of one Moonstone it is carrying before moving. Place it in base contact with the enemy at depth '1'.\nCatastrophe: This character suffers 2 Wds.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Move target enemy X\" directly away. If the enemy is in possession of at least one Moonstone it loses possession of one Moonstone it is carrying before moving. Place it in base contact with the enemy at depth 1.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     },
     {
       "name": "Ear Splitting Screech",
-      "cost": 3,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 3,
       "range": "6\"",
-      "description": "Target suffers X-1 Wds and gains [Bleed: During the Discard Step, this character suffers 1 Wd then loses this ability.]\nCatastrophe: This character suffers 2 Wds.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers X-1 Wds and gains [Bleed: During the Discard Step, this character suffers 1 Wd then loses this ability].",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Lacerate",
-    "upgradeFrom": "Rising Attack",
-    "damageType": "Slicing or Magical",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "2"},
-      {"opponentPlay": "Falling Swing", "deal": "1"},
-      {"opponentPlay": "Thrust", "deal": "2"},
-      {"opponentPlay": "Sweeping Cut", "deal": "2"},
-      {"opponentPlay": "Rising Attack", "deal": "1"},
-      {"opponentPlay": "Low Guard", "deal": "0"}
-    ],
-    "endStepEffect": "Reduce Dmg suffered by -2 if the enemy has at least one Bleed. If the enemy suffered 1 or more Wds during this round of melee, the enemy model gains [Bleed: During the Discard Step, this character suffers 1 Wd then loses this ability]"
-  },
-  "baseSize": "30mm",
-  "imageName": "128_banshee.json",
-  "shareCode": "AAB",
-  "slicingDamageBuff": 1,
-  "piercingDamageBuff": 1
+  ]
 }

@@ -1,0 +1,88 @@
+{
+  "id": 49,
+  "name": "The Goblin King",
+  "version": 2,
+  "factions": ["DOMINION"],
+  "health": 8,
+  "energyTrack": [1, 4],
+  "keywords": ["Goblin", "Noble"],
+  "melee": 3,
+  "meleeRange": 2,
+  "arcane": 0,
+  "evade": 0,
+  "baseSize": "30mm",
+  "imageName": "goblin_king",
+  "shareCode": "AAB",
+  "slicingDamageBuff": null,
+  "piercingDamageBuff": -1,
+  "impactDamageBuff": 1,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Grovel, Peasant!",
+    "upgradeFor": "Falling Swing",
+    "possibleDamageTypes": ["Impact"],
+    "highGuard": {"deal": "0", "isFollowUp": false},
+    "fallingSwing": {"deal": "2", "isFollowUp": false},
+    "thrust": {"deal": "2", "isFollowUp": false},
+    "sweepingCut": {"deal": "2", "isFollowUp": false},
+    "risingAttack": {"deal": "2", "isFollowUp": false},
+    "lowGuard": {"deal": "4", "isFollowUp": false},
+    "extraText": "This attack deals +1 Dmg to Goblins. Reduce all Dmg suffered from Goblins to {Null}.",
+    "endStepEffect": ""
+  },
+  "abilities": [
+    {
+      "name": "Weakling",
+      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Sceptre of Almighty Power",
+      "description": "If this character deals Slicing Melee Dmg, reduce the Dmg dealt to {Null}. If this character deals Impact Melee Dmg, increase the Dmg dealt by +2.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Royal Privilege",
+      "description": "Whenever this character would suffer Dmg, you may have a friendly Goblin within 4\" and LoS suffer all that Dmg instead.",
+      "abilityType": "Passive",
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Rule the Roost",
+      "description": "Target Goblin suffers 2 Wds, gains 2 energy and activates immediately (this character's activation ends). If the target has already activated, then this is a bonus activation; otherwise this counts as the target's activation for the turn.",
+      "abilityType": "Active",
+      "energyCost": 2,
+      "range": "8\"",
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Gimme!",
+      "description": "Gain possession of one Moonstone carried by target friendly Goblin.",
+      "abilityType": "Active",
+      "energyCost": 1,
+      "range": "2\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    }
+  ]
+}

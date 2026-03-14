@@ -1,72 +1,108 @@
 {
-  "id": "008",
+  "id": 8,
   "name": "Mama Gimble",
-  "version": "v.3",
+  "version": 3,
   "factions": ["COMMONWEALTH"],
-  "tags": ["Gnome"],
+  "health": 6,
+  "energyTrack": [1, 2, 3],
+  "keywords": ["Gnome"],
   "melee": 2,
   "meleeRange": 1,
   "arcane": 6,
   "evade": 0,
-  "health": 6,
-  "energyTrack": [1, 2, 3],
-  "passiveAbilities": [
+  "baseSize": "30mm",
+  "imageName": "mama_gimble",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "You'll Regret That",
+    "upgradeFor": "Low Guard",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "If this character is not slain, swap the positions of this model and a friendly model within 4\"."
+  },
+  "abilities": [
     {
       "name": "Slow",
-      "description": "This model's Jog actions are limited to 2”. "
+      "description": "This model's Jog actions are limited to 2\".",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
-      "name": "My Boys",
-      "description": "Reduce all Dmg this character would suffer by -1 for each other friendly Gnome within 4”, to a maximum of -2."
+      "name": "My Boys!",
+      "description": "Reduce all Dmg this character would suffer by -1, for each other friendly Gnome within 4\", to a maximum of -2.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Luck Charms",
-      "description": "Other friendly Gnomes within 4” gain +1 Melee stat, +1 Arcane stat."
-    }
-  ],
-  "activeAbilities": [
-    {
-      "name": "Mother's Wrath",
-      "cost": 1,
-      "range": "3\"",
-      "description": "Other friendly Gnomes within the pulse gain 1 energy. Enemy models within the pulse suffer 2 Wds.",
-      "oncePerGame": true,
-      "oncePerTurn": false
+      "description": "Other friendly Gnomes within 4\" gain +1 Melee stat and +1 Arcane stat.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Mother's Love",
-      "cost": 1,
+      "description": "Move 2\" directly towards target Gnome, then the target moves 2\" directly towards this model and restores 2 Wds.",
+      "abilityType": "Active",
+      "energyCost": 1,
       "range": "10\"",
-      "description": "Move 2” directly towards target Gnome, then the target moves 2” directly towards this model and restores 2 Wds.",
+      "pulse": false,
+      "oncePerTurn": true,
       "oncePerGame": false,
-      "oncePerTurn": true
-    }
-  ],
-  "arcaneAbilities": [
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Mother's Wrath",
+      "description": "This action can only be taken if engaged by an enemy. Other friendly Gnomes within the pulse gain 1 energy. Enemy models within the pulse suffer 2 Wds.",
+      "abilityType": "Active",
+      "energyCost": 1,
+      "range": "4\"",
+      "pulse": true,
+      "oncePerTurn": false,
+      "oncePerGame": true,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Healing",
-      "cost": 2,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
       "range": "8\"",
-      "description": "[B]X: Target restores X+1 Wds.\nCatastrophe: This model suffers 2 Wds.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Target restores X+1 Wds.",
+          "validCards": [{"colour": "Blue", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "You'll Regret That",
-    "upgradeFrom": "Low Guard",
-    "damageType": "",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": " If this model is still alive, swap the positions of this model and a friendly model within 4”."
-  },
-  "baseSize": "30mm",
-  "imageName": "mama_gimble",
-  "shareCode": "AAB"
+  ]
 }

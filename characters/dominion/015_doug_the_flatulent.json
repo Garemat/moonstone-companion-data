@@ -1,71 +1,88 @@
 {
-  "id": "015",
+  "id": 15,
   "name": "Doug, the Flatulent",
-  "version": "v.2",
+  "version": 3,
   "factions": ["DOMINION"],
-  "tags": ["Goblin", "Soldier", "Animal"],
+  "health": 8,
+  "energyTrack": [1, 3, 5, 7],
+  "keywords": ["Goblin", "Soldier", "Animal"],
   "melee": 4,
   "meleeRange": 3,
   "arcane": 0,
   "evade": 0,
-  "health": 8,
-  "energyTrack": [1, 3, 5, 7],
-  "passiveAbilities": [
+  "baseSize": "40mm",
+  "imageName": "doug",
+  "shareCode": "AAB",
+  "slicingDamageBuff": null,
+  "piercingDamageBuff": 1,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 1,
+  "impactDamageMitigation": 1,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Ankle Biter",
+    "upgradeFor": "Rising Attack",
+    "possibleDamageTypes": ["Impact"],
+    "highGuard": {"deal": "3", "isFollowUp": false},
+    "fallingSwing": {"deal": "3", "isFollowUp": false},
+    "thrust": {"deal": "3", "isFollowUp": false},
+    "sweepingCut": {"deal": "3", "isFollowUp": false},
+    "risingAttack": {"deal": "2", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "This attack deals Null damage against models which are further than 1\" away.",
+    "endStepEffect": ""
+  },
+  "abilities": [
     {
       "name": "Lance",
-      "description": " If this character deals Slicing Melee Dmg, reduce the Dmg dealt to W. If this character deals Piercing Dmg, increase the Dmg dealt by +1."
+      "description": "If this character deals Slicing Melee Dmg, reduce the Dmg dealt to {Null}. If this character deals Piercing Melee Dmg, increase the Dmg dealt by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Jousting Shield",
-      "description": " Reduce Piercing and Impact Dmg suffered by -1."
-    }
-  ],
-  "activeAbilities": [
-    {
-      "name": "Chaaarge!!",
-      "cost": 2,
-      "range": "",
-      "description": "Move this model 4” directly towards target enemy model. If this character’s next action this turn is a Melee Attack against the same target it deals +2 Dmg.",
+      "description": "Reduce Piercing and Impact Dmg suffered by -1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Digger",
+      "description": "When this model takes a Harvest action, flip an Arcane Card and reduce the Depth Value by X, where X is the value of the card. Catastrophe: All models within a 3\" pulse suffer 2 Magical Dmg.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Foul Gases",
-      "cost": 2,
-      "range": "2\"",
       "description": "All models within the pulse suffer 2 Magical Dmg.",
+      "abilityType": "Active",
+      "energyCost": 2,
+      "range": "2\"",
+      "pulse": true,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "arcaneAbilities": [
+      "arcaneOutcomes": []
+    },
     {
-      "name": "Digger",
-      "cost": 0,
-      "range": "",
-      "description": "When this model takes a Harvest action, flip an Arcane Card and reduce the Depth Value by X, where X is the value of the card.\nCatastrophe: All models within a 3” pulse suffer 2 Magical Dmg.",
+      "name": "Chaaarge!!",
+      "description": "Move this model 4\" directly towards target enemy model. If this character's next action this turn is a Melee Attack against the same target it deals +2 Dmg.",
+      "abilityType": "Active",
+      "energyCost": 2,
+      "range": "6\"",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": []
     }
-  ],
-  "signatureMove": {
-    "name": "Ankle Biter",
-    "upgradeFrom": "Rising Attack",
-    "damageType": "Impact",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "3"},
-      {"opponentPlay": "Falling Swing", "deal": "3"},
-      {"opponentPlay": "Thrust", "deal": "3"},
-      {"opponentPlay": "Sweeping Cut", "deal": "3"},
-      {"opponentPlay": "Rising Attack", "deal": "2"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "passiveEffect": "This attack deals W damage against models which are further than 1” away. "
-  },
-  "baseSize": "40mm",
-  "imageName": "doug",
-  "piercingDamageBuff": 1,
-  "slicingDamageBuff": "Null",
-  "piercingDamageMitigation": 1,
-  "impactDamageMitigation": 1
+  ]
 }

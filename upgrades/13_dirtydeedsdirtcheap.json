@@ -1,0 +1,20 @@
+{
+  "id": 13,
+  "name": "Dirty Deeds, Dirt Cheap",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [
+    "Faerie",
+    "Goblin"
+  ],
+  "abilities": [
+    {
+      "name": "Pay Off (1) 2\"",
+      "description": "Target enemy character gains +1 energy but does not engage this model, and cannot target this character with actions, until end of turn.",
+      "oncePerGame": true
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "dirtydeedsdirtcheap"
+}

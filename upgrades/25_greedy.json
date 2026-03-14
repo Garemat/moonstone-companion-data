@@ -1,0 +1,18 @@
+{
+  "id": 25,
+  "name": "Greedy",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [
+    "Mercenary"
+  ],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Greedy",
+      "description": "This character can only lose possession of a Moonstone if slain. The first time this character performs a Harvest action in a game, reduce the energy cost by -1."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "greedy"
+}

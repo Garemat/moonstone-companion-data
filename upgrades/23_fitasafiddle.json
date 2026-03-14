@@ -1,0 +1,16 @@
+{
+  "id": 23,
+  "name": "Fit as a Fiddle",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Fit as a Fiddle",
+      "description": "This character may ignore the [Slow] ability, if printed on its card."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "fitasafiddle"
+}

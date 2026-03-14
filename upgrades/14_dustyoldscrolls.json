@@ -1,0 +1,20 @@
+{
+  "id": 14,
+  "name": "Dusty Old Scrolls",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [
+    "Wizard",
+    "Cleric"
+  ],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Dusty Old Scrolls",
+      "description": "When declaring an Arcane Ability, this character may increase their Arcane Stat by +1.",
+      "oncePerTurn": true
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "dustyoldscrolls"
+}

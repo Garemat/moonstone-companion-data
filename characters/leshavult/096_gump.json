@@ -1,68 +1,102 @@
 {
-  "id": "096",
+  "id": 96,
   "name": "Gump",
-  "version": "",
+  "version": 1,
   "factions": ["LESHAVULT"],
-  "tags": ["Treefolk", "Spirit"],
+  "health": 12,
+  "energyTrack": [1, 6],
+  "keywords": ["Treefolk", "Spirit"],
   "melee": 3,
   "meleeRange": 2,
   "arcane": 4,
   "evade": 2,
-  "health": 12,
-  "energyTrack": [1, 6],
-  "passiveAbilities": [
+  "baseSize": "40mm",
+  "imageName": "gump",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 2,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 1,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 1,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Rooted",
+    "upgradeFor": "Low Guard",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": true},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "This model cannot move or be moved and has its Melee Range increased to 3\" until end of the current activation.",
+    "endStepEffect": "If this character was not slain then it restores 1 Wd."
+  },
+  "abilities": [
     {
-      "name": "Woodfoot",
-      "description": "This character may jog over Wooded Patches."
+      "name": "Woodroot",
+      "description": "This character may Jog over Wooded Patches.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Ponderous",
-      "description": "This character cannot take Reaction Steps."
+      "description": "This character cannot take Reaction Steps.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Knotted Branches",
-      "description": "If this character deals Impact Melee Dmg, increase the Dmg dealt by +2."
+      "description": "If this character deals Impact Melee Dmg, increase the Dmg dealt by +2.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Bark Skin",
-      "description": "If this character suffers Piercing or Slicing Dmg, reduce the Dmg suffered by -1."
+      "description": "If this character suffers Piercing or Slicing Dmg, reduce the Dmg suffered by -1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Forest",
-      "description": "After this character suffers Dmg, it may restore 1 Wd for each Wooded Patch within 4\".",
-      "oncePerTurn": true
-    }
-  ],
-  "activeAbilities": [],
-  "arcaneAbilities": [
+      "description": "After this character suffers Dmg, it may restore 1 Wd for each Wooded Patch within 4\". Once per turn.",
+      "abilityType": "Passive",
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Call of the Woods",
-      "cost": 2,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
       "range": "8\"",
-      "description": "Move target enemy X+2\" directly towards any friendly Treefolk. Then target suffers 1 Wd for each Wooded Patch within 4\" of it.\nCatastrophe: This model cannot move or be moved and has its melee range increased to 3\" until end of turn.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Move target enemy X+2\" directly towards any friendly Treefolk. Then the target suffers 1 Wd for each Wooded Patch within 4\" of it.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This model cannot move or be moved and has its Melee Range increased to 3\" until end of turn.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Rooted",
-    "upgradeFrom": "Low Guard",
-    "damageType": "",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "If this character was not slain then it restores 1 Wd.",
-    "extraText": "This model cannot be move of be moved and has its Melee Range increased to 3\" until end of the current activation."
-  },
-  "baseSize": "40mm",
-  "imageName": "096_gump.json",
-  "shareCode": "AAB",
-  "impactDamageBuff": 2,
-  "piercingDamageMitigation": 1,
-  "slicingDamageMitigation": 1
+  ]
 }

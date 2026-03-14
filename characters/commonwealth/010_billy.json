@@ -1,57 +1,105 @@
 {
-  "id": "010",
+  "id": 10,
   "name": "Billy",
-  "version": "",
+  "version": 2,
   "factions": ["COMMONWEALTH"],
-  "tags": ["Gnome", "Militia", "Animal"],
+  "health": 8,
+  "energyTrack": [1, 2, 4],
+  "keywords": ["Gnome", "Militia", "Animal"],
   "melee": 4,
   "meleeRange": 1,
   "arcane": 4,
   "evade": -1,
-  "health": 8,
-  "energyTrack": [1, 2, 4],
-  "passiveAbilities": [
-    {
-      "name": "Arming Sword",
-      "description": " If this character deals Slicing Melee Dmg, increase the Dmg dealt by +1. "
-    },
-    {
-      "name": "Quilted Armour",
-      "description": "Reduce Slicing Dmg suffered by -1."
-    }
-  ],
-  "activeAbilities": [  
-    {
-      "name": "Ramming Speed",
-      "cost": 3,
-      "range": "6\"",
-      "description": "Move this model 6” directly towards target enemy model. If base contact is made with the target, flip an arcane card. The target suffers X+1 Impact Dmg then is moved X” directly away, where X is the value of the flipped card.\nCatastrophe: The target model suffers no damage and may move up to 3”."
-    }],
-  "arcaneAbilities": [
-    {
-      "name": "High-ho Silver",
-      "cost": 2,
-      "range": "",
-      "description": "[G]X or [P]X: Move this model 2X”.\nCatastrophe: This model cannot move or be moved until end of turn."
-    }
-  ],
-  "signatureMove": {
-    "name": "Wild Swing",
-    "upgradeFrom": "Falling Swing",
-    "damageType": "Slicing",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "2"},
-      {"opponentPlay": "Thrust", "deal": "2"},
-      {"opponentPlay": "Sweeping Cut", "deal": "3"},
-      {"opponentPlay": "Rising Attack", "deal": "3"},
-      {"opponentPlay": "Low Guard", "deal": "2"}
-    ],
-    "endStepEffect": "Move the enemy model 1\" directly away from this model."
-  },
   "baseSize": "30mm",
   "imageName": "billy",
   "shareCode": "AAB",
   "slicingDamageBuff": 1,
-  "slicingDamageMitigation": 1
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 1,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Wild Swing",
+    "upgradeFor": "Falling Swing",
+    "possibleDamageTypes": ["Slicing"],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "2", "isFollowUp": false},
+    "thrust": {"deal": "2", "isFollowUp": false},
+    "sweepingCut": {"deal": "3", "isFollowUp": false},
+    "risingAttack": {"deal": "3", "isFollowUp": false},
+    "lowGuard": {"deal": "2", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "Move the enemy model 1\" directly away from this model."
+  },
+  "abilities": [
+    {
+      "name": "Arming Sword",
+      "description": "If this character deals Slicing Melee Dmg, increase the Dmg dealt by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Quilted Armour",
+      "description": "Reduce Slicing Dmg suffered by -1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Ramming Speed",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 3,
+      "range": "6\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers X+1 Impact Dmg then is moved 1\" directly away.",
+          "validCards": [
+            {"colour": "Green", "value": "X"},
+            {"colour": "Blue", "value": "X"},
+            {"colour": "Pink", "value": "X"}
+          ]
+        },
+        {
+          "text": "Target suffers no damage and may move up to 3\".",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    },
+    {
+      "name": "High-ho",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": null,
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Move this model 2X\".",
+          "validCards": [
+            {"colour": "Green", "value": "X"},
+            {"colour": "Pink", "value": "X"}
+          ]
+        },
+        {
+          "text": "This model cannot move or be moved until end of turn.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

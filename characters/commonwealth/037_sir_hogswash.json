@@ -1,60 +1,80 @@
 {
-  "id": "037",
+  "id": 37,
   "name": "Sir Hogswash",
-  "version": "",
+  "version": 1,
   "factions": ["COMMONWEALTH"],
-  "tags": ["Human", "Animal", "Soldier"],
+  "health": 10,
+  "energyTrack": [1, 3, 6],
+  "keywords": ["Human", "Animal", "Soldier"],
   "melee": 4,
   "meleeRange": 2,
   "arcane": 0,
-  "evade": 0,
-  "health": 10,
-  "energyTrack": [1, 3, 6],
-  "passiveAbilities": [
+  "evade": 1,
+  "baseSize": "40mm",
+  "imageName": "sir_hogswash",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 1,
+  "piercingDamageBuff": 1,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 1,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 1,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Gore",
+    "upgradeFor": "Rising Attack",
+    "possibleDamageTypes": ["Piercing"],
+    "highGuard": {"deal": "2", "isFollowUp": false},
+    "fallingSwing": {"deal": "2", "isFollowUp": false},
+    "thrust": {"deal": "2", "isFollowUp": false},
+    "sweepingCut": {"deal": "1", "isFollowUp": false},
+    "risingAttack": {"deal": "2", "isFollowUp": false},
+    "lowGuard": {"deal": "0", "isFollowUp": false},
+    "extraText": "This attack deals {Null} damage against models which are further than 1\" away.",
+    "endStepEffect": "Move the enemy model 1\"."
+  },
+  "abilities": [
     {
       "name": "Hunting Spear",
-      "description": "If this character deals Piercing or Slicing Melee Dmg, increase the Dmg dealt by +1. If this character deals Melee Dmg against an Animal, increase the Dmg by +1."
+      "description": "If this character deals Piercing or Slicing Melee Dmg, increase the Dmg dealt by +1. If this character deals Melee Dmg against an Animal, increase the Dmg by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Sun Shield",
-      "description": "If this character suffers Impact or Magical Dmg, reduce the Dmg suffered by -1."
-    }
-  ],
-  "activeAbilities": [
+      "description": "If this character suffers Impact or Magical Dmg, reduce the Dmg suffered by -1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Utter Swine",
-      "cost": 1,
+      "description": "You may have another friendly model within 6\" suffer 2 Wds. If they do then target enemy loses one Arcane Ability of your choice until end of turn.",
+      "abilityType": "Active",
+      "energyCost": 1,
       "range": "6\"",
-      "description": "You may have another friendly model within 6” suffer 2 Wds. If they do then target enemy loses one Arcane Ability of your choice until end of turn.",
-      "oncePerTurn": true
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Chaaarge!!",
-      "cost": 2,
+      "description": "Move this model 4\" directly towards target enemy model. If this character's next action this turn is a Melee Attack against the same target it deals +2 Dmg.",
+      "abilityType": "Active",
+      "energyCost": 2,
       "range": "6\"",
-      "description": "Move this model 4” directly towards target enemy model. If this character’s next action this turn is a Melee Attack against the same target it deals +2 Dmg."
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     }
-  ],
-  "arcaneAbilities": [],
-  "signatureMove": {
-    "name": "Gore",
-    "upgradeFrom": "Rising Attack",
-    "damageType": "Piercing",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "2"},
-      {"opponentPlay": "Falling Swing", "deal": "2"},
-      {"opponentPlay": "Thrust", "deal": "2"},
-      {"opponentPlay": "Sweeping Cut", "deal": "1"},
-      {"opponentPlay": "Rising Attack", "deal": "0"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "Move the enemy model 1”."
-  },
-  "baseSize": "40mm",
-  "imageName": "037_sir_hogswash.json",
-  "shareCode": "AAB",
-  "piercingDamageBuff": 1,
-  "slicingDamageBuff": 1,
-  "impactDamageMitigation": 1,
-  "magicalDamageMitigation": 1
+  ]
 }

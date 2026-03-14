@@ -1,0 +1,21 @@
+{
+  "id": 19,
+  "name": "Expert Training",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [
+    "Human"
+  ],
+  "restrictedKeywords": [
+    "Rogue"
+  ],
+  "abilities": [
+    {
+      "name": "Expert Training",
+      "description": "Friendly characters within 6\" may use this character's Signature Move. When doing so, this character's Signature Move may only be used to upgrade the Melee Card specified on it (not the Melee Card of the friendly character's normal Signature Move).",
+      "oncePerTurn": true
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "experttraining"
+}

@@ -1,0 +1,16 @@
+{
+  "id": 55,
+  "name": "Troll Knuckles",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "'Lucky' Troll Knuckles",
+      "description": "Whenever this character uses an Arcane Ability, immediately after hands are drawn, you may reveal the top card from the Arcane Deck. If it's a Catastrophe, then this character immediately suffers the Catastrophe effect of the ability before proceeding. Otherwise, add it your hand."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "trollknuckles"
+}

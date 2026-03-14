@@ -1,68 +1,113 @@
 {
-  "id": "127",
+  "id": 127,
   "name": "Brigid",
-  "version": "",
+  "version": 1,
   "factions": ["DOMINION", "SHADES"],
-  "tags": ["Faerie", "Pirate"],
+  "health": 6,
+  "energyTrack": [1, 2, 3, 5, 6],
+  "keywords": ["Faerie", "Pirate"],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 4,
   "evade": -2,
-  "health": 6,
-  "energyTrack": [1, 2, 3, 5, 6],
-  "passiveAbilities": [
+  "baseSize": "30mm",
+  "imageName": "brigid",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Sink to the Deep",
+    "upgradeFor": "Low Guard",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "Reduce Dmg suffered by -1. If there is at least one friendly slain non-Thrall character, instead reduce Dmg suffered to {0}.",
+    "endStepEffect": ""
+  },
+  "abilities": [
     {
       "name": "Feeble",
-      "description": "Reduce all Melee Dmg this character deals by -2. Harvest actions cost this model +1 energy."
+      "description": "Reduce all Melee Dmg this character deals by -2. Harvest actions cost this model +1 energy.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Spirits of the Fallen",
-      "description": "Once per turn this model may use an Arcane Ability printed on a friendly slain model, ignoring any Once Per Game restrictions, paying its cost as normal."
-    }
-  ],
-  "activeAbilities": [
+      "description": "Once per turn this model may use an Arcane Ability that is Arcane Locked on a friendly slain model, ignoring any once per game restrictions, paying its cost as normal.",
+      "abilityType": "Passive",
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Reload [Faerie Fire Pistol]",
-      "cost": 0,
+      "description": "The named ability can be used again. This ability cannot be used while this model is engaged.",
+      "abilityType": "Active",
+      "energyCost": 2,
       "range": "",
-      "description": "The name ability can be used again. This ability cannot be used while engaged.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "arcaneAbilities": [
+      "arcaneOutcomes": []
+    },
     {
       "name": "Faerie Fire Pistol",
-      "cost": 1,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 1,
       "range": "8\"",
-      "description": "Target suffers X Magical Dmg.\nCatastrophe: This character suffers 2 Wds.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": true,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers X Magical Dmg.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     },
     {
       "name": "Poor Unfortunate Souls",
-      "cost": 3,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 3,
       "range": "6\"",
-      "description": "Target character restores X Wds then loses X Energy.\nTarget other Pirate gains X Energy then suffers X Wds.\nCatastrophe: This character suffers 3 Wds.",
+      "pulse": false,
+      "oncePerTurn": true,
       "oncePerGame": false,
-      "oncePerTurn": true
+      "arcaneOutcomes": [
+        {
+          "text": "Target character restores X Wds then loses X Energy.",
+          "validCards": [{"colour": "Blue", "value": "X"}]
+        },
+        {
+          "text": "Target other Pirate gains X Energy then suffers X Wds.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 3 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Sink to the Deep",
-    "upgradeFrom": "Low Guard",
-    "damageType": "",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "Reduce Dmg suffered by -1. If there is at least one friendly slain non-Thrall character, instead reduce Dmg suffered to W."
-  },
-  "baseSize": "30mm",
-  "imageName": "127_brigid.json",
-  "shareCode": "AAB"
+  ]
 }

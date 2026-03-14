@@ -1,0 +1,11 @@
+{
+  "id": 67,
+  "name": "Bravado",
+  "version": 2,
+  "factions": [],
+  "tags": [],
+  "timing": "Play during deployment, instead of placing your final character on the board.",
+  "description": "Play with 1 less character in your troupe.\n\nIf you *Win* this game: **Gain 4 Machination Points** and your opponent **Loses 2 Machination Points**.",
+  "shareCode": "AAB",
+  "imageName": "bravado"
+}

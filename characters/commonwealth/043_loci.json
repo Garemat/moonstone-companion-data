@@ -1,66 +1,106 @@
 {
-  "id": "043",
+  "id": 43,
   "name": "Loci, Nordic Shipwright",
-  "version": "",
+  "version": 3,
   "factions": ["COMMONWEALTH"],
-  "tags": ["Gnome", "Rogue", "Norse"],
+  "health": 8,
+  "energyTrack": [1, 2, 3],
+  "keywords": ["Gnome", "Rogue", "Norse"],
   "melee": 4,
   "meleeRange": 1,
   "arcane": 3,
   "evade": 0,
-  "health": 8,
-  "energyTrack": [1, 3, 2],
-  "passiveAbilities": [
+  "baseSize": "30mm",
+  "imageName": "loci",
+  "shareCode": "AAB",
+  "slicingDamageBuff": null,
+  "piercingDamageBuff": null,
+  "impactDamageBuff": 1,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Strong Arm",
+    "upgradeFor": "Falling Swing",
+    "possibleDamageTypes": ["Impact"],
+    "highGuard": {"deal": "0", "isFollowUp": false},
+    "fallingSwing": {"deal": "2", "isFollowUp": false},
+    "thrust": {"deal": "1", "isFollowUp": false},
+    "sweepingCut": {"deal": "3", "isFollowUp": false},
+    "risingAttack": {"deal": "3", "isFollowUp": false},
+    "lowGuard": {"deal": "2", "isFollowUp": false},
+    "extraText": "Damage from this attack cannot be reduced by passive abilities.",
+    "endStepEffect": "You may move the enemy model 1\"."
+  },
+  "abilities": [
     {
       "name": "Hammer",
-      "description": "If this character deals Piercing or Slicing Melee Dmg, reduce the Dmg dealt to W. If this character deals Impact Melee Dmg, increase the Dmg dealt by +1. "
+      "description": "If this character deals Piercing or Slicing Melee Dmg, reduce the Dmg dealt to {Null}. If this character deals Impact Melee Dmg, increase the Dmg dealt by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Favour of the Old Gods",
-      "description": "When this character suffers Dmg you\nmay flip the top card of the Arcane Deck and reduce the Dmg suffered by -X where X is the value on the flipped card. Catastrophe reduces the Dmg suffered by 0",
-      "oncePerTurn": true
+      "description": "When this character suffers Dmg you may flip the top card of the Arcane Deck and reduce the Dmg suffered by -X where X is the value on the flipped card. Catastrophe reduces the Dmg suffered by 0.",
+      "abilityType": "Passive",
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Trickster",
       "description": "When this model successfully bluffs, after resolving the effect you may reveal the bluff and gain +3 energy.",
-      "oncePerTurn": true
-    }
-  ],
-  "activeAbilities": [],
-  "arcaneAbilities": [
+      "abilityType": "Passive",
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Verdant Growth",
-      "cost": 2,
-      "range": "",
-      "description": " Place a 50mm Diameter Wooded Patch within 3X\" and LoS on open ground. This remains in place until end of game. A maximum of 3 Wooded Patches may be placed by this troupe, if a fourth is placed you must choose and remove a Wooded Patch you created earlier this game.\nCatastrophe: This model suffers 2 Wds.",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "3\"",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Place a 50mm Diameter Wooded Patch within 3\" and LoS on open ground. This remains in place until end of game. A maximum of 3 Wooded Patches may be placed by this troupe; if a fourth is placed you must choose and remove a Wooded Patch you created earlier this game.",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     },
     {
       "name": "One with the Wind",
-      "cost": 2,
-      "range": "8\"",
-      "description": "Move target model X+1\".\nCatastrophe: This model suffers 2 Wds.",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "1\"",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Move target model X+1\".",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Strong Arm",
-    "upgradeFrom": "Falling Swing",
-    "damageType": "Impact",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "0"},
-      {"opponentPlay": "Falling Swing", "deal": "1"},
-      {"opponentPlay": "Thrust", "deal": "1"},
-      {"opponentPlay": "Sweeping Cut", "deal": "3"},
-      {"opponentPlay": "Rising Attack", "deal": "3"},
-      {"opponentPlay": "Low Guard", "deal": "2"}
-    ],
-    "endStepEffect": "You may move the enemy model 1\"."
-  },
-  "baseSize": "30mm",
-  "imageName": "loci",
-  "shareCode": "AAB",
-  "impactDamageBuff": 1
+  ]
 }

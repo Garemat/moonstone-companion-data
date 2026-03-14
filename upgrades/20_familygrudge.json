@@ -1,0 +1,20 @@
+{
+  "id": 20,
+  "name": "Family Grudge",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [
+    "Risen",
+    "Human"
+  ],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Family Grudge",
+      "description": "When this character causes 1 or more Wds to an enemy Human or Noble it may gain +1 energy.",
+      "oncePerTurn": true
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "familygrudge"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 41,
+  "name": "Revival Elixir",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [
+    "Cleric"
+  ],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Revival Elixir",
+      "description": "If a friendly model is slain within 4\", this character may spend (X) energy. If they do, the character is not slain and remains in play with X health boxes remaining.",
+      "oncePerTurn": true
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "revivalelixir"
+}

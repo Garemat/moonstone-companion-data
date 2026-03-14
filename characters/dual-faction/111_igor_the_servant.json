@@ -1,62 +1,118 @@
 {
-  "id": "111",
+  "id": 111,
   "name": "Igor, the Servant",
-  "version": "",
+  "version": 1,
   "factions": ["DOMINION", "SHADES"],
-  "tags": ["Spirit"],
+  "health": 7,
+  "energyTrack": [1, 3, 5],
+  "keywords": ["Spirit"],
   "melee": 2,
   "meleeRange": 1,
   "arcane": 3,
   "evade": -1,
-  "health": 7,
-  "energyTrack": [1, 3, 5],
-  "passiveAbilities": [
+  "baseSize": "30mm",
+  "imageName": "igor_the_servant",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [106],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Save me, my Liege!",
+    "upgradeFor": "High Guard",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "Move this model 4\" directly towards the nearest friendly Noble."
+  },
+  "abilities": [
     {
       "name": "Strength from Beyond",
-      "description": "If at least one friendly model was slain this turn, this character gains +2 Arcane Stat until end of turn."
-    }
-  ],
-  "activeAbilities": [],
-  "arcaneAbilities": [
-    {
-      "name": "Summon the Forgotten King",
-      "cost": 3,
-      "range": "",
-      "description": "Place a new Echo of the Forgotten King in base contact; it is considered a permanent additional character in your troupe and may activate this turn. Then this model is slain.\nCatastrophe: This model suffers 3 Wds.",
+      "description": "If at least one friendly model was slain this turn, this character gains +2 Arcane Stat until end of turn.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
-    },
-    {
-      "name": "Reanimate",
-      "cost": 3,
-      "range": "",
-      "description": "Place a friendly slain model in base contact with this model. Restore half its health rounding up. It has no energy but may activate this turn. \nCatastrophe: This model suffers 4 Wds.",
-      "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": []
     },
     {
       "name": "Eternal Servitude",
-      "cost": 2,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
       "range": "4\"",
-      "description": " Target Elrich or Noble restores X Wds or gains +1 energy.\nTarget Human or Noble gains +1 energy.\nTarget Risen or Noble restores X Wds.\nCatastrophe: This model suffers 3 Wds.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Target Human or Noble gains +1 energy.",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "Target Human or Noble restores X Wds.",
+          "validCards": [{"colour": "Blue", "value": "X"}]
+        },
+        {
+          "text": "Target Elrich or Noble restores X Wds or gains +1 energy.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 3 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    },
+    {
+      "name": "Summon the Forgotten King",
+      "description": "This action can only be taken if your chosen faction is Shades and there is no friendly Echo of the Forgotten King in play.",
+      "abilityType": "Arcane",
+      "energyCost": 3,
+      "range": "",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Place a new Echo of the Forgotten King in base contact with this model; it is considered a permanent additional character in your troupe. It may activate this turn.",
+          "validCards": [{"colour": "Green", "value": "3"}, {"colour": "Blue", "value": "3"}, {"colour": "Pink", "value": "3"}]
+        },
+        {
+          "text": "This model suffers 3 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    },
+    {
+      "name": "Reanimate",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 3,
+      "range": "",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Place a friendly slain model in base contact with this model. Restore half its health rounding up. It has no energy but may activate this turn.",
+          "validCards": [{"colour": "Green", "value": "2"}, {"colour": "Blue", "value": "2"}, {"colour": "Pink", "value": "2"}]
+        },
+        {
+          "text": "This model suffers 4 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Save me, my Liege!",
-    "upgradeFrom": "High Guard",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "Move this model 4\" directly towards the nearest friendly Noble."
-  },
-  "baseSize": "30mm",
-  "imageName": "111_igor_the_servant.json",
-  "shareCode": "AAB"
+  ]
 }

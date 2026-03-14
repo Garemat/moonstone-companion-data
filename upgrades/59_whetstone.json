@@ -1,0 +1,20 @@
+{
+  "id": 59,
+  "name": "Whet Stone",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [
+    "Soldier",
+    "Noble",
+    "Mercenary"
+  ],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Razor Honed Blade",
+      "description": "If this character deals Slicing Melee Dmg, increase the Dmg dealt by +1."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "whetstone"
+}

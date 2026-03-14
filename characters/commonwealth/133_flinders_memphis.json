@@ -1,65 +1,97 @@
 {
-  "id": "133",
+  "id": 133,
   "name": "Flinders Memphis",
-  "version": "",
+  "version": 1,
   "factions": ["COMMONWEALTH"],
-  "tags": ["Gnome", "Machine"],
+  "health": 8,
+  "energyTrack": [1, 2],
+  "keywords": ["Gnome", "Machine"],
   "melee": 2,
   "meleeRange": 1,
   "arcane": 3,
   "evade": 0,
-  "health": 8,
-  "energyTrack": [1, 2],
-  "passiveAbilities": [
-    {
-      "name": "Augments",
-      "description": "Friendly charactres with Reload[...] gain the Machine keyword."
-    },
-    {
-      "name": "The Faculty",
-      "description": "If Old Polly, Prod. Boffinsworth and Flinders Memphis were taken in this troupe at the start of the game, this character gains Rogue, Animal and Machine keywords."
-    }
-  ],
-  "activeAbilities": [
-    {
-      "name": "Overclock",
-      "cost": 1,
-      "range": "4\"",
-      "description": "Target other friendly machine suffers 1 Wd, then may take any action available to them which would normally have an energy cost of (2). You may only target each character once per turn."
-    },
-    {
-      "name": "Have You Tired Turning it Off and On Again?",
-      "cost": 0,
-      "range": "",
-      "description": "After a friendly Machine draws an Arcane Hand, they may suffer 1 Wd, shuffle the hand back into the Arcane deck and redraw the same number of cards (Resist Hand is unchanged).",
-      "oncePerTurn": true
-    }
-  ],
-  "arcaneAbilities": [
-    {
-      "name": "Gnomish Air Rifle",
-      "cost": 2,
-      "range": "14\"",
-      "description": "Target suffers X+1 Impact Dmg\nCatastrophe: This character suffers 4 Wds",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
+  "baseSize": "30mm",
+  "imageName": "flinders_memphis",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
   "signatureMove": {
     "name": "Compressed Air",
-    "upgradeFrom": "High Guard",
-    "damageType": "Impact",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
+    "upgradeFor": "High Guard",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
     "endStepEffect": "This model suffers 1 Wd. All other models within 1\" suffer 1 Wd then are moved 2\" directly away."
   },
-  "baseSize": "30mm",
-  "imageName": "133_flinders_memphis.json",
-  "shareCode": "AAB"
+  "abilities": [
+    {
+      "name": "The Faculty",
+      "description": "If Old Polly, Prof Boffinsworth & Flinders Memphis are seen in this troupe at the start of the game, this character gains Rogue, Animal & Machine keywords.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Augments",
+      "description": "Friendly characters with Reload [...] gain the Machine keyword.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Have You Tried Turning it Off and On Again?",
+      "description": "After a friendly Machine sees an Arcane Hand, they may automatically suffer 1 Wd, shuffle the hand back into the Arcane Deck and redraw the same number of cards (Resist Hand is unchanged). Once per turn.",
+      "abilityType": "Passive",
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Overclock",
+      "description": "Target other friendly Machine suffers 1 Wd then may take any action available to them which would normally have an energy cost of {2}. You may only target each character once per turn.",
+      "abilityType": "Active",
+      "energyCost": 1,
+      "range": "4\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Gnomish Air Rifle",
+      "description": "This ability cannot be used while this model is engaged.",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "14\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers X+1 Impact Dmg.",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 4 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

@@ -1,0 +1,17 @@
+{
+  "id": 7,
+  "name": "Bunny Foot",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Lucky Murder-Bunny Foot",
+      "description": "This character can ignore the first Catastrophe effect that they suffer in each game.",
+      "oncePerGame": true
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "bunnyfoot"
+}

@@ -1,66 +1,101 @@
 {
   "id": 9,
   "name": "Quarrel",
-  "version": "3",
+  "version": 3,
   "factions": ["COMMONWEALTH"],
-  "tags": ["Gnome", "Soldier", "Militia"],
+  "health": 8,
+  "energyTrack": [1, 2, 3],
+  "keywords": ["Gnome", "Soldier", "Militia"],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 3,
-  "evade": "0",
-  "health": 8,
-  "energyTrack": [1,2,3],
-  "passiveAbilities": [
-    {
-      "name": "Slow",
-      "description": "This model's jog actions are limited to 2\"."
-    },
-    {
-      "name": "Dirk",
-      "description": "If this character deals Slicing Melee Dmg, increase the Dmg dealt by +1."
-    }
-  ],
-  "activeAbilities": [   
-    {
-      "name": "Reload [Shoot Crossbow]",
-      "cost": 2,
-      "range": "",
-      "description": "The named ability can be used again. This ability cannot be used while this model is engaged."
-    },
-    {
-      "name": "Brothers in Arms",
-      "cost": 1,
-      "range": "4\"",
-      "description": "Target other friendly Militia gains +1 Arcane stat and +2 Melee stat until end of turn. Then, the target may discard 1 energy to give this character +1 Arcane stat and +2 Melee stat until end of turn. TYou may only target each characters once per turn."
-    }
-  ],
-  "arcaneAbilities": [
-    {
-      "name": "Shoot Crossbow",
-      "cost": 1,
-      "range": "14",
-      "description": "[G]X: Target suffers 2X piercing Dmg then is moved 1\" directly away. \nCatastrophe: The Reload ability cannot be used for the remainder of the game.",
-      "oncePerGame": true,
-      "reloadable": true
-    }
-  ],
-  "signatureMove": {
-    "name": "Tactical Retreat",
-    "upgradeFrom": "High Guard",
-    "damageType": null,
-    "passiveEffect": "Reduce Dmg suffered by -1.",
-    "endStepEffect": "This model may move 2”.",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ]
-  },
+  "evade": 0,
   "baseSize": "30mm",
   "imageName": "quarrel",
   "shareCode": "AAJ",
-  "slicingDamageBuff": 1
+  "slicingDamageBuff": 1,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Tactical Retreat",
+    "upgradeFor": "High Guard",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "Reduce Dmg suffered by -1.",
+    "endStepEffect": "This model may move 2\"."
+  },
+  "abilities": [
+    {
+      "name": "Slow",
+      "description": "This model's Jog actions are limited to 2\".",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Dirk",
+      "description": "If the character deals Slicing Melee Dmg, increase the Dmg dealt by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Reload [Shoot Crossbow]",
+      "description": "The named ability can be used again. This ability cannot be used while this model is engaged.",
+      "abilityType": "Active",
+      "energyCost": 2,
+      "range": null,
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Brothers in Arms",
+      "description": "Target other friendly Militia gains +1 Arcane stat and +2 Melee stat until end of turn. Then, the target may discard 1 energy to give this character +1 Arcane stat and +2 Melee stat until end of turn. You may only target each character once per turn.",
+      "abilityType": "Active",
+      "energyCost": 1,
+      "range": "4\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Shoot Crossbow",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 1,
+      "range": "14\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": true,
+      "reloadable": true,
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers 2X Piercing Dmg and is moved 1\" directly away.",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "The Reload ability cannot be used for the remainder of the game.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

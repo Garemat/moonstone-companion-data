@@ -1,0 +1,11 @@
+{
+  "id": 12,
+  "name": "Defy the Odds",
+  "version": 2,
+  "factions": [],
+  "tags": [],
+  "timing": "Play during the Activation Step, before or after any action.",
+  "description": "For the remainder of the game, while another player is in possession of more Moonstones than you, characters you control gain +1\" Jog and +1 Melee Stat.",
+  "shareCode": "AAB",
+  "imageName": "defytheodds"
+}

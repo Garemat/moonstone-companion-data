@@ -1,0 +1,17 @@
+{
+  "id": 42,
+  "name": "Rogues' Guild",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [],
+  "extraDescription": "This character gains the Rogue keyword.",
+  "abilities": [
+    {
+      "name": "Rogues' Guild Membership",
+      "description": "If this character is in Light Cover while targeted by an enemy Arcane Ability, treat it as Heavy Cover instead."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "roguesguild"
+}

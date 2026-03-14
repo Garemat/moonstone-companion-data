@@ -1,52 +1,77 @@
 {
-  "id": "055",
+  "id": 55,
   "name": "Goblin Airship",
-  "version": "",
+  "version": 3,
   "factions": ["DOMINION"],
-  "tags": ["Goblin", "Machine", "Animal"],
+  "health": 8,
+  "energyTrack": [1, 3, 6],
+  "keywords": ["Goblin", "Machine", "Animal"],
   "melee": 0,
   "meleeRange": 0,
   "arcane": 3,
   "evade": 2,
-  "health": 8,
-  "energyTrack": [1, 3, 6],
-  "passiveAbilities": [
-    {
-      "name": "Ramshackle Armour",
-      "description": " Reduce all non-Magical Dmg suffered by -1."
-    },
-    {
-      "name": "Up, Up & Away",
-      "description": "This character may move freely over all terrain and other models during Jog and Step actions, provided it does not end the move with the base overlapping another model or barrier terrain. It cannot take the Harvest action or the Melee Attack action, cannot be targeted by Melee Attack actions and does not engage enemy models or become engaged by enemy models. It does not block LoS, provide Cover, or suffer from Falling. When targeted by Arcane Actions, this character does not benefit from Cover. "
-    }
-  ],
-  "activeAbilities": [
-    {
-      "name": "Sticky Tongue",
-      "cost": 2,
-      "range": "4\"",
-      "description": "Target with Evade Stat -1 or lower, suffers 1 Impact Dmg and then is moved 4\" directly towards this model."
-    }
-  ],
-  "arcaneAbilities": [
-    {
-      "name": "Peashooter",
-      "cost": 1,
-      "range": "8\"",
-      "description": "Target suffers X Impact Dmg.\nCatastrophe: This model suffers 2 Wds.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "signatureMove": {
-    "name": "No Signature",
-    "upgradeFrom": "",
-    "damageType": "",
-    "results": [],
-    "endStepEffect": ""
-  },
   "baseSize": "40mm",
   "imageName": "goblin_airship",
   "shareCode": "AAB",
-  "allNonMagicalDamageMitigation": 1
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 1,
+  "impactDamageMitigation": 1,
+  "slicingDamageMitigation": 1,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": null,
+  "abilities": [
+    {
+      "name": "Up, Up & Away",
+      "description": "This character may move freely over all terrain and other miniatures during Jog and Step actions provided it does not end the move with the base overlapping another model or barrier terrain. It cannot take the Harvest action or the Melee Attack action, cannot be targeted by Melee Attack actions and does not engage enemy models or become engaged by enemy models. It does not block LoS, provide Cover, gain bonuses for elevation, or suffer from Falling. When targeted by Arcane actions, this character cannot benefit from Cover.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Ramshackle Armour",
+      "description": "Reduce all non-Magical Dmg suffered by -1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Sticky Tongue",
+      "description": "Target with Evade Stat -1 or lower, suffers 1 Impact Dmg and then is moved 4\" directly towards this model.",
+      "abilityType": "Active",
+      "energyCost": 2,
+      "range": "4\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Peashooter",
+      "description": "This attack is not modified by Cover.",
+      "abilityType": "Arcane",
+      "energyCost": 1,
+      "range": "8\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers X Impact Dmg.",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

@@ -1,54 +1,73 @@
 {
-  "id": "123",
+  "id": 123,
   "name": "Pookie",
-  "version": "",
+  "version": 1,
   "factions": ["SHADES"],
-  "tags": ["Psychopomp", "Babeling"],
+  "health": 2,
+  "energyTrack": [999],
+  "keywords": ["Psychopomp", "Babeling"],
   "melee": 1,
   "meleeRange": 1,
   "arcane": 0,
   "evade": -1,
-  "health": 2,
-  "energyTrack": [999],
-  "passiveAbilities": [
+  "baseSize": "30mm",
+  "imageName": "pookie",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": true,
+  "signatureMove": null,
+  "abilities": [
+    {
+      "name": "Thrall",
+      "description": "This character can only enter play when summoned. It does not activate and can never gain energy. Instead, while the character that summoned it is active, this character can take actions, including Jog, by discarding the required energy on the character that summoned it. Reaction Steps and Go For It's can be taken in the same way.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Summoner's Delight",
-      "description": "If the character that summoned this model is Slain or Removed from Play then this character is immediately considered to be Slain."
+      "description": "If the character that summoned this model is Slain or Removed from Play then this character is immediately considered to be Slain.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Feeble",
-      "description": "Reduce all Melee Dmg this character deals by -2. Harvest actions cost this model +1 energy"
+      "description": "Reduce all Melee Dmg this character deals by -2. Harvest actions cost this model +1 energy.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
-      "name": "Thrall",
-      "description": "This character can only enter play when summoned. It does not activate and can never gain energy. Instead, while the character that summoned it is active, this character can take actions, including Jog, by discarding the required energy on the character that summoned it. Reaction Steps and Go For It's can be taken in the same way."
-    }
-  ],
-  "activeAbilities": [
-    {
-      "name": "I Want My Nanny!!",
-      "cost": 0,
-      "range": "",
-      "description": "When an enemy character declares this model as a target of an action, you may interupt the action to move this model 2\" directly towards a friendly Nanny. If you do, the enemy must complete the action if possible and may not choose a new target.",
-      "oncePerTurn": true
+      "name": "I Want My Nanny!",
+      "description": "When an enemy character declares this model as a target of an action, you may interrupt the action to move this model 2\" directly towards a friendly Nanny. If you do, the enemy must complete the action if possible and may not choose a new target. Once per turn.",
+      "abilityType": "Passive",
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
-      "name": "He Called me Names!",
-      "cost": 1,
-      "range": "2\"",
+      "name": "He Called Me Names!",
       "description": "Target character suffers -1 Arcane Stat or -1 Melee Stat until end of turn.",
-      "oncePerTurn": true
+      "abilityType": "Active",
+      "energyCost": 1,
+      "range": "2\"",
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     }
-  ],
-  "arcaneAbilities": [],
-  "signatureMove": {
-    "name": "No Signature",
-    "upgradeFrom": "",
-    "damageType": "",
-    "results": [],
-    "endStepEffect": ""
-  },
-  "baseSize": "30mm",
-  "imageName": "123_pookie.json",
-  "shareCode": "AAB"
+  ]
 }

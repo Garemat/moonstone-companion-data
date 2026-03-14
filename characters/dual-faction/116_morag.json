@@ -1,67 +1,109 @@
 {
-  "id": "116",
+  "id": 116,
   "name": "Morag",
-  "version": "",
+  "version": 1,
   "factions": ["LESHAVULT", "SHADES"],
-  "tags": ["Faun", "Spirit"],
+  "health": 7,
+  "energyTrack": [1, 2, 4, 7],
+  "keywords": ["Faun", "Spirit"],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 4,
   "evade": -1,
-  "health": 7,
-  "energyTrack": [1, 2, 4, 7],
-  "passiveAbilities": [
-    {
-      "name": "Eclipse",
-      "description": "When an enemy targets this character with an Arcane Ability you may reveal a G2 or P2 from your resist hand before any cards are played. If you do, this character reduces all Dmg suffered to W whilst resolving the current action"
-    },
+  "baseSize": "30mm",
+  "imageName": "morag",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Shadow Form",
+    "upgradeFor": "High Guard",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "Reduce Dmg suffered by -1. If the enemy has 4 Wds or fewer remaining, instead reduce Dmg suffered to {0}.",
+    "endStepEffect": ""
+  },
+  "abilities": [
     {
       "name": "Slow",
-      "description": "This model's Jog actions are limited to 2\"."
-    }
-  ],
-  "activeAbilities": [
+      "description": "This model's Jog actions are limited to 2\".",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Eclipse",
+      "description": "When an enemy targets this character with an Arcane Ability, you may reveal a Pink 2 or Blue 2 from your resist hand before any cards are played. If you do, this character reduces all Dmg suffered to {0} during the current action.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Reclaim Life",
-      "cost": 0,
-      "range": "4\"",
       "description": "Target friendly character suffers 2 Wds or, if at least one friendly model was slain or reduced to 0 Wds this turn, it may restore 2 Wds instead.",
-      "oncePerTurn": true
-    }
-  ],
-  "arcaneAbilities": [
+      "abilityType": "Active",
+      "energyCost": 0,
+      "range": "4\"",
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Shadow Stride",
-      "cost": 2,
+      "description": "This ability is inhibited by Evade Stat. This character suffers an amount of Wds equal to half the number of Wds they currently have remaining, rounded up.",
+      "abilityType": "Arcane",
+      "energyCost": 2,
       "range": "",
-      "description": "Place this model within X+1\". \nCatastrophe: This character suffers 3 Wds.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Place this model within X+1\".",
+          "validCards": [{"colour": "Green", "value": "X"}, {"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "The target may be moved 4\" by the reacting player.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     },
     {
       "name": "Hunting Ritual",
-      "cost": 3,
+      "description": "This action is inhibited by Evade Stat.",
+      "abilityType": "Arcane",
+      "energyCost": 3,
       "range": "8\"",
-      "description": "Target suffers an amount of Wds equal to half the number of Wds they currently have remaining, rounded up. \nCatastrophe: The target may be moved 4\" by the resisting player.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers an amount of Wds equal to half the number of Wds they currently have remaining, rounded up.",
+          "validCards": [{"colour": "Green", "value": "1"}, {"colour": "Blue", "value": "2"}, {"colour": "Pink", "value": "3"}]
+        },
+        {
+          "text": "The target may be moved 4\" by the reacting player.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Shadow Form",
-    "upgradeFrom": "High Guard",
-    "damageType": "",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "Reduce Dmg suffered by -1. If the enemy has 4 Wds or fewer remaining, instead reduce Dmg suffered to W."
-  },
-  "baseSize": "30mm",
-  "imageName": "116_morag.json",
-  "shareCode": "AAB"
+  ]
 }

@@ -1,0 +1,12 @@
+{
+  "id": 70,
+  "name": "Decoy",
+  "version": 2,
+  "factions": [],
+  "tags": [],
+  "timing": "Play after the game.",
+  "description": "If you *Won* this game: **Gain 1 Machination Point**.",
+  "extraDescription": "Before deployment place one or two Objective Markers 18\" away from your deployment table edge and at least 4\" apart (they have no effect on the game).",
+  "shareCode": "AAB",
+  "imageName": "decoy"
+}

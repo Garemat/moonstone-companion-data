@@ -1,70 +1,105 @@
 {
-  "id": "035",
+  "id": 35,
   "name": "Old Calders",
-  "version": "",
+  "version": 1,
   "factions": ["COMMONWEALTH"],
-  "tags": ["Human", "Soldier"],
+  "health": 8,
+  "energyTrack": [1, 3, 7],
+  "keywords": ["Human", "Soldier"],
   "melee": 3,
   "meleeRange": 2,
   "arcane": 4,
   "evade": 0,
-  "health": 8,
-  "energyTrack": [1, 3, 7],
-  "passiveAbilities": [
+  "baseSize": "30mm",
+  "imageName": "old_calders",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 1,
+  "piercingDamageBuff": 1,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 1,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Tactical Retreat",
+    "upgradeFor": "High Guard",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "Reduce Dmg suffered by -1.",
+    "endStepEffect": "This model may move 2\"."
+  },
+  "abilities": [
     {
       "name": "Longsword",
-      "description": "If this character deals Slicing or Piercing Melee Dmg, increase the Dmg dealt by +1."
+      "description": "If this character deals Slicing or Piercing Melee Dmg, increase the Dmg dealt by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Quilted Armour",
-      "description": "Reduce Slicing Dmg suffered by -1."
+      "description": "Reduce Slicing Dmg suffered by -1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Sage Advice",
-      "description": "Friendly models within 4” may ignore Catastrophe effects."
+      "description": "Friendly models within 4\" may ignore Catastrophe effects.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Seen It All Before",
-      "description": "If this character is attacker or defender in a round of melee, before each player selects their combat card, your opponent must reveal their hand."
-    }
-  ],
-  "activeAbilities": [
+      "description": "If this character is attacker or defender in a round of melee, before each player selects their combat card, your opponent must reveal their hand.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "\"Look out!\"",
-      "cost": 1,
+      "description": "Target friendly character's Evade stat is reduced by -1 until end of turn.",
+      "abilityType": "Active",
+      "energyCost": 1,
       "range": "6\"",
-      "description": "Target friendly character’s Evade stat is reduced by -1 until end of turn.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "arcaneAbilities": [
+      "arcaneOutcomes": []
+    },
     {
       "name": "Field Medic",
-      "cost": 1,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 1,
       "range": "4\"",
-      "description": "Target Soldier or Noble restores X Wds.\nCatastrophe: This model suffers 2 Wds.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Target Soldier or Noble restores X Wds.",
+          "validCards": [{"colour": "Blue", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Tactical Retreat",
-    "upgradeFrom": "High Guard",
-    "damageType": "",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": " This model may move 2”."
-  },
-  "baseSize": "30mm",
-  "imageName": "035_old_calders.json",
-  "shareCode": "AAB",
-  "slicingDamageBuff": 1,
-  "slicingDamageMitigation": 1
+  ]
 }

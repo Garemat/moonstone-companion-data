@@ -1,0 +1,19 @@
+{
+  "id": 3,
+  "name": "Bad-News Talisman",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [
+    "Spirit"
+  ],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Bad-News Talisman",
+      "description": "When a friendly character within 6\" is slain or suffers a catastrophe, this character may restore 2 Wds.",
+      "oncePerTurn": true
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "badnewstalisman"
+}

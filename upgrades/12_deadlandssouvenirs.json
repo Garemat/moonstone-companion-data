@@ -1,0 +1,16 @@
+{
+  "id": 12,
+  "name": "Deadlands Souvenirs",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Deadlands Souvenirs",
+      "description": "When this character brings a model into play via Reanimate other friendly models within 2\" gain +1 energy and enemy models within 2\" suffer 1 Wd."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "deadlandssouvenirs"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 50,
+  "name": "Spord of Honour",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [
+    "Giant",
+    "Troll"
+  ],
+  "abilities": [
+    {
+      "name": "Perseverance",
+      "description": "Whilst this character has half or less of their starting health boxes remaining, they gain +2 Melee Stat."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "spordofhonour"
+}

@@ -1,57 +1,90 @@
 {
-  "id": "092",
+  "id": 92,
   "name": "Eric, the Enlightened",
-  "version": "",
+  "version": 1,
   "factions": ["LESHAVULT"],
-  "tags": ["Human", "Animal", "Cultist"],
+  "health": 10,
+  "energyTrack": [1, 3, 8],
+  "keywords": ["Human", "Animal", "Cultist"],
   "melee": 4,
   "meleeRange": 2,
   "arcane": 3,
   "evade": 1,
-  "health": 10,
-  "energyTrack": [1, 3, 8],
-  "passiveAbilities": [
+  "baseSize": "40mm",
+  "imageName": "eric_the_enlightened",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 2,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": true,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Swinging Antlers",
+    "upgradeFor": "Sweeping Cut",
+    "possibleDamageTypes": ["Impact"],
+    "highGuard": {"deal": "0", "isFollowUp": false},
+    "fallingSwing": {"deal": "3", "isFollowUp": false},
+    "thrust": {"deal": "0", "isFollowUp": true},
+    "sweepingCut": {"deal": "1", "isFollowUp": false},
+    "risingAttack": {"deal": "2", "isFollowUp": false},
+    "lowGuard": {"deal": "1", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "Move the enemy model 1\"."
+  },
+  "abilities": [
     {
       "name": "Enchanted Javelin",
-      "description": "If this character deals Piercing Melee Dmg, increase the Dmg dealt by +2. Whenever this character deals any Piercing Dmg it may deal the same amount of Magical Dmg instead."
-    },
-    {
-      "name": "Leshavit's Shield",
-      "description": "If this character would suffer Dmg, you may reduce that Dmg to W.",
-      "oncePerGame": true
+      "description": "If this character deals Piercing Melee Dmg, increase the Dmg dealt by +2. Whenever this character deals any Piercing Dmg it may deal the same amount of Magical Dmg instead.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Woodland Animal",
-      "description": " This character may Jog over Wooded Patches and gains +1 energy during the Replenish Step if any part of its base is within a Wooded Patch."
-    }
-  ],
-  "activeAbilities": [],
-  "arcaneAbilities": [
+      "description": "This character may Jog over Wooded Patches and does not need to expend 1 energy during the Replenish Step if any part of its base is within a Wooded Patch.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Leshavit's Shield",
+      "description": "If this character would suffer Dmg, you may reduce that Dmg to {Null}. Once per game.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": true,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Enchanted Bladestorm",
-      "cost": 2,
+      "description": "This attack is not modified by Evade Stat or Cover and may only be used if this model has the Enchanted Javelin ability.",
+      "abilityType": "Arcane",
+      "energyCost": 2,
       "range": "6\"",
-      "description": "This attack is not modified by Evade Stat or Cover and may only\nbe used if this model has the Enchanted Javelin ability.\nTarget suffers X+1 Piercing Dmg. After resolving this action, this model loses Enchanted Javelin until end of turn.\nThis character may discard 2 energy. If it does, all other models within 4\" suffer X+1 Piercing Dmg then are moved X\" directly away. Then, after resolving this action, this model loses Enchanted Javelin until end of game.\nCatastrophe: If this character has the Enchanted Javelin ability, the target gains it and this model loses it, both until end of turn.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers X+1 Piercing Dmg. After resolving this action, this model loses Enchanted Javelin until end of turn.",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "This character may discard 2 energy. If it does, all other models within 4\" of this model suffer X+1 Piercing Dmg then are moved X\" directly away. After resolving this action, this model loses Enchanted Javelin until end of game.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "If this character has the Enchanted Javelin ability, the targtet gains it and this model loses it, both until end of turn.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Swinging Antlers",
-    "upgradeFrom": "Sweeping Cut",
-    "damageType": "Impact",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "0"},
-      {"opponentPlay": "Falling Swing", "deal": "3"},
-      {"opponentPlay": "Thrust", "deal": "0"},
-      {"opponentPlay": "Sweeping Cut", "deal": "1"},
-      {"opponentPlay": "Rising Attack", "deal": "2"},
-      {"opponentPlay": "Low Guard", "deal": "1"}
-    ],
-    "endStepEffect": "Move the enemy model 1\"."
-  },
-  "baseSize": "40mm",
-  "imageName": "092_eric_the_enlightened.json",
-  "shareCode": "AAB",
-  "piercingDamageBuff": 2
+  ]
 }

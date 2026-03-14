@@ -1,0 +1,19 @@
+{
+  "id": 10,
+  "name": "Crooked Investiture",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [
+    "Spirit"
+  ],
+  "extraDescription": "This character gains the Noble keyword.",
+  "abilities": [
+    {
+      "name": "Petty",
+      "description": "This character gains +1 Melee Stat if involved in a round of melee with a Non-Noble."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "crookedinvestiture"
+}

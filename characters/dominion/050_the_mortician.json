@@ -1,67 +1,118 @@
 {
-  "id": "050",
+  "id": 50,
   "name": "The Mortician",
-  "version": "",
+  "version": 1,
   "factions": ["DOMINION"],
-  "tags": ["Goblin", "Wizard"],
+  "health": 7,
+  "energyTrack": [1, 4],
+  "keywords": ["Goblin", "Wizard"],
   "melee": 2,
   "meleeRange": 1,
   "arcane": 4,
   "evade": -1,
-  "health": 7,
-  "energyTrack": [1, 4],
-  "passiveAbilities": [
+  "baseSize": "30mm",
+  "imageName": "mortician",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Play Dead",
+    "upgradeFor": "Low Guard",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "Enemy characters cannot target this model with actions until this model next performs an action or the end of turn, whichever comes first."
+  },
+  "abilities": [
     {
       "name": "Slow",
-      "description": "This model's Jog actions are limited to 2”."
+      "description": "This model's Jog actions are limited to 2\".",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Spirit Link",
-      "description": "During the Replenish Step, this character gains +1 energy for each friendly slain character."
-    }
-  ],
-  "activeAbilities": [],
-  "arcaneAbilities": [
+      "description": "During the Replenish Step, this character gains +1 energy for each friendly slain character.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Healing",
-      "cost": 2,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
       "range": "8\"",
-      "description": "Target restores X+1 Wds.\nCatastrophe: This model suffers 2 Wds.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Target restores X+1 Wds.",
+          "validCards": [{"colour": "Blue", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     },
     {
       "name": "Rigor Mortis",
-      "cost": 3,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 3,
       "range": "6\"",
-      "description": "Target discards all energy and suffers 1 Wd.\nCatastrophe:  This model suffers 4 Wds.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Target discards all energy and suffers 1 Wd.",
+          "validCards": [{"colour": "Green", "value": "X"}, {"colour": "Blue", "value": "X"}, {"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 4 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     },
     {
       "name": "Reanimate",
-      "cost": 3,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 3,
       "range": "",
-      "description": "Place a friendly slain model in base contact with this model. Restore half its health rounding up. It has no energy but may activate this turn.\nCatastrophe: This model suffers 4 Wds.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Place a friendly slain model in base contact with this model. Restore half its health rounding up. It has no energy but may activate this turn.",
+          "validCards": [{"colour": "Green", "value": "X"}, {"colour": "Blue", "value": "X"}, {"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 4 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Play Dead",
-    "upgradeFrom": "Low Guard",
-    "damageType": "",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": " Enemy characters cannot target this model with actions until this model next performs an action or the end of turn, whichever comes first."
-  },
-  "baseSize": "30mm",
-  "imageName": "mortician",
-  "shareCode": "AAB"
+  ]
 }
