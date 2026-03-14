@@ -1,64 +1,92 @@
 {
-  "id": "059",
+  "id": 59,
   "name": "Vespa",
-  "version": "",
+  "version": 1,
   "factions": ["DOMINION"],
-  "tags": ["Faerie", "Animal", "Soldier"],
+  "health": 8,
+  "energyTrack": [1, 4, 7],
+  "keywords": ["Faerie", "Animal", "Soldier"],
   "melee": 3,
   "meleeRange": 2,
   "arcane": 4,
   "evade": 0,
-  "health": 8,
-  "energyTrack": [1, 4, 7],
-  "passiveAbilities": [
-    {
-      "name": "Stinger",
-      "description": "If this character deals Piercing Melee Dmg, increase the Dmg dealt by +2."
-    }
-  ],
-  "activeAbilities": [
-    {
-      "name": "Antagonise",
-      "cost": 1,
-      "range": "6\"",
-      "description": "Target gains +1 Melee Stat and +1 Evade Stat until end of turn.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    },
-    {
-      "name": "Out of Reach",
-      "cost": 1,
-      "range": "",
-      "description": "This character cannot be targeted by a Melee Attack action and does not benefit from cover until end of turn.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "arcaneAbilities": [
-    {
-      "name": "Throw Javelin",
-      "cost": 2,
-      "range": "6\"",
-      "description": "Target suffers X Piercing Dmg.\nCatastrophe: This character suffers 1 Wd.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "signatureMove": {
-    "name": "Strike from Above",
-    "upgradeFrom": "Falling Swing",
-    "damageType": "Piercing",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "2"},
-      {"opponentPlay": "Thrust", "deal": "2"},
-      {"opponentPlay": "Sweeping Cut", "deal": "1"},
-      {"opponentPlay": "Rising Attack", "deal": "0"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ]
-  },
   "baseSize": "40mm",
   "imageName": "vespa",
   "shareCode": "AAB",
-  "piercingDamageBuff": 2
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 2,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Strike from Above",
+    "upgradeFor": "Falling Swing",
+    "possibleDamageTypes": ["Piercing"],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "2", "isFollowUp": false},
+    "thrust": {"deal": "2", "isFollowUp": false},
+    "sweepingCut": {"deal": "2", "isFollowUp": false},
+    "risingAttack": {"deal": "1", "isFollowUp": false},
+    "lowGuard": {"deal": "0", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": ""
+  },
+  "abilities": [
+    {
+      "name": "Stinger",
+      "description": "If this character deals Piercing Melee Dmg, increase the Dmg dealt by +2.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Antagonise",
+      "description": "Target gains +1 Melee Stat and +1 Evade Stat until end of turn.",
+      "abilityType": "Active",
+      "energyCost": 1,
+      "range": "6\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Out of Reach",
+      "description": "This character cannot be targeted by a Melee Attack action and does not benefit from cover until end of turn.",
+      "abilityType": "Active",
+      "energyCost": 1,
+      "range": "",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Throw Javelin",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "6\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers X Piercing Dmg.",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 1 Wd.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

@@ -1,67 +1,103 @@
 {
-  "id": "032",
+  "id": 32,
   "name": "Natty, Slum Thief",
-  "version": "v.2",
+  "version": 2,
   "factions": ["COMMONWEALTH"],
-  "tags": ["Human", "Rogue"],
+  "health": 6,
+  "energyTrack": [1, 2, 4, 6],
+  "keywords": ["Human", "Rogue"],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 4,
   "evade": 0,
-  "health": 6,
-  "energyTrack": [1, 2, 4, 6],
-  "passiveAbilities": [
-    {
-      "name": "Weakling",
-      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy."
-    },
-    {
-      "name": "Concealed Dagger",
-      "description": "If this character deals Piercing Melee Dmg, increase the Dmg dealt by +1. If this character plays a Rising Attack increase the Dmg dealt by +1."
-    },
-    {
-      "name": "Look of Innocence",
-      "description": " When an enemy targets this character with an action, the active enemy model must discard 1 energy or the action is cancelled."
-    },
-    {
-      "name": "Disappear in a Crowd",
-      "description": "This character’s Evade Stat is -[#], where [#] is the number of other models within 3”, excluding the originator of the ability."
-    },
-    {
-      "name": "Swift",
-      "description": "When making a Reaction Step while engaged by an enemy, this model may move 2” instead of the usual 1”.",
-      "oncePerTurn": true
-    }
-  ],
-  "activeAbilities": [],
-  "arcaneAbilities": [
-    {
-      "name": "Slingshot",
-      "cost": 2,
-      "range": "6\"",
-      "description": "Target suffers X Impact Dmg.\nCatastrophe: This character loses the Look of Innocence and Disappear in a Crowd abilities and is Evade Stat +1 until end of turn.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "signatureMove": {
-    "name": "Cut Purse",
-    "upgradeFrom": "Sweeping Cut",
-    "damageType": "",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "passiveEffect": "Reduce Dmg suffered by -2. ",
-    "endStepEffect": "If this character was not slain then it may take possession of up to one Moonstone carried by the enemy."
-  },
+  "evadeIsDynamic": true,
   "baseSize": "30mm",
   "imageName": "natty",
   "shareCode": "AAB",
   "slicingDamageBuff": -1,
-  "impactDamageBuff": -1
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": -1,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Cut Purse",
+    "upgradeFor": "Sweeping Cut",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "Reduce Dmg suffered by -2.",
+    "endStepEffect": "If this character was not slain then it may take possession of up to one Moonstone carried by the enemy."
+  },
+  "abilities": [
+    {
+      "name": "Weakling",
+      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Concealed Dagger",
+      "description": "If this character deals Piercing Melee Dmg, increase the Dmg dealt by +1. If this character plays a Rising Attack increase the Dmg dealt by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Look of Innocence",
+      "description": "When an enemy targets this character with an action, the active enemy model must discard 1 energy or the action is cancelled.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Disappear in a Crowd",
+      "description": "This character's Evade Stat is -[#], where [#] is the number of other models within 3\", excluding the originator of the ability.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Swift",
+      "description": "When making a Reaction Step while engaged by an enemy, this model may move 2\" instead of the usual 1\".",
+      "abilityType": "Passive",
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Slingshot",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "6\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers X Impact Dmg.",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "This character loses the Look of Innocence and Disappear in a Crowd abilities and is Evade Stat +1 until end of turn.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

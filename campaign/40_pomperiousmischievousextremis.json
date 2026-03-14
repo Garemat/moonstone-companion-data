@@ -1,0 +1,11 @@
+{
+  "id": 40,
+  "name": "Pomperious Mischievous Extremis",
+  "version": 2,
+  "factions": [],
+  "tags": [],
+  "timing": "Play during the Activation Step, before or after any action.",
+  "description": "Choose any two friendly *Psychopomps* and swap their positions. Both *Psychopomps* may immediately take any action available to them irrespective of energy cost, excluding Jog.",
+  "shareCode": "AAB",
+  "imageName": "pomperiousmischievousextremis"
+}

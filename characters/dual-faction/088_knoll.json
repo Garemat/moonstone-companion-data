@@ -1,65 +1,114 @@
 {
-  "id": "088",
+  "id": 88,
   "name": "Knoll",
-  "version": "",
+  "version": 1,
   "factions": ["DOMINION", "LESHAVULT"],
-  "tags": ["Troll", "Wizard"],
+  "health": 12,
+  "energyTrack": [1, 6],
+  "keywords": ["Troll", "Wizard"],
   "melee": 2,
   "meleeRange": 3,
   "arcane": 4,
   "evade": 2,
-  "health": 12,
-  "energyTrack": [1, 6],
-  "passiveAbilities": [
+  "baseSize": "40mm",
+  "imageName": "knoll",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 1,
+  "impactDamageBuff": 1,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Bog Off!",
+    "upgradeFor": "Thrust",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "Move the enemy model 1\" directly away from this model."
+  },
+  "abilities": [
     {
       "name": "Tough as Old Boots",
-      "description": "At the start of the Replenish Step this model recovers 2 Wds."
+      "description": "At the start of the Replenish Step this model recovers 2 Wds.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Recluse",
-      "description": "At the start of the Replenish Step this model gains +1 energy if there are no other models within 3\"."
+      "description": "At the start of the Replenish Step this model gains +1 energy if there are no other models within 3\".",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Old Staff",
-      "description": " If this character deals Piercing or Impact Melee Dmg, increase the Dmg dealt by +1."
-    }
-  ],
-  "activeAbilities": [],
-  "arcaneAbilities": [
+      "description": "If this character deals Piercing or Impact Melee Dmg, increase the Dmg dealt by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Healing",
-      "cost": 2,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
       "range": "8\"",
-      "description": "Target restores X+1 Wds.\nCatastrophe: This model suffers 2 Wds.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Target restores X+1 Wds.",
+          "validCards": [{"colour": "Blue", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     },
     {
       "name": "Trollish Remedies",
-      "cost": 3,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 3,
       "range": "8\"",
-      "description": "Target Troll gains [Tough as Old Boots: At the start of the Replenish Step this model recovers 2 Wds.], until end of game.\nTarget suffers X Wds, then gains +1 energy.\nTarget restores 3X-1 Wds.\nCatastrophe: The target suffers 2 Wds and loses 1 energy.",
+      "pulse": false,
+      "oncePerTurn": true,
       "oncePerGame": false,
-      "oncePerTurn": true
+      "arcaneOutcomes": [
+        {
+          "text": "Target restores 3X-1 Wds",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "Target Troll gains [Tough as Old Boots: At the start of the Replenish Step this model recovers 2 Wds.], until end of game.",
+          "validCards": [{"colour": "Blue", "value": "X"}]
+        },
+        {
+          "text": "Target rsuffers X Wds, then gains +1 energy.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "The target restores 2 Wds and loses 1 energy.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Bog Off!",
-    "upgradeFrom": "Thrust",
-    "damageType": "Piercing",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "1"},
-      {"opponentPlay": "Falling Swing", "deal": "3"},
-      {"opponentPlay": "Thrust", "deal": "4"},
-      {"opponentPlay": "Sweeping Cut", "deal": "3"},
-      {"opponentPlay": "Rising Attack", "deal": "1"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "Move the enemy model 1\" directly away from this model."
-  },
-  "baseSize": "40mm",
-  "imageName": "088_knoll.json",
-  "shareCode": "AAB",
-  "impactDamageBuff": 1,
-  "piercingDamageBuff": 1
+  ]
 }

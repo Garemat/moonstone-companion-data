@@ -1,0 +1,12 @@
+{
+  "id": 65,
+  "name": "Antagonise",
+  "version": 2,
+  "factions": [],
+  "tags": [],
+  "timing": "Play immediately.",
+  "description": "Gain 1 Victory Point.\n\nYour opponent may choose an additional Campaign Card.",
+  "extraDescription": "This additional card may allow them to exceed the usual max. 3 limit.",
+  "shareCode": "AAB",
+  "imageName": "antagonise"
+}

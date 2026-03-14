@@ -1,0 +1,21 @@
+{
+  "id": 46,
+  "name": "Shovel",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [
+    "Animal",
+    "Goblin",
+    "Human",
+    "Gnome"
+  ],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Shovel",
+      "description": "If this character takes a Harvest action, you may reduce the Moonstone's depth value by an additional -1."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "shovel"
+}

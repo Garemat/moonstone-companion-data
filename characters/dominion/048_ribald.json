@@ -1,59 +1,86 @@
 {
-  "id": "048",
+  "id": 48,
   "name": "Ribald",
-  "version": "",
+  "version": 3,
   "factions": ["DOMINION"],
-  "tags": ["Goblin", "Troll"],
+  "health": 11,
+  "energyTrack": [1, 7],
+  "keywords": ["Goblin", "Troll"],
   "melee": 2,
   "meleeRange": 2,
   "arcane": 3,
   "evade": 2,
-  "health": 11,
-  "energyTrack": [1, 7],
-  "passiveAbilities": [
-    {
-      "name": "Slow",
-      "description": "This model's Jog actions are limited to 2”"
-    },
-    {
-      "name": "Ironclad Knuckles",
-      "description": "If this character deals Piercing or Slicing Melee Dmg, reduce the Dmg dealt to W. If this character deals Impact Melee Dmg, increase the Dmg dealt by +2. "
-    },
-    {
-      "name": "Ramshackle Armour",
-      "description": "Reduce all non-Magical Dmg suffered by -1."
-    }
-  ],
-  "activeAbilities": [],
-  "arcaneAbilities": [
-    {
-      "name": "Fire Cannon!",
-      "cost": 2,
-      "range": "8\"",
-      "description": "Target character suffers 3X-1 Impact Dmg then is moved X\" directly away.\nCatastrophe: This model suffers 3 Wds. All other models within 2” suffer 3 Magical Dmg then are moved 1\" directly away.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "signatureMove": {
-    "name": "Short Fuse",
-    "upgradeFrom": "High Guard",
-    "damageType": "",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "This model suffers 3 Wds. All other models within 2” suffer 3 Magical Dmg then are moved 1\" directly away."
-  },
   "baseSize": "40mm",
   "imageName": "ribald",
   "shareCode": "AAB",
+  "slicingDamageBuff": null,
+  "piercingDamageBuff": null,
   "impactDamageBuff": 2,
-  "piercingDamageReduction": 1,
-  "slicingDamageReduction": 1,
-  "allNonMagicalDamageMitigation": 1
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 1,
+  "impactDamageMitigation": 1,
+  "slicingDamageMitigation": 1,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Short Fuse",
+    "upgradeFor": "High Guard",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "This model suffers 3 Wds. All other models within 2\" suffer 3 Magical Dmg then are moved 1\" directly away."
+  },
+  "abilities": [
+    {
+      "name": "Slow",
+      "description": "This model's Jog actions are limited to 2\".",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Ironclad Knuckles",
+      "description": "If this character deals Piercing or Slicing Melee Dmg, reduce the Dmg dealt to {Null}. If this character deals Impact Melee Dmg, increase the Dmg dealt by +2.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Ramshackle Armour",
+      "description": "Reduce all non-Magical Dmg suffered by -1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Fire Cannon!",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "8\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target character suffers X×3 Impact Dmg then is moved X\" directly away.",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 3 Wds. All other models within 2\" suffer 3 Magical Dmg then are moved 1\" directly away.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

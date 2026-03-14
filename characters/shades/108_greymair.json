@@ -1,65 +1,104 @@
 {
-  "id": "108",
+  "id": 108,
   "name": "Greymair",
-  "version": "",
+  "version": 2,
   "factions": ["SHADES"],
-  "tags": ["Risen", "Cleric", "Soldier"],
-  "melee": 3,
-  "meleeRange": 2,
-  "arcane": 3,
-  "evade": 0,
   "health": 8,
   "energyTrack": [1, 3, 5],
-  "passiveAbilities": [],
-  "activeAbilities": [
-    {
-      "name": "Necrotic Salve",
-      "cost": 1,
-      "range": "4\"",
-      "description": "Target friendly character restores 1 Wd. If at least one friendly model was slain this turn, the target also gains +1 energy. ",
-      "oncePerTurn": true
-    },
+  "keywords": ["Risen", "Cleric", "Soldier"],
+  "melee": 3,
+  "meleeRange": 2,
+  "arcane": 0,
+  "evade": 0,
+  "baseSize": "30mm",
+  "imageName": "greymair",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [102, 103],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Raise the Banner!",
+    "upgradeFor": "High Guard",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "Reduce Dmg suffered by -1.",
+    "endStepEffect": "Choose another friendly Soldier within 4\" and move it 2\"."
+  },
+  "abilities": [
     {
       "name": "Drain Life",
-      "cost": 2,
+      "description": "Target other friendly Spirit or Risen is slain. The next time this character uses Reanimate this turn, reduce its energy cost to {0} and gain +2 Arcane Stat for the duration of the action.",
+      "abilityType": "Active",
+      "energyCost": 2,
       "range": "4\"",
-      "description": "Target other friendly character is slain. If the target wasn't a Psychopomp then the next time this character uses Reanimate this turn, reduce its energy cost to (0) and gain +2 Arcane Stat for the duration of the action.",
-      "oncePerTurn": true
-    }
-  ],
-  "arcaneAbilities": [
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Necrotic Salve",
+      "description": "Target friendly character restores 1 Wd. If the target is a Noble or Risen and at least one friendly model was slain this turn, the target also gains +1 energy.",
+      "abilityType": "Active",
+      "energyCost": 1,
+      "range": "4\"",
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Reanimate",
-      "cost": 3,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 3,
       "range": "",
-      "description": "Place a friendly slain model in base contact with this model. Restore half its health rounding up. It has no energy but may activate this turn. \nCatastrophe: This model suffers 4 Wds.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Place a friendly slain model in base contact with this model. Restore half its health rounding up. It has no energy but may activate this turn.",
+          "validCards": [{"colour": "Green", "value": "2"}, {"colour": "Blue", "value": "2"}, {"colour": "Pink", "value": "2"}]
+        },
+        {
+          "text": "This model suffers 4 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     },
     {
       "name": "Summon a Helping Hand",
-      "cost": 2,
+      "description": "This action cannot bring a character into play if it is already in play.",
+      "abilityType": "Arcane",
+      "energyCost": 2,
       "range": "",
-      "description": "Place a new Familiar Psychopomp in base contact with this character. \nCatastrophe: This model suffers 3 Wds.",
+      "pulse": false,
+      "oncePerTurn": true,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Place a new Familiar Psychopomp in base contact with this model.",
+          "validCards": [{"colour": "Green", "value": "1"}, {"colour": "Blue", "value": "1"}, {"colour": "Pink", "value": "1"}]
+        },
+        {
+          "text": "This model suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Raise the Banner!",
-    "upgradeFrom": "High Guard",
-    "damageType": "",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "Reduce Dmg suffered by -1. Choose another friendly Soldier within 4\" and move it 2\"."
-  },
-  "baseSize": "30mm",
-  "imageName": "108_greymair.json",
-  "shareCode": "AAB"
+  ]
 }

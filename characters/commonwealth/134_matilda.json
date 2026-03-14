@@ -1,68 +1,103 @@
 {
-  "id": "134",
+  "id": 134,
   "name": "Matilda",
-  "version": "",
+  "version": 1,
   "factions": ["COMMONWEALTH"],
-  "tags": ["Human", "Animal", "Mercenary"],
+  "health": 9,
+  "energyTrack": [1, 3, 6],
+  "keywords": ["Human", "Animal", "Mercenary"],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 3,
   "evade": 0,
-  "health": 9,
-  "energyTrack": [1, 3, 6],
-  "passiveAbilities": [
+  "baseSize": "40mm",
+  "imageName": "matilda",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Leaped & Loaded",
+    "upgradeFor": "High Guard",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "Place this model within 1\" of itself and LoS. You may immediately play the Reload ability even if engaged, and without spending energy."
+  },
+  "abilities": [
     {
       "name": "Bingy",
-      "description": "When making a Reaction Step whilst engaged by an enemy, this model may spend (0) energy instead of (1).",
-      "oncePerTurn": true
-    }
-  ],
-  "activeAbilities": [
+      "description": "When making a Reaction Step whilst engaged by an enemy, this model may spend {0} energy instead of {1}. Once per turn.",
+      "abilityType": "Passive",
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Boingy",
-      "cost": 2,
-      "range": "",
       "description": "Place this model within 2\" and LoS. This model cannot take Harvest actions until end of turn.",
-      "oncePerTurn": true
+      "abilityType": "Active",
+      "energyCost": 2,
+      "range": "",
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Astrazan Tactics",
-      "cost": 0,
-      "range": "",
       "description": "This character immediately takes a Melee Attack or Blunderbuss action against an enemy in range, without spending energy. In either case, increase any Dmg dealt by +2, then place this model within 1\" of itself and LoS after resolving the attack.",
-      "oncePerTurn": true
+      "abilityType": "Active",
+      "energyCost": 1,
+      "range": "",
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Reload [Blunderbuss]",
-      "cost": 2,
+      "description": "The named ability can be used again. This ability cannot be used while this model is engaged.",
+      "abilityType": "Active",
+      "energyCost": 2,
       "range": "",
-      "description": "The named ability can be used again. This ability cannot be used while this model is engaged."
-    }
-  ],
-  "arcaneAbilities": [
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Blunderbuss",
-      "cost": 1,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 1,
       "range": "4\"",
-      "description": "Target suffers X Impact Dmg.\nCatastrophe: This model suffers 2 Wds.",
-      "oncePerGame": true
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": true,
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers X Impact Dmg.",
+          "validCards": [{"colour": "Green", "value": "X"}, {"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Leaped & Loaded",
-    "upgradeFrom": "High Guard",
-    "damageType": "Impact",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "0"},
-      {"opponentPlay": "Falling Swing", "deal": "0"},
-      {"opponentPlay": "Thrust", "deal": "0"},
-      {"opponentPlay": "Sweeping Cut", "deal": "0"},
-      {"opponentPlay": "Rising Attack", "deal": "0"},
-      {"opponentPlay": "Low Guard", "deal": "0"}
-    ],
-    "endStepEffect": "Place this model within 1\" of itself and LoS. You may immediately play the Reload ability even if engaged, and without spending energy."
-  },
-  "baseSize": "30mm",
-  "imageName": "134_matilda.json",
-  "shareCode": "AAB"
+  ]
 }

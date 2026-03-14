@@ -1,0 +1,18 @@
+{
+  "id": 37,
+  "name": "Pimp My Ride",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [
+    "Animal"
+  ],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Barding",
+      "description": "If this character suffers Impact or Slicing Dmg, reduce the Dmg suffered by -1, to a maximum of -1."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "pimpmyride"
+}

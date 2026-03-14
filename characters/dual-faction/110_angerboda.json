@@ -1,62 +1,94 @@
 {
-  "id": "110",
+  "id": 110,
   "name": "Angerboda",
-  "version": "",
+  "version": 1,
   "factions": ["COMMONWEALTH", "SHADES"],
-  "tags": ["Risen", "Soldier", "Giant", "Norse"],
+  "health": 12,
+  "energyTrack": [1, 7],
+  "keywords": ["Risen", "Soldier", "Giant", "Norse"],
   "melee": 3,
   "meleeRange": 2,
   "arcane": 4,
   "evade": 2,
-  "health": 12,
-  "energyTrack": [1, 7],
-  "passiveAbilities": [
-    {
-      "name": "Ice Shard Armour",
-      "description": "If this character suffers Piercing or Slicing Dmg, reduce the Dmg suffered by -1."
-    },
-    {
-      "name": "Frostbite",
-      "description": "If this character deals Impact Melee Dmg, increase the Dmg dealt by +2. If at least one friendly model was slain this turn, Melee Dmg dealt by this character cannot be reduced by passive abilities."
-    }
-  ],
-  "activeAbilities": [
-    {
-      "name": "Ice in the Veins",
-      "cost": 1,
-      "range": "",
-      "description": "Flip an Arcane Card. If the card is Blue X,  restore X+1 Wds.",
-      "oncePerTurn": true
-    }
-  ],
-  "arcaneAbilities": [
-    {
-      "name": "Eternal Chill",
-      "cost": 2,
-      "range": "6\"",
-      "description": "Target suffers X Magical Dmg and gains [Slow: This model's Jog actions are limited to 2\"], until end of turn.\nCatastrophe: This character restores 1 Wd. The target restores 2 Wds.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
+  "baseSize": "40mm",
+  "imageName": "angerboda",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 2,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 1,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 1,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
   "signatureMove": {
     "name": "Cleave",
-    "upgradeFrom": "Sweeping Cut",
-    "damageType": "Impact",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "1"},
-      {"opponentPlay": "Falling Swing", "deal": "2"},
-      {"opponentPlay": "Thrust", "deal": "0"},
-      {"opponentPlay": "Sweeping Cut", "deal": "0"},
-      {"opponentPlay": "Rising Attack", "deal": "2"},
-      {"opponentPlay": "Low Guard", "deal": "2"}
-    ],
-    "endStepEffect": "If the enemy suffered 1 or more Wds during this round of Melee, the next time the enemy would restore Wds this turn, reduce Wds restored to W. If the enemy has an ability which restores or otherwise regains Wds after being reduced to 0 Wds, it does not and is slain instead"
+    "upgradeFor": "Sweeping Cut",
+    "possibleDamageTypes": ["Impact"],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "2", "isFollowUp": false},
+    "thrust": {"deal": "0", "isFollowUp": true},
+    "sweepingCut": {"deal": "0", "isFollowUp": false},
+    "risingAttack": {"deal": "2", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "If the enemy suffered 1 or more Wds during this round of Melee, the next time the enemy would restore Wds this turn, reduce Wds restored to {0}. If the enemy has an ability which restores or otherwise regains Wds after being reduced to 0 Wds, it does not and is slain instead.",
+    "endStepEffect": ""
   },
-  "baseSize": "40mm",
-  "imageName": "110_angerboda.json",
-  "shareCode": "AAB",
-  "impactDamageBuff": 2,
-  "piercingDamageMitigation": 1,
-  "slicingDamageMitigation": 1
+  "abilities": [
+    {
+      "name": "Frostbite",
+      "description": "If this character deals Impact Melee Dmg, increase the Dmg dealt by +2. If at least one friendly model was slain this turn, Melee Dmg dealt by this character cannot be reduced below {0}.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Ice Shard Armour",
+      "description": "If this character suffers Piercing or Slicing Dmg, reduce the Dmg suffered by -1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Ice in the Veins",
+      "description": "Flip an Arcane Card.",
+      "abilityType": "Arcane",
+      "energyCost": 1,
+      "range": "",
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Restore X+1 Wds.",
+          "validCards": [{"colour": "Blue", "value": "X"}]
+        }
+      ]
+    },
+    {
+      "name": "Eternal Chill",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "6\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers X Magical Dmg and gains [Slow: This character's Jog actions are limited to 2\"], until end of turn.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This character restores 1 Wd. The target restores 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

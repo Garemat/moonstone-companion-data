@@ -1,0 +1,19 @@
+{
+  "id": 21,
+  "name": "Fanatic",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [
+    "Noble"
+  ],
+  "abilities": [
+    {
+      "name": "Zeal (0)",
+      "description": "This character suffers 3 Wds and gains +1 energy.",
+      "oncePerTurn": true
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "fanatic"
+}

@@ -1,59 +1,89 @@
 {
-  "id": "075",
+  "id": 75,
   "name": "The Revenant",
-  "version": "",
+  "version": 2,
   "factions": ["DOMINION", "LESHAVULT"],
-  "tags": ["Human", "Noble", "Spirit"],
+  "health": 7,
+  "energyTrack": [3, 5, 7],
+  "keywords": ["Human", "Noble", "Spirit"],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 4,
   "evade": 0,
-  "health": 7,
-  "energyTrack": [3, 5, 7],
-  "passiveAbilities": [
+  "baseSize": "30mm",
+  "imageName": "revenant",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Destiny Fulfilled",
+    "upgradeFor": "Thrust",
+    "possibleDamageTypes": ["Piercing"],
+    "highGuard": {"deal": "1", "isFollowUp": false},
+    "fallingSwing": {"deal": "3", "isFollowUp": false},
+    "thrust": {"deal": "4", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "3", "isFollowUp": false},
+    "lowGuard": {"deal": "2", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "If the enemy is slain, this character is Removed from Play."
+  },
+  "abilities": [
     {
       "name": "Undying",
-      "description": "Each time this character would be slain, instead restore all Wds. Then, if this character was in possession of any Moonstones, it drops one of them as if it were slain"
+      "description": "Each time this character would be slain, instead restore all Wds. Then, if this character was in possession of any Moonstones, it drops one of them as if it were slain.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Seen It All Before",
-      "description": "If this character is attacker or defender in a round of melee, before each player selects their combat card, your opponent must reveal their hand."
-    }
-  ],
-  "activeAbilities": [
+      "description": "If this character is attacker or defender in a round of melee, before each player selects their combat card, your opponent must reveal their hand.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Visions of the Future",
-      "cost": 2,
+      "description": "Target other friendly character immediately suffers one Catastrophe printed on their card. If it requires a target, you may choose any target that meets the ability's requirements.",
+      "abilityType": "Active",
+      "energyCost": 2,
       "range": "8\"",
-      "description": "Target other friendly character immediately suffers one Catastrophe printed on their card. If it requires a target, you may choose any target that meets the ability’s requirements.",
-      "oncePerTurn": true
-    }
-  ],
-  "arcaneAbilities": [
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Eternal Chill",
-      "cost": 2,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
       "range": "6\"",
-      "description": "Target suffers X Magical Dmg and gains Slow until end of turn.\nCatastrophe:  This character restores 1 Wd. The target restores 2 Wds.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers X Magical Dmg and gains Slow until end of turn.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This character restores 1 Wd. The target restores 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Destiny Fulfilled",
-    "upgradeFrom": "Thrust",
-    "damageType": "Piercing",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "1"},
-      {"opponentPlay": "Falling Swing", "deal": "3"},
-      {"opponentPlay": "Thrust", "deal": "4"},
-      {"opponentPlay": "Sweeping Cut", "deal": "3"},
-      {"opponentPlay": "Rising Attack", "deal": "3"},
-      {"opponentPlay": "Low Guard", "deal": "2"}
-    ],
-    "endStepEffect": "If the enemy is slain, this character is Removed from Play"
-  },
-  "baseSize": "30mm",
-  "imageName": "revenant",
-  "shareCode": "AAB"
+  ]
 }

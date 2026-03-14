@@ -1,67 +1,101 @@
 {
-  "id": "026",
+  "id": 26,
   "name": "Butterfingers",
-  "version": "",
+  "version": 2,
   "factions": ["DOMINION"],
-  "tags": ["Faerie"],
+  "health": 6,
+  "energyTrack": [1, 2, 3, 4, 5],
+  "keywords": ["Faerie"],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 5,
   "evade": -2,
-  "health": 6,
-  "energyTrack": [1, 2, 3, 4, 5],
-  "passiveAbilities": [
-    {
-      "name": "Weakling",
-      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy"
-    }
-  ],
-  "activeAbilities": [
-    {
-      "name": "Clumsy Cluts ",
-      "cost": 2,
-      "range": "6\"",
-      "description": "Target gains Weakling until end of turn.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "arcaneAbilities": [
-    {
-      "name": "Butterfingers",
-      "cost": 0,
-      "range": "6\"",
-      "description": "Target loses possession of 1 Moonstone they are carrying. Place it in base contact with the target with a depth value of ‘1’.\nCatastrophe: This model discards all energy.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    },
-    {
-      "name": "Fizzle-Pop",
-      "cost": 2,
-      "range": "6\"",
-      "description": "Target suffers X Magical Dmg then is moved 1” directly away.\nCatastrophe: This model suffers 2 Wds.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "signatureMove": {
-    "name": "Faerie Dust",
-    "upgradeFrom": "High Guard",
-    "damageType": "",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "Reduce Dmg suffered by -2. The enemy character must discard 2 energy."
-  },
   "baseSize": "30mm",
   "imageName": "butterfingers",
   "shareCode": "AAB",
   "slicingDamageBuff": -1,
   "piercingDamageBuff": -1,
-  "impactDamageBuff": -1
+  "impactDamageBuff": -1,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Faerie Dust",
+    "upgradeFor": "High Guard",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "Reduce Dmg suffered by -2.",
+    "endStepEffect": "The enemy character must discard 2 energy."
+  },
+  "abilities": [
+    {
+      "name": "Weakling",
+      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Clumsy Cluts",
+      "description": "Target gains Weakling until end of turn.",
+      "abilityType": "Active",
+      "energyCost": 2,
+      "range": "6\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Fizzle-Pop",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "6\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers X Magical Dmg then is moved 1\" directly away.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    },
+    {
+      "name": "Butterfingers",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "6\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target loses possession of 1 Moonstone they are carrying. Place it in base contact with the target with a depth value of 1.",
+          "validCards": [{"colour": "Green", "value": "3"}, {"colour": "Blue", "value": "3"}, {"colour": "Pink", "value": "3"}]
+        },
+        {
+          "text": "This model discards all energy.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

@@ -1,0 +1,19 @@
+{
+  "id": 26,
+  "name": "Immaterial Essence",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [
+    "Spirit"
+  ],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Immaterial Essence",
+      "description": "When this character suffers Non-Magical Melee Dmg, you may reduce that Dmg to 0.",
+      "oncePerTurn": true
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "immaterialessence"
+}

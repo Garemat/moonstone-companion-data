@@ -1,0 +1,12 @@
+{
+  "id": 69,
+  "name": "Consolidate Power",
+  "version": 2,
+  "factions": [],
+  "tags": [],
+  "timing": "Play immediately.",
+  "description": "If you had the highest Power of all players in the campaign at the start of this game-week: **Gain 1 Machination Point**.",
+  "extraDescription": "You cannot have the 'highest Power' if any other player has the same Power as you.",
+  "shareCode": "AAB",
+  "imageName": "consolidatepower"
+}

@@ -1,0 +1,70 @@
+{
+  "id": 66,
+  "name": "Murder Bunny",
+  "version": 2,
+  "factions": ["COMMONWEALTH", "LESHAVULT"],
+  "health": 4,
+  "energyTrack": [999],
+  "keywords": ["Animal"],
+  "melee": 2,
+  "meleeRange": 1,
+  "arcane": 0,
+  "evade": -1,
+  "baseSize": "30mm",
+  "imageName": "murder_bunny_2",
+  "shareCode": "AAB",
+  "slicingDamageBuff": -1,
+  "piercingDamageBuff": -1,
+  "impactDamageBuff": -1,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": true,
+  "signatureMove": null,
+  "abilities": [
+    {
+      "name": "Thrall [Boris, the Bunny Summoner]",
+      "description": "This character can only enter play when summoned by Boris, the Bunny Summoner. It does not activate and can never gain energy. Instead, while Boris is active, this character can take actions, including Jog, by discarding the required energy from Boris. Reaction Steps and Go For It's can be taken in the same way.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Back in the Burrow",
+      "description": "You can have up to 3 friendly Murder Bunny's in play at a time. If a fourth is summoned you must choose one friendly Murder Bunny to be Removed from Play. If Boris the Bunny Summoner is Slain or Removed from Play then this character is immediately considered to be Slain.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Weakling",
+      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Razor Incisors",
+      "description": "If this character plays a Rising Attack, increase the Dmg dealt by +2.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Hippity",
+      "description": "You may move freely over intervening obstacles and models during a Jog action provided bases do not overlap at the end of the move.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    }
+  ]
+}

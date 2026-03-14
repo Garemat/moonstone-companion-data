@@ -1,0 +1,11 @@
+{
+  "id": 66,
+  "name": "A Plan 500 Years in the Making",
+  "version": 2,
+  "factions": [],
+  "tags": [],
+  "timing": "Reveal when a friendly Noble is slain.",
+  "description": "**Gain 1 Victory Point**, to a maximum of 3, for each currently slain friendly *Noble*.",
+  "shareCode": "AAB",
+  "imageName": "aplan500yearsInthemaking"
+}

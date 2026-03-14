@@ -1,58 +1,86 @@
 {
-  "id": "047",
+  "id": 47,
   "name": "Bristlenose",
-  "version": "",
+  "version": 3,
   "factions": ["DOMINION"],
-  "tags": ["Troll"],
+  "health": 12,
+  "energyTrack": [1, 6],
+  "keywords": ["Troll"],
   "melee": 3,
   "meleeRange": 2,
   "arcane": 3,
   "evade": 2,
-  "health": 12,
-  "energyTrack": [1, 6],
-  "passiveAbilities": [
-    {
-      "name": "Razor Claws",
-      "description": "If this character deals Impact or Piercing Melee Dmg, increase the Dmg dealt by +1. If this character deals Slicing Melee Dmg, increase the Dmg dealt by +3. "
-    },
-    {
-      "name": "Amphibious",
-      "description": "This character may Jog freely over Water Feature terrain and gains +1 energy during the Replenish Step if any part of its base is within a Water Feature."
-    },
-    {
-      "name": "Scaly Skin",
-      "description": "Reduce non-Impact Dmg suffered by -1."
-    }
-  ],
-  "activeAbilities": [],
-  "arcaneAbilities": [
-    {
-      "name": "Vomit",
-      "cost": 2,
-      "range": "4\"",
-      "description": "Target character suffers X+1 Magical Dmg.\nCatastrophe: This models suffers 3 Wds. ",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "signatureMove": {
-    "name": "Insatiable Hunger",
-    "upgradeFrom": "Rising Attack",
-    "damageType": "Magical",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "2"},
-      {"opponentPlay": "Falling Swing", "deal": "3"},
-      {"opponentPlay": "Thrust", "deal": "3"},
-      {"opponentPlay": "Sweeping Cut", "deal": "2"},
-      {"opponentPlay": "Rising Attack", "deal": "1"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "If the enemy is slain, and this character is not slain, then this character recovers all Wds and all energy."
-  },
   "baseSize": "40mm",
   "imageName": "bristlenose",
   "shareCode": "AAB",
-  "impactDamageBuff": 1,
   "slicingDamageBuff": 3,
-  "nonImpactDamageMitigation": 1
+  "piercingDamageBuff": 1,
+  "impactDamageBuff": 1,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 1,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 1,
+  "magicalDamageMitigation": 1,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Insatiable Hunger",
+    "upgradeFor": "Rising Attack",
+    "possibleDamageTypes": ["Magical"],
+    "highGuard": {"deal": "2", "isFollowUp": false},
+    "fallingSwing": {"deal": "3", "isFollowUp": false},
+    "thrust": {"deal": "3", "isFollowUp": false},
+    "sweepingCut": {"deal": "2", "isFollowUp": false},
+    "risingAttack": {"deal": "1", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "If the enemy is slain, then this character restores all Wds and all energy."
+  },
+  "abilities": [
+    {
+      "name": "Amphibious",
+      "description": "This character may Jog over Water Features and gains +1 energy during the Replenish Step if any part of its base is within a Water Feature.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Razor Claws",
+      "description": "If this character deals Impact or Piercing Melee Dmg, increase the Dmg dealt by +1. If this character deals Slicing Melee Dmg, increase the Dmg dealt by +3.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Scaly Skin",
+      "description": "Reduce non-Impact Dmg suffered by -1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Vomit",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "4\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target character suffers X+1 Magical Dmg.",
+          "validCards": [{"colour": "Blue", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 3 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

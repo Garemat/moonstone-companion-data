@@ -1,69 +1,105 @@
 {
-  "id": "013",
+  "id": 13,
   "name": "Gradock",
-  "version": "",
+  "version": 2,
   "factions": ["COMMONWEALTH"],
-  "tags": ["Gnome", "Militia"],
+  "health": 8,
+  "energyTrack": [1, 2],
+  "keywords": ["Gnome", "Militia"],
   "melee": 4,
   "meleeRange": 1,
   "arcane": 2,
   "evade": 0,
-  "health": 8,
-  "energyTrack": [1, 2],
-  "passiveAbilities": [
-    {
-      "name": "Sage Advice",
-      "description": "Friendly models within 4” may ignore Catastrophe effects."
-    },
-    {
-      "name": "Tough as Old Boots",
-      "description": "At the start of the Replenish Step this model recovers 2 Wds."
-    },
-    {
-      "name": "Smell a Lie",
-      "description": "Enemy models targeting this model, or a model within 2”, must reveal the arcane card as it is played."
-    },
-    {
-      "name": "Quilted Armour",
-      "description": "Reduce Slicing Dmg suffered by -1."
-    }
-  ],
-  "activeAbilities": [
-    {
-      "name": "Forgetfulness",
-      "cost": 1,
-      "range": "8\"",
-      "description": "Remove one Arcane or Active Ability from target character until the end of the turn. ",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "arcaneAbilities": [
-    {
-      "name": "Snare Traps",
-      "cost": 2,
-      "range": "14\"",
-      "description": "This attack is not modified by Evade Stat or Cover.\n[G]X: Targets suffers X Piercing Dmg\nCatastrophe: This character suffers 2 Wds.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "signatureMove": {
-    "name": "The Old Slip-Step",
-    "upgradeFrom": "High Guard",
-    "damageType": "Impact",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "1"},
-      {"opponentPlay": "Thrust", "deal": "1"},
-      {"opponentPlay": "Sweeping Cut", "deal": "1"},
-      {"opponentPlay": "Rising Attack", "deal": "1"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "This model may move 1”"
-  },
   "baseSize": "30mm",
   "imageName": "gradock",
   "shareCode": "AAB",
-  "slicingDamageMitigation": 1
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 1,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "The Old Slip-Step",
+    "upgradeFor": "High Guard",
+    "possibleDamageTypes": ["Impact"],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "1", "isFollowUp": false},
+    "thrust": {"deal": "1", "isFollowUp": false},
+    "sweepingCut": {"deal": "1", "isFollowUp": false},
+    "risingAttack": {"deal": "1", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "This model may move 1\"."
+  },
+  "abilities": [
+    {
+      "name": "Quilted Armour",
+      "description": "Reduce Slicing Dmg suffered by -1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Tough as Old Boots",
+      "description": "At the start of the Replenish Step this model recovers 2 Wds.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Smell a Lie",
+      "description": "Enemy models targeting this model, or a model within 2\", must reveal the arcane card as it is played.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Sage Advice",
+      "description": "Friendly models within 4\" may ignore Catastrophe effects.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Forgetfulness",
+      "description": "Remove one Arcane or Active Ability from target character until the end of the turn.",
+      "abilityType": "Active",
+      "energyCost": 1,
+      "range": "8\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Snare Traps",
+      "description": "This attack is not modified by Evade Stat or Cover.",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "14\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers X Piercing Dmg.",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

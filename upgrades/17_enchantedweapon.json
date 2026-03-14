@@ -1,0 +1,17 @@
+{
+  "id": 17,
+  "name": "Enchanted Weapon",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Enchanted Weapon",
+      "description": "When this character deals Dmg, you may choose to ignore enemy Passive Abilities.",
+      "oncePerTurn": true
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "enchantedweapon"
+}

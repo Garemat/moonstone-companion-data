@@ -1,61 +1,94 @@
 {
-  "id": "131",
+  "id": 131,
   "name": "Old Polly",
-  "version": "",
+  "version": 1,
   "factions": ["COMMONWEALTH"],
-  "tags": ["Gnome", "Rogue"],
+  "health": 8,
+  "energyTrack": [1, 2],
+  "keywords": ["Gnome", "Rogue"],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 4,
-  "evade": "0",
-  "health": 8,
-  "energyTrack": [1, 2],
-  "passiveAbilities": [
+  "evade": 0,
+  "baseSize": "30mm",
+  "imageName": "old_polly",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Cockatrice Stare",
+    "upgradeFor": "Thrust",
+    "possibleDamageTypes": ["Magical"],
+    "highGuard": {"deal": "0", "isFollowUp": false},
+    "fallingSwing": {"deal": "2", "isFollowUp": false},
+    "thrust": {"deal": "3", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "3", "isFollowUp": false},
+    "lowGuard": {"deal": "0", "isFollowUp": false},
+    "extraText": "This may deal Dmg to characters outside this character's Melee Range.",
+    "endStepEffect": "If the enemy suffered 1 or more Wds during this round of melee, they must discard 1 energy."
+  },
+  "abilities": [
     {
       "name": "The Faculty",
-      "description": "If Old Polly, Prof. Boffinsworth and Flinders Memphis were taken in this troupe at the start of the game, this character gains Rogue, Animal and Machine Keywords"
+      "description": "If Old Polly, Prof Boffinsworth & Flinders Memphis are seen in this troupe at the start of the game, this character gains Rogue, Animal & Machine keywords.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
-      "name": "Prognosication",
-      "description": "Friendly Rogues within 4\" gain [Seen It All Before: If this character is attacker or defender in a round of Melee, before each player selects a Melee Card, your opponent must reveal their hand]"
+      "name": "Prognostication",
+      "description": "Friendly Rogues within 4\" gain [Seen It All Before: If this character is attacker or defender in a round of melee, before each player selects their Melee Card, your opponent must reveal their hand].",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Wily Old Weasel",
+      "description": "If a friendly Rogue takes an Arcane action within 6\" you may reduce the energy cost by -1. Once per turn.",
+      "abilityType": "Passive",
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Cockatrice Companion",
-      "description": "When targetting an enemy character that has no energy with a Melee Attack or Petrifying Gaze action, increase any Dmg dealt by +1."
-    }
-  ],
-  "activeAbilities": [
-    {
-      "name": "Wily Old Weasel",
-      "cost": 0,
-      "range": "6\"",
-      "description": "If a friendly Rogue takes an Arcane action within 6\" you may reduce its energy cost by -1.",
-      "oncePerTurn": true
-    }
-  ],
-  "arcaneAbilities": [
+      "description": "When this character targets an enemy that has no energy with a Melee Attack or Petrifying Gaze action, increase any Dmg dealt by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Petrifying Gaze",
-      "cost": 2,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
       "range": "4\"",
-      "description": "Taget suffers X Magical Dmg then loses X energy\nCatastrophe: This character suffers 3 Wds"
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers X Magical Dmg then loses X energy.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 3 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Cockatrice Stare",
-    "upgradeFrom": "",
-    "damageType": "Magical",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "0"},
-      {"opponentPlay": "Falling Swing", "deal": "2"},
-      {"opponentPlay": "Thrust", "deal": "3"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "3"},
-      {"opponentPlay": "Low Guard", "deal": "0"}
-    ],
-    "endStepEffect": "This may deal Dmg to characters outside Melee Range. If the enemy suffered 1 or more Wds during this round of melee, they must discard 1 energy."
-  },
-  "baseSize": "30mm",
-  "imageName": "131_old_polly.json",
-  "shareCode": "AAB"
+  ]
 }

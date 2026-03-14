@@ -1,0 +1,11 @@
+{
+  "id": 84,
+  "name": "Sir Flashypants",
+  "version": 2,
+  "factions": [],
+  "tags": [],
+  "timing": "Play during the Activation Step, before or after any action.",
+  "description": "If friendly characters are in possession of *all* Moonstones that were grown at the start of this game: **Gain 4 Victory Points** and your opponent **Loses 2 Machination Points**.",
+  "shareCode": "AAB",
+  "imageName": "sirflashypants"
+}

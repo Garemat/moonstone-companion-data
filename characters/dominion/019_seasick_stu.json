@@ -1,66 +1,101 @@
 {
-  "id": "019",
+  "id": 19,
   "name": "Seasick Stu",
-  "version": "",
+  "version": 4,
   "factions": ["DOMINION"],
-  "tags": ["Goblin", "Pirate"],
+  "health": 7,
+  "energyTrack": [1, 3, 5, 7],
+  "keywords": ["Goblin", "Pirate"],
   "melee": 2,
   "meleeRange": 3,
   "arcane": 4,
   "evade": -1,
-  "health": 7,
-  "energyTrack": [1, 3, 5, 7],
-  "passiveAbilities": [
-    {
-      "name": "Harpoon",
-      "description": "If this character deals Impact or Slicing Melee Dmg, reduce the Dmg dealt by -1. If this character deals Piercing Melee Dmg, increase the Dmg dealt by +1."
-    }
-  ],
-  "activeAbilities": [
-    {
-      "name": "Bawdy Jokes",
-      "cost": 2,
-      "range": "4\" Pulse",
-      "description": "All Goblins within the pulse are moved 1” directly towards this model. Then, all other Goblins within 1” gain +1 energy.",
-      "oncePerTurn": true
-    }
-  ],
-  "arcaneAbilities": [
-    {
-      "name": "Rough Tides",
-      "cost": 2,
-      "range": "6\"",
-      "description": "Move other target model X” directly away.\nCatastrophe: This model suffers 1 Wd and loses all energy.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    },
-    {
-      "name": "Seasick",
-      "cost": 2,
-      "range": "6\"",
-      "description": "Target loses X energy.\nCatastrophe: This model suffers 2 Wds and loses all energy.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "signatureMove": {
-    "name": "It’s a big’un!",
-    "upgradeFrom": "Thrust",
-    "damageType": "Piercing",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "1"},
-      {"opponentPlay": "Falling Swing", "deal": "3"},
-      {"opponentPlay": "Thrust", "deal": "3"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "2"},
-      {"opponentPlay": "Low Guard", "deal": "1"}
-    ],
-    "endStepEffect": "If the enemy suffered 1 or more Wds during this round of Melee, it cannot take a Jog action until end of turn."
-  },
   "baseSize": "30mm",
   "imageName": "stu",
   "shareCode": "AAB",
+  "slicingDamageBuff": -1,
   "piercingDamageBuff": 1,
   "impactDamageBuff": -1,
-  "slicingDamageBuff": -1
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "It's a big'un!",
+    "upgradeFor": "Thrust",
+    "possibleDamageTypes": ["Piercing"],
+    "highGuard": {"deal": "0", "isFollowUp": false},
+    "fallingSwing": {"deal": "3", "isFollowUp": false},
+    "thrust": {"deal": "3", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "2", "isFollowUp": false},
+    "lowGuard": {"deal": "1", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "If the enemy suffered 1 or more Wds during this round of Melee, it cannot take a Jog action until end of turn."
+  },
+  "abilities": [
+    {
+      "name": "Harpoon",
+      "description": "If this character deals Impact or Slicing Melee Dmg, reduce the Dmg dealt by -1. If this character deals Piercing Melee Dmg, increase the Dmg dealt by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Bawdy Jokes",
+      "description": "All Goblins within the pulse are moved 1\" directly towards this model. Then, all other Goblins within 1\" gain +1 energy.",
+      "abilityType": "Active",
+      "energyCost": 2,
+      "range": "4\"",
+      "pulse": true,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Rough Tides",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "6\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Move other target model X\" directly away.",
+          "validCards": [{"colour": "Blue", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 1 Wd and loses all energy.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    },
+    {
+      "name": "Seasick",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "6\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target loses X energy.",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 2 Wds and loses all energy.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

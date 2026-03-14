@@ -1,68 +1,109 @@
 {
-  "id": "004",
+  "id": 4,
   "name": "Quack",
-  "version": "",
+  "version": 1,
   "factions": ["COMMONWEALTH"],
-  "tags": ["Human", "Wizard", "Cleric"],
+  "health": 7,
+  "energyTrack": [1, 2, 5],
+  "keywords": ["Human", "Wizard", "Cleric"],
   "melee": 2,
   "meleeRange": 1,
   "arcane": 5,
-  "evade": "0",
-  "health": 7,
-  "energyTrack": [1, 2, 5],
-  "passiveAbilities": [
-    {
-      "name": "Weakling",
-      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy."
-    },
-    {
-      "name": "Premonition",
-      "description": "If an enemy character declares this model as a target of an action, you may interrupt the action to make a reaction step by discarding one energy. If you do, the enemy must complete the action if possible and may not choose a new target."
-    }
-  ],
-  "activeAbilities": [
-    {
-      "name": "Foresight",
-      "cost": 1,
-      "range": "10\"",
-      "description": "Target Human gains +2 Arcane stat until end of turn.",
-      "oncePerTurn": true
-    }
-  ],
-  "arcaneAbilities": [
-    {
-      "name": "Healing",
-      "cost": 2,
-      "range": "8\"",
-      "description": "[B]X: Target restores X+1 wounds.\nCatastrophe: This model suffers 2 Wds.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    },
-    {
-      "name": "Blinding Powder",
-      "cost": 1,
-      "range": "4\"",
-      "description": "[B]X:  Reduce target's Melee and Arcane stats by 2X until the end of turn.\nCatastrophe: This model loses all energy.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "signatureMove": {
-    "name": "Gone in a puff...",
-    "upgradeFrom": "Low Guard",
-    "damageType": "",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "The enemy model has -2 Melee stay for the remainder of the turn. This model may move 4\"."
-  },
+  "evade": 0,
   "baseSize": "30mm",
   "imageName": "quack",
   "shareCode": "AAB",
-  "allMeleeDamageBuff": -1
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Gone in a puff...",
+    "upgradeFor": "Low Guard",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "The enemy model has -2 Melee stat for the remainder of the turn. This model may move 4\"."
+  },
+  "abilities": [
+    {
+      "name": "Weakling",
+      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model -1 energy.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Premonition",
+      "description": "If an enemy character declares this model as a target of an action, you may interrupt the action to make a reaction step by discarding 1 energy. If you do, the enemy must complete the action if possible and may not choose a new target.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Foresight",
+      "description": "Target Human gains +2 Arcane stat until end of turn.",
+      "abilityType": "Active",
+      "energyCost": 1,
+      "range": "10\"",
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Healing",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "8\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target restores X+1 Wds.",
+          "validCards": [{"colour": "Blue", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    },
+    {
+      "name": "Blinding Powder",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 1,
+      "range": "4\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Reduce target's Melee and Arcane stats by 2X until the end of turn.",
+          "validCards": [{"colour": "Blue", "value": "X"}]
+        },
+        {
+          "text": "This model loses all energy.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

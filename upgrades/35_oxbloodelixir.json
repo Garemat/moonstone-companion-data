@@ -1,0 +1,16 @@
+{
+  "id": 35,
+  "name": "Ox Blood Elixir",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Strong as an Ox",
+      "description": "If this character deals Impact Melee Dmg, increase the Dmg dealt by +1."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "oxbloodelixir"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 22,
+  "name": "Fill yer Boots!",
+  "version": 2,
+  "factions": [],
+  "tags": [],
+  "timing": "Play during the Activation Step, before or after any action.",
+  "description": "For the remainder of the game, when a *Mercenary* you control performs a Harvest action, they may drop the Moonstone's depth value by 2, instead of 1.",
+  "extraDescription": "Friendly *Mercenaries* may gain possession of Moonstones with a depth value of 2, using a single Harvest action.",
+  "shareCode": "AAB",
+  "imageName": "fillyerboots"
+}

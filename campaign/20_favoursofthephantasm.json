@@ -1,0 +1,11 @@
+{
+  "id": 20,
+  "name": "Favours of the Phantasm",
+  "version": 2,
+  "factions": [],
+  "tags": [],
+  "timing": "Play during the Activation Step, before or after any action.",
+  "description": "Search the Arcane Deck for X cards, where X is the total number of slain characters controlled by all players. Remove those cards from the deck and shuffle it. Do not reveal these cards to any other player. At any time you may choose to shuffle all cards removed in this way back into the deck.",
+  "shareCode": "AAB",
+  "imageName": "favoursofthephantasm"
+}

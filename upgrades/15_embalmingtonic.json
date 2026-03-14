@@ -1,0 +1,17 @@
+{
+  "id": 15,
+  "name": "Embalming Tonic",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Embalming Tonic (2) 6\"",
+      "description": "Target restores 2 Wds.",
+      "oncePerTurn": true
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "embalmingtonic"
+}

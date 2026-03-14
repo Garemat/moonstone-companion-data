@@ -1,0 +1,18 @@
+{
+  "id": 34,
+  "name": "Nordic Tattoos",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [],
+  "extraDescription": "This character gains the Norse keyword.",
+  "abilities": [
+    {
+      "name": "Glimpse Fate (0)",
+      "description": "Look at the top card of the Arcane Deck, then put it back on the top of the deck.",
+      "oncePerTurn": true
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "nordictattoos"
+}

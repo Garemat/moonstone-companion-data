@@ -1,0 +1,11 @@
+{
+  "id": 86,
+  "name": "Steal the Glory",
+  "version": 2,
+  "factions": [],
+  "tags": [],
+  "timing": "Play after the game.",
+  "description": "If you *Won* this game: **Gain 1 Machination Point**\n\nPlayers who *Supported* you this week do not gain any Machination Points as a result of the win.",
+  "shareCode": "AAB",
+  "imageName": "stealtheglory"
+}

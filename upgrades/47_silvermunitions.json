@@ -1,0 +1,17 @@
+{
+  "id": 47,
+  "name": "Silver Munitions",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Silver Munitions",
+      "description": "When dealing Impact or Piercing Dmg with an Arcane Ability you may change the Dmg type to Magical Dmg and deal +1 Dmg.",
+      "oncePerGame": true
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "silvermunitions"
+}

@@ -1,70 +1,104 @@
 {
   "id": 3,
   "name": "Flintlock",
-  "version": "",
+  "version": 2,
   "factions": ["COMMONWEALTH"],
-  "tags": ["Human", "Soldier"],
+  "health": 8,
+  "energyTrack": [1, 2, 5],
+  "keywords": ["Human", "Soldier"],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 3,
-  "evade": "0",
-  "health": 8,
-  "energyTrack": [1,2,5],
-  "passiveAbilities": [
-    {
-      "name": "Dagger",
-      "description": "If this character deals Piercing Melee Dmg, increase the Dmg dealt by +1."
-    }
-  ],
-  "activeAbilities": [
-    {
-      "name": "Reload [Shoot Musket]",
-      "cost": 2,
-      "range": "",
-      "description": "The named ability can be used again. This ability cannot be used while this model is engaged."
-    },
-    {
-      "name": "Take Aim",
-      "cost": 1,
-      "range": "",
-      "description": "Increase this character's Arcane stat by +1 until end of turn.",
-      "oncePerTurn": true
-    },
-    {
-      "name": "Look Out!",
-      "cost": 1,
-      "range": "6\"",
-      "description": "Target friendly character's Evade stat is reduced by -1 until end of turn.",
-      "oncePerGame": false
-    }
-  ],
-  "arcaneAbilities": [
-    {
-      "name": "Shoot Musket",
-      "cost": 1,
-      "range": "12\"",
-      "description": "[G]X: Target suffers X+2 Impact Dmg.\nCatastrophe: This model suffers 2 Wds and the Reload ability cannot be used for the remainder of the game.",
-      "oncePerGame": true,
-      "reloadable": true
-    }
-  ],
-  "signatureMove": {
-    "name": "Tactical Retreat",
-    "upgradeFrom": "High Guard",
-    "damageType": "",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "passiveEffect": "Reduce Dmg suffered by -1.",
-    "endStepEffect": "This model may move 2\""
-  },
+  "evade": 0,
   "baseSize": "30mm",
   "imageName": "flintlock",
   "shareCode": "AAB",
-  "piercingDamageBuff": 1
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 1,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Tactical Retreat",
+    "upgradeFor": "High Guard",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "Reduce Dmg suffered by -1.",
+    "endStepEffect": "This model may move 2\"."
+  },
+  "abilities": [
+    {
+      "name": "Dagger",
+      "description": "If this character deals Piercing Melee Dmg, increase the Dmg dealt by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Reload [Shoot Musket]",
+      "description": "The named ability can be used again. This ability cannot be used while this model is engaged.",
+      "abilityType": "Active",
+      "energyCost": 2,
+      "range": null,
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Take Aim",
+      "description": "Increase this character's Arcane stat by +1 until end of turn.",
+      "abilityType": "Active",
+      "energyCost": 1,
+      "range": null,
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "\"Look out!\"",
+      "description": "Target friendly character's Evade stat is reduced by -1 until end of turn.",
+      "abilityType": "Active",
+      "energyCost": 1,
+      "range": "6\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Shoot Musket",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 1,
+      "range": "12\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": true,
+      "reloadable": true,
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers X+2 Impact Dmg.",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 2 Wds and the Reload ability cannot be used for the remainder of the game.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

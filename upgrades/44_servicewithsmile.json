@@ -1,0 +1,18 @@
+{
+  "id": 44,
+  "name": "Service with a Smile",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [
+    "Noble"
+  ],
+  "abilities": [
+    {
+      "name": "Service with a Smile",
+      "description": "When a friendly Noble within 8\" suffers 1 or more Wds, you may move this model 2\" directly towards the friendly Noble."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "servicewithsmile"
+}

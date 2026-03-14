@@ -1,0 +1,17 @@
+{
+  "id": 27,
+  "name": "Leshavit's Favourite",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Leshavit's Favourite",
+      "description": "The first time in a game this character would suffer Dmg, reduce that Dmg to 0.",
+      "oncePerGame": true
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "leshavitsfavourite"
+}

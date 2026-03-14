@@ -1,0 +1,11 @@
+{
+  "id": 55,
+  "name": "The Hunt",
+  "version": 2,
+  "factions": [],
+  "tags": [],
+  "timing": "Play at the start of any Replenish Step (including the first turn).",
+  "description": "For the remainder of the game, you may choose a friendly *Faun* or *Animal* during each Replenish Step. That character gains +1 energy.",
+  "shareCode": "AAB",
+  "imageName": "thehunt"
+}

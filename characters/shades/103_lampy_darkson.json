@@ -1,52 +1,82 @@
 {
-  "id": "103",
+  "id": 103,
   "name": "Lampy Darkson",
-  "version": "",
+  "version": 1,
   "factions": ["SHADES"],
-  "tags": ["Psychopomp", "Familiar"],
+  "health": 2,
+  "energyTrack": [999],
+  "keywords": ["Psychopomp", "Familiar"],
   "melee": 1,
   "meleeRange": 1,
   "arcane": 4,
   "evade": -1,
-  "health": 2,
-  "energyTrack": [999],
-  "passiveAbilities": [
+  "baseSize": "30mm",
+  "imageName": "lampy_darkson",
+  "shareCode": "AAB",
+  "slicingDamageBuff": -2,
+  "piercingDamageBuff": -2,
+  "impactDamageBuff": -2,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": true,
+  "signatureMove": null,
+  "abilities": [
     {
       "name": "Thrall",
-      "description": "This character can only enter play when summoned. It does not activate and can never gain energy. Instead, while the character that summoned it is active, this character can take actions, including Jog, by discarding the required energy on the character that summoned it. Reaction Steps and Go For It's can be taken in the same way"
-    },
-    {
-      "name": "Feeble",
-      "description": "Reduce all Melee Dmg this character deals by -2. Harvest actions cost this model +1 energy"
-    },
-    {
-      "name": "Lampy's Light",
-      "description": "Enemy models within 3\" get +1 Evade Stat. "
+      "description": "This character can only enter play when summoned. It does not activate and can never gain energy. Instead, while the character that summoned it is active, this character can take actions, including Jog, by discarding the required energy on the character that summoned it. Reaction Steps and Go For It's can be taken in the same way.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Summoner's Delight",
-      "description": "If the character that summoned this model is Slain or Removed from Play then this character is immediately considered to be Slain."
-    }
-  ],
-  "activeAbilities": [],
-  "arcaneAbilities": [
+      "description": "If the character that summoned this model is Slain or Removed from Play then this character is immediately considered to be Slain.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Feeble",
+      "description": "Reduce all Melee Dmg this character deals by -2. Harvest actions cost this model +1 energy.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Lampy's Light",
+      "description": "Enemy models within 3\" get +1 Evade Stat.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "A Little More Oil...",
-      "cost": 1,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 1,
       "range": "",
-      "description": "Increase the range of Lampy's Light by +X\" until end of turn. \nCatastrophe: This character loses the Lampy's Light ability until end of turn.",
+      "pulse": false,
+      "oncePerTurn": true,
       "oncePerGame": false,
-      "oncePerTurn": true
+      "arcaneOutcomes": [
+        {
+          "text": "Increase the range of Lampy's Light by +X until end of turn.",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "This character loses the Lampy's Light ability until end of turn.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "No Signature",
-    "upgradeFrom": "",
-    "damageType": "",
-    "results": [],
-    "endStepEffect": ""
-  },
-  "baseSize": "30mm",
-  "imageName": "103_lampy_darkson.json",
-  "shareCode": "AAB"
+  ]
 }

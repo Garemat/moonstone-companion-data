@@ -1,0 +1,21 @@
+{
+  "id": 33,
+  "name": "Menacing Words",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [
+    "Giant",
+    "Troll",
+    "Animal"
+  ],
+  "abilities": [
+    {
+      "name": "Robbery (2) 1\"",
+      "description": "Target model with less Wds remaining than this character loses possession of one Moonstone, and this character gains possession of that Moonstone.",
+      "oncePerTurn": true
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "menacingwords"
+}

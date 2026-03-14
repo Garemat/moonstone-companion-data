@@ -1,0 +1,12 @@
+{
+  "id": 92,
+  "name": "Wytchwood Riddle",
+  "version": 2,
+  "factions": [],
+  "tags": [],
+  "timing": "Play at end of game.",
+  "description": "If characters you control have suffered 4 or more Catastrophes this game and the placed Objective Marker is Active: **Gain 3 Victory Points**.",
+  "extraDescription": "Before deployment place one Objective Marker 18\" away from your deployment table edge.",
+  "shareCode": "AAB",
+  "imageName": "wytchwoodriddle"
+}

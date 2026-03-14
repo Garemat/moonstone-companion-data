@@ -1,0 +1,20 @@
+{
+  "id": 22,
+  "name": "Feverfew Leaf",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [
+    "Cleric",
+    "Faun",
+    "Gnome"
+  ],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Healing (2) 8\"",
+      "description": "Target restores X+1 Wds. Catastrophe: This model suffers 2 Wds."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "feverfewleaf"
+}

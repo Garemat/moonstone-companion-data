@@ -1,64 +1,97 @@
 {
-  "id": "089",
+  "id": 89,
   "name": "Bjørn",
-  "version": "",
+  "version": 1,
   "factions": ["COMMONWEALTH"],
-  "tags": ["Gnome", "Norse", "Mercenary"],
+  "health": 8,
+  "energyTrack": [1, 2, 3],
+  "keywords": ["Gnome", "Norse", "Mercenary"],
   "melee": 4,
   "meleeRange": 1,
   "arcane": 2,
   "evade": 0,
-  "health": 8,
-  "energyTrack": [1, 2, 3],
-  "passiveAbilities": [
+  "baseSize": "30mm",
+  "imageName": "bjorn",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 1,
+  "slicingDamageMitigation": 1,
+  "magicalDamageMitigation": 1,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Thrash",
+    "upgradeFor": "Falling Swing",
+    "possibleDamageTypes": ["Impact", "Slicing"],
+    "highGuard": {"deal": "0", "isFollowUp": false},
+    "fallingSwing": {"deal": "0", "isFollowUp": true},
+    "thrust": {"deal": "0", "isFollowUp": true},
+    "sweepingCut": {"deal": "0", "isFollowUp": false},
+    "risingAttack": {"deal": "0", "isFollowUp": true},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "Move this model 2\" directly towards the enemy."
+  },
+  "abilities": [
     {
       "name": "Bearskin",
-      "description": "Reduce non-Piercing Dmg suffered by -1."
-    },
-    {
-      "name": "Skål",
-      "description": "When this character activates, you may flip an Arcane Card. This model suffers X Wds where X is the value of the card. Catastrophe: This character restores all Wds and loses Berserk Fury until end of turn."
+      "description": "Reduce non-Piercing Dmg suffered by -1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Berserk Fury",
-      "description": " Increase all Melee Dmg dealt by half the number of Wds, rounded up, this character has currently suffered. Ignore any Wds suffered during the current action for this Dmg increase."
-    }
-  ],
-  "activeAbilities": [
+      "description": "Increase all Melee Dmg dealt by half the number of Wds, rounded up, this character has currently suffered. Ignore any Wds suffered during the current effect for this Dmg increase.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Skål",
+      "description": "When this character activates, you may flip an Arcane Card. This model suffers X Wds where X is the value of the card. Catastrophe: This character restores all Wds and loses Berserk Fury until end of turn.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Bear Charge",
-      "cost": 1,
+      "description": "Move this model 5\" directly towards target enemy model. The target cannot play Signature Moves until end of this character's activation.",
+      "abilityType": "Active",
+      "energyCost": 1,
       "range": "4\"",
-      "description": "Move this model 3\" directly towards target enemy model. The target cannot play Signature Moves until end of this character's activation.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "arcaneAbilities": [
+      "arcaneOutcomes": []
+    },
     {
       "name": "Throwing Axe",
-      "cost": 2,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
       "range": "4\"",
-      "description": "Target suffers 2X Impact Dmg.\nCatastrophe: This character suffers 3 Wds.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers 2×X Impact Dmg.",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 3 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Thrash",
-    "upgradeFrom": "Falling Swing",
-    "damageType": "Impact or Slicing",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "0"},
-      {"opponentPlay": "Falling Swing", "deal": "0"},
-      {"opponentPlay": "Thrust", "deal": "0"},
-      {"opponentPlay": "Sweeping Cut", "deal": "0"},
-      {"opponentPlay": "Rising Attack", "deal": "0"},
-      {"opponentPlay": "Low Guard", "deal": "0"}
-    ],
-    "endStepEffect": "Move this model 2” directly towards the enemy"
-  },
-  "baseSize": "30mm",
-  "imageName": "089_bjorn.json",
-  "shareCode": "AAB"
+  ]
 }

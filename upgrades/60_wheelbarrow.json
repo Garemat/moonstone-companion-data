@@ -1,0 +1,21 @@
+{
+  "id": 60,
+  "name": "Wheelbarrow",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [
+    "Goblin",
+    "Human",
+    "Gnome",
+    "Troll"
+  ],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Wheelbarrow",
+      "description": "This character is unaffected by the Slow Carry rule but gains +1 Evade Stat while in possession of one or more Moonstones instead."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "wheelbarrow"
+}

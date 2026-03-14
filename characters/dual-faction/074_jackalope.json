@@ -1,60 +1,88 @@
 {
-  "id": "074",
+  "id": 74,
   "name": "Jackalope",
-  "version": "",
+  "version": 3,
   "factions": ["COMMONWEALTH", "LESHAVULT"],
-  "tags": ["Animal"],
+  "health": 10,
+  "energyTrack": [1, 4, 8],
+  "keywords": ["Animal"],
   "melee": 3,
   "meleeRange": 2,
   "arcane": 0,
   "evade": 1,
-  "health": 10,
-  "energyTrack": [1, 4, 8],
-  "passiveAbilities": [
-    {
-      "name": "Razor Sharp Antlers",
-      "description": "If this character deals Piercing Melee Dmg increase the Dmg dealt by +2."
-    },
-    {
-      "name": "Hippity",
-      "description": "You may move freely over intervening obstacles and models during Jog actions provided bases do not overlap at the end of the move."
-    },
-    {
-      "name": "Fluffy",
-      "description": "Reduce Impact Dmg suffered by -1."
-    },
-    {
-      "name": "Burrowing Claws",
-      "description": "This model gains posession of one Moonstone it is in base contact with regardless of its depth value. This ability cannot be used while this model is engaged."
-    }
-  ],
-  "activeAbilities": [
-    {
-      "name": "Hop",
-      "cost": 2,
-      "range": "",
-      "description": "Move this model 4\". You may move freely over intervening obstacles and models provided bases do not overlap at the end of the move.",
-      "oncePerTurn": true
-    }
-  ],
-  "arcaneAbilities": [],
-  "signatureMove": {
-    "name": "Gore",
-    "upgradeFrom": "Rising Attack",
-    "damageType": "Piercing",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "2"},
-      {"opponentPlay": "Falling Swing", "deal": "2"},
-      {"opponentPlay": "Thrust", "deal": "2"},
-      {"opponentPlay": "Sweeping Cut", "deal": "1"},
-      {"opponentPlay": "Rising Attack", "deal": "2"},
-      {"opponentPlay": "Low Guard", "deal": "0"}
-    ],
-    "endStepEffect": "Move the enemy model 1”."
-  },
   "baseSize": "40mm",
   "imageName": "jackalope",
   "shareCode": "AAB",
+  "slicingDamageBuff": 0,
   "piercingDamageBuff": 2,
-  "impactDamageMitigation": 1
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 1,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": true,
+  "signatureMove": {
+    "name": "Gore",
+    "upgradeFor": "Rising Attack",
+    "possibleDamageTypes": ["Piercing"],
+    "highGuard": {"deal": "2", "isFollowUp": false},
+    "fallingSwing": {"deal": "2", "isFollowUp": false},
+    "thrust": {"deal": "2", "isFollowUp": false},
+    "sweepingCut": {"deal": "1", "isFollowUp": false},
+    "risingAttack": {"deal": "2", "isFollowUp": false},
+    "lowGuard": {"deal": "0", "isFollowUp": false},
+    "extraText": "This attack deals {Null} damage against models which are further than 1\" away.",
+    "endStepEffect": "Move the enemy model 1\"."
+  },
+  "abilities": [
+    {
+      "name": "Razor Sharp Antlers",
+      "description": "If this character deals Piercing Melee Dmg, increase the Dmg dealt by +2.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Fluffy",
+      "description": "Reduce Impact Dmg suffered by -1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Hippity",
+      "description": "You may move freely over intervening obstacles and models during Jog actions provided bases do not overlap at the end of the move.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Burrowing Claws",
+      "description": "This model gains possession of one Moonstone it is in base contact with regardless of its depth value. This ability cannot be used while this model is engaged.",
+      "abilityType": "Active",
+      "energyCost": 3,
+      "range": "",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Hop",
+      "description": "Move this model 4\". You may move freely over intervening obstacles and models provided bases do not overlap at the end of the move.",
+      "abilityType": "Active",
+      "energyCost": 2,
+      "range": "",
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    }
+  ]
 }

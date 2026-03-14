@@ -1,61 +1,98 @@
 {
-  "id": "041",
+  "id": 41,
   "name": "Joanna, Nordic Princess",
-  "version": "v.4",
+  "version": 4,
   "factions": ["COMMONWEALTH"],
-  "tags": ["Gnome", "Noble", "Norse"],
+  "health": 7,
+  "energyTrack": [1, 2, 4],
+  "keywords": ["Gnome", "Noble", "Norse"],
   "melee": 5,
   "meleeRange": 2,
   "arcane": 3,
   "evade": 0,
-  "health": 7,
-  "energyTrack": [2, 1, 4],
-  "passiveAbilities": [
-    {
-      "name": "Glaive",
-      "description": "If this character deals Slicing or Piercing Melee Dmg, increase the Dmg dealt by +1. "
-    },
-    {
-      "name": "Älskling",
-      "description": "Reduce all Dmg this character would suffer by -1 for each other friendly Gnome or Animal within 4”, to a maximum of -2."
-    }
-  ],
-  "activeAbilities": [],
-  "arcaneAbilities": [
-    {
-      "name": "Pixie-Elf Elixer",
-      "cost": 2,
-      "range": "",
-      "description": "This character gains X+1 energy.\nCatastrophe: This character suffers 3 Wds.",
-      "oncePerGame": false,
-      "oncePerTurn": true
-    },
-    {
-      "name": "Revenge of the Forest Friends",
-      "cost": 2,
-      "range": "18\"",
-      "description": "This attack is not modified by Cover.\nTarget within 3” of a Tree or Wooded Patch terrain suffers X Magical Dmg.\nCatastrophe: Target gains [Protection: The first time this character would suffer Dmg, reduce that Dmg to W], until end of turn.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "signatureMove": {
-    "name": "Valkyrie Cyclone",
-    "upgradeFrom": "Sweeping Cut",
-    "damageType": "Slicing",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "2"},
-      {"opponentPlay": "Thrust", "deal": "1"},
-      {"opponentPlay": "Sweeping Cut", "deal": "1"},
-      {"opponentPlay": "Rising Attack", "deal": "2"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "Deal 2 Slicing Dmg to all models within 2” that did not participate in this round of melee. This does not count as Melee Dmg."
-  },
   "baseSize": "30mm",
   "imageName": "joanna",
   "shareCode": "AAB",
   "slicingDamageBuff": 1,
-  "piercingDamageBuff": 1
+  "piercingDamageBuff": 1,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Valkyrie Cyclone",
+    "upgradeFor": "Sweeping Cut",
+    "possibleDamageTypes": ["Slicing"],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "2", "isFollowUp": false},
+    "thrust": {"deal": "1", "isFollowUp": false},
+    "sweepingCut": {"deal": "1", "isFollowUp": false},
+    "risingAttack": {"deal": "2", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "Deal 2 Slicing Dmg to all models within 2\" that did not participate in this round of melee. This does not count as Melee Dmg."
+  },
+  "abilities": [
+    {
+      "name": "Glaive",
+      "description": "If this character deals Slicing or Piercing Melee Dmg, increase the Dmg dealt by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Älskling",
+      "description": "Reduce all Dmg this character would suffer by -1 for each friendly Gnome or Animal within 4\", to a maximum of -2.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Pixie-Elf Elixir",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "",
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "This character gains X+1 energy.",
+          "validCards": [{"colour": "Blue", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 3 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    },
+    {
+      "name": "Revenge of the Forest Friends",
+      "description": "This attack is not modified by Cover.",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "18\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target within 3\" of a Tree or Wooded Patch terrain suffers X Magical Dmg.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "Target gains Protection (The first time this character would suffer Dmg, reduce that Dmg to {Null}), until end of turn.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

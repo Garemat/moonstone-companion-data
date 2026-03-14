@@ -1,0 +1,14 @@
+{
+  "id": 9,
+  "name": "Conscripted",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [
+    "Wizard"
+  ],
+  "extraDescription": "This character gains the Soldier keyword. The first Wd this character suffers in a game is ignored.",
+  "abilities": [],
+  "shareCode": "AAB",
+  "imageName": "conscripted"
+}

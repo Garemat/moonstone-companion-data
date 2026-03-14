@@ -1,64 +1,105 @@
 {
-  "id": "060",
+  "id": 60,
   "name": "Brother Daniel",
-  "version": "",
+  "version": 2,
   "factions": ["COMMONWEALTH", "LESHAVULT"],
-  "tags": ["Human", "Cultist", "Cleric"],
+  "health": 7,
+  "energyTrack": [1, 2, 4],
+  "keywords": ["Human", "Cultist", "Cleric"],
   "melee": 2,
   "meleeRange": 2,
   "arcane": 4,
   "evade": 0,
-  "health": 7,
-  "energyTrack": [1, 2, 4],
-  "passiveAbilities": [
+  "baseSize": "30mm",
+  "imageName": "daniel",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Thwack!",
+    "upgradeFor": "Sweeping Cut",
+    "possibleDamageTypes": ["Impact"],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "2", "isFollowUp": false},
+    "thrust": {"deal": "2", "isFollowUp": false},
+    "sweepingCut": {"deal": "1", "isFollowUp": false},
+    "risingAttack": {"deal": "2", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "The opponent suffers -1 Melee Stat until end of turn."
+  },
+  "abilities": [
     {
       "name": "Slightly Maddening",
       "description": "You may make one opponent re-roll their die when determining who activates first.",
-      "oncePerGame": true
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": true,
+      "arcaneOutcomes": []
     },
     {
       "name": "Look at the Shiny Thing",
-      "description": "f this character is in possession of one or more Moonstones during the Replenish Step, you may have another friendly character within 4\" and LoS gain +1 energy."
-    }
-  ],
-  "activeAbilities": [
+      "description": "If this character is in possession of one or more Moonstones during the Replenish Step, you may have another friendly character within 4\" and LoS gain +1 energy.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Plant the Placard",
-      "cost": 2,
-      "range": "6\"",
-      "description": "Move all other friendly characters within the pulse up to 1\". This character cannot take Jog or Step actions, or make a Reaction Step until end of turn.",
-      "oncePerTurn": true
-    }
-  ],
-  "arcaneAbilities": [
+      "description": "Move all other friendly characters within the pulse up to 1\". This character cannot take Jog or Step actions or make a Reaction Step until end of turn.",
+      "abilityType": "Active",
+      "energyCost": 2,
+      "range": "6\" Pulse",
+      "pulse": true,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Bell Ringer",
-      "cost": 2,
-      "range": "4\"",
-      "description": "All friendly characters within the pulse restore X Wds.\nCatastrophe: All characters within the pulse suffer 1 Wd."
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "4\" Pulse",
+      "pulse": true,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "All friendly characters within the pulse restore X Wds. All characters within the pulse suffer 1 Wd.",
+          "validCards": [{"colour": "Blue", "value": "X"}]
+        }
+      ]
     },
     {
       "name": "The End is Nigh",
-      "cost": 4,
-      "range": "",
-      "description": "Choose a model within 3\" and LoS of this character. Then choose another model within 3X\" and LoS of this character. Place the first model within 3\" of the second model.\nCatastrophe: This character's controller must choose either to have him suffer 4 Wds, or be Removed from Play."
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 4,
+      "range": "3\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Choose a model within 3\" and LoS of this character. Then choose another model within 3×X\" and LoS of the second model. Place the first model within 3×X\" of the second model.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This character's controller must choose either to have him suffer 4 Wds or be Removed from Play.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Thwack!",
-    "upgradeFrom": "Sweeping Cut",
-    "damageType": "Impact",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "1"},
-      {"opponentPlay": "Falling Swing", "deal": "2"},
-      {"opponentPlay": "Thrust", "deal": "2"},
-      {"opponentPlay": "Sweeping Cut", "deal": "1"},
-      {"opponentPlay": "Rising Attack", "deal": "0"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "The opponent suffers -1 Melee Stat until end of turn."
-  },
-  "baseSize": "30mm",
-  "imageName": "daniel",
-  "shareCode": "AAB"
+  ]
 }

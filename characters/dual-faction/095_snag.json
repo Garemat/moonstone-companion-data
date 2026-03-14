@@ -1,61 +1,94 @@
 {
-  "id": "095",
+  "id": 95,
   "name": "Snag",
-  "version": "",
+  "version": 1,
   "factions": ["LESHAVULT", "SHADES"],
-  "tags": ["Treefolk", "Spirit"],
+  "health": 11,
+  "energyTrack": [1, 4, 10],
+  "keywords": ["Treefolk", "Spirit"],
   "melee": 4,
   "meleeRange": 2,
   "arcane": 3,
   "evade": 2,
-  "health": 11,
-  "energyTrack": [1, 4, 10],
-  "passiveAbilities": [
+  "baseSize": "40mm",
+  "imageName": "snag",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 1,
+  "impactDamageBuff": 1,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Hex",
+    "upgradeFor": "Rising Attack",
+    "possibleDamageTypes": ["Magical"],
+    "highGuard": {"deal": "0", "isFollowUp": false},
+    "fallingSwing": {"deal": "0", "isFollowUp": false},
+    "thrust": {"deal": "0", "isFollowUp": false},
+    "sweepingCut": {"deal": "1", "isFollowUp": false},
+    "risingAttack": {"deal": "1", "isFollowUp": false},
+    "lowGuard": {"deal": "1", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "If the enemy suffered no Wds during this round of melee, the enemy model gains [Deadwood Cursed: During the Discard Step, this character and all models friendly to this character within 3\" suffer 1 Wd], until this character is slain."
+  },
+  "abilities": [
     {
-      "name": "Windfoot",
-      "description": "This character may jog over Wooded Patches."
-    },
-    {
-      "name": "Accursed",
-      "description": "When an enemy targets this character with an arcane action you may reveal a Green:X from your resist hand before any cards are played. After resolving the current action, the enemy model suffers X-1 Wds where X is the value of the revealed card."
+      "name": "Woodroot",
+      "description": "This character may Jog over Wooded Patches.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Splintered Branches",
-      "description": "If this character deals Impact or Piercing Melee dmg, increase the dmg dealt by +1."
+      "description": "If this character deals Impact or Piercing Melee Dmg, increase the Dmg dealt by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
-      "name": "Vengeance",
-      "description": "If a friendly character is slain or reduced to - Wds, the fist time this model uses an Arcane Ability this turn it doesn't need to spend any energy."
-    }
-  ],
-  "activeAbilities": [],
-  "arcaneAbilities": [
+      "name": "Accursed",
+      "description": "When an enemy targets this character with an arcane action you may reveal a [G]X from your hand before any cards are played. After resolving the current action, the enemy model suffers X-1 Wds where X is the value of the revealed card.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Vengence",
+      "description": "If a friendly character is slain or reduced to 0 Wds, the first time this model uses an Arcane Ability this turn it doesn't need to spend any energy.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Deadwood Curse",
-      "cost": 3,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 3,
       "range": "8\"",
-      "description": "Target gains [Deadwood Cursed: During the Discard Step, this character and all models friendly to this character within 3\" suffer 1 Wd.], until this character is slain.\nCatastrophe: This character suffers 2 Wds. All other models within 3\" suffer 2 Wds.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Target gains [Deadwood Cursed]: During the Discard Step, this character and all models friendly to this character within 3\" of the target suffer 1 Wd, until this character is slain.",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 2 Wds. All other models within 3\" suffer 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Crowd Control",
-    "upgradeFrom": "Rising Attack",
-    "damageType": "Impact",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "0"},
-      {"opponentPlay": "Falling Swing", "deal": "0"},
-      {"opponentPlay": "Thrust", "deal": "0"},
-      {"opponentPlay": "Sweeping Cut", "deal": "1"},
-      {"opponentPlay": "Rising Attack", "deal": "1"},
-      {"opponentPlay": "Low Guard", "deal": "2"}
-    ],
-    "endStepEffect": "This attack deals W damage against models which are further than 1\" away. If the enemy is within 1\" it is moved 1\" directly away from this model."
-  },
-  "baseSize": "40mm",
-  "imageName": "095_snag.json",
-  "shareCode": "AAB",
-  "impactDamageBuff": 1,
-  "piercingDamageBuff": 1
+  ]
 }

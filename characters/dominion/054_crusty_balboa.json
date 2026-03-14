@@ -1,70 +1,109 @@
 {
-  "id": "054",
+  "id": 54,
   "name": "Crusty Balboa",
-  "version": "",
+  "version": 1,
   "factions": ["DOMINION"],
-  "tags": ["Animal", "Goblin", "Pirate"],
+  "health": 9,
+  "energyTrack": [1, 3, 5],
+  "keywords": ["Animal", "Goblin", "Pirate"],
   "melee": 3,
   "meleeRange": 2,
   "arcane": 4,
   "evade": 1,
-  "health": 9,
-  "energyTrack": [1, 3, 5],
-  "passiveAbilities": [
-    {
-      "name": "Claw and Hook",
-      "description": "If this character deals Impact Melee Dmg, increase the Dmg dealt by +1."
-    },
-    {
-      "name": "Barnacle Encrusted Shell",
-      "description": "Reduce all non-Magical Dmg suffered by -1."
-    }
-  ],
-  "activeAbilities": [
-    {
-      "name": "\"Look out!\"",
-      "cost": 1,
-      "range": "6\"",
-      "description": "Target friendly character’s Evade stat is reduced by -1 until end of turn.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "arcaneAbilities": [
-    {
-      "name": "Pinch",
-      "cost": 2,
-      "range": "2\"",
-      "description": "Target loses possession of one Moonstone they are carrying and this model gains possession of that Moonstone.\nCatastrophe: This model suffers 3 Wds.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    },
-    {
-      "name": "Punch",
-      "cost": 1,
-      "range": "2\"",
-      "description": "Target suffers 2 Impact Dmg. If this character has already used the Pinch ability this turn, increase this Dmg by +1.\nCatastrophe: This model suffers 2 Wds.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "signatureMove": {
-    "name": "First of the Month!",
-    "upgradeFrom": "Rising Attack",
-    "damageType": "Impact",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "2"},
-      {"opponentPlay": "Falling Swing", "deal": "1"},
-      {"opponentPlay": "Thrust", "deal": "2"},
-      {"opponentPlay": "Sweeping Cut", "deal": "1"},
-      {"opponentPlay": "Rising Attack", "deal": "0"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "If this character has already used the Pinch and Punch abilities this turn then the enemy suffers 2 Wds and cannot take a Melee Attack action targeting this model until end of turn."
-  },
   "baseSize": "40mm",
   "imageName": "balboa",
   "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
   "impactDamageBuff": 1,
-  "allNonMagicalDamageMitigation": 1
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 1,
+  "impactDamageMitigation": 1,
+  "slicingDamageMitigation": 1,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "First of the Month!",
+    "upgradeFor": "Rising Attack",
+    "possibleDamageTypes": ["Impact"],
+    "highGuard": {"deal": "2", "isFollowUp": false},
+    "fallingSwing": {"deal": "1", "isFollowUp": false},
+    "thrust": {"deal": "2", "isFollowUp": false},
+    "sweepingCut": {"deal": "2", "isFollowUp": false},
+    "risingAttack": {"deal": "1", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "If this character has already used the Pinch and Punch abilities this turn then the enemy suffers 2 Wds and cannot take a Melee Attack action targeting this model until end of turn."
+  },
+  "abilities": [
+    {
+      "name": "Claw and Hook",
+      "description": "If this character deals Impact Melee Dmg, increase the Dmg dealt by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Barnacle Encrusted Shell",
+      "description": "Reduce all non-Magical Dmg suffered by -1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "\"Look out!\"",
+      "description": "Target friendly character's Evade stat is reduced by -1 until end of turn.",
+      "abilityType": "Active",
+      "energyCost": 1,
+      "range": "6\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Pinch",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "2\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target loses possession of one Moonstone they are carrying and this model gains possession of that Moonstone.",
+          "validCards": [{"colour": "Green", "value": "X"}, {"colour": "Blue", "value": "X"}, {"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 3 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    },
+    {
+      "name": "Punch",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 1,
+      "range": "2\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers 2 Impact Dmg. If this character has already used the Pinch ability this turn increase this Dmg by +1.",
+          "validCards": [{"colour": "Green", "value": "X"}, {"colour": "Blue", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

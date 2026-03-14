@@ -1,0 +1,19 @@
+{
+  "id": 38,
+  "name": "Polished Helmet",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [
+    "Wizard",
+    "Cleric"
+  ],
+  "abilities": [
+    {
+      "name": "Polished Helmet",
+      "description": "If this character suffers Impact Dmg, reduce the Dmg suffered by -1. If this character is the defender in a round of melee, then the attacker suffers -1 Melee Stat."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "polishedhelmet"
+}

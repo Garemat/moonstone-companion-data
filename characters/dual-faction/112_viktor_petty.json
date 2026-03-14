@@ -1,60 +1,94 @@
 {
-  "id": "112",
+  "id": 112,
   "name": "Viktor Petty, Graverobber",
-  "version": "",
+  "version": 1,
   "factions": ["DOMINION", "SHADES"],
-  "tags": ["Human", "Rogue"],
+  "health": 8,
+  "energyTrack": [1, 4, 6],
+  "keywords": ["Human", "Rogue"],
   "melee": 3,
   "meleeRange": 2,
   "arcane": 4,
   "evade": 0,
-  "health": 8,
-  "energyTrack": [1, 4, 6],
-  "passiveAbilities": [
-    {
-      "name": "Guiding Lantern",
-      "description": "When a friendly model enters play via Reanimate or Reanimate Jobie it may be placed in base contact with this model instead of the originator. "
-    },
+  "baseSize": "30mm",
+  "imageName": "viktor_petty",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 1,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Slip into Shadows",
+    "upgradeFor": "Low Guard",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "Place this model within 4\"."
+  },
+  "abilities": [
     {
       "name": "Spade",
-      "description": "If this character deals Impact Melee Dmg, increase the Dmg dealt by +1. "
+      "description": "If this character deals Impact Melee Dmg, increase the Dmg dealt by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Gravedigger",
-      "description": "The first time each turn this character performs a Harvest action, you may reduce the depth value by 2, instead of 1."
+      "description": "The first time each turn this character performs a Harvest action, you may reduce the depth value by 2, instead of 1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Keep 'em Fresh",
-      "description": "When this model or a friendly Risen model enters play via Reanimate, it may restore 2 Wds. Other friendly models entering play via Reanimate may restore 1 Wd. "
-    }
-  ],
-  "activeAbilities": [],
-  "arcaneAbilities": [
+      "description": "When this model or a friendly Risen model enters play via Reanimate, it may restore 2 Wds. Other friendly models entering play via Reanimate may restore 1 Wd.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Guiding Lantern",
+      "description": "When a friendly model enters play via Reanimate or Reanimate Jobie it may be placed in base contact with this model instead of the originator.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Sink Hole",
-      "cost": 2,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
       "range": "8\"",
-      "description": "Target suffers X Wds and gains [Slow: This model's Jog actions are limited to 2\"], until end of turn. \nCatastrophe: This character suffers 2 Wds.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers X Wds and gains [Slow: This model's Jog actions are limited to 2\"], until end of turn.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 3 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Slip into Shadows",
-    "upgradeFrom": "Low Guard",
-    "damageType": "",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "Place this model within 4”."
-  },
-  "baseSize": "30mm",
-  "imageName": "112_viktor_petty.json",
-  "shareCode": "AAB",
-  "impactDamageBuff": 1
+  ]
 }

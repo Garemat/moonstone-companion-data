@@ -1,53 +1,85 @@
 {
-  "id": "091",
+  "id": 91,
   "name": "Olim",
-  "version": "",
+  "version": 2,
   "factions": ["COMMONWEALTH"],
-  "tags": ["Gnome", "Animal", "Norse", "Noble"],
+  "health": 8,
+  "energyTrack": [1, 2, 4],
+  "keywords": ["Gnome", "Animal", "Norse", "Noble"],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 4,
-  "evade": "0",
-  "health": 8,
-  "energyTrack": [1, 2, 4],
-  "passiveAbilities": [
-    {
-      "name": "Valhalla!!",
-      "description": "When another friendly Norse or a friendly Young Jack within 6\" starts a Jog action, it may move +2\", provided the move ends with the character engaging an enemy. (Models with Slow are still limited to 2\" as normal)."
-    }
-  ],
-  "activeAbilities": [
-    {
-      "name": "Fortunate",
-      "cost": 1,
-      "range": "",
-      "description": "Look at the top 3 cards of the Arcane Deck. Put any number on the top of the deck in any order and put the remainder on the bottom of the deck in any order.",
-      "oncePerTurn": true
-    }
-  ],
-  "arcaneAbilities": [
-    {
-      "name": "Buttermilk Elixir",
-      "cost": 2,
-      "range": "6\"",
-      "description": "Target Norse or Gnome gains +1 energy.\nTarget restores X+1 Wds.\nCatastrophe: This character suffers 3 Wds."
-    }
-  ],
+  "evade": 0,
+  "baseSize": "40mm",
+  "imageName": "olim",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
   "signatureMove": {
     "name": "Fetch!",
-    "upgradeFrom": "Low Guard",
-    "damageType": "",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "Choose a friendly Norse or friendly Young Jack within 4\" of the enemy model. Move the chosen friendly character 3\" directly towards the enemy. If the chosen friendly character is now engaging the enemy then this model may move 3\" directly away from the enemy model."
+    "upgradeFor": "Low Guard",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "Choose a friendly Norse or friendly Young Jack within 4\" of the enemy model and move them 3\" directly towards the enemy. If the chosen character is now engaging the enemy then this model may move 3\" directly away from the enemy."
   },
-  "baseSize": "40mm",
-  "imageName": "count_de_candies",
-  "shareCode": "AAB"
+  "abilities": [
+    {
+      "name": "Valhalla!!",
+      "description": "When another friendly Norse or a friendly Young Jack within 6\" starts a Jog action, it may move +2\" provided the move ends with the character engaging an enemy. (Models with Slow are still limited to 2\" as normal.)",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Fortunate",
+      "description": "Look at the top 3 cards of the Arcane Deck. Put any number on the top of the deck in any order and put the remainder on the bottom of the deck in any order.",
+      "abilityType": "Active",
+      "energyCost": 1,
+      "range": "",
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Buttermilk Elixir",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "6\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target restores X+1 Wds.",
+          "validCards": [{"colour": "Blue", "value": "X"}]
+        },
+        {
+          "text": "Target Norse or Gnome gains +1 energy.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 3 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

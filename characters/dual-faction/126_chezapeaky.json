@@ -1,60 +1,118 @@
 {
-  "id": "126",
+  "id": 126,
   "name": "Chezapeaky",
-  "version": "",
+  "version": 1,
   "factions": ["DOMINION", "SHADES"],
-  "tags": ["Spirit", "Animal", "Pirate"],
+  "health": 9,
+  "energyTrack": [1, 3, 6],
+  "keywords": ["Spirit", "Animal", "Pirate"],
   "melee": 2,
   "meleeRange": 2,
   "arcane": 3,
-  "evade": "1",
-  "health": 9,
-  "energyTrack": [1, 3, 6],
-  "passiveAbilities": [
+  "evade": 1,
+  "baseSize": "40mm",
+  "imageName": "chezapeaky",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 1,
+  "impactDamageMitigation": 1,
+  "slicingDamageMitigation": 1,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Crushing Pressure",
+    "upgradeFor": "Thrust",
+    "possibleDamageTypes": ["Impact"],
+    "highGuard": {"deal": "1", "isFollowUp": false},
+    "fallingSwing": {"deal": "1", "isFollowUp": false},
+    "thrust": {"deal": "1", "isFollowUp": false},
+    "sweepingCut": {"deal": "1", "isFollowUp": false},
+    "risingAttack": {"deal": "1", "isFollowUp": false},
+    "lowGuard": {"deal": "1", "isFollowUp": false},
+    "extraText": "This attack deals {0} damage against models which are further than 1\" away.",
+    "endStepEffect": "If the enemy suffered 1 or more Wds during this round of melee, they must discard 1 energy."
+  },
+  "abilities": [
     {
       "name": "Barnacle Encrusted Shell",
-      "description": "Reduce all non-Magical Dmg suffered by -1."
-    }
-  ],
-  "activeAbilities": [
+      "description": "Reduce all non-Magical Dmg suffered by -1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Stocked to the Gills",
-      "cost": 1,
+      "description": "Resolve this action with +2 Arcane Stat if there is a Water Feature within 4\" of this model.",
+      "abilityType": "Arcane",
+      "energyCost": 1,
       "range": "4\"",
-      "description": "Target Pirate with the Reload [...] ability may immediately use the Reload [...] ability without spending energy.",
-      "oncePerTurn": true
-    }
-  ],
-  "arcaneAbilities": [
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target Pirate or Troll gains X energy and suffers -X Arcane Stat until end of turn.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 3 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    },
     {
       "name": "Junk Toss",
-      "cost": 1,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 1,
       "range": "4\"",
-      "description": "Target suffers X Piercing Dmg.\nTarget suffers 1 Wd then is moved X\" directly away.\nTarget cannot take the Jog action until end of turn.\nCatastrophe: This model suffers 4 Wds.",
-      "oncePerTurn": true
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers X Piercing Dmg.",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "Target suffers 1 Wd then is moved X\" directly away.",
+          "validCards": [{"colour": "Blue", "value": "X"}]
+        },
+        {
+          "text": "Target cannot take the Jog action until end of turn.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 4 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     },
     {
       "name": "Gone Fishin'",
-      "cost": 2,
+      "description": "Resolve this action with +2 Arcane Stat if there is a Water Feature within 4\" of this model.",
+      "abilityType": "Arcane",
+      "energyCost": 2,
       "range": "4\"",
-      "description": "Resolve this action with +2 Arcane Stat if there is a Water Feature within 4\" of this model.\nTarget restores X Wds.\nCatastrophe: This model suffers 3 Wds."
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target restores X Wds.",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 3 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Crushing Pressure",
-    "upgradeFrom": "Thrust",
-    "damageType": "Impact",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "1"},
-      {"opponentPlay": "Falling Swing", "deal": "1"},
-      {"opponentPlay": "Thrust", "deal": "1"},
-      {"opponentPlay": "Sweeping Cut", "deal": "1"},
-      {"opponentPlay": "Rising Attack", "deal": "1"},
-      {"opponentPlay": "Low Guard", "deal": "1"}
-    ],
-    "endStepEffect": "This action deals W damage against models which are further than 1\" away. If the enemy suffered 1 or more Wds during this round of melee, they must discard 1 energy."
-  },
-  "baseSize": "40mm",
-  "imageName": "126_chezapeaky.json",
-  "shareCode": "AAB"
+  ]
 }

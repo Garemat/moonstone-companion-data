@@ -1,57 +1,86 @@
 {
-  "id": "039",
+  "id": 39,
   "name": "Jayda",
-  "version": "",
+  "version": 1,
   "factions": ["COMMONWEALTH", "LESHAVULT"],
-  "tags": ["Faun", "Soldier"],
+  "health": 7,
+  "energyTrack": [1, 3, 4, 6],
+  "keywords": ["Faun", "Soldier"],
   "melee": 4,
   "meleeRange": 1,
   "arcane": 4,
   "evade": -1,
-  "health": 7,
-  "energyTrack": [3, 1, 4, 6],
-  "passiveAbilities": [
-    {
-      "name": "Dagger",
-      "description": "If this character deals Piercing Melee Dmg, increase the Dmg dealt by +1."
-    },
-    {
-      "name": "Swift",
-      "description": "When making a Reaction Step while engaged by an enemy, this model may move 2” instead of the usual 1”",
-      "oncePerTurn": true
-    },
-    {
-      "name": "Sure Footed",
-      "description": "This character may Jog over Water Features and Wooded Patches and pays 1 less energy for Traverse actions."
-    }
-  ],
-  "activeAbilities": [],
-  "arcaneAbilities": [
-    {
-      "name": "Shoot Bow",
-      "cost": 3,
-      "range": "10\"",
-      "description": "Target suffers X+1 Piercing Dmg.\nCatastrophe: This ability cannot be used for the remainder of the game.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "signatureMove": {
-    "name": "Mercy Kill",
-    "upgradeFrom": "Falling Swing",
-    "damageType": "Piercing",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "0"},
-      {"opponentPlay": "Thrust", "deal": "3"},
-      {"opponentPlay": "Sweeping Cut", "deal": "3"},
-      {"opponentPlay": "Rising Attack", "deal": "2"},
-      {"opponentPlay": "Low Guard", "deal": "2"}
-    ],
-    "endStepEffect": "If the enemy is slain, this character gains 1 energy."
-  },
   "baseSize": "30mm",
   "imageName": "jayda",
   "shareCode": "AAB",
-  "piercingDamageBuff": 1
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 1,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Mercy Kill",
+    "upgradeFor": "Falling Swing",
+    "possibleDamageTypes": ["Piercing"],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "0", "isFollowUp": false},
+    "thrust": {"deal": "0", "isFollowUp": false},
+    "sweepingCut": {"deal": "3", "isFollowUp": false},
+    "risingAttack": {"deal": "3", "isFollowUp": false},
+    "lowGuard": {"deal": "2", "isFollowUp": false},
+    "extraText": "This attack deals +2 Dmg if the enemy has 4 Wds or fewer remaining.",
+    "endStepEffect": "If the enemy is slain, this character gains 1 energy."
+  },
+  "abilities": [
+    {
+      "name": "Dagger",
+      "description": "If this character deals Piercing Melee Dmg, increase the Dmg dealt by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Swift",
+      "description": "When making a Reaction Step while engaged by an enemy, this model may move 2\" instead of the usual 1\".",
+      "abilityType": "Passive",
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Sure Footed",
+      "description": "This character may Jog over Water Features and Wooded Patches and pays 1 less energy for Traverse actions.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Shoot Bow",
+      "description": "This ability cannot be used while this model is engaged.",
+      "abilityType": "Arcane",
+      "energyCost": 3,
+      "range": "10\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers X+1 Piercing Dmg.",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "This ability cannot be used for the remainder of the game.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

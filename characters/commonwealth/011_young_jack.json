@@ -1,61 +1,93 @@
 {
-  "id": "011",
+  "id": 11,
   "name": "Young Jack",
-  "version": "",
+  "version": 2,
   "factions": ["COMMONWEALTH"],
-  "tags": ["Gnome", "Noble", "Militia"],
+  "health": 7,
+  "energyTrack": [1, 2, 3],
+  "keywords": ["Gnome", "Noble", "Militia"],
   "melee": 4,
   "meleeRange": 1,
   "arcane": 2,
   "evade": 0,
-  "health": 7,
-  "energyTrack": [1, 2, 3],
-  "passiveAbilities": [
-    {
-      "name": "Ancestral Shield",
-      "description": "Reduce all Dmg suffered by -1."
-    },
-    {
-      "name": "Ancestral Sword",
-      "description": "If this character deals Slicing Melee Dmg, increase the Dmg dealt by +2. If this character deals Piercing Melee Dmg, increase the Dmg dealt by +1."
-    }
-  ],
-  "activeAbilities": [
-    {
-      "name": "Lucky",
-      "cost": 1,
-      "range": "",
-      "description": "Look at the top 5 cards of the Arcane Deck. Put any number on the top of the deck in any order and put the remainder on the bottom of the deck in any order.",
-      "oncePerTurn": true
-    }
-  ],
-  "arcaneAbilities": [
-    {
-      "name": "Magic Brew",
-      "cost": 1,
-      "range": "",
-      "description": "[P]X: This model gains X energy.\n[B]X: This model restores X Wds.\nCatastrophe: This model suffers 3 Wds.",
-      "oncePerTurn": true
-    }
-  ],
-  "signatureMove": {
-    "name": "Shield Bash",
-    "upgradeFrom": "Low Guard",
-    "damageType": "Impact",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "1"},
-      {"opponentPlay": "Falling Swing", "deal": "2"},
-      {"opponentPlay": "Thrust", "deal": "0"},
-      {"opponentPlay": "Sweeping Cut", "deal": "2"},
-      {"opponentPlay": "Rising Attack", "deal": "2"},
-      {"opponentPlay": "Low Guard", "deal": "1"}
-    ],
-    "endStepEffect": "Move this model 1” directly towards the enemy, then if base contact is made, move the enemy 1” directly away"
-  },
   "baseSize": "30mm",
   "imageName": "young_jack",
   "shareCode": "AAB",
   "slicingDamageBuff": 2,
   "piercingDamageBuff": 1,
-  "allDamageMitigation": 1
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 1,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Shield Bash",
+    "upgradeFor": "Low Guard",
+    "possibleDamageTypes": ["Impact"],
+    "highGuard": {"deal": "1", "isFollowUp": false},
+    "fallingSwing": {"deal": "2", "isFollowUp": false},
+    "thrust": {"deal": "0", "isFollowUp": false},
+    "sweepingCut": {"deal": "2", "isFollowUp": false},
+    "risingAttack": {"deal": "2", "isFollowUp": false},
+    "lowGuard": {"deal": "1", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "Move this model 1\" directly towards the enemy, then if base contact is made, move the enemy 1\" directly away."
+  },
+  "abilities": [
+    {
+      "name": "Ancestral Sword",
+      "description": "If this character deals Slicing Melee Dmg, increase the Dmg dealt by +2. If this character deals Piercing Melee Dmg, increase the Dmg dealt by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Ancestral Shield",
+      "description": "Reduce all Dmg suffered by -1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Lucky",
+      "description": "Look at the top 5 cards of the Arcane Deck. Put any number on the top of the deck in any order and put the remainder on the bottom of the deck in any order.",
+      "abilityType": "Active",
+      "energyCost": 1,
+      "range": null,
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Magic Brew",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 1,
+      "range": null,
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "This model restores X Wds.",
+          "validCards": [{"colour": "Blue", "value": "X"}]
+        },
+        {
+          "text": "This model gains X energy.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 3 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

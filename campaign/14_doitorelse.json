@@ -1,0 +1,11 @@
+{
+  "id": 14,
+  "name": "Do it or Else!",
+  "version": 2,
+  "factions": [],
+  "tags": [],
+  "timing": "Play during the Activation Step, before or after any action.",
+  "description": "Target friendly character gains +2 energy.",
+  "shareCode": "AAB",
+  "imageName": "doitorelse"
+}

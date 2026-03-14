@@ -1,0 +1,16 @@
+{
+  "id": 56,
+  "name": "Unhallowed Strength",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [],
+  "abilities": [
+    {
+      "name": "Unhallowed Strength",
+      "description": "If this character deals Impact Melee Dmg, increase the Dmg dealt by +1."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "unhallowedstrength"
+}

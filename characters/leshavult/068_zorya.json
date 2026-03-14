@@ -1,66 +1,97 @@
 {
-  "id": "068",
+  "id": 68,
   "name": "Zorya, Dawn Witch",
-  "version": "",
+  "version": 3,
   "factions": ["LESHAVULT"],
-  "tags": ["Spirit"],
+  "health": 8,
+  "energyTrack": [1, 3, 5],
+  "keywords": ["Spirit", "Witch"],
   "melee": 5,
   "meleeRange": 1,
   "arcane": 2,
   "evade": -1,
-  "health": 8,
-  "energyTrack": [1, 3, 5],
-  "passiveAbilities": [
-    {
-      "name": "Mesmerising",
-      "description": "Enemy models engaged by this character must discard 1 energy before they can declare a Jog, Step or Reaction Step. "
-    },
+  "baseSize": "30mm",
+  "imageName": "zorya",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Betrayal",
+    "upgradeFor": "High Guard",
+    "possibleDamageTypes": ["Impact", "Slicing", "Piercing"],
+    "highGuard": {"deal": "2", "isFollowUp": false},
+    "fallingSwing": {"deal": "1", "isFollowUp": false},
+    "thrust": {"deal": "1", "isFollowUp": false},
+    "sweepingCut": {"deal": "2", "isFollowUp": false},
+    "risingAttack": {"deal": "1", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "This model may move 1\"."
+  },
+  "abilities": [
     {
       "name": "Link to the Present",
-      "description": "If a friendly Antonia, Noonday Witch was taken in this troupe at the start of the game then this character gains +1 energy during each Replenish Step."
-    }
-  ],
-  "activeAbilities": [
+      "description": "If a friendly Antonia, Noonday Witch was taken in this troupe at the start of the game then this character gains +1 energy during each Replenish Step.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
-      "name": "Visions of the Future",
-      "cost": 2,
-      "range": "8\"",
-      "description": "Target other friendly character immediately suffers one Catastrophe printed on their card. If it requires a target, you may choose any target that meets the ability’s requirements.",
-      "oncePerTurn": true
+      "name": "Mesmerising",
+      "description": "Enemy models engaged by this character must discard 1 energy before they can declare a Jog, Step or Reaction Step.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
     },
     {
       "name": "Swift",
-      "cost": 0,
-      "range": "",
-      "description": "When making a Reaction Step while engaged by an enemy, this model may move 2” instead of the usual 1”. ",
-      "oncePerTurn": true
-    }
-  ],
-  "arcaneAbilities": [
+      "description": "When making a Reaction Step while engaged by an enemy, this model may move 2\" instead of the usual 1\".",
+      "abilityType": "Passive",
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Visions of the Future",
+      "description": "Target other friendly character immediately suffers one Catastrophe printed on their card. If it requires a target, you may choose any target that meets the ability's requirements.",
+      "abilityType": "Active",
+      "energyCost": 2,
+      "range": "8\"",
+      "pulse": false,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Violent Impulse",
-      "cost": 1,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 1,
       "range": "",
-      "description": "This character's Melee Attacks deal +X Dmg until end of turn.\nCatastrophe: All characters within 4\" deal +1 Melee Dmg until end of turn.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "This character's Melee Attacks deal +X Dmg until end of turn.",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "All characters within 4\" deal +1 Melee Dmg until end of turn.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Betrayal",
-    "upgradeFrom": "High Guard",
-    "damageType": "Impact, Slicing or Piercing",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "2"},
-      {"opponentPlay": "Falling Swing", "deal": "1"},
-      {"opponentPlay": "Thrust", "deal": "1"},
-      {"opponentPlay": "Sweeping Cut", "deal": "2"},
-      {"opponentPlay": "Rising Attack", "deal": "1"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "Move this model 1\" directly towards the enemy."
-  },
-  "baseSize": "30mm",
-  "imageName": "zorya",
-  "shareCode": "AAB"
+  ]
 }

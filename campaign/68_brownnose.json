@@ -1,0 +1,11 @@
+{
+  "id": 68,
+  "name": "Brown Nose",
+  "version": 2,
+  "factions": [],
+  "tags": [],
+  "timing": "Play after the game.",
+  "description": "Choose another player in the campaign. The chosen player may not *Sabotage* you next week and must *Support* you if able.",
+  "shareCode": "AAB",
+  "imageName": "brownnose"
+}

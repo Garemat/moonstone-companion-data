@@ -1,65 +1,97 @@
 {
-  "id": "062",
+  "id": 62,
   "name": "Kalista, Leshavult Priestess",
-  "version": "",
+  "version": 3,
   "factions": ["LESHAVULT"],
-  "tags": ["Human", "Cultist", "Cleric"],
+  "health": 8,
+  "energyTrack": [1, 2, 4],
+  "keywords": ["Human", "Cultist", "Cleric"],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 5,
   "evade": 0,
-  "health": 8,
-  "energyTrack": [1, 2, 4],
-  "passiveAbilities": [
-    {
-      "name": "Dagger",
-      "description": "If this character deals Piercing Melee Dmg, increase the Dmg dealt by +1."
-    },
-    {
-      "name": "Joy of Entropy",
-      "description": "Whenever another character within 4\" is slain, this character gains +1 energy"
-    },
-    {
-      "name": "Conductor",
-      "description": "Other friendly Cultists and Spirits within 4\" gain +1 Arcane Stat."
-    }
-  ],
-  "activeAbilities": [
-    {
-      "name": "Paroxysm",
-      "cost": 4,
-      "range": "3\"",
-      "description": "All other models within 3\" suffer 4 Magical Dmg then are moved 3\" directly away.",
-      "oncePerGame": true,
-      "oncePerTurn": false
-    }
-  ],
-  "arcaneAbilities": [
-    {
-      "name": "Leshavit's Caress",
-      "cost": 3,
-      "range": "8\"",
-      "description": "Target restores X+1 Wds and gains [Protection: The first time this character would suffer Dmg, reduce that Dmg to W], until end of turn.\nCatastrophe: This character suffers 2 Wds. All other models within 6\" suffer 1 Wd.",
-      "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "signatureMove": {
-    "name": "Slip into Shadows",
-    "upgradeFrom": "Low Guard",
-    "damageType": "",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "Place this model within 4\"."
-  },
   "baseSize": "30mm",
   "imageName": "kalista",
   "shareCode": "AAB",
-  "piercingDamageBuff": 1
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 1,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Slip into Shadows",
+    "upgradeFor": "Low Guard",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "Place this model within 4\"."
+  },
+  "abilities": [
+    {
+      "name": "Dagger",
+      "description": "If this character deals Piercing Melee Dmg, increase the Dmg dealt by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Joy of Entropy",
+      "description": "Whenever another character within 4\" is slain, this character gains +1 energy.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Conductor",
+      "description": "Other friendly Cultists and Spirits within 4\" gain +1 Arcane Stat.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Paroxysm",
+      "description": "All other models within 3\" suffer 4 Magical Dmg then are moved 3\" directly away.",
+      "abilityType": "Active",
+      "energyCost": 4,
+      "range": "3\" Pulse",
+      "pulse": true,
+      "oncePerTurn": false,
+      "oncePerGame": true,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Leshavit's Caress",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 3,
+      "range": "8\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Target restores X+1 Wds and gains Protection (The first time this character would suffer Dmg, reduce that Dmg to {Null}), until end of turn.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This character suffers 2 Wds. All other models within 6\" suffer 1 Wd.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

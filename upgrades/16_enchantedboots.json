@@ -1,0 +1,20 @@
+{
+  "id": 16,
+  "name": "Enchanted Boots",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [
+    "Animal",
+    "Troll",
+    "Gnome"
+  ],
+  "abilities": [
+    {
+      "name": "Enchanted Boots",
+      "description": "This character gains +1\" Jog."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "enchantedboots"
+}

@@ -1,57 +1,77 @@
 {
-  "id": "046",
+  "id": 46,
   "name": "Brunhilde",
-  "version": "",
+  "version": 3,
   "factions": ["COMMONWEALTH"],
-  "tags": ["Giant", "Mercenary", "Norse"],
+  "health": 13,
+  "energyTrack": [1, 6],
+  "keywords": ["Giant", "Mercenary", "Norse"],
   "melee": 4,
   "meleeRange": 2,
   "arcane": 0,
   "evade": 2,
-  "health": 13,
-  "energyTrack": [1, 6],
-  "passiveAbilities": [
-    {
-      "name": "Giant-Forged Blades",
-      "description": "If this character deals Piercing or Slicing Dmg, increase the Dmg dealt by +2."
-    },
-    {
-      "name": "Bodyguard",
-      "description": " If a friendly Noble within 4” and LoS suffers Dmg, you may have this character suffer all that Dmg instead.",
-      "oncePerTurn": true
-    },
-    {
-      "name": "Loyalty",
-      "description": "If this character takes a Reaction Step it may move 3\" directly towards the nearest friendly Noble instead of the normal 1\" move."
-    }
-  ],
-  "activeAbilities": [
-    {
-      "name": "Epic Ballads of Giant Heros!",
-      "cost": 1,
-      "range": "6\"",
-      "description": "Other Giants within the pulse gain +1 energy. ",
-      "oncePerTurn": true
-    }
-  ],
-  "arcaneAbilities": [],
-  "signatureMove": {
-    "name": "Shattering Oathstone",
-    "upgradeFrom": "Falling Swing",
-    "damageType": "Slicing",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "0"},
-      {"opponentPlay": "Thrust", "deal": "3"},
-      {"opponentPlay": "Sweeping Cut", "deal": "3"},
-      {"opponentPlay": "Rising Attack", "deal": "2"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "If this character was slain, all other models within 8\", excluding friendly Giants and friendly Nobles, suffer 1 Wd. Other friendly Giants and friendly Nobles within 8\" restore all Wds instead. "
-  },
   "baseSize": "40mm",
   "imageName": "brunhilde",
   "shareCode": "AAB",
   "slicingDamageBuff": 2,
-  "piercingDamageBuff": 2
+  "piercingDamageBuff": 2,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Shattering Oathstone",
+    "upgradeFor": "Falling Swing",
+    "possibleDamageTypes": ["Slicing"],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "0", "isFollowUp": false},
+    "thrust": {"deal": "0", "isFollowUp": false},
+    "sweepingCut": {"deal": "3", "isFollowUp": false},
+    "risingAttack": {"deal": "3", "isFollowUp": false},
+    "lowGuard": {"deal": "2", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "If this character was slain, all other models within 8\", excluding friendly Giants and friendly Nobles, suffer 1 Wd. Other friendly Giants and friendly Nobles within 8\" restore all Wds instead."
+  },
+  "abilities": [
+    {
+      "name": "Giant-Forged Blades",
+      "description": "If this character deals Piercing or Slicing Dmg, increase the Dmg dealt by +2.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Bodyguard",
+      "description": "If a friendly Noble within 4\" and LoS suffers Dmg, you may have this character suffer all that Dmg instead.",
+      "abilityType": "Passive",
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Loyalty",
+      "description": "If this character takes a Reaction Step it may move 3\" directly towards the nearest friendly Noble instead of the normal 1\" move.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Epic Ballads of Giant Heroes!",
+      "description": "Other Giants within the pulse gain +1 energy.",
+      "abilityType": "Active",
+      "energyCost": 1,
+      "range": "6\" Pulse",
+      "pulse": true,
+      "oncePerTurn": true,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    }
+  ]
 }

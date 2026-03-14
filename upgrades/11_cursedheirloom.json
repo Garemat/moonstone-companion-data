@@ -1,0 +1,20 @@
+{
+  "id": 11,
+  "name": "Cursed Heirloom",
+  "version": 1,
+  "factions": [],
+  "allowedKeywords": [],
+  "restrictedKeywords": [
+    "Giant",
+    "Troll",
+    "Wizard"
+  ],
+  "abilities": [
+    {
+      "name": "Cursed Heirloom",
+      "description": "When this character is involved in a round of melee, before drawing Melee Cards they may suffer 1 Wd and gain +3 Melee Stat for the action."
+    }
+  ],
+  "shareCode": "AAB",
+  "imageName": "cursedheirloom"
+}

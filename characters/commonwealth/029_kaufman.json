@@ -1,59 +1,84 @@
 {
-  "id": "031",
+  "id": 31,
   "name": "Kaufman",
-  "version": "",
+  "version": 2,
   "factions": ["COMMONWEALTH"],
-  "tags": ["Human", "Noble"],
+  "health": 9,
+  "energyTrack": [1, 3, 6],
+  "keywords": ["Human", "Noble"],
   "melee": 2,
   "meleeRange": 1,
   "arcane": 4,
   "evade": 1,
-  "health": 9,
-  "energyTrack": [1, 3, 6],
-  "passiveAbilities": [],
-  "activeAbilities": [
+  "baseSize": "30mm",
+  "imageName": "kaufman",
+  "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 0,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Gut Barge",
+    "upgradeFor": "Thrust",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "Move the enemy model 2\" directly away from this model."
+  },
+  "abilities": [
     {
       "name": "Shower of Gold",
-      "cost": 2,
+      "description": "Target a single point on the board within 6\" and LoS of this model. All other models within 4\" of the chosen spot move 2\" directly away. The Kaufman player chooses the order of the moves.",
+      "abilityType": "Active",
+      "energyCost": 2,
       "range": "6\"",
-      "description": "Target a single point on the board within 6\" and LoS of this model. All other models within 4\" of the chosen spot move 2\" directly towards that point. The Kaufman player chooses the order of the moves.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": []
     },
     {
       "name": "Money Bag",
-      "cost": 2,
+      "description": "Place a 30mm diameter Bag of Gold token within 6\" and LoS of this model. The token remains in play but is immediately removed if a model is in base contact with it. Whenever another model takes a Jog or Step action while within 6\" and LoS of a Bag of Gold token, it may not end the move further from the nearest Bag of Gold token than it began.",
+      "abilityType": "Active",
+      "energyCost": 2,
       "range": "6\"",
-      "description": "Place a 30mm diameter Bag of Gold token within 6\" and LoS of this model. The token remains in play but is immediately removed if any model is in base contact with it. Whenever another model takes a Jog or Step action while within 6\" and LoS of a Bag of Gold token, it may not end the move further from the nearest Bag if Gold than it began.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "arcaneAbilities": [
+      "arcaneOutcomes": []
+    },
     {
       "name": "A Generous Offer",
-      "cost": 1,
+      "description": "This attack is not modified by Evade Stat.",
+      "abilityType": "Arcane",
+      "energyCost": 1,
       "range": "2\"",
-      "description": "Target model loses possession of one Moonstone it is carrying and this character gains possession of that Moonstone \nCatastrophe: This model suffers 2 Wds",
+      "pulse": false,
+      "oncePerTurn": true,
       "oncePerGame": false,
-      "oncePerTurn": true
+      "arcaneOutcomes": [
+        {
+          "text": "Target model loses possession of one Moonstone it is carrying and this character gains possession of that Moonstone.",
+          "validCards": [{"colour": "Green", "value": "2"}, {"colour": "Pink", "value": "2"}]
+        },
+        {
+          "text": "This model suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Gut Barge",
-    "upgradeFrom": "Thrust",
-    "damageType": "",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "Move the enemy model 2\" directly away from this model."
-  },
-  "baseSize": "30mm",
-  "imageName": "kaufman",
-  "shareCode": "AAB"
+  ]
 }

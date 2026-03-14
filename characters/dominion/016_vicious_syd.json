@@ -1,69 +1,105 @@
 {
-  "id": "016",
+  "id": 16,
   "name": "Vicious Syd",
-  "version": "",
+  "version": 2,
   "factions": ["DOMINION"],
-  "tags": ["Goblin", "Soldier"],
+  "health": 5,
+  "energyTrack": [1, 2, 4],
+  "keywords": ["Goblin", "Soldier"],
   "melee": 5,
   "meleeRange": 1,
   "arcane": 4,
   "evade": -1,
-  "health": 5,
-  "energyTrack": [1, 2, 4],
-  "passiveAbilities": [
-    {
-      "name": "Plate Armour",
-      "description": "Reduce all non-Magical Dmg suffered by -2."
-    },
-    {
-      "name": "Vicious",
-      "description": "Each time this model causes one or more Wds to an enemy, it gains 1 energy. Max. 3 times per turn."
-    },
-    {
-      "name": "Short 'n Stabby",
-      "description": "If this character deals Piercing Melee Dmg, increase the Dmg dealt by +1."
-    },
-    {
-      "name": "Lard Lover",
-      "description": "This character gains +2 Melee stat if there is a Giant within 4”."
-    }
-  ],
-  "activeAbilities": [
-    {
-      "name": "Giant Whisperer",
-      "cost": 1,
-      "range": "8\"",
-      "description": "Move target Giant 1”"
-    }
-  ],
-  "arcaneAbilities": [
-    {
-      "name": "Where’d You Come From!?",
-      "cost": 2,
-      "range": "6\"",
-      "description": "Place this model anywhere in base contact with target enemy\nCatastrophe: The resisting player places this model anywhere within 6”."
-    }
-  ],
-  "signatureMove": {
-    "name": "Groin Tickler",
-    "upgradeFrom": "Rising Attack",
-    "damageType": "Piercing",
-    "passiveEffect": "Damage from this attack cannot be reduced by passive abilities.",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "2"},
-      {"opponentPlay": "Falling Swing", "deal": "3"},
-      {"opponentPlay": "Thrust", "deal": "2"},
-      {"opponentPlay": "Sweeping Cut", "deal": "1"},
-      {"opponentPlay": "Rising Attack", "deal": "0"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "You may place this model anywhere in base contact with the enemy model."
-  },
   "baseSize": "30mm",
   "imageName": "syd",
   "shareCode": "AAB",
+  "slicingDamageBuff": 0,
+  "piercingDamageBuff": 1,
+  "impactDamageBuff": 0,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
   "piercingDamageMitigation": 2,
   "impactDamageMitigation": 2,
   "slicingDamageMitigation": 2,
-  "piercingDamageBuff": 1
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Groin Tickler",
+    "upgradeFor": "Rising Attack",
+    "possibleDamageTypes": ["Piercing"],
+    "highGuard": {"deal": "2", "isFollowUp": false},
+    "fallingSwing": {"deal": "3", "isFollowUp": false},
+    "thrust": {"deal": "2", "isFollowUp": false},
+    "sweepingCut": {"deal": "1", "isFollowUp": false},
+    "risingAttack": {"deal": "0", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "Damage from this attack cannot be reduced by passive abilities.",
+    "endStepEffect": "You may place this model anywhere in base contact with the enemy model."
+  },
+  "abilities": [
+    {
+      "name": "Plate Armour",
+      "description": "Reduce all non-Magical Dmg suffered by -2.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Vicious",
+      "description": "Each time this model causes one or more Wds to an enemy, it gains 1 energy. Max. 3 times per turn.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Short 'n Stabby",
+      "description": "If this character deals Piercing Melee Dmg, increase the Dmg dealt by +1.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Lard Lover",
+      "description": "This character gains +2 Melee stat if there is a Giant within 4\".",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Giant Whisperer",
+      "description": "Move target Giant 1\".",
+      "abilityType": "Active",
+      "energyCost": 1,
+      "range": "8\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
+    {
+      "name": "Where'd You Come From!?",
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 2,
+      "range": "6\"",
+      "pulse": false,
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": [
+        {
+          "text": "Place this model anywhere in base contact with target enemy.",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "The resisting player places this model anywhere within 6\".",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
+    }
+  ]
 }

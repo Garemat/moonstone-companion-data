@@ -1,64 +1,109 @@
 {
-  "id": "057",
+  "id": 57,
   "name": "Belladonna",
-  "version": "",
+  "version": 1,
   "factions": ["DOMINION"],
-  "tags": ["Faerie", "Rogue"],
+  "health": 6,
+  "energyTrack": [1, 2, 3, 4, 5],
+  "keywords": ["Faerie", "Rogue"],
   "melee": 4,
   "meleeRange": 1,
   "arcane": 3,
   "evade": -2,
-  "health": 6,
-  "energyTrack": [1, 2, 3, 4, 5],
-  "passiveAbilities": [
+  "baseSize": "30mm",
+  "imageName": "belladonna",
+  "shareCode": "AAB",
+  "slicingDamageBuff": -1,
+  "piercingDamageBuff": -1,
+  "impactDamageBuff": -1,
+  "dealsMagicalDamage": false,
+  "allDamageMitigation": 0,
+  "piercingDamageMitigation": 0,
+  "impactDamageMitigation": 0,
+  "slicingDamageMitigation": 0,
+  "magicalDamageMitigation": 0,
+  "summonsCharacterIds": [],
+  "isUnselectableInTroupe": false,
+  "signatureMove": {
+    "name": "Drop of Delirium",
+    "upgradeFor": "High Guard",
+    "possibleDamageTypes": [],
+    "highGuard": {"deal": "Null", "isFollowUp": false},
+    "fallingSwing": {"deal": "Null", "isFollowUp": false},
+    "thrust": {"deal": "Null", "isFollowUp": false},
+    "sweepingCut": {"deal": "Null", "isFollowUp": false},
+    "risingAttack": {"deal": "Null", "isFollowUp": false},
+    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "extraText": "",
+    "endStepEffect": "Move the enemy model 2\", then it loses 1 energy and suffers 1 Wd."
+  },
+  "abilities": [
     {
       "name": "Weakling",
-      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy"
-    }
-  ],
-  "activeAbilities": [
+      "description": "Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy.",
+      "abilityType": "Passive",
+      "oncePerTurn": false,
+      "oncePerGame": false,
+      "arcaneOutcomes": []
+    },
     {
       "name": "Faerie Tricks",
-      "cost": 2,
-      "range": "8\"",
       "description": "Swap places with target friendly Rogue.",
+      "abilityType": "Active",
+      "energyCost": 2,
+      "range": "8\"",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
-    }
-  ],
-  "arcaneAbilities": [
+      "arcaneOutcomes": []
+    },
     {
       "name": "Acid Flask",
-      "cost": 3,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 3,
       "range": "4\"",
-      "description": "Target suffers X+1 Magical Dmg.\nCatastrophe: This model suffers 2 Wds.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Target suffers X+1 Magical Dmg.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "This model suffers 2 Wds.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     },
     {
       "name": "Drop of Nightshade",
-      "cost": 3,
+      "description": "",
+      "abilityType": "Arcane",
+      "energyCost": 3,
       "range": "1\"",
-      "description": "Target enemy loses X energy.\nTarget enemy suffers X Wds.\nMove target enemy up to 2X”. Then you may have the target take a Melee Attack action controlled by you. They count as friendly during the Melee attack action.\nCatastrophe: The target and this character are both slain.",
+      "pulse": false,
+      "oncePerTurn": false,
       "oncePerGame": false,
-      "oncePerTurn": false
+      "arcaneOutcomes": [
+        {
+          "text": "Target enemy loses X energy.",
+          "validCards": [{"colour": "Pink", "value": "X"}]
+        },
+        {
+          "text": "Target enemy gains X Wds.",
+          "validCards": [{"colour": "Blue", "value": "X"}]
+        },
+        {
+          "text": "Move target enemy up to 2×X\". Then you may have the target take a Melee Attack action controlled by you. They count as friendly during the Melee Attack action.",
+          "validCards": [{"colour": "Green", "value": "X"}]
+        },
+        {
+          "text": "The target and this character are both slain.",
+          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+        }
+      ]
     }
-  ],
-  "signatureMove": {
-    "name": "Drop of Delirium",
-    "upgradeFrom": "High Guard",
-    "damageType": "",
-    "results": [
-      {"opponentPlay": "High Guard", "deal": "Null"},
-      {"opponentPlay": "Falling Swing", "deal": "Null"},
-      {"opponentPlay": "Thrust", "deal": "Null"},
-      {"opponentPlay": "Sweeping Cut", "deal": "Null"},
-      {"opponentPlay": "Rising Attack", "deal": "Null"},
-      {"opponentPlay": "Low Guard", "deal": "Null"}
-    ],
-    "endStepEffect": "Move the enemy model 2”, then it loses 1 energy and suffers 1 Wd."
-  },
-  "baseSize": "30mm",
-  "imageName": "belladonna",
-  "shareCode": "AAB"
+  ]
 }
