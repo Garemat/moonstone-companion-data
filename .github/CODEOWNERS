@@ -1,0 +1,3 @@
+# CI/CD workflows and scripts require owner approval to prevent bypassing quality gates
+.github/ @garemat
+scripts/ @garemat
