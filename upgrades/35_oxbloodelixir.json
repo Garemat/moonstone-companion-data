@@ -2,7 +2,7 @@
   "id": 35,
   "name": "Ox Blood Elixir",
   "version": 1,
-  "factions": [],
+  "factions": ["COMMONWEALTH"],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [

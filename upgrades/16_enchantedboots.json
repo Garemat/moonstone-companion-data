@@ -2,7 +2,7 @@
   "id": 16,
   "name": "Enchanted Boots",
   "version": 1,
-  "factions": [],
+  "factions": ["COMMONWEALTH","DOMINION"],
   "allowedKeywords": [],
   "restrictedKeywords": [
     "Animal",

@@ -2,7 +2,7 @@
   "id": 29,
   "name": "Leshavit's Ascension",
   "version": 2,
-  "factions": [],
+  "factions": ["LESHAVULT"],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "For the remainder of the game, whenever a character is slain, choose a *Spirit* or *Cultist* you control to gain +1 energy.",

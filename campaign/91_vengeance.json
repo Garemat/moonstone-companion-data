@@ -2,7 +2,7 @@
   "id": 91,
   "name": "Vengeance",
   "version": 2,
-  "factions": [],
+  "factions": ["COMMONWEALTH", "LESHAVULT","DOMINION", "SHADES"],
   "tags": [],
   "timing": "Play after the game.",
   "description": "If you *Won* this game: Your opponent, plus each player who *Sabotaged* you this week, each **Loses 2 Machination Points**.",

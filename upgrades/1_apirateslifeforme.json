@@ -2,7 +2,7 @@
   "id": 1,
   "name": "A Pirate's life for me!",
   "version": 1,
-  "factions": [],
+  "factions": ["DOMINION", "SHADES"],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "extraDescription": "This character gains the Pirate keyword.",

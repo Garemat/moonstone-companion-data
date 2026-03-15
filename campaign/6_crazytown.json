@@ -2,7 +2,7 @@
   "id": 6,
   "name": "Crazy Town",
   "version": 2,
-  "factions": [],
+  "factions": ["DOMINION", "SHADES"],
   "tags": [],
   "timing": "Play at the start of any Replenish Step (including the first turn).",
   "description": "For the remainder of the game, at the end of the Replenish Step, flip an Arcane Card. You may move up to X items of terrain up to 3\" each in any direction, where X is the value of the card. Catastrophe: The player to your left may move 1 item of terrain up to 6\".",

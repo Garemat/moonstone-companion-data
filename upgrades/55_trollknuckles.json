@@ -2,7 +2,7 @@
   "id": 55,
   "name": "Troll Knuckles",
   "version": 1,
-  "factions": [],
+  "factions": ["DOMINION"],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [

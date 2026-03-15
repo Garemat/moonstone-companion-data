@@ -2,7 +2,7 @@
   "id": 5,
   "name": "Clumsiness of Cowards",
   "version": 2,
-  "factions": [],
+  "factions": ["COMMONWEALTH", "LESHAVULT"],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "Target character who is within 10\" of their starting table edge loses possession of all Moonstones they are carrying and gains [**Weakling**: Reduce all Melee Dmg this character deals by -1. Harvest actions cost this model +1 energy.] until end of turn.",

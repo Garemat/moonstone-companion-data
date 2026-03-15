@@ -2,7 +2,7 @@
   "id": 77,
   "name": "Lurk in Obscurity",
   "version": 2,
-  "factions": [],
+  "factions": ["COMMONWEALTH", "LESHAVULT","DOMINION", "SHADES"],
   "tags": [],
   "timing": "Play immediately.",
   "description": "If you had the lowest Power of all players in the campaign at the start of this game-week: **Gain 3 Machination Points**.",

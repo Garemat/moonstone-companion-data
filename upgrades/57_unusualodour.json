@@ -2,7 +2,7 @@
   "id": 57,
   "name": "Unusual Odour",
   "version": 1,
-  "factions": [],
+  "factions": ["LESHAVULT","DOMINION"],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [

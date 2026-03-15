@@ -2,7 +2,7 @@
   "id": 41,
   "name": "Revival Elixir",
   "version": 1,
-  "factions": [],
+  "factions": ["COMMONWEALTH", "LESHAVULT"],
   "allowedKeywords": [
     "Cleric"
   ],

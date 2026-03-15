@@ -2,7 +2,7 @@
   "id": 23,
   "name": "Fit as a Fiddle",
   "version": 1,
-  "factions": [],
+  "factions": ["COMMONWEALTH","DOMINION"],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [

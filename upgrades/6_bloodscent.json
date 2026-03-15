@@ -2,7 +2,7 @@
   "id": 6,
   "name": "Blood Scent",
   "version": 1,
-  "factions": [],
+  "factions": ["LESHAVULT"],
   "allowedKeywords": [
     "Animal",
     "Faun"

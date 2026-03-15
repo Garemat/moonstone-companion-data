@@ -2,7 +2,7 @@
   "id": 4,
   "name": "Battle Hardened",
   "version": 1,
-  "factions": [],
+  "factions": ["COMMONWEALTH"],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [

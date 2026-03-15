@@ -2,7 +2,7 @@
   "id": 28,
   "name": "Leshavit's Vessel",
   "version": 1,
-  "factions": [],
+  "factions": ["LESHAVULT"],
   "allowedKeywords": [
     "Spirit",
     "Cultist"

@@ -2,7 +2,7 @@
   "id": 13,
   "name": "Dirty Deeds, Dirt Cheap",
   "version": 1,
-  "factions": [],
+  "factions": ["DOMINION", "SHADES"],
   "allowedKeywords": [],
   "restrictedKeywords": [
     "Faerie",

@@ -2,7 +2,7 @@
   "id": 53,
   "name": "They Owed Me Money",
   "version": 1,
-  "factions": [],
+  "factions": ["DOMINION", "SHADES"],
   "allowedKeywords": [],
   "restrictedKeywords": [
     "Giant",

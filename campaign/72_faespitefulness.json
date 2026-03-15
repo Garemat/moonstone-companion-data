@@ -2,7 +2,7 @@
   "id": 72,
   "name": "Fae Spitefulness",
   "version": 2,
-  "factions": [],
+  "factions": ["COMMONWEALTH", "LESHAVULT","DOMINION", "SHADES"],
   "tags": [],
   "timing": "Play immediately.",
   "description": "Choose another player in the campaign.\n\nThey **Lose 1 Machination Point**.",

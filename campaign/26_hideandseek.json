@@ -2,7 +2,7 @@
   "id": 26,
   "name": "Hide and Seek",
   "version": 2,
-  "factions": [],
+  "factions": ["LESHAVULT","DOMINION"],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "Target character who is within 3\" of a terrain piece cannot take actions, and cannot be targeted with actions, until the end of the turn.",

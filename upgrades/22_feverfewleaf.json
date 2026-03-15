@@ -2,7 +2,7 @@
   "id": 22,
   "name": "Feverfew Leaf",
   "version": 1,
-  "factions": [],
+  "factions": ["COMMONWEALTH", "LESHAVULT"],
   "allowedKeywords": [
     "Cleric",
     "Faun",

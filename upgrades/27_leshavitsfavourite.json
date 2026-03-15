@@ -2,7 +2,7 @@
   "id": 27,
   "name": "Leshavit's Favourite",
   "version": 1,
-  "factions": [],
+  "factions": ["LESHAVULT"],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [

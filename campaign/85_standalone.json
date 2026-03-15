@@ -2,7 +2,7 @@
   "id": 85,
   "name": "Stand Alone",
   "version": 2,
-  "factions": [],
+  "factions": ["COMMONWEALTH", "LESHAVULT","DOMINION", "SHADES"],
   "tags": [],
   "timing": "Play after the game.",
   "description": "If there was a *Machinations Phase* this week, no other player *Supported* you this week and you *Won* this game: **Gain 3 Machination Points**.",

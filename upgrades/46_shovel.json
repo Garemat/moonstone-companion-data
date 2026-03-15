@@ -2,7 +2,7 @@
   "id": 46,
   "name": "Shovel",
   "version": 1,
-  "factions": [],
+  "factions": ["COMMONWEALTH","DOMINION"],
   "allowedKeywords": [
     "Animal",
     "Goblin",

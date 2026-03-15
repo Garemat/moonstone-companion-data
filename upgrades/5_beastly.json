@@ -2,7 +2,7 @@
   "id": 5,
   "name": "Beastly",
   "version": 1,
-  "factions": [],
+  "factions": ["LESHAVULT","DOMINION"],
   "allowedKeywords": [
     "Animal",
     "Troll"

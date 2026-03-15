@@ -2,7 +2,7 @@
   "id": 14,
   "name": "Dusty Old Scrolls",
   "version": 1,
-  "factions": [],
+  "factions": ["COMMONWEALTH", "DOMINION"],
   "allowedKeywords": [
     "Wizard",
     "Cleric"

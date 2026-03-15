@@ -2,7 +2,7 @@
   "id": 10,
   "name": "Crooked Investiture",
   "version": 1,
-  "factions": [],
+  "factions": ["SHADES"],
   "allowedKeywords": [],
   "restrictedKeywords": [
     "Spirit"

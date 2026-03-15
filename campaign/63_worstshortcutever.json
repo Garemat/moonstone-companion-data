@@ -2,7 +2,7 @@
   "id": 63,
   "name": "Worst. Shortcut. Ever.",
   "version": 2,
-  "factions": [],
+  "factions": ["DOMINION", "SHADES"],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "Choose a friendly character and flip an Arcane Card. Place the character within 2\", where X is the value of the flipped card. Then they suffer X Wds. Catastrophe: The player to your left places the character anywhere within 2\".",

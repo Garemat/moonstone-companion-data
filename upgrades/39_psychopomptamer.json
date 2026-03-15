@@ -2,7 +2,7 @@
   "id": 39,
   "name": "Psychopomp Tamer",
   "version": 1,
-  "factions": [],
+  "factions": ["SHADES"],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [

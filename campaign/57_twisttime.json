@@ -2,7 +2,7 @@
   "id": 57,
   "name": "Twist Time",
   "version": 2,
-  "factions": [],
+  "factions": ["LESHAVULT","DOMINION"],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "Move target character 3\".",
