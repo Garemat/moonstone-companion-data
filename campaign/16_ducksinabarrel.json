@@ -6,6 +6,6 @@
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "For the remainder of the game, once per turn you may draw +2 Arcane Cards when performing an Arcane Ability targeting an enemy.",
-  "shareCode": "AAB",
+  "shareCode": "BEABG",
   "imageName": "ducksinabarrel"
 }

@@ -3,11 +3,7 @@
   "name": "Feverfew Leaf",
   "version": 1,
   "factions": ["COMMONWEALTH", "LESHAVULT"],
-  "allowedKeywords": [
-    "Cleric",
-    "Faun",
-    "Gnome"
-  ],
+  "allowedKeywords": ["Cleric", "Faun", "Gnome"],
   "restrictedKeywords": [],
   "abilities": [
     {
@@ -15,6 +11,6 @@
       "description": "Target restores X+1 Wds. Catastrophe: This model suffers 2 Wds."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CFACC",
   "imageName": "feverfewleaf"
 }

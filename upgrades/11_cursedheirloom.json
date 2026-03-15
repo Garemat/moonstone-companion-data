@@ -4,17 +4,13 @@
   "version": 1,
   "factions": ["DOMINION", "SHADES"],
   "allowedKeywords": [],
-  "restrictedKeywords": [
-    "Giant",
-    "Troll",
-    "Wizard"
-  ],
+  "restrictedKeywords": ["Giant", "Troll", "Wizard"],
   "abilities": [
     {
       "name": "Cursed Heirloom",
       "description": "When this character is involved in a round of melee, before drawing Melee Cards they may suffer 1 Wd and gain +3 Melee Stat for the action."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CIABB",
   "imageName": "cursedheirloom"
 }

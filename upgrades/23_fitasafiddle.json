@@ -2,7 +2,7 @@
   "id": 23,
   "name": "Fit as a Fiddle",
   "version": 1,
-  "factions": ["COMMONWEALTH","DOMINION"],
+  "factions": ["COMMONWEALTH", "DOMINION"],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [
@@ -11,6 +11,6 @@
       "description": "This character may ignore the [Slow] ability, if printed on its card."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CEACD",
   "imageName": "fitasafiddle"
 }

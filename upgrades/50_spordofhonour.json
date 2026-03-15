@@ -4,16 +4,13 @@
   "version": 1,
   "factions": ["COMMONWEALTH", "SHADES"],
   "allowedKeywords": [],
-  "restrictedKeywords": [
-    "Giant",
-    "Troll"
-  ],
+  "restrictedKeywords": ["Giant", "Troll"],
   "abilities": [
     {
       "name": "Perseverance",
       "description": "Whilst this character has half or less of their starting health boxes remaining, they gain +2 Melee Stat."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CGAFA",
   "imageName": "spordofhonour"
 }

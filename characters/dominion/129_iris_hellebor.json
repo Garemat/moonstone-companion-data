@@ -12,7 +12,7 @@
   "evade": -1,
   "baseSize": "40mm",
   "imageName": "iris_hellebore",
-  "shareCode": "AAB",
+  "shareCode": "ABBCJ",
   "slicingDamageBuff": 1,
   "piercingDamageBuff": 1,
   "impactDamageBuff": 0,
@@ -28,12 +28,30 @@
     "name": "From Below & Above",
     "upgradeFor": "Rising Attack",
     "possibleDamageTypes": ["Slicing", "Piercing"],
-    "highGuard": {"deal": "2", "isFollowUp": false},
-    "fallingSwing": {"deal": "1", "isFollowUp": false},
-    "thrust": {"deal": "2", "isFollowUp": false},
-    "sweepingCut": {"deal": "2", "isFollowUp": false},
-    "risingAttack": {"deal": "1", "isFollowUp": false},
-    "lowGuard": {"deal": "0", "isFollowUp": false},
+    "highGuard": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "0",
+      "isFollowUp": false
+    },
     "extraText": "After upgrading to this signature, this character may place down any Falling Swing melee cards from their melee hand treating them as Critical Hits. (Resolve those cards as exact copies of this signature.)",
     "endStepEffect": "This model may move 1\"."
   },

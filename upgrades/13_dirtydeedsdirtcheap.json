@@ -4,10 +4,7 @@
   "version": 1,
   "factions": ["DOMINION", "SHADES"],
   "allowedKeywords": [],
-  "restrictedKeywords": [
-    "Faerie",
-    "Goblin"
-  ],
+  "restrictedKeywords": ["Faerie", "Goblin"],
   "abilities": [
     {
       "name": "Pay Off (1) 2\"",
@@ -15,6 +12,6 @@
       "oncePerGame": true
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CIABD",
   "imageName": "dirtydeedsdirtcheap"
 }

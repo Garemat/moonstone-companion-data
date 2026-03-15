@@ -12,7 +12,7 @@
   "evade": 1,
   "baseSize": "30mm",
   "imageName": "kaufman",
-  "shareCode": "AAB",
+  "shareCode": "AAADB",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -28,12 +28,30 @@
     "name": "Gut Barge",
     "upgradeFor": "Thrust",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "Move the enemy model 2\" directly away from this model."
   },
@@ -72,11 +90,25 @@
       "arcaneOutcomes": [
         {
           "text": "Target model loses possession of one Moonstone it is carrying and this character gains possession of that Moonstone.",
-          "validCards": [{"colour": "Green", "value": "2"}, {"colour": "Pink", "value": "2"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "2"
+            },
+            {
+              "colour": "Pink",
+              "value": "2"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

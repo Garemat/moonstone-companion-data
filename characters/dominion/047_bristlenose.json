@@ -12,7 +12,7 @@
   "evade": 2,
   "baseSize": "40mm",
   "imageName": "bristlenose",
-  "shareCode": "AAB",
+  "shareCode": "ABAEH",
   "slicingDamageBuff": 3,
   "piercingDamageBuff": 1,
   "impactDamageBuff": 1,
@@ -28,12 +28,30 @@
     "name": "Insatiable Hunger",
     "upgradeFor": "Rising Attack",
     "possibleDamageTypes": ["Magical"],
-    "highGuard": {"deal": "2", "isFollowUp": false},
-    "fallingSwing": {"deal": "3", "isFollowUp": false},
-    "thrust": {"deal": "3", "isFollowUp": false},
-    "sweepingCut": {"deal": "2", "isFollowUp": false},
-    "risingAttack": {"deal": "1", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "If the enemy is slain, then this character restores all Wds and all energy."
   },
@@ -74,11 +92,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target character suffers X+1 Magical Dmg.",
-          "validCards": [{"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 3 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

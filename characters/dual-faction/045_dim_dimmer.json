@@ -12,7 +12,7 @@
   "evade": 2,
   "baseSize": "40mm",
   "imageName": "dim_dimmer",
-  "shareCode": "AAB",
+  "shareCode": "AEAEF",
   "slicingDamageBuff": 2,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 2,
@@ -28,12 +28,30 @@
     "name": "Packed Lunch",
     "upgradeFor": "Rising Attack",
     "possibleDamageTypes": ["Impact"],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "1", "isFollowUp": false},
-    "thrust": {"deal": "1", "isFollowUp": false},
-    "sweepingCut": {"deal": "1", "isFollowUp": false},
-    "risingAttack": {"deal": "1", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "If the enemy suffered 1 or more Wds during this round of Melee and has an Evade Stat of -1 or lower, then it is Removed From Play."
   },

@@ -4,15 +4,13 @@
   "version": 1,
   "factions": ["DOMINION", "SHADES"],
   "allowedKeywords": [],
-  "restrictedKeywords": [
-    "Noble"
-  ],
+  "restrictedKeywords": ["Noble"],
   "abilities": [
     {
       "name": "Service with a Smile",
       "description": "When a friendly Noble within 8\" suffers 1 or more Wds, you may move this model 2\" directly towards the friendly Noble."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CIAEE",
   "imageName": "servicewithsmile"
 }

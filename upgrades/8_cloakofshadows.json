@@ -2,15 +2,11 @@
   "id": 8,
   "name": "Cloak of Shadows",
   "version": 1,
-  "factions": ["LESHAVULT","DOMINION"],
-  "allowedKeywords": [
-    "Human",
-    "Faun",
-    "Gnome"
-  ],
+  "factions": ["LESHAVULT", "DOMINION"],
+  "allowedKeywords": ["Human", "Faun", "Gnome"],
   "restrictedKeywords": [],
   "extraDescription": "Evade Stat: -1 (i.e. Evade Stat +1 would become Evade Stat 0).",
   "abilities": [],
-  "shareCode": "AAB",
+  "shareCode": "CHAAI",
   "imageName": "cloakofshadows"
 }

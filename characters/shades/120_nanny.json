@@ -12,7 +12,7 @@
   "evade": 1,
   "baseSize": "30mm",
   "imageName": "nanny",
-  "shareCode": "AAB",
+  "shareCode": "ADBCA",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -28,12 +28,30 @@
     "name": "Nap Time!",
     "upgradeFor": "Falling Swing",
     "possibleDamageTypes": ["Impact"],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "2", "isFollowUp": false},
-    "thrust": {"deal": "2", "isFollowUp": false},
-    "sweepingCut": {"deal": "2", "isFollowUp": false},
-    "risingAttack": {"deal": "2", "isFollowUp": false},
-    "lowGuard": {"deal": "2", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "2",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "If the enemy suffered 1 or more Wds during this round of Melee, they lose 1 energy."
   },
@@ -58,15 +76,30 @@
       "arcaneOutcomes": [
         {
           "text": "Target friendly character restores X Wds.",
-          "validCards": [{"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "Target friendly character gains +1 energy.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "The target suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -82,19 +115,39 @@
       "arcaneOutcomes": [
         {
           "text": "Place a new Sprog in base contact with this character.",
-          "validCards": [{"colour": "Green", "value": "1"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "1"
+            }
+          ]
         },
         {
           "text": "Place a new Pookie in base contact with this character.",
-          "validCards": [{"colour": "Blue", "value": "1"}]
+          "validCards": [
+            {
+              "colour": "Blue",
+              "value": "1"
+            }
+          ]
         },
         {
           "text": "Place a new Urchin in base contact with this character.",
-          "validCards": [{"colour": "{Pink}", "value": "1"}]
-        }, 
+          "validCards": [
+            {
+              "colour": "{Pink}",
+              "value": "1"
+            }
+          ]
+        },
         {
           "text": "This model and Babelings within 6\" suffer 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -110,11 +163,25 @@
       "arcaneOutcomes": [
         {
           "text": "Target model must discard half its energy rounding up, then it restores 2 Wds.",
-          "validCards": [{"colour": "Blue", "value": "2"}, {"colour": "Pink", "value": "2"}]
+          "validCards": [
+            {
+              "colour": "Blue",
+              "value": "2"
+            },
+            {
+              "colour": "Pink",
+              "value": "2"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

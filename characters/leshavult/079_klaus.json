@@ -12,7 +12,7 @@
   "evade": 0,
   "baseSize": "30mm",
   "imageName": "klaus",
-  "shareCode": "AAB",
+  "shareCode": "ACAHJ",
   "slicingDamageBuff": null,
   "piercingDamageBuff": null,
   "impactDamageBuff": 0,
@@ -28,12 +28,30 @@
     "name": "Flail Around Madly",
     "upgradeFor": "Sweeping Cut",
     "possibleDamageTypes": ["Impact"],
-    "highGuard": {"deal": "0", "isFollowUp": false},
-    "fallingSwing": {"deal": "2", "isFollowUp": false},
-    "thrust": {"deal": "2", "isFollowUp": false},
-    "sweepingCut": {"deal": "1", "isFollowUp": false},
-    "risingAttack": {"deal": "1", "isFollowUp": true},
-    "lowGuard": {"deal": "1", "isFollowUp": false},
+    "highGuard": {
+      "deal": "0",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "1",
+      "isFollowUp": true
+    },
+    "lowGuard": {
+      "deal": "1",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "This character suffers 1 Impact Dmg. This does not count as Melee Dmg."
   },

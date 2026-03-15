@@ -12,7 +12,7 @@
   "evade": 0,
   "baseSize": "30mm",
   "imageName": "agatha",
-  "shareCode": "AAB",
+  "shareCode": "AAAAG",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 1,
   "impactDamageBuff": 0,
@@ -28,12 +28,30 @@
     "name": "Hell hath no fury...",
     "upgradeFor": "High Guard",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": true},
-    "thrust": {"deal": "Null", "isFollowUp": true},
-    "sweepingCut": {"deal": "Null", "isFollowUp": true},
-    "risingAttack": {"deal": "Null", "isFollowUp": true},
-    "lowGuard": {"deal": "Null", "isFollowUp": true},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": true
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": true
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": true
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": true
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": true
+    },
     "extraText": "",
     "endStepEffect": ""
   },
@@ -67,14 +85,28 @@
         {
           "text": "Move target 4\" directly towards this model.",
           "validCards": [
-            {"colour": "Green", "value": "2"},
-            {"colour": "Blue", "value": "2"},
-            {"colour": "Pink", "value": "2"}
+            {
+              "colour": "Green",
+              "value": "2"
+            },
+            {
+              "colour": "Blue",
+              "value": "2"
+            },
+            {
+              "colour": "Pink",
+              "value": "2"
+            }
           ]
         },
         {
           "text": "This character suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -90,15 +122,30 @@
       "arcaneOutcomes": [
         {
           "text": "Target loses X energy.",
-          "validCards": [{"colour": "Green", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "Target gains X energy and its Arcane stat is reduced by X until end of turn.",
-          "validCards": [{"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "Target's Melee stat is increased by +X until end of turn. Target loses possession of up to one Moonstone they are carrying (place it in base contact with them with a depth value of 1).",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

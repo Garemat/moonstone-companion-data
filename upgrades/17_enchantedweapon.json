@@ -2,7 +2,7 @@
   "id": 17,
   "name": "Enchanted Weapon",
   "version": 1,
-  "factions": ["LESHAVULT","DOMINION"],
+  "factions": ["LESHAVULT", "DOMINION"],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [
@@ -12,6 +12,6 @@
       "oncePerTurn": true
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CHABH",
   "imageName": "enchantedweapon"
 }

@@ -2,10 +2,10 @@
   "id": 24,
   "name": "Gribble Bog",
   "version": 2,
-  "factions": ["LESHAVULT","DOMINION"],
+  "factions": ["LESHAVULT", "DOMINION"],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "Place two 50mm diameter Wooded Patch terrain pieces anywhere on the board that is currently open ground.",
-  "shareCode": "AAB",
+  "shareCode": "BHACE",
   "imageName": "gribblebog"
 }

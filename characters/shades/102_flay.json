@@ -12,7 +12,7 @@
   "evade": -1,
   "baseSize": "30mm",
   "imageName": "flay",
-  "shareCode": "AAB",
+  "shareCode": "ADBAC",
   "slicingDamageBuff": -2,
   "piercingDamageBuff": -2,
   "impactDamageBuff": -2,
@@ -70,11 +70,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target model gains +1 Arcane Stat until end of turn.",
-          "validCards": [{"colour": "Green", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "The target's Arcane Stat is reduced by -2 until end of turn.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

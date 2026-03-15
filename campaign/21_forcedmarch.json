@@ -6,6 +6,6 @@
   "tags": [],
   "timing": "Play after characters are deployed but before turn 1 begins.",
   "description": "Friendly characters may immediately move 2\". Friendly *Soldiers* may move 3\" instead.",
-  "shareCode": "AAB",
+  "shareCode": "BEACB",
   "imageName": "forcedmarch"
 }

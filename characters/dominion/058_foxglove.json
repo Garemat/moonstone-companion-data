@@ -12,7 +12,7 @@
   "evade": -2,
   "baseSize": "30mm",
   "imageName": "foxglove",
-  "shareCode": "AAB",
+  "shareCode": "ABAFI",
   "slicingDamageBuff": -1,
   "piercingDamageBuff": -1,
   "impactDamageBuff": -1,
@@ -28,12 +28,30 @@
     "name": "Mirror of Mischief",
     "upgradeFor": "Low Guard",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "?", "isFollowUp": false},
-    "fallingSwing": {"deal": "?", "isFollowUp": false},
-    "thrust": {"deal": "?", "isFollowUp": false},
-    "sweepingCut": {"deal": "?", "isFollowUp": false},
-    "risingAttack": {"deal": "?", "isFollowUp": false},
-    "lowGuard": {"deal": "?", "isFollowUp": false},
+    "highGuard": {
+      "deal": "?",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "?",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "?",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "?",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "?",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "?",
+      "isFollowUp": false
+    },
     "extraText": "When played, choose a Faerie or Rogue within 6\". This becomes a copy of that character's Signature Move. It is still considered a Low Guard when calculating your opponent's Dmg dealt to you. If there is no Faerie or Rogue character within 6\" then this card deals {Null} Dmg.",
     "endStepEffect": ""
   },
@@ -66,11 +84,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target gains Protection (The first time this character would suffer Dmg, reduce that Dmg to {Null}), until end of turn.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -86,11 +114,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers 2×X Magical Dmg.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

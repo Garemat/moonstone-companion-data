@@ -6,6 +6,6 @@
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "Until the end of game, abilities which are gained by enemy characters until '*this character is slain*', remain until *end of game* instead.",
-  "shareCode": "AAB",
+  "shareCode": "BDADG",
   "imageName": "norespiteforthewicked"
 }

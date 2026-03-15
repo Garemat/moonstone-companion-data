@@ -12,7 +12,7 @@
   "evade": 2,
   "baseSize": "40mm",
   "imageName": "angerboda",
-  "shareCode": "AAB",
+  "shareCode": "AGBBA",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 2,
@@ -28,12 +28,30 @@
     "name": "Cleave",
     "upgradeFor": "Sweeping Cut",
     "possibleDamageTypes": ["Impact"],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "2", "isFollowUp": false},
-    "thrust": {"deal": "0", "isFollowUp": true},
-    "sweepingCut": {"deal": "0", "isFollowUp": false},
-    "risingAttack": {"deal": "2", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "0",
+      "isFollowUp": true
+    },
+    "sweepingCut": {
+      "deal": "0",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "If the enemy suffered 1 or more Wds during this round of Melee, the next time the enemy would restore Wds this turn, reduce Wds restored to {0}. If the enemy has an ability which restores or otherwise regains Wds after being reduced to 0 Wds, it does not and is slain instead.",
     "endStepEffect": ""
   },
@@ -66,7 +84,12 @@
       "arcaneOutcomes": [
         {
           "text": "Restore X+1 Wds.",
-          "validCards": [{"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -82,11 +105,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X Magical Dmg and gains [Slow: This character's Jog actions are limited to 2\"], until end of turn.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character restores 1 Wd. The target restores 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

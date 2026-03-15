@@ -12,7 +12,7 @@
   "evade": 0,
   "baseSize": "30mm",
   "imageName": "boris",
-  "shareCode": "AAB",
+  "shareCode": "AFAGE",
   "slicingDamageBuff": null,
   "piercingDamageBuff": null,
   "impactDamageBuff": 1,
@@ -28,12 +28,30 @@
     "name": "Rabbit Punch",
     "upgradeFor": "Thrust",
     "possibleDamageTypes": ["Impact"],
-    "highGuard": {"deal": "0", "isFollowUp": false},
-    "fallingSwing": {"deal": "1", "isFollowUp": false},
-    "thrust": {"deal": "1", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "1", "isFollowUp": false},
-    "lowGuard": {"deal": "1", "isFollowUp": false},
+    "highGuard": {
+      "deal": "0",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "1",
+      "isFollowUp": false
+    },
     "extraText": "This attack deals +1 Dmg for each Animal within 4\".",
     "endStepEffect": ""
   },
@@ -66,11 +84,29 @@
       "arcaneOutcomes": [
         {
           "text": "Place a new friendly Murder Bunny in base contact with this character.",
-          "validCards": [{"colour": "Green", "value": "2"}, {"colour": "Blue", "value": "2"}, {"colour": "Pink", "value": "2"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "2"
+            },
+            {
+              "colour": "Blue",
+              "value": "2"
+            },
+            {
+              "colour": "Pink",
+              "value": "2"
+            }
+          ]
         },
         {
           "text": "This character suffers 3 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -86,11 +122,29 @@
       "arcaneOutcomes": [
         {
           "text": "Place a new friendly Jackalope in base contact with this character.",
-          "validCards": [{"colour": "Green", "value": "3"}, {"colour": "Blue", "value": "3"}, {"colour": "Pink", "value": "3"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "3"
+            },
+            {
+              "colour": "Blue",
+              "value": "3"
+            },
+            {
+              "colour": "Pink",
+              "value": "3"
+            }
+          ]
         },
         {
           "text": "This character suffers 3 Wds. Place a new friendly Murder Bunny in base contact with this character.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

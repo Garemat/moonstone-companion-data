@@ -12,7 +12,7 @@
   "evade": 0,
   "baseSize": "30mm",
   "imageName": "loci",
-  "shareCode": "AAB",
+  "shareCode": "AAAED",
   "slicingDamageBuff": null,
   "piercingDamageBuff": null,
   "impactDamageBuff": 1,
@@ -28,12 +28,30 @@
     "name": "Strong Arm",
     "upgradeFor": "Falling Swing",
     "possibleDamageTypes": ["Impact"],
-    "highGuard": {"deal": "0", "isFollowUp": false},
-    "fallingSwing": {"deal": "2", "isFollowUp": false},
-    "thrust": {"deal": "1", "isFollowUp": false},
-    "sweepingCut": {"deal": "3", "isFollowUp": false},
-    "risingAttack": {"deal": "3", "isFollowUp": false},
-    "lowGuard": {"deal": "2", "isFollowUp": false},
+    "highGuard": {
+      "deal": "0",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "2",
+      "isFollowUp": false
+    },
     "extraText": "Damage from this attack cannot be reduced by passive abilities.",
     "endStepEffect": "You may move the enemy model 1\"."
   },
@@ -74,11 +92,21 @@
       "arcaneOutcomes": [
         {
           "text": "Place a 50mm Diameter Wooded Patch within 3\" and LoS on open ground. This remains in place until end of game. A maximum of 3 Wooded Patches may be placed by this troupe; if a fourth is placed you must choose and remove a Wooded Patch you created earlier this game.",
-          "validCards": [{"colour": "Green", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -94,11 +122,21 @@
       "arcaneOutcomes": [
         {
           "text": "Move target model X+1\".",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

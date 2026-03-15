@@ -4,16 +4,13 @@
   "version": 1,
   "factions": ["DOMINION", "SHADES"],
   "allowedKeywords": [],
-  "restrictedKeywords": [
-    "Giant",
-    "Troll"
-  ],
+  "restrictedKeywords": ["Giant", "Troll"],
   "abilities": [
     {
       "name": "Bitter Debtor",
       "description": "Nominate a friendly Non-Psychopomp character at the start of the game. Whilst the nominated character is slain or removed from play, this model gains +2 Melee Stat."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CIAFD",
   "imageName": "theyowedmemoney"
 }

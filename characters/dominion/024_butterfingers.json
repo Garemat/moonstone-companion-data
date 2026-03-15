@@ -12,7 +12,7 @@
   "evade": -2,
   "baseSize": "30mm",
   "imageName": "butterfingers",
-  "shareCode": "AAB",
+  "shareCode": "ABACG",
   "slicingDamageBuff": -1,
   "piercingDamageBuff": -1,
   "impactDamageBuff": -1,
@@ -28,12 +28,30 @@
     "name": "Faerie Dust",
     "upgradeFor": "High Guard",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "Reduce Dmg suffered by -2.",
     "endStepEffect": "The enemy character must discard 2 energy."
   },
@@ -69,11 +87,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X Magical Dmg then is moved 1\" directly away.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -89,11 +117,29 @@
       "arcaneOutcomes": [
         {
           "text": "Target loses possession of 1 Moonstone they are carrying. Place it in base contact with the target with a depth value of 1.",
-          "validCards": [{"colour": "Green", "value": "3"}, {"colour": "Blue", "value": "3"}, {"colour": "Pink", "value": "3"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "3"
+            },
+            {
+              "colour": "Blue",
+              "value": "3"
+            },
+            {
+              "colour": "Pink",
+              "value": "3"
+            }
+          ]
         },
         {
           "text": "This model discards all energy.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

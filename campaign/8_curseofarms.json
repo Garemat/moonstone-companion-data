@@ -6,6 +6,6 @@
   "tags": [],
   "timing": "Play at the start of a Melee Attack action, before Melee Cards are drawn.",
   "description": "The enemy character's Melee Dmg cannot be increased by passive abilities until end of turn.",
-  "shareCode": "AAB",
+  "shareCode": "BJAAI",
   "imageName": "curseofarms"
 }

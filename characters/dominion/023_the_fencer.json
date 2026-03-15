@@ -12,7 +12,7 @@
   "evade": -2,
   "baseSize": "30mm",
   "imageName": "fencer",
-  "shareCode": "AAB",
+  "shareCode": "ABACF",
   "slicingDamageBuff": -1,
   "piercingDamageBuff": 0,
   "impactDamageBuff": -1,
@@ -28,12 +28,30 @@
     "name": "Needlepoint",
     "upgradeFor": "Thrust",
     "possibleDamageTypes": ["Piercing"],
-    "highGuard": {"deal": "1", "isFollowUp": false},
-    "fallingSwing": {"deal": "2", "isFollowUp": false},
-    "thrust": {"deal": "2", "isFollowUp": false},
-    "sweepingCut": {"deal": "1", "isFollowUp": false},
-    "risingAttack": {"deal": "2", "isFollowUp": false},
-    "lowGuard": {"deal": "2", "isFollowUp": false},
+    "highGuard": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "2",
+      "isFollowUp": false
+    },
     "extraText": "Damage from this attack cannot be reduced by passive abilities.",
     "endStepEffect": ""
   },
@@ -90,11 +108,21 @@
       "arcaneOutcomes": [
         {
           "text": "Reduce all Melee Dmg dealt by target by -X until the end of the turn.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "The target gains +1 energy.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

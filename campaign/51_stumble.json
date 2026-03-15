@@ -6,6 +6,6 @@
   "tags": [],
   "timing": "Interrupt a Jog or Step action, or Reaction Step.",
   "description": "The character does not move and the action (as well as any spent energy) is lost. The character also suffers 2 Impact Dmg.",
-  "shareCode": "AAB",
+  "shareCode": "BAAFB",
   "imageName": "stumble"
 }

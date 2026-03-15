@@ -2,10 +2,10 @@
   "id": 74,
   "name": "Infiltrate",
   "version": 2,
-  "factions": ["COMMONWEALTH", "LESHAVULT","DOMINION", "SHADES"],
+  "factions": ["COMMONWEALTH", "LESHAVULT", "DOMINION", "SHADES"],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "For each friendly model that is at least 26\" away from your deployment table edge: **Gain 1 Victory Point**, to a maximum of 3.",
-  "shareCode": "AAB",
+  "shareCode": "BKAHE",
   "imageName": "infiltrate"
 }

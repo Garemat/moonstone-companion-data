@@ -2,11 +2,8 @@
   "id": 5,
   "name": "Beastly",
   "version": 1,
-  "factions": ["LESHAVULT","DOMINION"],
-  "allowedKeywords": [
-    "Animal",
-    "Troll"
-  ],
+  "factions": ["LESHAVULT", "DOMINION"],
+  "allowedKeywords": ["Animal", "Troll"],
   "restrictedKeywords": [],
   "abilities": [
     {
@@ -14,6 +11,6 @@
       "description": "If this character deals Melee Dmg, increase the Dmg by +1."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CHAAF",
   "imageName": "beastly"
 }

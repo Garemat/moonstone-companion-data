@@ -2,19 +2,15 @@
   "id": 16,
   "name": "Enchanted Boots",
   "version": 1,
-  "factions": ["COMMONWEALTH","DOMINION"],
+  "factions": ["COMMONWEALTH", "DOMINION"],
   "allowedKeywords": [],
-  "restrictedKeywords": [
-    "Animal",
-    "Troll",
-    "Gnome"
-  ],
+  "restrictedKeywords": ["Animal", "Troll", "Gnome"],
   "abilities": [
     {
       "name": "Enchanted Boots",
       "description": "This character gains +1\" Jog."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CEABG",
   "imageName": "enchantedboots"
 }

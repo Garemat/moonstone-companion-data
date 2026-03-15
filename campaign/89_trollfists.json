@@ -2,11 +2,11 @@
   "id": 89,
   "name": "Troll Fists",
   "version": 2,
-  "factions": ["COMMONWEALTH", "LESHAVULT","DOMINION", "SHADES"],
+  "factions": ["COMMONWEALTH", "LESHAVULT", "DOMINION", "SHADES"],
   "tags": [],
   "timing": "Play at end of game.",
   "description": "For each of the two placed Objective Markers that are Active: **Gain 1 Victory Point**.",
   "extraDescription": "Before deployment place two Objective Markers 18\" away from your deployment table edge and at least 4\" apart.",
-  "shareCode": "AAB",
+  "shareCode": "BKAIJ",
   "imageName": "trollfists"
 }

@@ -6,6 +6,6 @@
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "Target friendly character gains +2 energy.",
-  "shareCode": "AAB",
+  "shareCode": "BIABE",
   "imageName": "doitorelse"
 }

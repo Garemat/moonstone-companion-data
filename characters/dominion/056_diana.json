@@ -12,7 +12,7 @@
   "evade": -2,
   "baseSize": "30mm",
   "imageName": "diana",
-  "shareCode": "AAB",
+  "shareCode": "ABAFG",
   "slicingDamageBuff": -1,
   "piercingDamageBuff": -1,
   "impactDamageBuff": -1,
@@ -28,12 +28,30 @@
     "name": "Dance with Death",
     "upgradeFor": "Sweeping Cut",
     "possibleDamageTypes": ["Magical"],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "2", "isFollowUp": false},
-    "thrust": {"deal": "0", "isFollowUp": true},
-    "sweepingCut": {"deal": "0", "isFollowUp": false},
-    "risingAttack": {"deal": "2", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "0",
+      "isFollowUp": true
+    },
+    "sweepingCut": {
+      "deal": "0",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "If this character is not slain, it may move 2\". If this character is slain, the enemy suffers 2 Wds."
   },
@@ -74,11 +92,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target loses X energy. Then distribute that much energy amongst Faeries within 6\" of the target.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -94,11 +122,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X+1 Magical Dmg.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers 3 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

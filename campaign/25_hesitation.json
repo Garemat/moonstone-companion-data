@@ -6,6 +6,6 @@
   "tags": [],
   "timing": "Interrupt any enemy action.",
   "description": "The character does not take the action but must still discard its energy cost.",
-  "shareCode": "AAB",
+  "shareCode": "BEACF",
   "imageName": "hesitation"
 }

@@ -12,7 +12,7 @@
   "evade": -2,
   "baseSize": "30mm",
   "imageName": "silvertongue",
-  "shareCode": "AAB",
+  "shareCode": "ABACI",
   "slicingDamageBuff": -2,
   "piercingDamageBuff": -1,
   "impactDamageBuff": -2,
@@ -28,12 +28,30 @@
     "name": "Threats & Promises",
     "upgradeFor": "Rising Attack",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "Reduce Dmg suffered by -3.",
     "endStepEffect": "The enemy character gains 3 energy and may not target this model with an action for the remainder of the turn. This effect takes place even if the enemy is outside this character's Melee Range."
   },
@@ -85,11 +103,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target friendly Faerie gains X energy and restores 1 Wd.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

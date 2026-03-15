@@ -6,6 +6,6 @@
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "Friendly *Nobles* gain +1 Arcane Stat and +2 Melee Stat until end of turn.",
-  "shareCode": "AAB",
+  "shareCode": "BGAGC",
   "imageName": "wellschooledandwellheeled"
 }

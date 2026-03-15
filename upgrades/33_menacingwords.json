@@ -2,13 +2,9 @@
   "id": 33,
   "name": "Menacing Words",
   "version": 1,
-  "factions": ["LESHAVULT","DOMINION"],
+  "factions": ["LESHAVULT", "DOMINION"],
   "allowedKeywords": [],
-  "restrictedKeywords": [
-    "Giant",
-    "Troll",
-    "Animal"
-  ],
+  "restrictedKeywords": ["Giant", "Troll", "Animal"],
   "abilities": [
     {
       "name": "Robbery (2) 1\"",
@@ -16,6 +12,6 @@
       "oncePerTurn": true
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CHADD",
   "imageName": "menacingwords"
 }

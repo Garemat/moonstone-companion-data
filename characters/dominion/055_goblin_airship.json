@@ -12,7 +12,7 @@
   "evade": 2,
   "baseSize": "40mm",
   "imageName": "goblin_airship",
-  "shareCode": "AAB",
+  "shareCode": "ABAFF",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -65,11 +65,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X Impact Dmg.",
-          "validCards": [{"colour": "Green", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

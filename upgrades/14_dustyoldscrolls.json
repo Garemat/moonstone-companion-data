@@ -3,10 +3,7 @@
   "name": "Dusty Old Scrolls",
   "version": 1,
   "factions": ["COMMONWEALTH", "DOMINION"],
-  "allowedKeywords": [
-    "Wizard",
-    "Cleric"
-  ],
+  "allowedKeywords": ["Wizard", "Cleric"],
   "restrictedKeywords": [],
   "abilities": [
     {
@@ -15,6 +12,6 @@
       "oncePerTurn": true
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CEABE",
   "imageName": "dustyoldscrolls"
 }

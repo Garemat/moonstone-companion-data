@@ -2,11 +2,11 @@
   "id": 73,
   "name": "Gamble the Silverware",
   "version": 2,
-  "factions": ["COMMONWEALTH", "LESHAVULT","DOMINION", "SHADES"],
+  "factions": ["COMMONWEALTH", "LESHAVULT", "DOMINION", "SHADES"],
   "tags": [],
   "timing": "*Must* be played at end of game.",
   "description": "If the placed Objective Marker is Active: **Gain 1 Victory Point**.\nIf you *Won* this game: **Gain 2 Machination Points**.\nIf you *Lost* this game: **Lose 2 Machination Points**.",
   "extraDescription": "Before deployment place one Objective Markers 18\" away from your deployment table Edge.",
-  "shareCode": "AAB",
+  "shareCode": "BKAHD",
   "imageName": "gamblethesilverware"
 }

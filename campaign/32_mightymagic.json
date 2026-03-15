@@ -7,6 +7,6 @@
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "Target friendly *Giant* or *Troll* may immediately take any action available to them with an energy cost of (1), without spending energy. If the chosen action is a Melee Attack, then it deals +2 Dmg.",
   "extraDescription": "This bonus action may be taken even during another character's activation.",
-  "shareCode": "AAB",
+  "shareCode": "BEADC",
   "imageName": "mightymagic"
 }

@@ -12,7 +12,7 @@
   "evade": 0,
   "baseSize": "30mm",
   "imageName": "negroli",
-  "shareCode": "AAB",
+  "shareCode": "ADBAJ",
   "slicingDamageBuff": 1,
   "piercingDamageBuff": 1,
   "impactDamageBuff": 0,
@@ -28,12 +28,30 @@
     "name": "Fracture",
     "upgradeFor": "Falling Swing",
     "possibleDamageTypes": ["Impact"],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "1", "isFollowUp": false},
-    "thrust": {"deal": "1", "isFollowUp": false},
-    "sweepingCut": {"deal": "3", "isFollowUp": false},
-    "risingAttack": {"deal": "3", "isFollowUp": false},
-    "lowGuard": {"deal": "2", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "2",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "If the enemy suffered 1 or more Wds during this round of Melee, you may choose another character within 4\" of the enemy model to suffer 1 Wd."
   },
@@ -74,11 +92,25 @@
       "arcaneOutcomes": [
         {
           "text": "Place a new Soldier Psychopomp in base contact with this model.",
-          "validCards": [{"colour": "Green", "value": "1"}, {"colour": "Pink", "value": "1"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "1"
+            },
+            {
+              "colour": "Pink",
+              "value": "1"
+            }
+          ]
         },
         {
           "text": "This character suffers 3 Wds or, if there is a friendly Psychopomp within 6\", you may choose a friendly Psychopomp within 6\" to be slain instead.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

@@ -2,11 +2,11 @@
   "id": 18,
   "name": "Fancy Feint",
   "version": 2,
-  "factions": ["COMMONWEALTH","SHADES"],
+  "factions": ["COMMONWEALTH", "SHADES"],
   "tags": [],
   "timing": "Interrupt a Melee Attack action.",
   "description": "Exchange your revealed Melee Card for another in your hand.",
   "extraDescription": "This is done after cards are initially revealed but before Dmg is dealt. The new card can be played as a Critical Hit and/or upgraded to a Signature Move as normal.",
-  "shareCode": "AAB",
+  "shareCode": "BGABI",
   "imageName": "fancyfeint"
 }

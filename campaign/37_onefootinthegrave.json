@@ -7,6 +7,6 @@
   "timing": "Interrupt a Jog or Step action, or Reaction Step.",
   "description": "The character does not move and the action (as well as any spent energy) is lost. The character suffers 1 Wd each time they are moved until end of turn.",
   "extraDescription": "'Moved' includes Jogs, Steps, Reactions Steps and any other abilities which cause this model to be moved.",
-  "shareCode": "AAB",
+  "shareCode": "BDADH",
   "imageName": "onefootinthegrave"
 }

@@ -12,7 +12,7 @@
   "evade": 1,
   "baseSize": "40mm",
   "imageName": "viscount_de_faulte",
-  "shareCode": "AAB",
+  "shareCode": "AIBBD",
   "slicingDamageBuff": null,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 1,
@@ -28,12 +28,30 @@
     "name": "Impale",
     "upgradeFor": "Thrust",
     "possibleDamageTypes": ["Piercing"],
-    "highGuard": {"deal": "1", "isFollowUp": false},
-    "fallingSwing": {"deal": "3", "isFollowUp": false},
-    "thrust": {"deal": "4", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "3", "isFollowUp": false},
-    "lowGuard": {"deal": "2", "isFollowUp": false},
+    "highGuard": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "4",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "2",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "Move this model 1\" directly towards the enemy."
   },
@@ -82,11 +100,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target other character loses X energy then a friendly character gains that much energy.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers 3 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

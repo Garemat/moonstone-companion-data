@@ -12,7 +12,7 @@
   "evade": 2,
   "baseSize": "40mm",
   "imageName": "snag",
-  "shareCode": "AAB",
+  "shareCode": "AJAJF",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 1,
   "impactDamageBuff": 1,
@@ -28,12 +28,30 @@
     "name": "Hex",
     "upgradeFor": "Rising Attack",
     "possibleDamageTypes": ["Magical"],
-    "highGuard": {"deal": "0", "isFollowUp": false},
-    "fallingSwing": {"deal": "0", "isFollowUp": false},
-    "thrust": {"deal": "0", "isFollowUp": false},
-    "sweepingCut": {"deal": "1", "isFollowUp": false},
-    "risingAttack": {"deal": "1", "isFollowUp": false},
-    "lowGuard": {"deal": "1", "isFollowUp": false},
+    "highGuard": {
+      "deal": "0",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "0",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "0",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "1",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "If the enemy suffered no Wds during this round of melee, the enemy model gains [Deadwood Cursed: During the Discard Step, this character and all models friendly to this character within 3\" suffer 1 Wd], until this character is slain."
   },
@@ -82,11 +100,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target gains [Deadwood Cursed]: During the Discard Step, this character and all models friendly to this character within 3\" of the target suffer 1 Wd, until this character is slain.",
-          "validCards": [{"colour": "Green", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers 2 Wds. All other models within 3\" suffer 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

@@ -6,6 +6,6 @@
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "Target character gains the following Active Ability until the end of turn:\n\nRobbery (2) 1\" - *Once per turn*. Target model with less Wds remaining than this character loses possession of one Moonstone, and this character gains possession of that Moonstone.",
-  "shareCode": "AAB",
+  "shareCode": "BFABB",
   "imageName": "dawnlightrobbery"
 }

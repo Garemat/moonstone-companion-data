@@ -6,6 +6,6 @@
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "For the remainder of the game *Wizards* and *Clerics* you control gain +1 Arcane Stat.",
-  "shareCode": "AAB",
+  "shareCode": "BFABH",
   "imageName": "erudition"
 }

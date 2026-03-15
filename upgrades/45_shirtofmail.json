@@ -2,10 +2,8 @@
   "id": 45,
   "name": "Shirt of Mail",
   "version": 1,
-  "factions": ["COMMONWEALTH","DOMINION"],
-  "allowedKeywords": [
-    "Soldier"
-  ],
+  "factions": ["COMMONWEALTH", "DOMINION"],
+  "allowedKeywords": ["Soldier"],
   "restrictedKeywords": [],
   "abilities": [
     {
@@ -13,6 +11,6 @@
       "description": "If this character suffers Slicing Dmg, reduce the Dmg suffered by -2, to a maximum of -2."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CEAEF",
   "imageName": "shirtofmail"
 }

@@ -7,6 +7,6 @@
   "timing": "Interrupt a Melee Attack action.",
   "description": "Add a **Critical Hit** to your melee result.",
   "extraDescription": "e.g. A single Falling Swing is treated as two Falling Swings. Two Falling Swings are treated as three Falling Swings. Three Falling Swings are treated as four Falling Swings.",
-  "shareCode": "AAB",
+  "shareCode": "BEABD",
   "imageName": "devastatingblow"
 }

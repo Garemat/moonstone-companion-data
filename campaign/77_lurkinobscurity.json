@@ -2,11 +2,11 @@
   "id": 77,
   "name": "Lurk in Obscurity",
   "version": 2,
-  "factions": ["COMMONWEALTH", "LESHAVULT","DOMINION", "SHADES"],
+  "factions": ["COMMONWEALTH", "LESHAVULT", "DOMINION", "SHADES"],
   "tags": [],
   "timing": "Play immediately.",
   "description": "If you had the lowest Power of all players in the campaign at the start of this game-week: **Gain 3 Machination Points**.",
   "extraDescription": "You cannot have the 'lowest Power' if any other player has the same Power as you.",
-  "shareCode": "AAB",
+  "shareCode": "BKAHH",
   "imageName": "lurkinobscurity"
 }

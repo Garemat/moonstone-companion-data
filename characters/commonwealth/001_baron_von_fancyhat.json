@@ -12,7 +12,7 @@
   "evade": 0,
   "baseSize": "30mm",
   "imageName": "baron",
-  "shareCode": "AAB",
+  "shareCode": "AAAAB",
   "slicingDamageBuff": 1,
   "piercingDamageBuff": 1,
   "impactDamageBuff": 0,
@@ -28,12 +28,30 @@
     "name": "Master Strike",
     "upgradeFor": "Falling Swing",
     "possibleDamageTypes": ["Slicing"],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "0", "isFollowUp": true},
-    "thrust": {"deal": "1", "isFollowUp": true},
-    "sweepingCut": {"deal": "2", "isFollowUp": true},
-    "risingAttack": {"deal": "3", "isFollowUp": false},
-    "lowGuard": {"deal": "2", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "0",
+      "isFollowUp": true
+    },
+    "thrust": {
+      "deal": "1",
+      "isFollowUp": true
+    },
+    "sweepingCut": {
+      "deal": "2",
+      "isFollowUp": true
+    },
+    "risingAttack": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "2",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": ""
   },
@@ -89,11 +107,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X+1 Impact Dmg.",
-          "validCards": [{"colour": "Green", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers 3 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

@@ -4,9 +4,7 @@
   "version": 1,
   "factions": ["COMMONWEALTH", "LESHAVULT"],
   "allowedKeywords": [],
-  "restrictedKeywords": [
-    "Cleric"
-  ],
+  "restrictedKeywords": ["Cleric"],
   "abilities": [
     {
       "name": "Resilient",
@@ -14,6 +12,6 @@
       "oncePerGame": true
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CFAEA",
   "imageName": "resilient"
 }

@@ -12,7 +12,7 @@
   "evade": 2,
   "baseSize": "40mm",
   "imageName": "brunhilde",
-  "shareCode": "AAB",
+  "shareCode": "AAAEG",
   "slicingDamageBuff": 2,
   "piercingDamageBuff": 2,
   "impactDamageBuff": 0,
@@ -28,12 +28,30 @@
     "name": "Shattering Oathstone",
     "upgradeFor": "Falling Swing",
     "possibleDamageTypes": ["Slicing"],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "0", "isFollowUp": false},
-    "thrust": {"deal": "0", "isFollowUp": false},
-    "sweepingCut": {"deal": "3", "isFollowUp": false},
-    "risingAttack": {"deal": "3", "isFollowUp": false},
-    "lowGuard": {"deal": "2", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "0",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "0",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "2",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "If this character was slain, all other models within 8\", excluding friendly Giants and friendly Nobles, suffer 1 Wd. Other friendly Giants and friendly Nobles within 8\" restore all Wds instead."
   },

@@ -3,12 +3,8 @@
   "name": "Expert Training",
   "version": 1,
   "factions": ["COMMONWEALTH"],
-  "allowedKeywords": [
-    "Human"
-  ],
-  "restrictedKeywords": [
-    "Rogue"
-  ],
+  "allowedKeywords": ["Human"],
+  "restrictedKeywords": ["Rogue"],
   "abilities": [
     {
       "name": "Expert Training",
@@ -16,6 +12,6 @@
       "oncePerTurn": true
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CAABJ",
   "imageName": "experttraining"
 }

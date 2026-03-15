@@ -7,6 +7,6 @@
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "Move target Moonstone 4\" in a random direction and set its depth value to '4'.",
   "extraDescription": "The target Moonstone must be on the board. To generate a random direction, spin a pen or use another suitable method. If the generated location for the Moonstone would overlap a model's base or item of terrain, reduce the distance of the move until it can be placed on open ground.",
-  "shareCode": "AAB",
+  "shareCode": "BFABA",
   "imageName": "damnrabbitholes"
 }

@@ -4,11 +4,9 @@
   "version": 1,
   "factions": ["COMMONWEALTH", "DOMINION"],
   "allowedKeywords": [],
-  "restrictedKeywords": [
-    "Wizard"
-  ],
+  "restrictedKeywords": ["Wizard"],
   "extraDescription": "This character gains the Soldier keyword. The first Wd this character suffers in a game is ignored.",
   "abilities": [],
-  "shareCode": "AAB",
+  "shareCode": "CEAAJ",
   "imageName": "conscripted"
 }

@@ -2,10 +2,10 @@
   "id": 52,
   "name": "Tangle Tree",
   "version": 2,
-  "factions": ["LESHAVULT","DOMINION"],
+  "factions": ["LESHAVULT", "DOMINION"],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "Target character within 3\" of a Tree or Wooded Patch terrain piece suffers 4 Wds and cannot move, or be moved, until end of turn.",
-  "shareCode": "AAB",
+  "shareCode": "BHAFC",
   "imageName": "tangletree"
 }

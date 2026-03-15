@@ -3,9 +3,7 @@
   "name": "Massive Codpiece",
   "version": 1,
   "factions": ["COMMONWEALTH", "SHADES"],
-  "allowedKeywords": [
-    "Giant"
-  ],
+  "allowedKeywords": ["Giant"],
   "restrictedKeywords": [],
   "abilities": [
     {
@@ -13,6 +11,6 @@
       "description": "If this character suffers Melee Dmg from a Rising Attack (including Signature Moves using Rising Attacks) reduce the Dmg suffered by -2."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CGADC",
   "imageName": "massivecodpiece"
 }

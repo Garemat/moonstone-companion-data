@@ -7,6 +7,6 @@
   "timing": "Interrupt any action.",
   "description": "Reduce all Wds suffered by target character as a result of the current action to 0.",
   "extraDescription": "This includes *all* Wds that occurred during a *single* action to a *single* character including additional damage from Follow-Up attacks, End Step Effects and Arcane repeats following incorrect bluff calls.",
-  "shareCode": "AAB",
+  "shareCode": "BEADF",
   "imageName": "ninjareactions"
 }

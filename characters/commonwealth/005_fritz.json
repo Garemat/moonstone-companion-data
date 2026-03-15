@@ -12,7 +12,7 @@
   "evade": 1,
   "baseSize": "30mm",
   "imageName": "fritz",
-  "shareCode": "AAF",
+  "shareCode": "AAAAF",
   "slicingDamageBuff": 3,
   "piercingDamageBuff": 1,
   "impactDamageBuff": 1,
@@ -28,12 +28,30 @@
     "name": "Corn Cutter",
     "upgradeFor": "Rising Attack",
     "possibleDamageTypes": ["Slicing"],
-    "highGuard": {"deal": "2", "isFollowUp": false},
-    "fallingSwing": {"deal": "1", "isFollowUp": false},
-    "thrust": {"deal": "1", "isFollowUp": false},
-    "sweepingCut": {"deal": "2", "isFollowUp": false},
-    "risingAttack": {"deal": "1", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "Deal 2 Slicing Dmg to all models within 2\" that did not participate in this round of melee. This does not count as Melee Dmg."
   },

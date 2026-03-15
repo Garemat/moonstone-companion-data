@@ -7,6 +7,6 @@
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "Choose a character that has already activated. The character immediately resolves a Discard Step, including discarding all energy, and resolving other effects that resolve in the Discard Step.",
   "extraDescription": "The character still resolves a Discard Step at the end of the turn as normal.",
-  "shareCode": "AAB",
+  "shareCode": "BDAGE",
   "imageName": "yourtimeisup"
 }

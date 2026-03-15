@@ -3,10 +3,7 @@
   "name": "Blood Scent",
   "version": 1,
   "factions": ["LESHAVULT"],
-  "allowedKeywords": [
-    "Animal",
-    "Faun"
-  ],
+  "allowedKeywords": ["Animal", "Faun"],
   "restrictedKeywords": [],
   "abilities": [
     {
@@ -14,6 +11,6 @@
       "description": "When this character takes a Jog action, it may move +2\", provided the move ends with this character engaging an enemy."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CCAAG",
   "imageName": "bloodscent"
 }

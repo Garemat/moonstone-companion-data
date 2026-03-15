@@ -3,9 +3,7 @@
   "name": "Immaterial Essence",
   "version": 1,
   "factions": ["LESHAVULT", "SHADES"],
-  "allowedKeywords": [
-    "Spirit"
-  ],
+  "allowedKeywords": ["Spirit"],
   "restrictedKeywords": [],
   "abilities": [
     {
@@ -14,6 +12,6 @@
       "oncePerTurn": true
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CJACG",
   "imageName": "immaterialessence"
 }

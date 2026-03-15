@@ -3,9 +3,7 @@
   "name": "Towering Presence",
   "version": 1,
   "factions": ["LESHAVULT", "SHADES"],
-  "allowedKeywords": [
-    "Spirit"
-  ],
+  "allowedKeywords": ["Spirit"],
   "restrictedKeywords": [],
   "abilities": [
     {
@@ -14,6 +12,6 @@
       "oncePerGame": true
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CJAFE",
   "imageName": "toweringpresence"
 }

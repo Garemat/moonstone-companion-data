@@ -2,11 +2,11 @@
   "id": 82,
   "name": "Portal of Grommel",
   "version": 2,
-  "factions": ["COMMONWEALTH", "LESHAVULT","DOMINION", "SHADES"],
+  "factions": ["COMMONWEALTH", "LESHAVULT", "DOMINION", "SHADES"],
   "tags": [],
   "timing": "Play after a friendly character enters play and an Objective Marker is active.",
   "description": "The character entering play is placed in base contact with an active Objective Marker.\n\n**Gain 1 Victory Point**.",
   "extraDescription": "Before deployment place two Objective Markers 18\" away from your deployment table edge and at least 4\" apart.",
-  "shareCode": "AAB",
+  "shareCode": "BKAIC",
   "imageName": "portalofgrommel"
 }

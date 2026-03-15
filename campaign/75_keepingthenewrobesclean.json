@@ -2,11 +2,11 @@
   "id": 75,
   "name": "Keeping the New Robes Clean",
   "version": 2,
-  "factions": ["COMMONWEALTH", "LESHAVULT","DOMINION", "SHADES"],
+  "factions": ["COMMONWEALTH", "LESHAVULT", "DOMINION", "SHADES"],
   "tags": [],
   "timing": "Play after characters are deployed but before turn 1 begins.",
   "description": "At the end of the game, if no friendly *Nobles* are currently slain: **Gain 1 Victory Point** for each friendly *Noble*.",
   "extraDescription": "Nobles Removed from Play are not slain and count towards this total.",
-  "shareCode": "AAB",
+  "shareCode": "BKAHF",
   "imageName": "keepingthenewrobesclean"
 }

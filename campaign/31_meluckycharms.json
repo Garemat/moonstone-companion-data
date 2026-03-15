@@ -6,6 +6,6 @@
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "Characters you control gain +1 Arcane Stat until end of turn.",
-  "shareCode": "AAB",
+  "shareCode": "BAADB",
   "imageName": "meluckycharms"
 }

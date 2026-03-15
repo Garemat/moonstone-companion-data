@@ -3,10 +3,7 @@
   "name": "Leshavit's Vessel",
   "version": 1,
   "factions": ["LESHAVULT"],
-  "allowedKeywords": [
-    "Spirit",
-    "Cultist"
-  ],
+  "allowedKeywords": ["Spirit", "Cultist"],
   "restrictedKeywords": [],
   "abilities": [
     {
@@ -15,6 +12,6 @@
       "oncePerGame": true
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CCACI",
   "imageName": "leshavitsvessel"
 }

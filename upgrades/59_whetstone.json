@@ -2,12 +2,8 @@
   "id": 59,
   "name": "Whet Stone",
   "version": 1,
-  "factions": ["COMMONWEALTH","DOMINION"],
-  "allowedKeywords": [
-    "Soldier",
-    "Noble",
-    "Mercenary"
-  ],
+  "factions": ["COMMONWEALTH", "DOMINION"],
+  "allowedKeywords": ["Soldier", "Noble", "Mercenary"],
   "restrictedKeywords": [],
   "abilities": [
     {
@@ -15,6 +11,6 @@
       "description": "If this character deals Slicing Melee Dmg, increase the Dmg dealt by +1."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CEAFJ",
   "imageName": "whetstone"
 }

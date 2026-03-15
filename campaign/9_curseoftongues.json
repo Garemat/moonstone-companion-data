@@ -2,11 +2,11 @@
   "id": 9,
   "name": "Curse of Tongues",
   "version": 2,
-  "factions": ["LESHAVULT","SHADES"],
+  "factions": ["LESHAVULT", "SHADES"],
   "tags": [],
   "timing": "Play at the start of an Arcane Ability action, before Arcane Cards are drawn.",
   "description": "Reduce the range of all of the character's Arcane Abilities by 3\" until end of turn. If the target of the Arcane Ability is now out of range, the action is cancelled and the energy is lost.",
   "extraDescription": "If the range is reduced to 0\" or less, the target only counts as in range if it is in base to base contact.",
-  "shareCode": "AAB",
+  "shareCode": "BJAAJ",
   "imageName": "curseoftongues"
 }

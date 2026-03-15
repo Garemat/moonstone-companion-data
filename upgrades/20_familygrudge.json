@@ -3,10 +3,7 @@
   "name": "Family Grudge",
   "version": 1,
   "factions": ["DOMINION", "SHADES"],
-  "allowedKeywords": [
-    "Risen",
-    "Human"
-  ],
+  "allowedKeywords": ["Risen", "Human"],
   "restrictedKeywords": [],
   "abilities": [
     {
@@ -15,6 +12,6 @@
       "oncePerTurn": true
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CIACA",
   "imageName": "familygrudge"
 }

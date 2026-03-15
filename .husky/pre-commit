@@ -1,0 +1,2 @@
+npx lint-staged
+python3 scripts/aggregate.py && python3 scripts/lint_data.py

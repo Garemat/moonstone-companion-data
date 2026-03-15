@@ -10,6 +10,45 @@ import sys
 VALID_FACTIONS = {"COMMONWEALTH", "DOMINION", "LESHAVULT", "SHADES"}
 VALID_ABILITY_TYPES = {"Passive", "Active", "Arcane"}
 
+FACTION_MAP = {
+    frozenset(["COMMONWEALTH"]):                                      "A",
+    frozenset(["DOMINION"]):                                         "B",
+    frozenset(["LESHAVULT"]):                                        "C",
+    frozenset(["SHADES"]):                                           "D",
+    frozenset(["COMMONWEALTH", "DOMINION"]):                         "E",
+    frozenset(["COMMONWEALTH", "LESHAVULT"]):                        "F",
+    frozenset(["COMMONWEALTH", "SHADES"]):                           "G",
+    frozenset(["DOMINION", "LESHAVULT"]):                            "H",
+    frozenset(["DOMINION", "SHADES"]):                               "I",
+    frozenset(["LESHAVULT", "SHADES"]):                              "J",
+    frozenset(["COMMONWEALTH", "DOMINION", "LESHAVULT", "SHADES"]): "K",
+}
+DIGIT_MAP = {str(i): chr(ord("A") + i) for i in range(10)}
+
+
+def expected_share_code(type_letter: str, factions: list, item_id: int) -> str | None:
+    faction_letter = FACTION_MAP.get(frozenset(factions))
+    if faction_letter is None:
+        return None
+    padded = str(item_id).zfill(3)
+    id_code = "".join(DIGIT_MAP[d] for d in padded)
+    return type_letter + faction_letter + id_code
+
+
+def check_share_code(p: str, type_letter: str, factions: list, item_id: int, actual: str | None) -> None:
+    if actual is None:
+        error(p, "missing 'shareCode'")
+        return
+    if len(actual) != 5:
+        error(p, f"'shareCode' must be 5 characters, got {actual!r}")
+        return
+    expected = expected_share_code(type_letter, factions, item_id)
+    if expected is None:
+        error(p, f"unknown faction combination {sorted(factions)} — cannot validate shareCode")
+        return
+    if actual != expected:
+        error(p, f"'shareCode' {actual!r} does not match expected {expected!r}")
+
 errors = []
 
 
@@ -98,9 +137,11 @@ for i, c in enumerate(characters):
         if field not in c:
             error(p, f"missing required field '{field}'")
 
-    check_id(p, c.get("id"), seen_char_ids)
+    cid = check_id(p, c.get("id"), seen_char_ids)
     check_factions(p, c.get("factions", []))
     check_abilities(p, c.get("abilities", []))
+    if cid is not None:
+        check_share_code(p, "A", c.get("factions", []), cid, c.get("shareCode"))
 
     health = c.get("health")
     if health is not None:
@@ -122,8 +163,10 @@ for i, u in enumerate(upgrades):
     for field in ("id", "name", "factions"):
         if field not in u:
             error(p, f"missing required field '{field}'")
-    check_id(p, u.get("id"), seen_upgrade_ids)
+    uid = check_id(p, u.get("id"), seen_upgrade_ids)
     check_factions(p, u.get("factions", []))
+    if uid is not None:
+        check_share_code(p, "C", u.get("factions", []), uid, u.get("shareCode"))
 
 print(f"upgrades         : {len(upgrades)} entries")
 
@@ -135,8 +178,10 @@ for i, card in enumerate(campaign):
     for field in ("id", "name", "factions"):
         if field not in card:
             error(p, f"missing required field '{field}'")
-    check_id(p, card.get("id"), seen_campaign_ids)
+    cid = check_id(p, card.get("id"), seen_campaign_ids)
     check_factions(p, card.get("factions", []))
+    if cid is not None:
+        check_share_code(p, "B", card.get("factions", []), cid, card.get("shareCode"))
 
 print(f"campaign         : {len(campaign)} entries")
 

@@ -2,10 +2,10 @@
   "id": 30,
   "name": "Malady",
   "version": 2,
-  "factions": ["LESHAVULT","SHADES"],
+  "factions": ["LESHAVULT", "SHADES"],
   "tags": [],
   "timing": "Play at the end of the Replenish Step.",
   "description": "Choose any value for X. Then choose up to X different characters who each have X or more energy. They all lose 1 energy.",
-  "shareCode": "AAB",
+  "shareCode": "BJADA",
   "imageName": "malady"
 }
