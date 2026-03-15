@@ -2,18 +2,10 @@
   "id": 106,
   "name": "Echo of the Forgotten King",
   "version": 1,
-  "factions": [
-    "SHADES"
-  ],
+  "factions": ["SHADES"],
   "health": 11,
-  "energyTrack": [
-    999
-  ],
-  "keywords": [
-    "Spirit",
-    "Elrich",
-    "Noble"
-  ],
+  "energyTrack": [999],
+  "keywords": ["Spirit", "Elrich", "Noble"],
   "melee": 4,
   "meleeRange": 2,
   "arcane": 4,
@@ -35,9 +27,7 @@
   "signatureMove": {
     "name": "Torrent of Power",
     "upgradeFor": "Sweeping Cut",
-    "possibleDamageTypes": [
-      "Magical"
-    ],
+    "possibleDamageTypes": ["Magical"],
     "highGuard": {
       "deal": "0",
       "isFollowUp": false

@@ -2,13 +2,8 @@
   "id": 6,
   "name": "Blood Scent",
   "version": 1,
-  "factions": [
-    "LESHAVULT"
-  ],
-  "allowedKeywords": [
-    "Animal",
-    "Faun"
-  ],
+  "factions": ["LESHAVULT"],
+  "allowedKeywords": ["Animal", "Faun"],
   "restrictedKeywords": [],
   "abilities": [
     {

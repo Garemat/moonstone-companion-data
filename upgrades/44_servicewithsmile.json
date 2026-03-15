@@ -2,14 +2,9 @@
   "id": 44,
   "name": "Service with a Smile",
   "version": 1,
-  "factions": [
-    "DOMINION",
-    "SHADES"
-  ],
+  "factions": ["DOMINION", "SHADES"],
   "allowedKeywords": [],
-  "restrictedKeywords": [
-    "Noble"
-  ],
+  "restrictedKeywords": ["Noble"],
   "abilities": [
     {
       "name": "Service with a Smile",

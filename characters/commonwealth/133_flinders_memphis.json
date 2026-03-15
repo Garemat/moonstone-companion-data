@@ -2,18 +2,10 @@
   "id": 133,
   "name": "Flinders Memphis",
   "version": 1,
-  "factions": [
-    "COMMONWEALTH"
-  ],
+  "factions": ["COMMONWEALTH"],
   "health": 8,
-  "energyTrack": [
-    1,
-    2
-  ],
-  "keywords": [
-    "Gnome",
-    "Machine"
-  ],
+  "energyTrack": [1, 2],
+  "keywords": ["Gnome", "Machine"],
   "melee": 2,
   "meleeRange": 1,
   "arcane": 3,

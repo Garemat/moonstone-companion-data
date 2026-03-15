@@ -2,20 +2,10 @@
   "id": 59,
   "name": "Vespa",
   "version": 1,
-  "factions": [
-    "DOMINION"
-  ],
+  "factions": ["DOMINION"],
   "health": 8,
-  "energyTrack": [
-    1,
-    4,
-    7
-  ],
-  "keywords": [
-    "Faerie",
-    "Animal",
-    "Soldier"
-  ],
+  "energyTrack": [1, 4, 7],
+  "keywords": ["Faerie", "Animal", "Soldier"],
   "melee": 3,
   "meleeRange": 2,
   "arcane": 4,
@@ -37,9 +27,7 @@
   "signatureMove": {
     "name": "Strike from Above",
     "upgradeFor": "Falling Swing",
-    "possibleDamageTypes": [
-      "Piercing"
-    ],
+    "possibleDamageTypes": ["Piercing"],
     "highGuard": {
       "deal": "Null",
       "isFollowUp": false

@@ -2,12 +2,7 @@
   "id": 81,
   "name": "Plant Propaganda",
   "version": 2,
-  "factions": [
-    "COMMONWEALTH",
-    "LESHAVULT",
-    "DOMINION",
-    "SHADES"
-  ],
+  "factions": ["COMMONWEALTH", "LESHAVULT", "DOMINION", "SHADES"],
   "tags": [],
   "timing": "Play at end of game.",
   "description": "If both placed Objective Markers are Active: **Gain 2 Victory Points** and your opponent **Loses 2 Machination Points**.",

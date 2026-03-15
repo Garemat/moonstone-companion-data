@@ -2,19 +2,10 @@
   "id": 69,
   "name": "Antonia, Noonday Witch",
   "version": 3,
-  "factions": [
-    "LESHAVULT"
-  ],
+  "factions": ["LESHAVULT"],
   "health": 8,
-  "energyTrack": [
-    1,
-    2,
-    4
-  ],
-  "keywords": [
-    "Spirit",
-    "Witch"
-  ],
+  "energyTrack": [1, 2, 4],
+  "keywords": ["Spirit", "Witch"],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 4,

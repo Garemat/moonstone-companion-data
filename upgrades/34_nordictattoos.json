@@ -2,10 +2,7 @@
   "id": 34,
   "name": "Nordic Tattoos",
   "version": 1,
-  "factions": [
-    "COMMONWEALTH",
-    "SHADES"
-  ],
+  "factions": ["COMMONWEALTH", "SHADES"],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "extraDescription": "This character gains the Norse keyword.",

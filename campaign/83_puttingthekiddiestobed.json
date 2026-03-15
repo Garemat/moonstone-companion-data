@@ -2,12 +2,7 @@
   "id": 83,
   "name": "Putting the Kiddies to Bed",
   "version": 2,
-  "factions": [
-    "COMMONWEALTH",
-    "LESHAVULT",
-    "DOMINION",
-    "SHADES"
-  ],
+  "factions": ["COMMONWEALTH", "LESHAVULT", "DOMINION", "SHADES"],
   "tags": [],
   "timing": "Play after a friendly Thrall enters play.",
   "description": "If there are no friendly *Thralls* in play at the end of the game: **Gain 1 Victory Point**.",

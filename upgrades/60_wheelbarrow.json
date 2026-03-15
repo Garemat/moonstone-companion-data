@@ -2,16 +2,8 @@
   "id": 60,
   "name": "Wheelbarrow",
   "version": 1,
-  "factions": [
-    "COMMONWEALTH",
-    "LESHAVULT"
-  ],
-  "allowedKeywords": [
-    "Goblin",
-    "Human",
-    "Gnome",
-    "Troll"
-  ],
+  "factions": ["COMMONWEALTH", "LESHAVULT"],
+  "allowedKeywords": ["Goblin", "Human", "Gnome", "Troll"],
   "restrictedKeywords": [],
   "abilities": [
     {

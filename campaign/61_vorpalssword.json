@@ -2,10 +2,7 @@
   "id": 61,
   "name": "Vorpal's Sword",
   "version": 2,
-  "factions": [
-    "DOMINION",
-    "SHADES"
-  ],
+  "factions": ["DOMINION", "SHADES"],
   "tags": [],
   "timing": "Play at the start of a Melee Attack action where both models engage each other, before Melee cards are drawn.",
   "description": "After resolving the Melee Attack action, if neither character was slain then the character who suffered the most Wds is slain.\n\nIf the amount of Wds suffered was equal, this card has no effect.",

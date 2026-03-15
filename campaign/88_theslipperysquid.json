@@ -2,12 +2,7 @@
   "id": 88,
   "name": "The Slippery Squid",
   "version": 2,
-  "factions": [
-    "COMMONWEALTH",
-    "LESHAVULT",
-    "DOMINION",
-    "SHADES"
-  ],
+  "factions": ["COMMONWEALTH", "LESHAVULT", "DOMINION", "SHADES"],
   "tags": [],
   "timing": "Play after the game.",
   "description": "If you *Lost* the game: **Gain 2 Machination Points**.",

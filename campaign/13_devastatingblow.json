@@ -2,10 +2,7 @@
   "id": 13,
   "name": "Devastating Blow",
   "version": 2,
-  "factions": [
-    "COMMONWEALTH",
-    "DOMINION"
-  ],
+  "factions": ["COMMONWEALTH", "DOMINION"],
   "tags": [],
   "timing": "Interrupt a Melee Attack action.",
   "description": "Add a **Critical Hit** to your melee result.",

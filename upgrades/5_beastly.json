@@ -2,14 +2,8 @@
   "id": 5,
   "name": "Beastly",
   "version": 1,
-  "factions": [
-    "LESHAVULT",
-    "DOMINION"
-  ],
-  "allowedKeywords": [
-    "Animal",
-    "Troll"
-  ],
+  "factions": ["LESHAVULT", "DOMINION"],
+  "allowedKeywords": ["Animal", "Troll"],
   "restrictedKeywords": [],
   "abilities": [
     {

@@ -14,6 +14,7 @@ Share code format:
 
 import json
 import glob
+import re
 import sys
 
 FACTION_MAP = {
@@ -77,10 +78,14 @@ for glob_pattern, type_letter, kind in [
             continue
 
         if data.get("shareCode") != code:
-            data["shareCode"] = code
+            content = open(path).read()
+            new_content = re.sub(
+                r'"shareCode"\s*:\s*"[^"]*"',
+                f'"shareCode": "{code}"',
+                content
+            )
             with open(path, "w") as f:
-                json.dump(data, f, indent=2, ensure_ascii=False)
-                f.write("\n")
+                f.write(new_content)
             updated += 1
 
 if errors:

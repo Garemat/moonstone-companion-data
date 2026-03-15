@@ -2,13 +2,8 @@
   "id": 37,
   "name": "Pimp My Ride",
   "version": 1,
-  "factions": [
-    "COMMONWEALTH",
-    "SHADES"
-  ],
-  "allowedKeywords": [
-    "Animal"
-  ],
+  "factions": ["COMMONWEALTH", "SHADES"],
+  "allowedKeywords": ["Animal"],
   "restrictedKeywords": [],
   "abilities": [
     {

@@ -2,14 +2,9 @@
   "id": 24,
   "name": "Friend of the Trees",
   "version": 1,
-  "factions": [
-    "LESHAVULT",
-    "SHADES"
-  ],
+  "factions": ["LESHAVULT", "SHADES"],
   "allowedKeywords": [],
-  "restrictedKeywords": [
-    "Treefolk"
-  ],
+  "restrictedKeywords": ["Treefolk"],
   "abilities": [
     {
       "name": "Woodfriend",

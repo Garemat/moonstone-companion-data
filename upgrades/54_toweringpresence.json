@@ -2,13 +2,8 @@
   "id": 54,
   "name": "Towering Presence",
   "version": 1,
-  "factions": [
-    "LESHAVULT",
-    "SHADES"
-  ],
-  "allowedKeywords": [
-    "Spirit"
-  ],
+  "factions": ["LESHAVULT", "SHADES"],
+  "allowedKeywords": ["Spirit"],
   "restrictedKeywords": [],
   "abilities": [
     {

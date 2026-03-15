@@ -2,10 +2,7 @@
   "id": 47,
   "name": "Silver Munitions",
   "version": 1,
-  "factions": [
-    "COMMONWEALTH",
-    "SHADES"
-  ],
+  "factions": ["COMMONWEALTH", "SHADES"],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [

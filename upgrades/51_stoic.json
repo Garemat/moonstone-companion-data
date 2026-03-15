@@ -2,9 +2,7 @@
   "id": 51,
   "name": "Stoic",
   "version": 1,
-  "factions": [
-    "COMMONWEALTH"
-  ],
+  "factions": ["COMMONWEALTH"],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [

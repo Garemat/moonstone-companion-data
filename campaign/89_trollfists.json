@@ -2,12 +2,7 @@
   "id": 89,
   "name": "Troll Fists",
   "version": 2,
-  "factions": [
-    "COMMONWEALTH",
-    "LESHAVULT",
-    "DOMINION",
-    "SHADES"
-  ],
+  "factions": ["COMMONWEALTH", "LESHAVULT", "DOMINION", "SHADES"],
   "tags": [],
   "timing": "Play at end of game.",
   "description": "For each of the two placed Objective Markers that are Active: **Gain 1 Victory Point**.",

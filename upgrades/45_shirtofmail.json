@@ -2,13 +2,8 @@
   "id": 45,
   "name": "Shirt of Mail",
   "version": 1,
-  "factions": [
-    "COMMONWEALTH",
-    "DOMINION"
-  ],
-  "allowedKeywords": [
-    "Soldier"
-  ],
+  "factions": ["COMMONWEALTH", "DOMINION"],
+  "allowedKeywords": ["Soldier"],
   "restrictedKeywords": [],
   "abilities": [
     {

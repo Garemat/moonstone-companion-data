@@ -2,12 +2,7 @@
   "id": 82,
   "name": "Portal of Grommel",
   "version": 2,
-  "factions": [
-    "COMMONWEALTH",
-    "LESHAVULT",
-    "DOMINION",
-    "SHADES"
-  ],
+  "factions": ["COMMONWEALTH", "LESHAVULT", "DOMINION", "SHADES"],
   "tags": [],
   "timing": "Play after a friendly character enters play and an Objective Marker is active.",
   "description": "The character entering play is placed in base contact with an active Objective Marker.\n\n**Gain 1 Victory Point**.",

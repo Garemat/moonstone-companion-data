@@ -2,19 +2,10 @@
   "id": 68,
   "name": "Zorya, Dawn Witch",
   "version": 3,
-  "factions": [
-    "LESHAVULT"
-  ],
+  "factions": ["LESHAVULT"],
   "health": 8,
-  "energyTrack": [
-    1,
-    3,
-    5
-  ],
-  "keywords": [
-    "Spirit",
-    "Witch"
-  ],
+  "energyTrack": [1, 3, 5],
+  "keywords": ["Spirit", "Witch"],
   "melee": 5,
   "meleeRange": 1,
   "arcane": 2,
@@ -36,11 +27,7 @@
   "signatureMove": {
     "name": "Betrayal",
     "upgradeFor": "High Guard",
-    "possibleDamageTypes": [
-      "Impact",
-      "Slicing",
-      "Piercing"
-    ],
+    "possibleDamageTypes": ["Impact", "Slicing", "Piercing"],
     "highGuard": {
       "deal": "2",
       "isFollowUp": false

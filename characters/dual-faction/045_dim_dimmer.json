@@ -2,18 +2,10 @@
   "id": 45,
   "name": "Dim & Dimmer",
   "version": 3,
-  "factions": [
-    "COMMONWEALTH",
-    "DOMINION"
-  ],
+  "factions": ["COMMONWEALTH", "DOMINION"],
   "health": 14,
-  "energyTrack": [
-    6
-  ],
-  "keywords": [
-    "Giant",
-    "Mercenary"
-  ],
+  "energyTrack": [6],
+  "keywords": ["Giant", "Mercenary"],
   "melee": 2,
   "meleeRange": 2,
   "arcane": 0,
@@ -35,9 +27,7 @@
   "signatureMove": {
     "name": "Packed Lunch",
     "upgradeFor": "Rising Attack",
-    "possibleDamageTypes": [
-      "Impact"
-    ],
+    "possibleDamageTypes": ["Impact"],
     "highGuard": {
       "deal": "Null",
       "isFollowUp": false

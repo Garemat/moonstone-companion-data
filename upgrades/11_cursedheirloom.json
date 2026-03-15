@@ -2,16 +2,9 @@
   "id": 11,
   "name": "Cursed Heirloom",
   "version": 1,
-  "factions": [
-    "DOMINION",
-    "SHADES"
-  ],
+  "factions": ["DOMINION", "SHADES"],
   "allowedKeywords": [],
-  "restrictedKeywords": [
-    "Giant",
-    "Troll",
-    "Wizard"
-  ],
+  "restrictedKeywords": ["Giant", "Troll", "Wizard"],
   "abilities": [
     {
       "name": "Cursed Heirloom",

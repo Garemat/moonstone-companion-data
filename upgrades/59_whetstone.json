@@ -2,15 +2,8 @@
   "id": 59,
   "name": "Whet Stone",
   "version": 1,
-  "factions": [
-    "COMMONWEALTH",
-    "DOMINION"
-  ],
-  "allowedKeywords": [
-    "Soldier",
-    "Noble",
-    "Mercenary"
-  ],
+  "factions": ["COMMONWEALTH", "DOMINION"],
+  "allowedKeywords": ["Soldier", "Noble", "Mercenary"],
   "restrictedKeywords": [],
   "abilities": [
     {

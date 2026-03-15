@@ -2,20 +2,10 @@
   "id": 4,
   "name": "Quack",
   "version": 1,
-  "factions": [
-    "COMMONWEALTH"
-  ],
+  "factions": ["COMMONWEALTH"],
   "health": 7,
-  "energyTrack": [
-    1,
-    2,
-    5
-  ],
-  "keywords": [
-    "Human",
-    "Wizard",
-    "Cleric"
-  ],
+  "energyTrack": [1, 2, 5],
+  "keywords": ["Human", "Wizard", "Cleric"],
   "melee": 2,
   "meleeRange": 1,
   "arcane": 5,

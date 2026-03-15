@@ -2,20 +2,10 @@
   "id": 17,
   "name": "Beaky Bobby",
   "version": 1,
-  "factions": [
-    "DOMINION"
-  ],
+  "factions": ["DOMINION"],
   "health": 7,
-  "energyTrack": [
-    1,
-    2,
-    4,
-    6
-  ],
-  "keywords": [
-    "Goblin",
-    "Wizard"
-  ],
+  "energyTrack": [1, 2, 4, 6],
+  "keywords": ["Goblin", "Wizard"],
   "melee": 2,
   "meleeRange": 1,
   "arcane": 5,
@@ -37,9 +27,7 @@
   "signatureMove": {
     "name": "Take your medicine",
     "upgradeFor": "Thrust",
-    "possibleDamageTypes": [
-      "Magical"
-    ],
+    "possibleDamageTypes": ["Magical"],
     "highGuard": {
       "deal": "3",
       "isFollowUp": false

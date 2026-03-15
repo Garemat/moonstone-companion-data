@@ -2,10 +2,7 @@
   "id": 44,
   "name": "Rolling Stones",
   "version": 2,
-  "factions": [
-    "LESHAVULT",
-    "DOMINION"
-  ],
+  "factions": ["LESHAVULT", "DOMINION"],
   "tags": [],
   "timing": "Play immediately after a character loses possession of a Moonstone.",
   "description": "Instead of placing the Moonstone in base contact (or transferring possession to another character), you may instead place it anywhere within 4\" of the character.",

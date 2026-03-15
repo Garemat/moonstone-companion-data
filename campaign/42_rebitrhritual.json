@@ -2,9 +2,7 @@
   "id": 42,
   "name": "Rebirth Ritual",
   "version": 2,
-  "factions": [
-    "LESHAVULT"
-  ],
+  "factions": ["LESHAVULT"],
   "tags": [],
   "timing": "Play immediately after a character you control is slain.",
   "description": "The slain character loses possession of any Moonstones it was carrying as normal. Then place it in base contact with a target friendly character in play. Choose any value for X that is 1 or greater. The target suffers X Wds. The slain character restores X Wds; it has no energy but may activate this turn.",

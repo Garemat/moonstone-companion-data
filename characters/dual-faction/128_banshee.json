@@ -2,22 +2,10 @@
   "id": 128,
   "name": "Banshee",
   "version": 1,
-  "factions": [
-    "DOMINION",
-    "SHADES"
-  ],
+  "factions": ["DOMINION", "SHADES"],
   "health": 6,
-  "energyTrack": [
-    1,
-    2,
-    3,
-    5,
-    6
-  ],
-  "keywords": [
-    "Faerie",
-    "Spirit"
-  ],
+  "energyTrack": [1, 2, 3, 5, 6],
+  "keywords": ["Faerie", "Spirit"],
   "melee": 4,
   "meleeRange": 1,
   "arcane": 4,
@@ -39,10 +27,7 @@
   "signatureMove": {
     "name": "Lacerate",
     "upgradeFor": "Rising Attack",
-    "possibleDamageTypes": [
-      "Slicing",
-      "Magical"
-    ],
+    "possibleDamageTypes": ["Slicing", "Magical"],
     "highGuard": {
       "deal": "2",
       "isFollowUp": false

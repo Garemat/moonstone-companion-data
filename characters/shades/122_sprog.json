@@ -2,17 +2,10 @@
   "id": 122,
   "name": "Sprog",
   "version": 1,
-  "factions": [
-    "SHADES"
-  ],
+  "factions": ["SHADES"],
   "health": 2,
-  "energyTrack": [
-    999
-  ],
-  "keywords": [
-    "Psychopomp",
-    "Babeling"
-  ],
+  "energyTrack": [999],
+  "keywords": ["Psychopomp", "Babeling"],
   "melee": 1,
   "meleeRange": 1,
   "arcane": 0,

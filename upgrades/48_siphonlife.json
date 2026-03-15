@@ -2,10 +2,7 @@
   "id": 48,
   "name": "Siphon Life",
   "version": 1,
-  "factions": [
-    "LESHAVULT",
-    "SHADES"
-  ],
+  "factions": ["LESHAVULT", "SHADES"],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [

@@ -2,10 +2,7 @@
   "id": 35,
   "name": "Ninja Reactions",
   "version": 2,
-  "factions": [
-    "COMMONWEALTH",
-    "DOMINION"
-  ],
+  "factions": ["COMMONWEALTH", "DOMINION"],
   "tags": [],
   "timing": "Interrupt any action.",
   "description": "Reduce all Wds suffered by target character as a result of the current action to 0.",

@@ -2,10 +2,7 @@
   "id": 41,
   "name": "Raiding Party",
   "version": 2,
-  "factions": [
-    "LESHAVULT",
-    "DOMINION"
-  ],
+  "factions": ["LESHAVULT", "DOMINION"],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "For the remainder of the game, the first Melee Attack action made by a character you control each turn deals +2 Dmg.",

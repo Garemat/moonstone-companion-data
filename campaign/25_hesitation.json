@@ -2,10 +2,7 @@
   "id": 25,
   "name": "Hesitation",
   "version": 2,
-  "factions": [
-    "COMMONWEALTH",
-    "DOMINION"
-  ],
+  "factions": ["COMMONWEALTH", "DOMINION"],
   "tags": [],
   "timing": "Interrupt any enemy action.",
   "description": "The character does not take the action but must still discard its energy cost.",

@@ -2,9 +2,7 @@
   "id": 51,
   "name": "Stumble",
   "version": 2,
-  "factions": [
-    "COMMONWEALTH"
-  ],
+  "factions": ["COMMONWEALTH"],
   "tags": [],
   "timing": "Interrupt a Jog or Step action, or Reaction Step.",
   "description": "The character does not move and the action (as well as any spent energy) is lost. The character also suffers 2 Impact Dmg.",

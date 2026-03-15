@@ -2,12 +2,7 @@
   "id": 79,
   "name": "Malign Resurrection",
   "version": 2,
-  "factions": [
-    "COMMONWEALTH",
-    "LESHAVULT",
-    "DOMINION",
-    "SHADES"
-  ],
+  "factions": ["COMMONWEALTH", "LESHAVULT", "DOMINION", "SHADES"],
   "tags": [],
   "timing": "Play immediately after a character you control is slain.",
   "description": "The character is not slain. Instead, restore all its Wds.\n\n**Lose 1 Victory Point**.",

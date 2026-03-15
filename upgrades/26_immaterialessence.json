@@ -2,13 +2,8 @@
   "id": 26,
   "name": "Immaterial Essence",
   "version": 1,
-  "factions": [
-    "LESHAVULT",
-    "SHADES"
-  ],
-  "allowedKeywords": [
-    "Spirit"
-  ],
+  "factions": ["LESHAVULT", "SHADES"],
+  "allowedKeywords": ["Spirit"],
   "restrictedKeywords": [],
   "abilities": [
     {

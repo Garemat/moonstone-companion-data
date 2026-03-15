@@ -2,19 +2,10 @@
   "id": 46,
   "name": "Brunhilde",
   "version": 3,
-  "factions": [
-    "COMMONWEALTH"
-  ],
+  "factions": ["COMMONWEALTH"],
   "health": 13,
-  "energyTrack": [
-    1,
-    6
-  ],
-  "keywords": [
-    "Giant",
-    "Mercenary",
-    "Norse"
-  ],
+  "energyTrack": [1, 6],
+  "keywords": ["Giant", "Mercenary", "Norse"],
   "melee": 4,
   "meleeRange": 2,
   "arcane": 0,
@@ -36,9 +27,7 @@
   "signatureMove": {
     "name": "Shattering Oathstone",
     "upgradeFor": "Falling Swing",
-    "possibleDamageTypes": [
-      "Slicing"
-    ],
+    "possibleDamageTypes": ["Slicing"],
     "highGuard": {
       "deal": "Null",
       "isFollowUp": false

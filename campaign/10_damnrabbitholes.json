@@ -2,10 +2,7 @@
   "id": 10,
   "name": "Damn Rabbit Holes!",
   "version": 2,
-  "factions": [
-    "COMMONWEALTH",
-    "LESHAVULT"
-  ],
+  "factions": ["COMMONWEALTH", "LESHAVULT"],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "Move target Moonstone 4\" in a random direction and set its depth value to '4'.",

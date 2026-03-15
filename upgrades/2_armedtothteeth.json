@@ -2,15 +2,8 @@
   "id": 2,
   "name": "Armed to th' Teeth",
   "version": 1,
-  "factions": [
-    "COMMONWEALTH",
-    "DOMINION"
-  ],
-  "allowedKeywords": [
-    "Rogue",
-    "Pirate",
-    "Noble"
-  ],
+  "factions": ["COMMONWEALTH", "DOMINION"],
+  "allowedKeywords": ["Rogue", "Pirate", "Noble"],
   "restrictedKeywords": [],
   "abilities": [
     {

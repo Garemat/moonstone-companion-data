@@ -2,14 +2,8 @@
   "id": 20,
   "name": "Family Grudge",
   "version": 1,
-  "factions": [
-    "DOMINION",
-    "SHADES"
-  ],
-  "allowedKeywords": [
-    "Risen",
-    "Human"
-  ],
+  "factions": ["DOMINION", "SHADES"],
+  "allowedKeywords": ["Risen", "Human"],
   "restrictedKeywords": [],
   "abilities": [
     {

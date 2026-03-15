@@ -2,14 +2,9 @@
   "id": 21,
   "name": "Fanatic",
   "version": 1,
-  "factions": [
-    "LESHAVULT",
-    "DOMINION"
-  ],
+  "factions": ["LESHAVULT", "DOMINION"],
   "allowedKeywords": [],
-  "restrictedKeywords": [
-    "Noble"
-  ],
+  "restrictedKeywords": ["Noble"],
   "abilities": [
     {
       "name": "Zeal (0)",

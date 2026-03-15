@@ -2,9 +2,7 @@
   "id": 33,
   "name": "Miniature Magic",
   "version": 2,
-  "factions": [
-    "DOMINION"
-  ],
+  "factions": ["DOMINION"],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "Place target friendly *Goblin* or *Faerie* within 6\" of their current position.",

@@ -2,15 +2,9 @@
   "id": 13,
   "name": "Dirty Deeds, Dirt Cheap",
   "version": 1,
-  "factions": [
-    "DOMINION",
-    "SHADES"
-  ],
+  "factions": ["DOMINION", "SHADES"],
   "allowedKeywords": [],
-  "restrictedKeywords": [
-    "Faerie",
-    "Goblin"
-  ],
+  "restrictedKeywords": ["Faerie", "Goblin"],
   "abilities": [
     {
       "name": "Pay Off (1) 2\"",

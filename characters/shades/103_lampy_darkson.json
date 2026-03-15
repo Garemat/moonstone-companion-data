@@ -2,17 +2,10 @@
   "id": 103,
   "name": "Lampy Darkson",
   "version": 1,
-  "factions": [
-    "SHADES"
-  ],
+  "factions": ["SHADES"],
   "health": 2,
-  "energyTrack": [
-    999
-  ],
-  "keywords": [
-    "Psychopomp",
-    "Familiar"
-  ],
+  "energyTrack": [999],
+  "keywords": ["Psychopomp", "Familiar"],
   "melee": 1,
   "meleeRange": 1,
   "arcane": 4,

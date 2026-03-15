@@ -2,9 +2,7 @@
   "id": 12,
   "name": "Deadlands Souvenirs",
   "version": 1,
-  "factions": [
-    "SHADES"
-  ],
+  "factions": ["SHADES"],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [

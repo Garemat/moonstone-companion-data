@@ -2,9 +2,7 @@
   "id": 46,
   "name": "Sleight of Hand",
   "version": 2,
-  "factions": [
-    "DOMINION"
-  ],
+  "factions": ["DOMINION"],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "A *Rogue* you control gains a Moonstone carried by a model within 2\".",

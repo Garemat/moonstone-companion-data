@@ -2,21 +2,10 @@
   "id": 75,
   "name": "The Revenant",
   "version": 2,
-  "factions": [
-    "DOMINION",
-    "LESHAVULT"
-  ],
+  "factions": ["DOMINION", "LESHAVULT"],
   "health": 7,
-  "energyTrack": [
-    3,
-    5,
-    7
-  ],
-  "keywords": [
-    "Human",
-    "Noble",
-    "Spirit"
-  ],
+  "energyTrack": [3, 5, 7],
+  "keywords": ["Human", "Noble", "Spirit"],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 4,
@@ -38,9 +27,7 @@
   "signatureMove": {
     "name": "Destiny Fulfilled",
     "upgradeFor": "Thrust",
-    "possibleDamageTypes": [
-      "Piercing"
-    ],
+    "possibleDamageTypes": ["Piercing"],
     "highGuard": {
       "deal": "1",
       "isFollowUp": false

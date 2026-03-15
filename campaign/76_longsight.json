@@ -2,12 +2,7 @@
   "id": 76,
   "name": "Longsight",
   "version": 2,
-  "factions": [
-    "COMMONWEALTH",
-    "LESHAVULT",
-    "DOMINION",
-    "SHADES"
-  ],
+  "factions": ["COMMONWEALTH", "LESHAVULT", "DOMINION", "SHADES"],
   "tags": [],
   "timing": "Play immediately.",
   "description": "Choose 2 additional Campaign Cards.\n\n**Lose 1 Victory Point**.",

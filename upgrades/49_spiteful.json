@@ -2,13 +2,9 @@
   "id": 49,
   "name": "Spiteful",
   "version": 1,
-  "factions": [
-    "DOMINION"
-  ],
+  "factions": ["DOMINION"],
   "allowedKeywords": [],
-  "restrictedKeywords": [
-    "Wizard"
-  ],
+  "restrictedKeywords": ["Wizard"],
   "abilities": [
     {
       "name": "Spiteful",

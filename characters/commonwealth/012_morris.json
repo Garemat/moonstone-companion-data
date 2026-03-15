@@ -2,18 +2,10 @@
   "id": 12,
   "name": "Morris",
   "version": 2,
-  "factions": [
-    "COMMONWEALTH"
-  ],
+  "factions": ["COMMONWEALTH"],
   "health": 8,
-  "energyTrack": [
-    1,
-    2
-  ],
-  "keywords": [
-    "Gnome",
-    "Militia"
-  ],
+  "energyTrack": [1, 2],
+  "keywords": ["Gnome", "Militia"],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 3,
@@ -35,9 +27,7 @@
   "signatureMove": {
     "name": "Pick a fight",
     "upgradeFor": "Falling Swing",
-    "possibleDamageTypes": [
-      "Impact"
-    ],
+    "possibleDamageTypes": ["Impact"],
     "highGuard": {
       "deal": "Null",
       "isFollowUp": false

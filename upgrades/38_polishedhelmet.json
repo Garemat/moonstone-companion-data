@@ -2,15 +2,9 @@
   "id": 38,
   "name": "Polished Helmet",
   "version": 1,
-  "factions": [
-    "COMMONWEALTH",
-    "DOMINION"
-  ],
+  "factions": ["COMMONWEALTH", "DOMINION"],
   "allowedKeywords": [],
-  "restrictedKeywords": [
-    "Wizard",
-    "Cleric"
-  ],
+  "restrictedKeywords": ["Wizard", "Cleric"],
   "abilities": [
     {
       "name": "Polished Helmet",

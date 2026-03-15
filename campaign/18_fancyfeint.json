@@ -2,10 +2,7 @@
   "id": 18,
   "name": "Fancy Feint",
   "version": 2,
-  "factions": [
-    "COMMONWEALTH",
-    "SHADES"
-  ],
+  "factions": ["COMMONWEALTH", "SHADES"],
   "tags": [],
   "timing": "Interrupt a Melee Attack action.",
   "description": "Exchange your revealed Melee Card for another in your hand.",

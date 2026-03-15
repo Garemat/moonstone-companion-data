@@ -2,13 +2,9 @@
   "id": 10,
   "name": "Crooked Investiture",
   "version": 1,
-  "factions": [
-    "SHADES"
-  ],
+  "factions": ["SHADES"],
   "allowedKeywords": [],
-  "restrictedKeywords": [
-    "Spirit"
-  ],
+  "restrictedKeywords": ["Spirit"],
   "extraDescription": "This character gains the Noble keyword.",
   "abilities": [
     {

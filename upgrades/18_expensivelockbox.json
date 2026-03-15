@@ -2,13 +2,8 @@
   "id": 18,
   "name": "Expensive Lockbox",
   "version": 1,
-  "factions": [
-    "COMMONWEALTH",
-    "SHADES"
-  ],
-  "allowedKeywords": [
-    "Noble"
-  ],
+  "factions": ["COMMONWEALTH", "SHADES"],
+  "allowedKeywords": ["Noble"],
   "restrictedKeywords": [],
   "abilities": [
     {

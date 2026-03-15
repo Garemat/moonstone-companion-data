@@ -2,10 +2,7 @@
   "id": 1,
   "name": "Birthright",
   "version": 2,
-  "factions": [
-    "COMMONWEALTH",
-    "DOMINION"
-  ],
+  "factions": ["COMMONWEALTH", "DOMINION"],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "For the remainder of the game, the first time a friendly *Noble* would suffer Dmg each turn, you may have a friendly Non-*Noble* within 4\" suffer that Dmg instead.",

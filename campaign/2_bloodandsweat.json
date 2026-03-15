@@ -2,10 +2,7 @@
   "id": 2,
   "name": "Blood and Sweat",
   "version": 2,
-  "factions": [
-    "COMMONWEALTH",
-    "LESHAVULT"
-  ],
+  "factions": ["COMMONWEALTH", "LESHAVULT"],
   "tags": [],
   "timing": "Play at the start of any Replenish Step (including the first turn).",
   "description": "When played, choose a value for X. For the remainder of the game, at the end of the Replenish Step choose up to X friendly *Cultists* or *Militia* who each suffer X Wds and gain +1 energy.",

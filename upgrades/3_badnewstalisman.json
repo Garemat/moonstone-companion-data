@@ -2,13 +2,8 @@
   "id": 3,
   "name": "Bad-News Talisman",
   "version": 1,
-  "factions": [
-    "LESHAVULT",
-    "SHADES"
-  ],
-  "allowedKeywords": [
-    "Spirit"
-  ],
+  "factions": ["LESHAVULT", "SHADES"],
+  "allowedKeywords": ["Spirit"],
   "restrictedKeywords": [],
   "abilities": [
     {

@@ -2,14 +2,9 @@
   "id": 52,
   "name": "The Circle of Life",
   "version": 1,
-  "factions": [
-    "DOMINION",
-    "SHADES"
-  ],
+  "factions": ["DOMINION", "SHADES"],
   "allowedKeywords": [],
-  "restrictedKeywords": [
-    "Goblin"
-  ],
+  "restrictedKeywords": ["Goblin"],
   "abilities": [
     {
       "name": "Circle of Life",

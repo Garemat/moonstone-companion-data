@@ -2,20 +2,10 @@
   "id": 42,
   "name": "Muridae",
   "version": 3,
-  "factions": [
-    "COMMONWEALTH",
-    "DOMINION"
-  ],
+  "factions": ["COMMONWEALTH", "DOMINION"],
   "health": 8,
-  "energyTrack": [
-    1,
-    2,
-    4
-  ],
-  "keywords": [
-    "Gnome",
-    "Rogue"
-  ],
+  "energyTrack": [1, 2, 4],
+  "keywords": ["Gnome", "Rogue"],
   "melee": 4,
   "meleeRange": 1,
   "arcane": 0,
@@ -37,9 +27,7 @@
   "signatureMove": {
     "name": "Hamstring",
     "upgradeFor": "Sweeping Cut",
-    "possibleDamageTypes": [
-      "Slicing"
-    ],
+    "possibleDamageTypes": ["Slicing"],
     "highGuard": {
       "deal": "1",
       "isFollowUp": false

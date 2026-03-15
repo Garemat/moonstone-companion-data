@@ -2,15 +2,9 @@
   "id": 53,
   "name": "They Owed Me Money",
   "version": 1,
-  "factions": [
-    "DOMINION",
-    "SHADES"
-  ],
+  "factions": ["DOMINION", "SHADES"],
   "allowedKeywords": [],
-  "restrictedKeywords": [
-    "Giant",
-    "Troll"
-  ],
+  "restrictedKeywords": ["Giant", "Troll"],
   "abilities": [
     {
       "name": "Bitter Debtor",

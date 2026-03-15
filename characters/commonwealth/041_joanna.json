@@ -2,20 +2,10 @@
   "id": 41,
   "name": "Joanna, Nordic Princess",
   "version": 4,
-  "factions": [
-    "COMMONWEALTH"
-  ],
+  "factions": ["COMMONWEALTH"],
   "health": 7,
-  "energyTrack": [
-    1,
-    2,
-    4
-  ],
-  "keywords": [
-    "Gnome",
-    "Noble",
-    "Norse"
-  ],
+  "energyTrack": [1, 2, 4],
+  "keywords": ["Gnome", "Noble", "Norse"],
   "melee": 5,
   "meleeRange": 2,
   "arcane": 3,
@@ -37,9 +27,7 @@
   "signatureMove": {
     "name": "Valkyrie Cyclone",
     "upgradeFor": "Sweeping Cut",
-    "possibleDamageTypes": [
-      "Slicing"
-    ],
+    "possibleDamageTypes": ["Slicing"],
     "highGuard": {
       "deal": "Null",
       "isFollowUp": false

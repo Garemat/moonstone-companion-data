@@ -2,10 +2,7 @@
   "id": 59,
   "name": "Underhanded Blow",
   "version": 2,
-  "factions": [
-    "DOMINION",
-    "SHADES"
-  ],
+  "factions": ["DOMINION", "SHADES"],
   "tags": [],
   "timing": "Play at the start of a Melee Attack action, before Melee Cards are drawn.",
   "description": "Treat all 0 Dmg results on your Melee Cards as 0 Dmg instead during this round of melee.\n\nYou may choose to treat your Dmg as any type of Dmg (Impact, Slicing, Piercing or Magical) during this round of melee.",

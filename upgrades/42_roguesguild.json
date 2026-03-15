@@ -2,10 +2,7 @@
   "id": 42,
   "name": "Rogues' Guild",
   "version": 1,
-  "factions": [
-    "COMMONWEALTH",
-    "DOMINION"
-  ],
+  "factions": ["COMMONWEALTH", "DOMINION"],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "extraDescription": "This character gains the Rogue keyword.",

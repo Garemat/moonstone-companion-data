@@ -2,12 +2,7 @@
   "id": 71,
   "name": "Distant Relatives",
   "version": 2,
-  "factions": [
-    "COMMONWEALTH",
-    "LESHAVULT",
-    "DOMINION",
-    "SHADES"
-  ],
+  "factions": ["COMMONWEALTH", "LESHAVULT", "DOMINION", "SHADES"],
   "tags": [],
   "timing": "Play after characters are deployed but before turn 1 begins.",
   "description": "Nominate any one friendly character and one enemy character with at least one keyword in common. Both characters gain an additional +1 energy each Replenish Step until end of game. If the chosen enemy character is slain at the end of the game: **Gain 2 Victory Points**.",

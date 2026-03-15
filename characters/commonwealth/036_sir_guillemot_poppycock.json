@@ -2,18 +2,10 @@
   "id": 36,
   "name": "Sir Guillemot Poppycock",
   "version": 1,
-  "factions": [
-    "COMMONWEALTH"
-  ],
+  "factions": ["COMMONWEALTH"],
   "health": 9,
-  "energyTrack": [
-    1,
-    4
-  ],
-  "keywords": [
-    "Human",
-    "Noble"
-  ],
+  "energyTrack": [1, 4],
+  "keywords": ["Human", "Noble"],
   "melee": 4,
   "meleeRange": 2,
   "arcane": 0,
@@ -35,9 +27,7 @@
   "signatureMove": {
     "name": "Knee Smasher",
     "upgradeFor": "Sweeping Cut",
-    "possibleDamageTypes": [
-      "Impact"
-    ],
+    "possibleDamageTypes": ["Impact"],
     "highGuard": {
       "deal": "2",
       "isFollowUp": false

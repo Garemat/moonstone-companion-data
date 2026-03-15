@@ -2,15 +2,9 @@
   "id": 19,
   "name": "Expert Training",
   "version": 1,
-  "factions": [
-    "COMMONWEALTH"
-  ],
-  "allowedKeywords": [
-    "Human"
-  ],
-  "restrictedKeywords": [
-    "Rogue"
-  ],
+  "factions": ["COMMONWEALTH"],
+  "allowedKeywords": ["Human"],
+  "restrictedKeywords": ["Rogue"],
   "abilities": [
     {
       "name": "Expert Training",
