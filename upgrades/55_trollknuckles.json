@@ -2,7 +2,9 @@
   "id": 55,
   "name": "Troll Knuckles",
   "version": 1,
-  "factions": ["DOMINION"],
+  "factions": [
+    "DOMINION"
+  ],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [
@@ -11,6 +13,6 @@
       "description": "Whenever this character uses an Arcane Ability, immediately after hands are drawn, you may reveal the top card from the Arcane Deck. If it's a Catastrophe, then this character immediately suffers the Catastrophe effect of the ability before proceeding. Otherwise, add it your hand."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CBAFF",
   "imageName": "trollknuckles"
 }

@@ -2,11 +2,13 @@
   "id": 19,
   "name": "Familiar Grounds",
   "version": 2,
-  "factions": ["LESHAVULT"],
+  "factions": [
+    "LESHAVULT"
+  ],
   "tags": [],
   "timing": "Play immediately.",
   "description": "All characters in your troupe gain [**Sure Footed**: This character may Jog over Water Features and Wooded Patches and pays 1 less energy for Traverse actions.] this game.\n\nIn addition, you may have the Table Edge/Initiative re-rolled.",
   "extraDescription": "If you decide to take the re-roll, all players roll again and you must accept the new result.",
-  "shareCode": "AAB",
+  "shareCode": "BCABJ",
   "imageName": "familiargrounds"
 }

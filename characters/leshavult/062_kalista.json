@@ -2,17 +2,27 @@
   "id": 62,
   "name": "Kalista, Leshavult Priestess",
   "version": 3,
-  "factions": ["LESHAVULT"],
+  "factions": [
+    "LESHAVULT"
+  ],
   "health": 8,
-  "energyTrack": [1, 2, 4],
-  "keywords": ["Human", "Cultist", "Cleric"],
+  "energyTrack": [
+    1,
+    2,
+    4
+  ],
+  "keywords": [
+    "Human",
+    "Cultist",
+    "Cleric"
+  ],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 5,
   "evade": 0,
   "baseSize": "30mm",
   "imageName": "kalista",
-  "shareCode": "AAB",
+  "shareCode": "ACAGC",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 1,
   "impactDamageBuff": 0,
@@ -28,12 +38,30 @@
     "name": "Slip into Shadows",
     "upgradeFor": "Low Guard",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "Place this model within 4\"."
   },
@@ -85,11 +113,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target restores X+1 Wds and gains Protection (The first time this character would suffer Dmg, reduce that Dmg to {Null}), until end of turn.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers 2 Wds. All other models within 6\" suffer 1 Wd.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

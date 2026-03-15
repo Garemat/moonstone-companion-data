@@ -2,17 +2,27 @@
   "id": 89,
   "name": "Bjørn",
   "version": 1,
-  "factions": ["COMMONWEALTH"],
+  "factions": [
+    "COMMONWEALTH"
+  ],
   "health": 8,
-  "energyTrack": [1, 2, 3],
-  "keywords": ["Gnome", "Norse", "Mercenary"],
+  "energyTrack": [
+    1,
+    2,
+    3
+  ],
+  "keywords": [
+    "Gnome",
+    "Norse",
+    "Mercenary"
+  ],
   "melee": 4,
   "meleeRange": 1,
   "arcane": 2,
   "evade": 0,
   "baseSize": "30mm",
   "imageName": "bjorn",
-  "shareCode": "AAB",
+  "shareCode": "AAAIJ",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -27,13 +37,34 @@
   "signatureMove": {
     "name": "Thrash",
     "upgradeFor": "Falling Swing",
-    "possibleDamageTypes": ["Impact", "Slicing"],
-    "highGuard": {"deal": "0", "isFollowUp": false},
-    "fallingSwing": {"deal": "0", "isFollowUp": true},
-    "thrust": {"deal": "0", "isFollowUp": true},
-    "sweepingCut": {"deal": "0", "isFollowUp": false},
-    "risingAttack": {"deal": "0", "isFollowUp": true},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Impact",
+      "Slicing"
+    ],
+    "highGuard": {
+      "deal": "0",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "0",
+      "isFollowUp": true
+    },
+    "thrust": {
+      "deal": "0",
+      "isFollowUp": true
+    },
+    "sweepingCut": {
+      "deal": "0",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "0",
+      "isFollowUp": true
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "Move this model 2\" directly towards the enemy."
   },
@@ -85,11 +116,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers 2×X Impact Dmg.",
-          "validCards": [{"colour": "Green", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers 3 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

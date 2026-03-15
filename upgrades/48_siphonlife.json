@@ -2,7 +2,10 @@
   "id": 48,
   "name": "Siphon Life",
   "version": 1,
-  "factions": ["LESHAVULT","SHADES"],
+  "factions": [
+    "LESHAVULT",
+    "SHADES"
+  ],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [
@@ -12,6 +15,6 @@
       "oncePerTurn": true
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CJAEI",
   "imageName": "siphonlife"
 }

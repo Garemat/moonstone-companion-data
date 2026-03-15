@@ -2,7 +2,9 @@
   "id": 61,
   "name": "Woodlot Amulet",
   "version": 1,
-  "factions": ["LESHAVULT"],
+  "factions": [
+    "LESHAVULT"
+  ],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [
@@ -11,6 +13,6 @@
       "description": "If this character suffers Magical Dmg, reduce the Dmg suffered by -1."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CCAGB",
   "imageName": "woodlotamulet"
 }

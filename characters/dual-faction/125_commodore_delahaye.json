@@ -2,17 +2,27 @@
   "id": 125,
   "name": "Commodore Delahaye",
   "version": 1,
-  "factions": ["DOMINION", "SHADES"],
+  "factions": [
+    "DOMINION",
+    "SHADES"
+  ],
   "health": 7,
-  "energyTrack": [1, 3, 5],
-  "keywords": ["Spirit", "Pirate"],
+  "energyTrack": [
+    1,
+    3,
+    5
+  ],
+  "keywords": [
+    "Spirit",
+    "Pirate"
+  ],
   "melee": 3,
   "meleeRange": 2,
   "arcane": 3,
   "evade": -1,
   "baseSize": "30mm",
   "imageName": "commodore_delahaye",
-  "shareCode": "AAB",
+  "shareCode": "AIBCF",
   "slicingDamageBuff": 1,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -27,13 +37,33 @@
   "signatureMove": {
     "name": "21 Ghoul Salute",
     "upgradeFor": "Thrust",
-    "possibleDamageTypes": ["Impact"],
-    "highGuard": {"deal": "0", "isFollowUp": false},
-    "fallingSwing": {"deal": "1", "isFollowUp": false},
-    "thrust": {"deal": "1", "isFollowUp": false},
-    "sweepingCut": {"deal": "0", "isFollowUp": false},
-    "risingAttack": {"deal": "1", "isFollowUp": false},
-    "lowGuard": {"deal": "0", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Impact"
+    ],
+    "highGuard": {
+      "deal": "0",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "0",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "0",
+      "isFollowUp": false
+    },
     "extraText": "This attack can damage models outside this character's Melee Range and deals +1 Dmg for each other friendly Pirate with the Reload [...] ability within 4\".",
     "endStepEffect": ""
   },
@@ -88,11 +118,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X+1 Impact Dmg.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers 3 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

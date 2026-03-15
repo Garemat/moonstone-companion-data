@@ -2,17 +2,24 @@
   "id": 117,
   "name": "Abra Cadaverous",
   "version": 1,
-  "factions": ["SHADES"],
+  "factions": [
+    "SHADES"
+  ],
   "health": 10,
-  "energyTrack": [1, 4],
-  "keywords": ["Spirit"],
+  "energyTrack": [
+    1,
+    4
+  ],
+  "keywords": [
+    "Spirit"
+  ],
   "melee": 4,
   "meleeRange": 2,
   "arcane": 5,
   "evade": 1,
   "baseSize": "40mm",
   "imageName": "abra_cadaverous",
-  "shareCode": "AAB",
+  "shareCode": "ADBBH",
   "slicingDamageBuff": 2,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 2,
@@ -27,13 +34,33 @@
   "signatureMove": {
     "name": "Frenzy",
     "upgradeFor": "Rising Attack",
-    "possibleDamageTypes": ["Slicing"],
-    "highGuard": {"deal": "1", "isFollowUp": false},
-    "fallingSwing": {"deal": "0", "isFollowUp": false},
-    "thrust": {"deal": "0", "isFollowUp": false},
-    "sweepingCut": {"deal": "1", "isFollowUp": false},
-    "risingAttack": {"deal": "0", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Slicing"
+    ],
+    "highGuard": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "0",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "0",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "0",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "If this character is the attacker and causes 1 or more Wds during this round of Melee, reduce the energy cost of its next action this turn to {0} if it is a Melee Attack action."
   },
@@ -66,11 +93,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target restores X Wds.",
-          "validCards": [{"colour": "Green", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -86,11 +123,29 @@
       "arcaneOutcomes": [
         {
           "text": "Place a friendly slain model in base contact with this model. Restore half its health rounding up. It has no energy but may activate this turn.",
-          "validCards": [{"colour": "Green", "value": "2"}, {"colour": "Blue", "value": "2"}, {"colour": "Pink", "value": "2"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "2"
+            },
+            {
+              "colour": "Blue",
+              "value": "2"
+            },
+            {
+              "colour": "Pink",
+              "value": "2"
+            }
+          ]
         },
         {
           "text": "This model suffers 4 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

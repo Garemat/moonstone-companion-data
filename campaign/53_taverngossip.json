@@ -2,10 +2,12 @@
   "id": 53,
   "name": "Tavern Gossip",
   "version": 2,
-  "factions": ["COMMONWEALTH"],
+  "factions": [
+    "COMMONWEALTH"
+  ],
   "tags": [],
   "timing": "Play at the beginning of any turn.",
   "description": "For the remainder of the game, you may add +1 to your score when rolling to determine which player activates first each turn.",
-  "shareCode": "AAB",
+  "shareCode": "BAAFD",
   "imageName": "taverngossip"
 }

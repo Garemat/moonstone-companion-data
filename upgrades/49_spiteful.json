@@ -2,7 +2,9 @@
   "id": 49,
   "name": "Spiteful",
   "version": 1,
-  "factions": ["DOMINION"],
+  "factions": [
+    "DOMINION"
+  ],
   "allowedKeywords": [],
   "restrictedKeywords": [
     "Wizard"
@@ -13,6 +15,6 @@
       "description": "When this model causes 1 or more Wds to an enemy, it restores 1 Wd."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CBAEJ",
   "imageName": "spiteful"
 }

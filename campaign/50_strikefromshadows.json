@@ -2,10 +2,12 @@
   "id": 50,
   "name": "Strike from Shadows",
   "version": 2,
-  "factions": ["DOMINION"],
+  "factions": [
+    "DOMINION"
+  ],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "For the remainder of the game, *Rogues* you control deal +1 Melee Dmg when making a Melee Attack action and suffer -1 Melee Dmg while defending in a round of melee.",
-  "shareCode": "AAB",
+  "shareCode": "BBAFA",
   "imageName": "strikefromshadows"
 }

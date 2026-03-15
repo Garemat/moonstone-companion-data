@@ -2,17 +2,24 @@
   "id": 105,
   "name": "Teacake of Torment",
   "version": 1,
-  "factions": ["SHADES"],
+  "factions": [
+    "SHADES"
+  ],
   "health": 2,
-  "energyTrack": [999],
-  "keywords": ["Psychopomp", "Food"],
+  "energyTrack": [
+    999
+  ],
+  "keywords": [
+    "Psychopomp",
+    "Food"
+  ],
   "melee": 1,
   "meleeRange": 1,
   "arcane": 0,
   "evade": -1,
   "baseSize": "30mm",
   "imageName": "teacake_of_torment",
-  "shareCode": "AAB",
+  "shareCode": "ADBAF",
   "slicingDamageBuff": -2,
   "piercingDamageBuff": -2,
   "impactDamageBuff": -2,

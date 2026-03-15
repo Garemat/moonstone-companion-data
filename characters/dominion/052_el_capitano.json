@@ -2,17 +2,27 @@
   "id": 52,
   "name": "El Capitano",
   "version": 2,
-  "factions": ["DOMINION"],
+  "factions": [
+    "DOMINION"
+  ],
   "health": 7,
-  "energyTrack": [1, 3, 5, 7],
-  "keywords": ["Goblin", "Pirate"],
+  "energyTrack": [
+    1,
+    3,
+    5,
+    7
+  ],
+  "keywords": [
+    "Goblin",
+    "Pirate"
+  ],
   "melee": 4,
   "meleeRange": 1,
   "arcane": 3,
   "evade": 0,
   "baseSize": "40mm",
   "imageName": "capitano",
-  "shareCode": "AAB",
+  "shareCode": "ABAFC",
   "slicingDamageBuff": 1,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -27,13 +37,33 @@
   "signatureMove": {
     "name": "Jolly Roger",
     "upgradeFor": "Rising Attack",
-    "possibleDamageTypes": ["Piercing"],
-    "highGuard": {"deal": "1", "isFollowUp": false},
-    "fallingSwing": {"deal": "2", "isFollowUp": false},
-    "thrust": {"deal": "2", "isFollowUp": false},
-    "sweepingCut": {"deal": "2", "isFollowUp": false},
-    "risingAttack": {"deal": "2", "isFollowUp": false},
-    "lowGuard": {"deal": "0", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Piercing"
+    ],
+    "highGuard": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "0",
+      "isFollowUp": false
+    },
     "extraText": "Damage from this attack cannot be reduced by passive abilities.",
     "endStepEffect": ""
   },
@@ -99,11 +129,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X+1 Impact Dmg.",
-          "validCards": [{"colour": "Green", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers 3 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

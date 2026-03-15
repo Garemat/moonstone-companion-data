@@ -2,17 +2,24 @@
   "id": 66,
   "name": "Murder Bunny",
   "version": 2,
-  "factions": ["COMMONWEALTH", "LESHAVULT"],
+  "factions": [
+    "COMMONWEALTH",
+    "LESHAVULT"
+  ],
   "health": 4,
-  "energyTrack": [999],
-  "keywords": ["Animal"],
+  "energyTrack": [
+    999
+  ],
+  "keywords": [
+    "Animal"
+  ],
   "melee": 2,
   "meleeRange": 1,
   "arcane": 0,
   "evade": -1,
   "baseSize": "30mm",
   "imageName": "murder_bunny_2",
-  "shareCode": "AAB",
+  "shareCode": "AFAGG",
   "slicingDamageBuff": -1,
   "piercingDamageBuff": -1,
   "impactDamageBuff": -1,

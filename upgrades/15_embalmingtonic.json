@@ -2,7 +2,9 @@
   "id": 15,
   "name": "Embalming Tonic",
   "version": 1,
-  "factions": ["SHADES"],
+  "factions": [
+    "SHADES"
+  ],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [
@@ -12,6 +14,6 @@
       "oncePerTurn": true
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CDABF",
   "imageName": "embalmingtonic"
 }

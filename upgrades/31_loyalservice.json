@@ -2,7 +2,9 @@
   "id": 31,
   "name": "Loyal Service",
   "version": 1,
-  "factions": ["DOMINION"],
+  "factions": [
+    "DOMINION"
+  ],
   "allowedKeywords": [],
   "restrictedKeywords": [
     "Noble"
@@ -13,6 +15,6 @@
       "description": "If there is no friendly Noble within 6\", this character suffers 2 Wds. This character loses [Weakling] until end of turn."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CBADB",
   "imageName": "loyalservice"
 }

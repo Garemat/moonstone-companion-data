@@ -2,10 +2,15 @@
   "id": 87,
   "name": "The High Road",
   "version": 2,
-  "factions": ["COMMONWEALTH", "LESHAVULT","DOMINION", "SHADES"],
+  "factions": [
+    "COMMONWEALTH",
+    "LESHAVULT",
+    "DOMINION",
+    "SHADES"
+  ],
   "tags": [],
   "timing": "Play after the game.",
   "description": "If you *Won* the game: **Gain 2 Machination Points**.",
-  "shareCode": "AAB",
+  "shareCode": "BKAIH",
   "imageName": "thehighroad"
 }

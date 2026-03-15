@@ -2,17 +2,25 @@
   "id": 34,
   "name": "Tabby, the Librarian",
   "version": 2,
-  "factions": ["COMMONWEALTH"],
+  "factions": [
+    "COMMONWEALTH"
+  ],
   "health": 8,
-  "energyTrack": [1, 4],
-  "keywords": ["Human", "Cleric"],
+  "energyTrack": [
+    1,
+    4
+  ],
+  "keywords": [
+    "Human",
+    "Cleric"
+  ],
   "melee": 3,
   "meleeRange": 3,
   "arcane": 5,
   "evade": 1,
   "baseSize": "40mm",
   "imageName": "tabby",
-  "shareCode": "AAB",
+  "shareCode": "AAADE",
   "slicingDamageBuff": null,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -27,13 +35,33 @@
   "signatureMove": {
     "name": "Shhhhh!",
     "upgradeFor": "Thrust",
-    "possibleDamageTypes": ["Impact"],
-    "highGuard": {"deal": "1", "isFollowUp": false},
-    "fallingSwing": {"deal": "1", "isFollowUp": false},
-    "thrust": {"deal": "1", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "1", "isFollowUp": false},
-    "lowGuard": {"deal": "1", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Impact"
+    ],
+    "highGuard": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "1",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "If the enemy suffered 1 or more Wds during this round of Melee then it must discard 1 energy, if able."
   },
@@ -58,11 +86,29 @@
       "arcaneOutcomes": [
         {
           "text": "Flip an Arcane card and redistribute up to X energy from that model to any combination of models within 8\" of this model, where X is the value on the card.",
-          "validCards": [{"colour": "Green", "value": "X"}, {"colour": "Blue", "value": "X"}, {"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            },
+            {
+              "colour": "Blue",
+              "value": "X"
+            },
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "The target loses 2 energy and this character suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -78,11 +124,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target model suffers X-1 Wds, then it gains Protection (The first time this character would suffer Dmg, reduce that Dmg to {Null}), until end of turn.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -98,11 +154,21 @@
       "arcaneOutcomes": [
         {
           "text": "Move target X\" directly away, then it suffers X-1 Wds.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 3 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

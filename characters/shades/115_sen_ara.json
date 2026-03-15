@@ -2,17 +2,27 @@
   "id": 115,
   "name": "Sen'Ara",
   "version": 2,
-  "factions": ["SHADES"],
+  "factions": [
+    "SHADES"
+  ],
   "health": 7,
-  "energyTrack": [1, 3, 5, 6],
-  "keywords": ["Spirit", "Merfolk"],
+  "energyTrack": [
+    1,
+    3,
+    5,
+    6
+  ],
+  "keywords": [
+    "Spirit",
+    "Merfolk"
+  ],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 4,
   "evade": -1,
   "baseSize": "40mm",
   "imageName": "sen_ara",
-  "shareCode": "AAB",
+  "shareCode": "ADBBF",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -22,18 +32,40 @@
   "impactDamageMitigation": 0,
   "slicingDamageMitigation": 0,
   "magicalDamageMitigation": 0,
-  "summonsCharacterIds": [104],
+  "summonsCharacterIds": [
+    104
+  ],
   "isUnselectableInTroupe": false,
   "signatureMove": {
     "name": "Vicious Claws",
     "upgradeFor": "Sweeping Cut",
-    "possibleDamageTypes": ["Slicing"],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "3", "isFollowUp": false},
-    "thrust": {"deal": "2", "isFollowUp": false},
-    "sweepingCut": {"deal": "2", "isFollowUp": false},
-    "risingAttack": {"deal": "3", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Slicing"
+    ],
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": ""
   },
@@ -77,11 +109,21 @@
       "arcaneOutcomes": [
         {
           "text": "Place a 50mm Dual Water Feature within 5\" and LoS on open ground. This remains in place until end of game. A maximum of 3 Water Features may be placed by this troupe; if a fourth is placed you must choose and remove a Water Feature you created earlier this game.",
-          "validCards": [{"colour": "Green", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -97,11 +139,21 @@
       "arcaneOutcomes": [
         {
           "text": "Move target X+2\" directly towards this model. Then, if the target is within 2\" of a Water Feature it suffers 4 Magical Dmg.",
-          "validCards": [{"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 3 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

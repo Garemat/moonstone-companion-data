@@ -2,10 +2,12 @@
   "id": 23,
   "name": "Furry Fury",
   "version": 2,
-  "factions": ["LESHAVULT"],
+  "factions": [
+    "LESHAVULT"
+  ],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "For the remainder of the game, *Animals* you control deal +1 Melee Dmg.",
-  "shareCode": "AAB",
+  "shareCode": "BCACD",
   "imageName": "furryfury"
 }

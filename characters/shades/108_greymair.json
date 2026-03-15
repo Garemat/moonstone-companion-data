@@ -2,17 +2,27 @@
   "id": 108,
   "name": "Greymair",
   "version": 2,
-  "factions": ["SHADES"],
+  "factions": [
+    "SHADES"
+  ],
   "health": 8,
-  "energyTrack": [1, 3, 5],
-  "keywords": ["Risen", "Cleric", "Soldier"],
+  "energyTrack": [
+    1,
+    3,
+    5
+  ],
+  "keywords": [
+    "Risen",
+    "Cleric",
+    "Soldier"
+  ],
   "melee": 3,
   "meleeRange": 2,
   "arcane": 0,
   "evade": 0,
   "baseSize": "30mm",
   "imageName": "greymair",
-  "shareCode": "AAB",
+  "shareCode": "ADBAI",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -22,18 +32,39 @@
   "impactDamageMitigation": 0,
   "slicingDamageMitigation": 0,
   "magicalDamageMitigation": 0,
-  "summonsCharacterIds": [102, 103],
+  "summonsCharacterIds": [
+    102,
+    103
+  ],
   "isUnselectableInTroupe": false,
   "signatureMove": {
     "name": "Raise the Banner!",
     "upgradeFor": "High Guard",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "Reduce Dmg suffered by -1.",
     "endStepEffect": "Choose another friendly Soldier within 4\" and move it 2\"."
   },
@@ -72,11 +103,29 @@
       "arcaneOutcomes": [
         {
           "text": "Place a friendly slain model in base contact with this model. Restore half its health rounding up. It has no energy but may activate this turn.",
-          "validCards": [{"colour": "Green", "value": "2"}, {"colour": "Blue", "value": "2"}, {"colour": "Pink", "value": "2"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "2"
+            },
+            {
+              "colour": "Blue",
+              "value": "2"
+            },
+            {
+              "colour": "Pink",
+              "value": "2"
+            }
+          ]
         },
         {
           "text": "This model suffers 4 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -92,11 +141,29 @@
       "arcaneOutcomes": [
         {
           "text": "Place a new Familiar Psychopomp in base contact with this model.",
-          "validCards": [{"colour": "Green", "value": "1"}, {"colour": "Blue", "value": "1"}, {"colour": "Pink", "value": "1"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "1"
+            },
+            {
+              "colour": "Blue",
+              "value": "1"
+            },
+            {
+              "colour": "Pink",
+              "value": "1"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

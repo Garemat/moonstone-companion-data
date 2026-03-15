@@ -2,17 +2,26 @@
   "id": 35,
   "name": "Old Calders",
   "version": 1,
-  "factions": ["COMMONWEALTH"],
+  "factions": [
+    "COMMONWEALTH"
+  ],
   "health": 8,
-  "energyTrack": [1, 3, 7],
-  "keywords": ["Human", "Soldier"],
+  "energyTrack": [
+    1,
+    3,
+    7
+  ],
+  "keywords": [
+    "Human",
+    "Soldier"
+  ],
   "melee": 3,
   "meleeRange": 2,
   "arcane": 4,
   "evade": 0,
   "baseSize": "30mm",
   "imageName": "old_calders",
-  "shareCode": "AAB",
+  "shareCode": "AAADF",
   "slicingDamageBuff": 1,
   "piercingDamageBuff": 1,
   "impactDamageBuff": 0,
@@ -28,12 +37,30 @@
     "name": "Tactical Retreat",
     "upgradeFor": "High Guard",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "Reduce Dmg suffered by -1.",
     "endStepEffect": "This model may move 2\"."
   },
@@ -93,11 +120,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target Soldier or Noble restores X Wds.",
-          "validCards": [{"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

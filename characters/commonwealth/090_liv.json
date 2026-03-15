@@ -2,17 +2,27 @@
   "id": 90,
   "name": "Liv",
   "version": 1,
-  "factions": ["COMMONWEALTH"],
+  "factions": [
+    "COMMONWEALTH"
+  ],
   "health": 8,
-  "energyTrack": [1, 2, 3],
-  "keywords": ["Gnome", "Norse", "Cleric"],
+  "energyTrack": [
+    1,
+    2,
+    3
+  ],
+  "keywords": [
+    "Gnome",
+    "Norse",
+    "Cleric"
+  ],
   "melee": 2,
   "meleeRange": 1,
   "arcane": 4,
   "evade": 0,
   "baseSize": "30mm",
   "imageName": "liv",
-  "shareCode": "AAB",
+  "shareCode": "AAAJA",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -28,12 +38,30 @@
     "name": "Rune Shield",
     "upgradeFor": "Low Guard",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "Reduce Dmg suffered by -2.",
     "endStepEffect": ""
   },
@@ -66,15 +94,30 @@
       "arcaneOutcomes": [
         {
           "text": "Target restores X Wds.",
-          "validCards": [{"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "Target suffers X+1 Magical Dmg.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

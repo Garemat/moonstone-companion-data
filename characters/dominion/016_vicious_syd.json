@@ -2,17 +2,26 @@
   "id": 16,
   "name": "Vicious Syd",
   "version": 2,
-  "factions": ["DOMINION"],
+  "factions": [
+    "DOMINION"
+  ],
   "health": 5,
-  "energyTrack": [1, 2, 4],
-  "keywords": ["Goblin", "Soldier"],
+  "energyTrack": [
+    1,
+    2,
+    4
+  ],
+  "keywords": [
+    "Goblin",
+    "Soldier"
+  ],
   "melee": 5,
   "meleeRange": 1,
   "arcane": 4,
   "evade": -1,
   "baseSize": "30mm",
   "imageName": "syd",
-  "shareCode": "AAB",
+  "shareCode": "ABABG",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 1,
   "impactDamageBuff": 0,
@@ -27,13 +36,33 @@
   "signatureMove": {
     "name": "Groin Tickler",
     "upgradeFor": "Rising Attack",
-    "possibleDamageTypes": ["Piercing"],
-    "highGuard": {"deal": "2", "isFollowUp": false},
-    "fallingSwing": {"deal": "3", "isFollowUp": false},
-    "thrust": {"deal": "2", "isFollowUp": false},
-    "sweepingCut": {"deal": "1", "isFollowUp": false},
-    "risingAttack": {"deal": "0", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Piercing"
+    ],
+    "highGuard": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "0",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "Damage from this attack cannot be reduced by passive abilities.",
     "endStepEffect": "You may place this model anywhere in base contact with the enemy model."
   },
@@ -93,11 +122,21 @@
       "arcaneOutcomes": [
         {
           "text": "Place this model anywhere in base contact with target enemy.",
-          "validCards": [{"colour": "Green", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "The resisting player places this model anywhere within 6\".",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

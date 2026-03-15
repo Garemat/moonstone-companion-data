@@ -2,17 +2,25 @@
   "id": 13,
   "name": "Gradock",
   "version": 2,
-  "factions": ["COMMONWEALTH"],
+  "factions": [
+    "COMMONWEALTH"
+  ],
   "health": 8,
-  "energyTrack": [1, 2],
-  "keywords": ["Gnome", "Militia"],
+  "energyTrack": [
+    1,
+    2
+  ],
+  "keywords": [
+    "Gnome",
+    "Militia"
+  ],
   "melee": 4,
   "meleeRange": 1,
   "arcane": 2,
   "evade": 0,
   "baseSize": "30mm",
   "imageName": "gradock",
-  "shareCode": "AAB",
+  "shareCode": "AAABD",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -27,13 +35,33 @@
   "signatureMove": {
     "name": "The Old Slip-Step",
     "upgradeFor": "High Guard",
-    "possibleDamageTypes": ["Impact"],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "1", "isFollowUp": false},
-    "thrust": {"deal": "1", "isFollowUp": false},
-    "sweepingCut": {"deal": "1", "isFollowUp": false},
-    "risingAttack": {"deal": "1", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Impact"
+    ],
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "This model may move 1\"."
   },
@@ -93,11 +121,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X Piercing Dmg.",
-          "validCards": [{"colour": "Green", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

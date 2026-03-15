@@ -2,7 +2,10 @@
   "id": 52,
   "name": "The Circle of Life",
   "version": 1,
-  "factions": ["DOMINION", "SHADES"],
+  "factions": [
+    "DOMINION",
+    "SHADES"
+  ],
   "allowedKeywords": [],
   "restrictedKeywords": [
     "Goblin"
@@ -13,6 +16,6 @@
       "description": "When this character is slain you may allocate up to 3 energy remaining on this character to a friendly model within 4\"."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CIAFC",
   "imageName": "thecircleoflife"
 }

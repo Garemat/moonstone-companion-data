@@ -2,17 +2,26 @@
   "id": 74,
   "name": "Jackalope",
   "version": 3,
-  "factions": ["COMMONWEALTH", "LESHAVULT"],
+  "factions": [
+    "COMMONWEALTH",
+    "LESHAVULT"
+  ],
   "health": 10,
-  "energyTrack": [1, 4, 8],
-  "keywords": ["Animal"],
+  "energyTrack": [
+    1,
+    4,
+    8
+  ],
+  "keywords": [
+    "Animal"
+  ],
   "melee": 3,
   "meleeRange": 2,
   "arcane": 0,
   "evade": 1,
   "baseSize": "40mm",
   "imageName": "jackalope",
-  "shareCode": "AAB",
+  "shareCode": "AFAHE",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 2,
   "impactDamageBuff": 0,
@@ -27,13 +36,33 @@
   "signatureMove": {
     "name": "Gore",
     "upgradeFor": "Rising Attack",
-    "possibleDamageTypes": ["Piercing"],
-    "highGuard": {"deal": "2", "isFollowUp": false},
-    "fallingSwing": {"deal": "2", "isFollowUp": false},
-    "thrust": {"deal": "2", "isFollowUp": false},
-    "sweepingCut": {"deal": "1", "isFollowUp": false},
-    "risingAttack": {"deal": "2", "isFollowUp": false},
-    "lowGuard": {"deal": "0", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Piercing"
+    ],
+    "highGuard": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "0",
+      "isFollowUp": false
+    },
     "extraText": "This attack deals {Null} damage against models which are further than 1\" away.",
     "endStepEffect": "Move the enemy model 1\"."
   },

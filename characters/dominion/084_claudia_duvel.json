@@ -2,17 +2,26 @@
   "id": 84,
   "name": "Claudia Duvel",
   "version": 1,
-  "factions": ["DOMINION"],
+  "factions": [
+    "DOMINION"
+  ],
   "health": 8,
-  "energyTrack": [1, 3, 7],
-  "keywords": ["Human", "Rogue"],
+  "energyTrack": [
+    1,
+    3,
+    7
+  ],
+  "keywords": [
+    "Human",
+    "Rogue"
+  ],
   "melee": 4,
   "meleeRange": 1,
   "arcane": 3,
   "evade": -1,
   "baseSize": "30mm",
   "imageName": "claudia_duvel",
-  "shareCode": "AAB",
+  "shareCode": "ABAIE",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -28,12 +37,30 @@
     "name": "Stand & Deliver",
     "upgradeFor": "Sweeping Cut",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "If this character was not slain, and the enemy is in possession of a Moonstone, then they must choose: Suffer 3 Wds or lose possession of one Moonstone and this character gains possession of that Moonstone."
   },
@@ -88,11 +115,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X+1 Impact Dmg.",
-          "validCards": [{"colour": "Green", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers 3 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

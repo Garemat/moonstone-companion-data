@@ -2,10 +2,13 @@
   "id": 7,
   "name": "Curse of Ages",
   "version": 2,
-  "factions": ["LESHAVULT", "SHADES"],
+  "factions": [
+    "LESHAVULT",
+    "SHADES"
+  ],
   "tags": [],
   "timing": "Interrupt a Jog or Step action, or Reaction Step.",
   "description": "The character does not move and the action (as well as any spent energy) is lost. The enemy character's Step actions and Reaction Steps now cost (X) until end of turn, where X is the turn number.",
-  "shareCode": "AAB",
+  "shareCode": "BJAAH",
   "imageName": "curseofages"
 }

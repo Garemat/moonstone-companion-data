@@ -2,17 +2,28 @@
   "id": 57,
   "name": "Belladonna",
   "version": 1,
-  "factions": ["DOMINION"],
+  "factions": [
+    "DOMINION"
+  ],
   "health": 6,
-  "energyTrack": [1, 2, 3, 4, 5],
-  "keywords": ["Faerie", "Rogue"],
+  "energyTrack": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "keywords": [
+    "Faerie",
+    "Rogue"
+  ],
   "melee": 4,
   "meleeRange": 1,
   "arcane": 3,
   "evade": -2,
   "baseSize": "30mm",
   "imageName": "belladonna",
-  "shareCode": "AAB",
+  "shareCode": "ABAFH",
   "slicingDamageBuff": -1,
   "piercingDamageBuff": -1,
   "impactDamageBuff": -1,
@@ -28,12 +39,30 @@
     "name": "Drop of Delirium",
     "upgradeFor": "High Guard",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "Move the enemy model 2\", then it loses 1 energy and suffers 1 Wd."
   },
@@ -69,11 +98,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X+1 Magical Dmg.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -89,19 +128,39 @@
       "arcaneOutcomes": [
         {
           "text": "Target enemy loses X energy.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "Target enemy gains X Wds.",
-          "validCards": [{"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "Move target enemy up to 2×X\". Then you may have the target take a Melee Attack action controlled by you. They count as friendly during the Melee Attack action.",
-          "validCards": [{"colour": "Green", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "The target and this character are both slain.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

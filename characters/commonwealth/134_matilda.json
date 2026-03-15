@@ -2,17 +2,27 @@
   "id": 134,
   "name": "Matilda",
   "version": 1,
-  "factions": ["COMMONWEALTH"],
+  "factions": [
+    "COMMONWEALTH"
+  ],
   "health": 9,
-  "energyTrack": [1, 3, 6],
-  "keywords": ["Human", "Animal", "Mercenary"],
+  "energyTrack": [
+    1,
+    3,
+    6
+  ],
+  "keywords": [
+    "Human",
+    "Animal",
+    "Mercenary"
+  ],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 3,
   "evade": 0,
   "baseSize": "40mm",
   "imageName": "matilda",
-  "shareCode": "AAB",
+  "shareCode": "AABDE",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -28,12 +38,30 @@
     "name": "Leaped & Loaded",
     "upgradeFor": "High Guard",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "Place this model within 1\" of itself and LoS. You may immediately play the Reload ability even if engaged, and without spending energy."
   },
@@ -91,11 +119,25 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X Impact Dmg.",
-          "validCards": [{"colour": "Green", "value": "X"}, {"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            },
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

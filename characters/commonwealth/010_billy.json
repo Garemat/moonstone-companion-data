@@ -2,17 +2,27 @@
   "id": 10,
   "name": "Billy",
   "version": 2,
-  "factions": ["COMMONWEALTH"],
+  "factions": [
+    "COMMONWEALTH"
+  ],
   "health": 8,
-  "energyTrack": [1, 2, 4],
-  "keywords": ["Gnome", "Militia", "Animal"],
+  "energyTrack": [
+    1,
+    2,
+    4
+  ],
+  "keywords": [
+    "Gnome",
+    "Militia",
+    "Animal"
+  ],
   "melee": 4,
   "meleeRange": 1,
   "arcane": 4,
   "evade": -1,
   "baseSize": "30mm",
   "imageName": "billy",
-  "shareCode": "AAB",
+  "shareCode": "AAABA",
   "slicingDamageBuff": 1,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -27,13 +37,33 @@
   "signatureMove": {
     "name": "Wild Swing",
     "upgradeFor": "Falling Swing",
-    "possibleDamageTypes": ["Slicing"],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "2", "isFollowUp": false},
-    "thrust": {"deal": "2", "isFollowUp": false},
-    "sweepingCut": {"deal": "3", "isFollowUp": false},
-    "risingAttack": {"deal": "3", "isFollowUp": false},
-    "lowGuard": {"deal": "2", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Slicing"
+    ],
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "2",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "Move the enemy model 1\" directly away from this model."
   },
@@ -67,14 +97,28 @@
         {
           "text": "Target suffers X+1 Impact Dmg then is moved 1\" directly away.",
           "validCards": [
-            {"colour": "Green", "value": "X"},
-            {"colour": "Blue", "value": "X"},
-            {"colour": "Pink", "value": "X"}
+            {
+              "colour": "Green",
+              "value": "X"
+            },
+            {
+              "colour": "Blue",
+              "value": "X"
+            },
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
           ]
         },
         {
           "text": "Target suffers no damage and may move up to 3\".",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -91,13 +135,24 @@
         {
           "text": "Move this model 2X\".",
           "validCards": [
-            {"colour": "Green", "value": "X"},
-            {"colour": "Pink", "value": "X"}
+            {
+              "colour": "Green",
+              "value": "X"
+            },
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
           ]
         },
         {
           "text": "This model cannot move or be moved until end of turn.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

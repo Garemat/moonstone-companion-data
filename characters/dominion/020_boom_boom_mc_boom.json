@@ -2,17 +2,26 @@
   "id": 20,
   "name": "Boom Boom Mc Boom",
   "version": 1,
-  "factions": ["DOMINION"],
+  "factions": [
+    "DOMINION"
+  ],
   "health": 7,
-  "energyTrack": [1, 2, 4, 6],
-  "keywords": ["Goblin"],
+  "energyTrack": [
+    1,
+    2,
+    4,
+    6
+  ],
+  "keywords": [
+    "Goblin"
+  ],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 4,
   "evade": -2,
   "baseSize": "30mm",
   "imageName": "boom_boom",
-  "shareCode": "AAB",
+  "shareCode": "ABACA",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -28,12 +37,30 @@
     "name": "Now you see me...",
     "upgradeFor": "Low Guard",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "Place this model anywhere within 6\"."
   },
@@ -73,11 +100,25 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X Impact Dmg.",
-          "validCards": [{"colour": "Green", "value": "X"}, {"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            },
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -93,11 +134,21 @@
       "arcaneOutcomes": [
         {
           "text": "Move target enemy model 2X\" directly towards this model.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "Target model is moved by your opponent 4\".",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

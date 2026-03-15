@@ -2,17 +2,27 @@
   "id": 55,
   "name": "Goblin Airship",
   "version": 3,
-  "factions": ["DOMINION"],
+  "factions": [
+    "DOMINION"
+  ],
   "health": 8,
-  "energyTrack": [1, 3, 6],
-  "keywords": ["Goblin", "Machine", "Animal"],
+  "energyTrack": [
+    1,
+    3,
+    6
+  ],
+  "keywords": [
+    "Goblin",
+    "Machine",
+    "Animal"
+  ],
   "melee": 0,
   "meleeRange": 0,
   "arcane": 3,
   "evade": 2,
   "baseSize": "40mm",
   "imageName": "goblin_airship",
-  "shareCode": "AAB",
+  "shareCode": "ABAFF",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -65,11 +75,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X Impact Dmg.",
-          "validCards": [{"colour": "Green", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

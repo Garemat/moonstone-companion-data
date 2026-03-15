@@ -2,10 +2,13 @@
   "id": 3,
   "name": "Bolt from the Blue",
   "version": 2,
-  "factions": ["COMMONWEALTH", "LESHAVULT"],
+  "factions": [
+    "COMMONWEALTH",
+    "LESHAVULT"
+  ],
   "tags": [],
   "timing": "Play at the end of the Replenish Step.",
   "description": "Target character suffers 3 Magical Dmg.",
-  "shareCode": "AAB",
+  "shareCode": "BFAAD",
   "imageName": "boltfromtheblue"
 }

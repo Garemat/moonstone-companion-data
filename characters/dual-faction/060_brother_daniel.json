@@ -2,17 +2,28 @@
   "id": 60,
   "name": "Brother Daniel",
   "version": 2,
-  "factions": ["COMMONWEALTH", "LESHAVULT"],
+  "factions": [
+    "COMMONWEALTH",
+    "LESHAVULT"
+  ],
   "health": 7,
-  "energyTrack": [1, 2, 4],
-  "keywords": ["Human", "Cultist", "Cleric"],
+  "energyTrack": [
+    1,
+    2,
+    4
+  ],
+  "keywords": [
+    "Human",
+    "Cultist",
+    "Cleric"
+  ],
   "melee": 2,
   "meleeRange": 2,
   "arcane": 4,
   "evade": 0,
   "baseSize": "30mm",
   "imageName": "daniel",
-  "shareCode": "AAB",
+  "shareCode": "AFAGA",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -27,13 +38,33 @@
   "signatureMove": {
     "name": "Thwack!",
     "upgradeFor": "Sweeping Cut",
-    "possibleDamageTypes": ["Impact"],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "2", "isFollowUp": false},
-    "thrust": {"deal": "2", "isFollowUp": false},
-    "sweepingCut": {"deal": "1", "isFollowUp": false},
-    "risingAttack": {"deal": "2", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Impact"
+    ],
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "The opponent suffers -1 Melee Stat until end of turn."
   },
@@ -77,7 +108,12 @@
       "arcaneOutcomes": [
         {
           "text": "All friendly characters within the pulse restore X Wds. All characters within the pulse suffer 1 Wd.",
-          "validCards": [{"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -93,11 +129,21 @@
       "arcaneOutcomes": [
         {
           "text": "Choose a model within 3\" and LoS of this character. Then choose another model within 3×X\" and LoS of the second model. Place the first model within 3×X\" of the second model.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character's controller must choose either to have him suffer 4 Wds or be Removed from Play.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

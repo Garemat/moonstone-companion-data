@@ -2,11 +2,14 @@
   "id": 38,
   "name": "Over My Dead Body",
   "version": 2,
-  "factions": ["COMMONWEALTH", "SHADES"],
+  "factions": [
+    "COMMONWEALTH",
+    "SHADES"
+  ],
   "tags": [],
   "timing": "Play immediately after a friendly Soldier, Mercenary or Militia is slain.",
   "description": "Before the character is removed, it may make a bonus Melee Attack action against an enemy it's engaging. It does not need to spend energy and gains +2 Melee Stat, in addition to the usual +2 for attacking.",
   "extraDescription": "If a character would restore Wds as part of this bonus action they are still slain after resolving this melee.",
-  "shareCode": "AAB",
+  "shareCode": "BGADI",
   "imageName": "overmydeadbody"
 }

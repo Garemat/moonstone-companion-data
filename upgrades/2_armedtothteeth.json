@@ -2,7 +2,10 @@
   "id": 2,
   "name": "Armed to th' Teeth",
   "version": 1,
-  "factions": ["COMMONWEALTH","DOMINION"],
+  "factions": [
+    "COMMONWEALTH",
+    "DOMINION"
+  ],
   "allowedKeywords": [
     "Rogue",
     "Pirate",
@@ -16,6 +19,6 @@
       "oncePerGame": true
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CEAAC",
   "imageName": "armedtothteeth"
 }

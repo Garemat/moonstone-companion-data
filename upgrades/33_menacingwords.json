@@ -2,7 +2,10 @@
   "id": 33,
   "name": "Menacing Words",
   "version": 1,
-  "factions": ["LESHAVULT","DOMINION"],
+  "factions": [
+    "LESHAVULT",
+    "DOMINION"
+  ],
   "allowedKeywords": [],
   "restrictedKeywords": [
     "Giant",
@@ -16,6 +19,6 @@
       "oncePerTurn": true
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CHADD",
   "imageName": "menacingwords"
 }

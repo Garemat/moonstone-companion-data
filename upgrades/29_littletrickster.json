@@ -2,7 +2,9 @@
   "id": 29,
   "name": "Little Trickster",
   "version": 1,
-  "factions": ["DOMINION"],
+  "factions": [
+    "DOMINION"
+  ],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [
@@ -11,6 +13,6 @@
       "description": "When this model successfully bluffs, after resolving the effect you may reveal the bluff and gain +1 energy. Max. 3 times per turn."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CBACJ",
   "imageName": "littletrickster"
 }

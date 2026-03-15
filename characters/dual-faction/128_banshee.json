@@ -2,17 +2,29 @@
   "id": 128,
   "name": "Banshee",
   "version": 1,
-  "factions": ["DOMINION", "SHADES"],
+  "factions": [
+    "DOMINION",
+    "SHADES"
+  ],
   "health": 6,
-  "energyTrack": [1, 2, 3, 5, 6],
-  "keywords": ["Faerie", "Spirit"],
+  "energyTrack": [
+    1,
+    2,
+    3,
+    5,
+    6
+  ],
+  "keywords": [
+    "Faerie",
+    "Spirit"
+  ],
   "melee": 4,
   "meleeRange": 1,
   "arcane": 4,
   "evade": -2,
   "baseSize": "30mm",
   "imageName": "banshee",
-  "shareCode": "AAB",
+  "shareCode": "AIBCI",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -27,13 +39,34 @@
   "signatureMove": {
     "name": "Lacerate",
     "upgradeFor": "Rising Attack",
-    "possibleDamageTypes": ["Slicing", "Magical"],
-    "highGuard": {"deal": "2", "isFollowUp": false},
-    "fallingSwing": {"deal": "1", "isFollowUp": false},
-    "thrust": {"deal": "2", "isFollowUp": false},
-    "sweepingCut": {"deal": "2", "isFollowUp": false},
-    "risingAttack": {"deal": "1", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Slicing",
+      "Magical"
+    ],
+    "highGuard": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "Reduce Dmg suffered by -2 if the enemy has at least one Bleed.",
     "endStepEffect": "If the enemy suffered 1 or more Wds during this round of Melee, the enemy model gains [Bleed: During the Discard Step, this character suffers 1 Wd then loses this ability]."
   },
@@ -82,11 +115,21 @@
       "arcaneOutcomes": [
         {
           "text": "Move target enemy X\" directly away. If the enemy is in possession of at least one Moonstone it loses possession of one Moonstone it is carrying before moving. Place it in base contact with the enemy at depth 1.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -102,11 +145,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X-1 Wds and gains [Bleed: During the Discard Step, this character suffers 1 Wd then loses this ability].",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

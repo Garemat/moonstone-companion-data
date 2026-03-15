@@ -2,17 +2,28 @@
   "id": 113,
   "name": "Viscount de Faulte",
   "version": 1,
-  "factions": ["DOMINION", "SHADES"],
+  "factions": [
+    "DOMINION",
+    "SHADES"
+  ],
   "health": 11,
-  "energyTrack": [1, 4, 6],
-  "keywords": ["Risen", "Animal", "Noble"],
+  "energyTrack": [
+    1,
+    4,
+    6
+  ],
+  "keywords": [
+    "Risen",
+    "Animal",
+    "Noble"
+  ],
   "melee": 3,
   "meleeRange": 2,
   "arcane": 0,
   "evade": 1,
   "baseSize": "40mm",
   "imageName": "viscount_de_faulte",
-  "shareCode": "AAB",
+  "shareCode": "AIBBD",
   "slicingDamageBuff": null,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 1,
@@ -27,13 +38,33 @@
   "signatureMove": {
     "name": "Impale",
     "upgradeFor": "Thrust",
-    "possibleDamageTypes": ["Piercing"],
-    "highGuard": {"deal": "1", "isFollowUp": false},
-    "fallingSwing": {"deal": "3", "isFollowUp": false},
-    "thrust": {"deal": "4", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "3", "isFollowUp": false},
-    "lowGuard": {"deal": "2", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Piercing"
+    ],
+    "highGuard": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "4",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "2",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "Move this model 1\" directly towards the enemy."
   },
@@ -82,11 +113,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target other character loses X energy then a friendly character gains that much energy.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers 3 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

@@ -2,17 +2,26 @@
   "id": 88,
   "name": "Knoll",
   "version": 1,
-  "factions": ["DOMINION", "LESHAVULT"],
+  "factions": [
+    "DOMINION",
+    "LESHAVULT"
+  ],
   "health": 12,
-  "energyTrack": [1, 6],
-  "keywords": ["Troll", "Wizard"],
+  "energyTrack": [
+    1,
+    6
+  ],
+  "keywords": [
+    "Troll",
+    "Wizard"
+  ],
   "melee": 2,
   "meleeRange": 3,
   "arcane": 4,
   "evade": 2,
   "baseSize": "40mm",
   "imageName": "knoll",
-  "shareCode": "AAB",
+  "shareCode": "AHAII",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 1,
   "impactDamageBuff": 1,
@@ -28,12 +37,30 @@
     "name": "Bog Off!",
     "upgradeFor": "Thrust",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "Move the enemy model 1\" directly away from this model."
   },
@@ -74,11 +101,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target restores X+1 Wds.",
-          "validCards": [{"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -94,19 +131,39 @@
       "arcaneOutcomes": [
         {
           "text": "Target restores 3X-1 Wds",
-          "validCards": [{"colour": "Green", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "Target Troll gains [Tough as Old Boots: At the start of the Replenish Step this model recovers 2 Wds.], until end of game.",
-          "validCards": [{"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "Target rsuffers X Wds, then gains +1 energy.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "The target restores 2 Wds and loses 1 energy.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

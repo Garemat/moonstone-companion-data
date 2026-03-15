@@ -2,10 +2,13 @@
   "id": 16,
   "name": "Ducks in a Barrel",
   "version": 2,
-  "factions": ["COMMONWEALTH", "DOMINION"],
+  "factions": [
+    "COMMONWEALTH",
+    "DOMINION"
+  ],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "For the remainder of the game, once per turn you may draw +2 Arcane Cards when performing an Arcane Ability targeting an enemy.",
-  "shareCode": "AAB",
+  "shareCode": "BEABG",
   "imageName": "ducksinabarrel"
 }

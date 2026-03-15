@@ -2,17 +2,27 @@
   "id": 17,
   "name": "Beaky Bobby",
   "version": 1,
-  "factions": ["DOMINION"],
+  "factions": [
+    "DOMINION"
+  ],
   "health": 7,
-  "energyTrack": [1, 2, 4, 6],
-  "keywords": ["Goblin", "Wizard"],
+  "energyTrack": [
+    1,
+    2,
+    4,
+    6
+  ],
+  "keywords": [
+    "Goblin",
+    "Wizard"
+  ],
   "melee": 2,
   "meleeRange": 1,
   "arcane": 5,
   "evade": -1,
   "baseSize": "30mm",
   "imageName": "bobby",
-  "shareCode": "AAB",
+  "shareCode": "ABABH",
   "slicingDamageBuff": -1,
   "piercingDamageBuff": -1,
   "impactDamageBuff": -1,
@@ -27,13 +37,33 @@
   "signatureMove": {
     "name": "Take your medicine",
     "upgradeFor": "Thrust",
-    "possibleDamageTypes": ["Magical"],
-    "highGuard": {"deal": "3", "isFollowUp": false},
-    "fallingSwing": {"deal": "3", "isFollowUp": false},
-    "thrust": {"deal": "3", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "3", "isFollowUp": false},
-    "lowGuard": {"deal": "3", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Magical"
+    ],
+    "highGuard": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "3",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": ""
   },
@@ -88,11 +118,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target restores X+1 Wds.",
-          "validCards": [{"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

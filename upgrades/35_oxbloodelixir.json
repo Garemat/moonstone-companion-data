@@ -2,7 +2,9 @@
   "id": 35,
   "name": "Ox Blood Elixir",
   "version": 1,
-  "factions": ["COMMONWEALTH"],
+  "factions": [
+    "COMMONWEALTH"
+  ],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [
@@ -11,6 +13,6 @@
       "description": "If this character deals Impact Melee Dmg, increase the Dmg dealt by +1."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CAADF",
   "imageName": "oxbloodelixir"
 }

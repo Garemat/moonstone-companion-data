@@ -2,17 +2,25 @@
   "id": 104,
   "name": "Jeremy, Lord of the Deep",
   "version": 1,
-  "factions": ["SHADES"],
+  "factions": [
+    "SHADES"
+  ],
   "health": 2,
-  "energyTrack": [999],
-  "keywords": ["Psychopomp", "Animal", "Aquatic"],
+  "energyTrack": [
+    999
+  ],
+  "keywords": [
+    "Psychopomp",
+    "Animal",
+    "Aquatic"
+  ],
   "melee": 1,
   "meleeRange": 1,
   "arcane": 0,
   "evade": -1,
   "baseSize": "30mm",
   "imageName": "jeremy",
-  "shareCode": "AAB",
+  "shareCode": "ADBAE",
   "slicingDamageBuff": -2,
   "piercingDamageBuff": -2,
   "impactDamageBuff": -2,

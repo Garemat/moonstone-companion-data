@@ -2,17 +2,26 @@
   "id": 33,
   "name": "Gertrude, the Faerie Hunter",
   "version": 2,
-  "factions": ["COMMONWEALTH"],
+  "factions": [
+    "COMMONWEALTH"
+  ],
   "health": 8,
-  "energyTrack": [1, 2, 5],
-  "keywords": ["Human", "Mercenary"],
+  "energyTrack": [
+    1,
+    2,
+    5
+  ],
+  "keywords": [
+    "Human",
+    "Mercenary"
+  ],
   "melee": 4,
   "meleeRange": 1,
   "arcane": 5,
   "evade": 0,
   "baseSize": "30mm",
   "imageName": "gertrude",
-  "shareCode": "AAB",
+  "shareCode": "AAADD",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -27,13 +36,33 @@
   "signatureMove": {
     "name": "Spin-Kick",
     "upgradeFor": "Sweeping Cut",
-    "possibleDamageTypes": ["Impact"],
-    "highGuard": {"deal": "1", "isFollowUp": false},
-    "fallingSwing": {"deal": "2", "isFollowUp": false},
-    "thrust": {"deal": "2", "isFollowUp": false},
-    "sweepingCut": {"deal": "1", "isFollowUp": false},
-    "risingAttack": {"deal": "1", "isFollowUp": false},
-    "lowGuard": {"deal": "0", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Impact"
+    ],
+    "highGuard": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "0",
+      "isFollowUp": false
+    },
     "extraText": "Reduce Dmg suffered by -1.",
     "endStepEffect": "Move the enemy model 1\". You may immediately play the Reload ability even if engaged, and without spending energy."
   },
@@ -91,11 +120,25 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X Impact Dmg.",
-          "validCards": [{"colour": "Green", "value": "X"}, {"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            },
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

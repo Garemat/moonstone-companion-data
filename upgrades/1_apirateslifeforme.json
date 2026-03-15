@@ -2,11 +2,14 @@
   "id": 1,
   "name": "A Pirate's life for me!",
   "version": 1,
-  "factions": ["DOMINION", "SHADES"],
+  "factions": [
+    "DOMINION",
+    "SHADES"
+  ],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "extraDescription": "This character gains the Pirate keyword.",
   "abilities": [],
-  "shareCode": "AAB",
+  "shareCode": "CIAAB",
   "imageName": "apirateslifeforme"
 }

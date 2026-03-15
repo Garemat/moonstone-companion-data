@@ -2,7 +2,9 @@
   "id": 10,
   "name": "Crooked Investiture",
   "version": 1,
-  "factions": ["SHADES"],
+  "factions": [
+    "SHADES"
+  ],
   "allowedKeywords": [],
   "restrictedKeywords": [
     "Spirit"
@@ -14,6 +16,6 @@
       "description": "This character gains +1 Melee Stat if involved in a round of melee with a Non-Noble."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CDABA",
   "imageName": "crookedinvestiture"
 }

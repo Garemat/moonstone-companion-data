@@ -2,7 +2,10 @@
   "id": 41,
   "name": "Revival Elixir",
   "version": 1,
-  "factions": ["COMMONWEALTH", "LESHAVULT"],
+  "factions": [
+    "COMMONWEALTH",
+    "LESHAVULT"
+  ],
   "allowedKeywords": [
     "Cleric"
   ],
@@ -14,6 +17,6 @@
       "oncePerTurn": true
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CFAEB",
   "imageName": "revivalelixir"
 }

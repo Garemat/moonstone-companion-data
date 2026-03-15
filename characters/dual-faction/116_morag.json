@@ -2,17 +2,28 @@
   "id": 116,
   "name": "Morag",
   "version": 1,
-  "factions": ["LESHAVULT", "SHADES"],
+  "factions": [
+    "LESHAVULT",
+    "SHADES"
+  ],
   "health": 7,
-  "energyTrack": [1, 2, 4, 7],
-  "keywords": ["Faun", "Spirit"],
+  "energyTrack": [
+    1,
+    2,
+    4,
+    7
+  ],
+  "keywords": [
+    "Faun",
+    "Spirit"
+  ],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 4,
   "evade": -1,
   "baseSize": "30mm",
   "imageName": "morag",
-  "shareCode": "AAB",
+  "shareCode": "AJBBG",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -28,12 +39,30 @@
     "name": "Shadow Form",
     "upgradeFor": "High Guard",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "Reduce Dmg suffered by -1. If the enemy has 4 Wds or fewer remaining, instead reduce Dmg suffered to {0}.",
     "endStepEffect": ""
   },
@@ -77,11 +106,25 @@
       "arcaneOutcomes": [
         {
           "text": "Place this model within X+1\".",
-          "validCards": [{"colour": "Green", "value": "X"}, {"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            },
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "The target may be moved 4\" by the reacting player.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -97,11 +140,29 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers an amount of Wds equal to half the number of Wds they currently have remaining, rounded up.",
-          "validCards": [{"colour": "Green", "value": "1"}, {"colour": "Blue", "value": "2"}, {"colour": "Pink", "value": "3"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "1"
+            },
+            {
+              "colour": "Blue",
+              "value": "2"
+            },
+            {
+              "colour": "Pink",
+              "value": "3"
+            }
+          ]
         },
         {
           "text": "The target may be moved 4\" by the reacting player.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

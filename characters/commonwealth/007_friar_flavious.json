@@ -2,17 +2,26 @@
   "id": 7,
   "name": "Friar Flavious",
   "version": 2,
-  "factions": ["COMMONWEALTH"],
+  "factions": [
+    "COMMONWEALTH"
+  ],
   "health": 9,
-  "energyTrack": [1, 3, 5],
-  "keywords": ["Human", "Cleric"],
+  "energyTrack": [
+    1,
+    3,
+    5
+  ],
+  "keywords": [
+    "Human",
+    "Cleric"
+  ],
   "melee": 4,
   "meleeRange": 2,
   "arcane": 3,
   "evade": 1,
   "baseSize": "30mm",
   "imageName": "friar",
-  "shareCode": "AAB",
+  "shareCode": "AAAAH",
   "slicingDamageBuff": null,
   "piercingDamageBuff": null,
   "impactDamageBuff": 1,
@@ -27,13 +36,33 @@
   "signatureMove": {
     "name": "Spank",
     "upgradeFor": "Sweeping Cut",
-    "possibleDamageTypes": ["Impact"],
-    "highGuard": {"deal": "1", "isFollowUp": false},
-    "fallingSwing": {"deal": "1", "isFollowUp": false},
-    "thrust": {"deal": "1", "isFollowUp": false},
-    "sweepingCut": {"deal": "0", "isFollowUp": false},
-    "risingAttack": {"deal": "0", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Impact"
+    ],
+    "highGuard": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "0",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "0",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "If this character was not slain then it restores 1 Wd."
   },
@@ -82,11 +111,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target restores X+1 Wds.",
-          "validCards": [{"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

@@ -2,17 +2,25 @@
   "id": 101,
   "name": "Terrible Musician",
   "version": 1,
-  "factions": ["SHADES"],
+  "factions": [
+    "SHADES"
+  ],
   "health": 2,
-  "energyTrack": [999],
-  "keywords": ["Psychopomp", "Soldier", "Musician"],
+  "energyTrack": [
+    999
+  ],
+  "keywords": [
+    "Psychopomp",
+    "Soldier",
+    "Musician"
+  ],
   "melee": 1,
   "meleeRange": 1,
   "arcane": 3,
   "evade": -1,
   "baseSize": "30mm",
   "imageName": "terrible_musician",
-  "shareCode": "AAB",
+  "shareCode": "ADBAB",
   "slicingDamageBuff": -2,
   "piercingDamageBuff": -2,
   "impactDamageBuff": -2,
@@ -62,19 +70,39 @@
       "arcaneOutcomes": [
         {
           "text": "Target model suffers -1 Melee Stat until end of turn.",
-          "validCards": [{"colour": "Green", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "Target model suffers -1 Arcane Stat until end of turn.",
-          "validCards": [{"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "Move target model X\" directly away.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "The resisting player may move this model 2\".",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

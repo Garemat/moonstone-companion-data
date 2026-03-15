@@ -2,17 +2,27 @@
   "id": 92,
   "name": "Eric, the Enlightened",
   "version": 1,
-  "factions": ["LESHAVULT"],
+  "factions": [
+    "LESHAVULT"
+  ],
   "health": 10,
-  "energyTrack": [1, 3, 8],
-  "keywords": ["Human", "Animal", "Cultist"],
+  "energyTrack": [
+    1,
+    3,
+    8
+  ],
+  "keywords": [
+    "Human",
+    "Animal",
+    "Cultist"
+  ],
   "melee": 4,
   "meleeRange": 2,
   "arcane": 3,
   "evade": 1,
   "baseSize": "40mm",
   "imageName": "eric_the_enlightened",
-  "shareCode": "AAB",
+  "shareCode": "ACAJC",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 2,
   "impactDamageBuff": 0,
@@ -27,13 +37,33 @@
   "signatureMove": {
     "name": "Swinging Antlers",
     "upgradeFor": "Sweeping Cut",
-    "possibleDamageTypes": ["Impact"],
-    "highGuard": {"deal": "0", "isFollowUp": false},
-    "fallingSwing": {"deal": "3", "isFollowUp": false},
-    "thrust": {"deal": "0", "isFollowUp": true},
-    "sweepingCut": {"deal": "1", "isFollowUp": false},
-    "risingAttack": {"deal": "2", "isFollowUp": false},
-    "lowGuard": {"deal": "1", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Impact"
+    ],
+    "highGuard": {
+      "deal": "0",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "0",
+      "isFollowUp": true
+    },
+    "sweepingCut": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "1",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "Move the enemy model 1\"."
   },
@@ -74,15 +104,30 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X+1 Piercing Dmg. After resolving this action, this model loses Enchanted Javelin until end of turn.",
-          "validCards": [{"colour": "Green", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character may discard 2 energy. If it does, all other models within 4\" of this model suffer X+1 Piercing Dmg then are moved X\" directly away. After resolving this action, this model loses Enchanted Javelin until end of game.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "If this character has the Enchanted Javelin ability, the targtet gains it and this model loses it, both until end of turn.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

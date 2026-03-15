@@ -2,17 +2,27 @@
   "id": 21,
   "name": "Grub",
   "version": 2,
-  "factions": ["DOMINION"],
+  "factions": [
+    "DOMINION"
+  ],
   "health": 7,
-  "energyTrack": [1, 2, 4, 6],
-  "keywords": ["Goblin", "Wizard"],
+  "energyTrack": [
+    1,
+    2,
+    4,
+    6
+  ],
+  "keywords": [
+    "Goblin",
+    "Wizard"
+  ],
   "melee": 4,
   "meleeRange": 1,
   "arcane": 4,
   "evade": -1,
   "baseSize": "30mm",
   "imageName": "grub",
-  "shareCode": "AAB",
+  "shareCode": "ABACB",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -27,13 +37,33 @@
   "signatureMove": {
     "name": "Insatiable Hunger",
     "upgradeFor": "Rising Attack",
-    "possibleDamageTypes": ["Magical"],
-    "highGuard": {"deal": "2", "isFollowUp": false},
-    "fallingSwing": {"deal": "3", "isFollowUp": false},
-    "thrust": {"deal": "3", "isFollowUp": false},
-    "sweepingCut": {"deal": "2", "isFollowUp": false},
-    "risingAttack": {"deal": "1", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Magical"
+    ],
+    "highGuard": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "If the enemy is slain, and this character is not slain, then this character recovers all Wds and all energy."
   },
@@ -69,11 +99,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X Magical Dmg.",
-          "validCards": [{"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

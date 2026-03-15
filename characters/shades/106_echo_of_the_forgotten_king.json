@@ -2,17 +2,25 @@
   "id": 106,
   "name": "Echo of the Forgotten King",
   "version": 1,
-  "factions": ["SHADES"],
+  "factions": [
+    "SHADES"
+  ],
   "health": 11,
-  "energyTrack": [999],
-  "keywords": ["Spirit", "Elrich", "Noble"],
+  "energyTrack": [
+    999
+  ],
+  "keywords": [
+    "Spirit",
+    "Elrich",
+    "Noble"
+  ],
   "melee": 4,
   "meleeRange": 2,
   "arcane": 4,
   "evade": 2,
   "baseSize": "40mm",
   "imageName": "echo_of_the_forgotten_king",
-  "shareCode": "AAB",
+  "shareCode": "ADBAG",
   "slicingDamageBuff": 3,
   "piercingDamageBuff": 3,
   "impactDamageBuff": 3,
@@ -27,13 +35,33 @@
   "signatureMove": {
     "name": "Torrent of Power",
     "upgradeFor": "Sweeping Cut",
-    "possibleDamageTypes": ["Magical"],
-    "highGuard": {"deal": "0", "isFollowUp": false},
-    "fallingSwing": {"deal": "2", "isFollowUp": false},
-    "thrust": {"deal": "2", "isFollowUp": false},
-    "sweepingCut": {"deal": "1", "isFollowUp": false},
-    "risingAttack": {"deal": "2", "isFollowUp": false},
-    "lowGuard": {"deal": "0", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Magical"
+    ],
+    "highGuard": {
+      "deal": "0",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "0",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "Deal 2 Magical Dmg to all models within 2\" that did not participate in this round of melee. This does not count as Melee Dmg. Then all models within 2\" are moved 2\" directly away."
   },
@@ -85,11 +113,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X+1 Magical Dmg or X+2 Magical Dmg if the target is not at full health.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers an amount of Wds equal to the number of Wds it has currently suffered.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

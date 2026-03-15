@@ -2,17 +2,27 @@
   "id": 18,
   "name": "Shabbaroon",
   "version": 3,
-  "factions": ["DOMINION"],
+  "factions": [
+    "DOMINION"
+  ],
   "health": 6,
-  "energyTrack": [1, 2, 3, 6],
-  "keywords": ["Goblin", "Wizard"],
+  "energyTrack": [
+    1,
+    2,
+    3,
+    6
+  ],
+  "keywords": [
+    "Goblin",
+    "Wizard"
+  ],
   "melee": 1,
   "meleeRange": 1,
   "arcane": 7,
   "evade": -1,
   "baseSize": "30mm",
   "imageName": "shabbaroon",
-  "shareCode": "AAB",
+  "shareCode": "ABABI",
   "slicingDamageBuff": -1,
   "piercingDamageBuff": -1,
   "impactDamageBuff": -1,
@@ -28,12 +38,30 @@
     "name": "Fuddlemuddle",
     "upgradeFor": "High Guard",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "If this model was the defender and was not slain, restore all wounds and energy and place it within 8\" of its current location."
   },
@@ -58,15 +86,34 @@
       "arcaneOutcomes": [
         {
           "text": "Gain +X energy.",
-          "validCards": [{"colour": "Green", "value": "X"}, {"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            },
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "Gain +1 energy.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "Suffer 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -82,11 +129,29 @@
       "arcaneOutcomes": [
         {
           "text": "Target enemy or Goblin immediately suffers one Catastrophe printed on their card. If it requires a target, you may choose any target that meets the ability's requirements.",
-          "validCards": [{"colour": "Green", "value": "X"}, {"colour": "Blue", "value": "X"}, {"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            },
+            {
+              "colour": "Blue",
+              "value": "X"
+            },
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers 3 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -102,11 +167,25 @@
       "arcaneOutcomes": [
         {
           "text": "Restore all wounds and energy of target Goblin, then place it within 8\" of this model.",
-          "validCards": [{"colour": "Green", "value": "X"}, {"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            },
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers 4 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

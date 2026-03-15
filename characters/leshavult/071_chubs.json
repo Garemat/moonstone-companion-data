@@ -2,17 +2,26 @@
   "id": 71,
   "name": "Chubs",
   "version": 2,
-  "factions": ["LESHAVULT"],
+  "factions": [
+    "LESHAVULT"
+  ],
   "health": 6,
-  "energyTrack": [1, 3, 4, 6],
-  "keywords": ["Faun"],
+  "energyTrack": [
+    1,
+    3,
+    4,
+    6
+  ],
+  "keywords": [
+    "Faun"
+  ],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 4,
   "evade": -1,
   "baseSize": "30mm",
   "imageName": "chubs",
-  "shareCode": "AAB",
+  "shareCode": "ACAHB",
   "slicingDamageBuff": -1,
   "piercingDamageBuff": -1,
   "impactDamageBuff": -1,
@@ -28,12 +37,30 @@
     "name": "Love Potion",
     "upgradeFor": "Low Guard",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "Reduce Melee Dmg suffered by -1.",
     "endStepEffect": "Choose a character you control. Move the enemy 3\" directly towards that character. The enemy cannot target that character with an action until end of turn."
   },
@@ -80,11 +107,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X Piercing Dmg.",
-          "validCards": [{"colour": "Green", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This ability cannot be used for the remainder of the game.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -100,11 +137,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target restores X+1 Wds.",
-          "validCards": [{"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

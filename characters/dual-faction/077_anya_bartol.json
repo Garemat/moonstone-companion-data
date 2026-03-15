@@ -2,17 +2,27 @@
   "id": 77,
   "name": "Anya Bartol",
   "version": 2,
-  "factions": ["DOMINION", "LESHAVULT"],
+  "factions": [
+    "DOMINION",
+    "LESHAVULT"
+  ],
   "health": 7,
-  "energyTrack": [1, 2, 4],
-  "keywords": ["Human", "Noble"],
+  "energyTrack": [
+    1,
+    2,
+    4
+  ],
+  "keywords": [
+    "Human",
+    "Noble"
+  ],
   "melee": 2,
   "meleeRange": 1,
   "arcane": 4,
   "evade": -1,
   "baseSize": "30mm",
   "imageName": "anya_bartol",
-  "shareCode": "AAB",
+  "shareCode": "AHAHH",
   "slicingDamageBuff": -1,
   "piercingDamageBuff": -1,
   "impactDamageBuff": -1,
@@ -29,12 +39,30 @@
     "name": "Lose Control",
     "upgradeFor": "High Guard",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "If this character was not slain then it is Removed from Play and replaced with Striga Anya. Striga Anya gains energy and suffers Wds equal to those already on this character along with all Moonstones it's carrying and any stat modifications or abilities it has gained. If this character was the active character, continue the current activation with Striga Anya; it may not Jog if Anya Bartol already did this turn."
   },
@@ -86,11 +114,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target restores X+1 Wds.",
-          "validCards": [{"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

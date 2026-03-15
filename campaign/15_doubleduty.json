@@ -2,11 +2,14 @@
   "id": 15,
   "name": "Double Duty",
   "version": 2,
-  "factions": ["COMMONWEALTH", "LESHAVULT"],
+  "factions": [
+    "COMMONWEALTH",
+    "LESHAVULT"
+  ],
   "tags": [],
   "timing": "Play during the Activation Step, at the end of any character's activation.",
   "description": "A *Soldier* or *Mercenary* you control gains +2 energy and may activate next, even if it has already activated this turn (and even if the last character to activate was yours).",
   "extraDescription": "Note that Jog actions are 'Once per turn' and not 'Once per activation'.",
-  "shareCode": "AAB",
+  "shareCode": "BFABF",
   "imageName": "doubleduty"
 }

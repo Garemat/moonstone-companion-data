@@ -2,17 +2,29 @@
   "id": 127,
   "name": "Brigid",
   "version": 1,
-  "factions": ["DOMINION", "SHADES"],
+  "factions": [
+    "DOMINION",
+    "SHADES"
+  ],
   "health": 6,
-  "energyTrack": [1, 2, 3, 5, 6],
-  "keywords": ["Faerie", "Pirate"],
+  "energyTrack": [
+    1,
+    2,
+    3,
+    5,
+    6
+  ],
+  "keywords": [
+    "Faerie",
+    "Pirate"
+  ],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 4,
   "evade": -2,
   "baseSize": "30mm",
   "imageName": "brigid",
-  "shareCode": "AAB",
+  "shareCode": "AIBCH",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -28,12 +40,30 @@
     "name": "Sink to the Deep",
     "upgradeFor": "Low Guard",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "Reduce Dmg suffered by -1. If there is at least one friendly slain non-Thrall character, instead reduce Dmg suffered to {0}.",
     "endStepEffect": ""
   },
@@ -77,11 +107,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X Magical Dmg.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -97,15 +137,30 @@
       "arcaneOutcomes": [
         {
           "text": "Target character restores X Wds then loses X Energy.",
-          "validCards": [{"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "Target other Pirate gains X Energy then suffers X Wds.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers 3 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

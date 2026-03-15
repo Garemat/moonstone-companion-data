@@ -2,7 +2,10 @@
   "id": 18,
   "name": "Expensive Lockbox",
   "version": 1,
-  "factions": ["COMMONWEALTH", "SHADES"],
+  "factions": [
+    "COMMONWEALTH",
+    "SHADES"
+  ],
   "allowedKeywords": [
     "Noble"
   ],
@@ -13,6 +16,6 @@
       "description": "This character cannot lose possession of a Moonstone due to an enemy model unless slain. When this character is slain it may place a Moonstone it was in possession of in base contact at depth '3' instead of the opponent placing at depth '1'."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CGABI",
   "imageName": "expensivelockbox"
 }

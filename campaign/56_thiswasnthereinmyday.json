@@ -2,10 +2,12 @@
   "id": 56,
   "name": "This Wasn't Here in My Day",
   "version": 2,
-  "factions": ["SHADES"],
+  "factions": [
+    "SHADES"
+  ],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "For the remainder of the game, *Spirits* you control may move freely over intervening *obstacles*, *barriers* and models provided their base does not overlap at the end of the move and may Jog over Water Features and Wooded Patches.",
-  "shareCode": "AAB",
+  "shareCode": "BDAFG",
   "imageName": "thiswasnthereinmyday"
 }

@@ -2,10 +2,12 @@
   "id": 47,
   "name": "Sneaky Bit o' Digging",
   "version": 2,
-  "factions": ["SHADES"],
+  "factions": [
+    "SHADES"
+  ],
   "tags": [],
   "timing": "Play after characters are deployed but before turn 1 begins.",
   "description": "Choose a Moonstone then flip an Arcane Card and reduce the Depth Value by X to a minimum of 1, where X is the value of the card. Catastrophe: The Moonstone Depth Value stays the same.\n\nIf your troupe contains at least one *Rogue* you may choose another Moonstone and repeat this effect, flipping a new Arcane Card.",
-  "shareCode": "AAB",
+  "shareCode": "BDAEH",
   "imageName": "sneakybitodigging"
 }

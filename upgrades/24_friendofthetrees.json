@@ -2,7 +2,10 @@
   "id": 24,
   "name": "Friend of the Trees",
   "version": 1,
-  "factions": ["LESHAVULT", "SHADES"],
+  "factions": [
+    "LESHAVULT",
+    "SHADES"
+  ],
   "allowedKeywords": [],
   "restrictedKeywords": [
     "Treefolk"
@@ -13,6 +16,6 @@
       "description": "This character may Jog over Wooded Patches. Whilst this character is within the Melee Range of a friendly Treefolk it may not be moved by enemy actions."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CJACE",
   "imageName": "friendofthetrees"
 }

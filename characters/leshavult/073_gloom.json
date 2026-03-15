@@ -2,17 +2,27 @@
   "id": 73,
   "name": "Gloom",
   "version": 2,
-  "factions": ["LESHAVULT"],
+  "factions": [
+    "LESHAVULT"
+  ],
   "health": 7,
-  "energyTrack": [1, 3, 4, 6],
-  "keywords": ["Faun", "Wizard"],
+  "energyTrack": [
+    1,
+    3,
+    4,
+    6
+  ],
+  "keywords": [
+    "Faun",
+    "Wizard"
+  ],
   "melee": 2,
   "meleeRange": 2,
   "arcane": 4,
   "evade": 0,
   "baseSize": "30mm",
   "imageName": "gloom",
-  "shareCode": "AAB",
+  "shareCode": "ACAHD",
   "slicingDamageBuff": null,
   "piercingDamageBuff": null,
   "impactDamageBuff": 0,
@@ -28,12 +38,30 @@
     "name": "Slip into Shadows",
     "upgradeFor": "Low Guard",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "Place this model within 4\"."
   },
@@ -85,11 +113,21 @@
       "arcaneOutcomes": [
         {
           "text": "Place this model within 2X\".",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "The resisting player may place this model within 6\".",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -105,11 +143,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X+1 Magical Dmg and gets +1 Evade Stat until end of turn.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 1 Wd and the target gets -2 Evade Stat until end of turn.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

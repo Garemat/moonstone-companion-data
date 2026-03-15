@@ -2,7 +2,9 @@
   "id": 51,
   "name": "Stoic",
   "version": 1,
-  "factions": ["COMMONWEALTH"],
+  "factions": [
+    "COMMONWEALTH"
+  ],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [
@@ -11,6 +13,6 @@
       "description": "This character always generates the full amount of energy on their health track during the Replenish Step, ignoring any Wds suffered. This character can never gain or lose energy through character abilities."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CAAFB",
   "imageName": "stoic"
 }

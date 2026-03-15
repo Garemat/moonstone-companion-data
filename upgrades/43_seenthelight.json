@@ -2,7 +2,9 @@
   "id": 43,
   "name": "Seen the Light",
   "version": 1,
-  "factions": ["LESHAVULT"],
+  "factions": [
+    "LESHAVULT"
+  ],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "extraDescription": "This character gains the Cultist keyword.",
@@ -12,6 +14,6 @@
       "description": "This character gains +1 Melee Stat and +1 Arcane Stat if a friendly Cultist is within 6\"."
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CCAED",
   "imageName": "seenthelight"
 }

@@ -2,10 +2,13 @@
   "id": 49,
   "name": "Strategic Manoeuvre",
   "version": 2,
-  "factions": ["COMMONWEALTH", "SHADES"],
+  "factions": [
+    "COMMONWEALTH",
+    "SHADES"
+  ],
   "tags": [],
   "timing": "Play at the beginning of any turn.",
   "description": "Friendly characters currently engaged by an enemy model may move 2\".",
-  "shareCode": "AAB",
+  "shareCode": "BGAEJ",
   "imageName": "strategicmanoeuvre"
 }

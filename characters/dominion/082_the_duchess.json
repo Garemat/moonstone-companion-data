@@ -2,17 +2,26 @@
   "id": 82,
   "name": "The Duchess",
   "version": 2,
-  "factions": ["DOMINION"],
+  "factions": [
+    "DOMINION"
+  ],
   "health": 7,
-  "energyTrack": [1, 3, 5],
-  "keywords": ["Human", "Noble"],
+  "energyTrack": [
+    1,
+    3,
+    5
+  ],
+  "keywords": [
+    "Human",
+    "Noble"
+  ],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 4,
   "evade": 0,
   "baseSize": "30mm",
   "imageName": "the_duchess",
-  "shareCode": "AAB",
+  "shareCode": "ABAIC",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 1,
   "impactDamageBuff": 0,
@@ -28,12 +37,30 @@
     "name": "Threats & Promises",
     "upgradeFor": "Rising Attack",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "Reduce Dmg suffered by -3.",
     "endStepEffect": "The enemy character gains 3 energy and may not target this model with an action for the remainder of the turn. This effect takes place even if the enemy is outside this character's Melee Range."
   },
@@ -82,11 +109,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target other character suffers X Wds. Then, for each Wd lost, a friendly model within 8\" and LoS of this model restores 1 Wd and gains 1 energy. The same friendly model may be chosen multiple times.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 3 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

@@ -2,17 +2,26 @@
   "id": 78,
   "name": "Striga Anya",
   "version": 2,
-  "factions": ["DOMINION", "LESHAVULT"],
+  "factions": [
+    "DOMINION",
+    "LESHAVULT"
+  ],
   "health": 7,
-  "energyTrack": [1, 2, 4],
-  "keywords": ["Spirit"],
+  "energyTrack": [
+    1,
+    2,
+    4
+  ],
+  "keywords": [
+    "Spirit"
+  ],
   "melee": 5,
   "meleeRange": 1,
   "arcane": 0,
   "evade": 1,
   "baseSize": "30mm",
   "imageName": "anya_striga",
-  "shareCode": "AAB",
+  "shareCode": "AHAHI",
   "slicingDamageBuff": 2,
   "piercingDamageBuff": 2,
   "impactDamageBuff": 2,
@@ -29,12 +38,30 @@
     "name": "Regain Control",
     "upgradeFor": "Low Guard",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "If this character was not slain then it is Removed from Play and replaced with Anya Bartol. Anya Bartol gains energy and suffers Wds equal to those already on this character along with all Moonstones it's carrying and any stat modifications or abilities it has gained. If this character was the active character, continue the current activation with Anya Bartol; it may not Jog if Striga Anya already did this turn."
   },

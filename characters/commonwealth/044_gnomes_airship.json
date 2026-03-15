@@ -2,17 +2,27 @@
   "id": 44,
   "name": "Gnomish Airship",
   "version": 3,
-  "factions": ["COMMONWEALTH"],
+  "factions": [
+    "COMMONWEALTH"
+  ],
   "health": 8,
-  "energyTrack": [1, 2, 3],
-  "keywords": ["Gnome", "Machine", "Militia"],
+  "energyTrack": [
+    1,
+    2,
+    3
+  ],
+  "keywords": [
+    "Gnome",
+    "Machine",
+    "Militia"
+  ],
   "melee": 0,
   "meleeRange": 0,
   "arcane": 3,
   "evade": 1,
   "baseSize": "40mm",
   "imageName": "gnome_airship",
-  "shareCode": "AAB",
+  "shareCode": "AAAEE",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -57,11 +67,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X+2 Piercing Dmg then is moved 1\" directly away.",
-          "validCards": [{"colour": "Green", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds and this action cannot be used for the remainder of the game.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -77,11 +97,21 @@
       "arcaneOutcomes": [
         {
           "text": "All other models within the pulse suffer X+1 Magical Dmg then are moved X\" directly away.",
-          "validCards": [{"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 4 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

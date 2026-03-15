@@ -2,7 +2,9 @@
   "id": 27,
   "name": "Leshavit's Favourite",
   "version": 1,
-  "factions": ["LESHAVULT"],
+  "factions": [
+    "LESHAVULT"
+  ],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [
@@ -12,6 +14,6 @@
       "oncePerGame": true
     }
   ],
-  "shareCode": "AAB",
+  "shareCode": "CCACH",
   "imageName": "leshavitsfavourite"
 }

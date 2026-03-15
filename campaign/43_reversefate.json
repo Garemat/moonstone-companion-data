@@ -2,10 +2,13 @@
   "id": 43,
   "name": "Reverse Fate",
   "version": 2,
-  "factions": ["LESHAVULT","DOMINION"],
+  "factions": [
+    "LESHAVULT",
+    "DOMINION"
+  ],
   "tags": [],
   "timing": "Interrupt an Arcane Ability.",
   "description": "After the energy is spent but before cards are drawn, you may have the target pay (3) energy to reverse the originator and target. The character that was the target is now playing the ability instead, using their own Arcane Stat, with the active character now the target.",
-  "shareCode": "AAB",
+  "shareCode": "BHAED",
   "imageName": "reversefate"
 }

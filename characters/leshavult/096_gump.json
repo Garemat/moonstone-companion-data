@@ -2,17 +2,25 @@
   "id": 96,
   "name": "Gump",
   "version": 1,
-  "factions": ["LESHAVULT"],
+  "factions": [
+    "LESHAVULT"
+  ],
   "health": 12,
-  "energyTrack": [1, 6],
-  "keywords": ["Treefolk", "Spirit"],
+  "energyTrack": [
+    1,
+    6
+  ],
+  "keywords": [
+    "Treefolk",
+    "Spirit"
+  ],
   "melee": 3,
   "meleeRange": 2,
   "arcane": 4,
   "evade": 2,
   "baseSize": "40mm",
   "imageName": "gump",
-  "shareCode": "AAB",
+  "shareCode": "ACAJG",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 2,
@@ -28,12 +36,30 @@
     "name": "Rooted",
     "upgradeFor": "Low Guard",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": true},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": true
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "This model cannot move or be moved and has its Melee Range increased to 3\" until end of the current activation.",
     "endStepEffect": "If this character was not slain then it restores 1 Wd."
   },
@@ -90,11 +116,21 @@
       "arcaneOutcomes": [
         {
           "text": "Move target enemy X+2\" directly towards any friendly Treefolk. Then the target suffers 1 Wd for each Wooded Patch within 4\" of it.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model cannot move or be moved and has its Melee Range increased to 3\" until end of turn.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

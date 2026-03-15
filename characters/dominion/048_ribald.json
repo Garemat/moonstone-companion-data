@@ -2,17 +2,25 @@
   "id": 48,
   "name": "Ribald",
   "version": 3,
-  "factions": ["DOMINION"],
+  "factions": [
+    "DOMINION"
+  ],
   "health": 11,
-  "energyTrack": [1, 7],
-  "keywords": ["Goblin", "Troll"],
+  "energyTrack": [
+    1,
+    7
+  ],
+  "keywords": [
+    "Goblin",
+    "Troll"
+  ],
   "melee": 2,
   "meleeRange": 2,
   "arcane": 3,
   "evade": 2,
   "baseSize": "40mm",
   "imageName": "ribald",
-  "shareCode": "AAB",
+  "shareCode": "ABAEI",
   "slicingDamageBuff": null,
   "piercingDamageBuff": null,
   "impactDamageBuff": 2,
@@ -28,12 +36,30 @@
     "name": "Short Fuse",
     "upgradeFor": "High Guard",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "This model suffers 3 Wds. All other models within 2\" suffer 3 Magical Dmg then are moved 1\" directly away."
   },
@@ -74,11 +100,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target character suffers X×3 Impact Dmg then is moved X\" directly away.",
-          "validCards": [{"colour": "Green", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers 3 Wds. All other models within 2\" suffer 3 Magical Dmg then are moved 1\" directly away.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

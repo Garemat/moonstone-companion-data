@@ -2,17 +2,27 @@
   "id": 129,
   "name": "Iris & Hellebore",
   "version": 1,
-  "factions": ["DOMINION"],
+  "factions": [
+    "DOMINION"
+  ],
   "health": 7,
-  "energyTrack": [1, 2, 4, 6],
-  "keywords": ["Faerie", "Noble"],
+  "energyTrack": [
+    1,
+    2,
+    4,
+    6
+  ],
+  "keywords": [
+    "Faerie",
+    "Noble"
+  ],
   "melee": 5,
   "meleeRange": 1,
   "arcane": 0,
   "evade": -1,
   "baseSize": "40mm",
   "imageName": "iris_hellebore",
-  "shareCode": "AAB",
+  "shareCode": "ABBCJ",
   "slicingDamageBuff": 1,
   "piercingDamageBuff": 1,
   "impactDamageBuff": 0,
@@ -27,13 +37,34 @@
   "signatureMove": {
     "name": "From Below & Above",
     "upgradeFor": "Rising Attack",
-    "possibleDamageTypes": ["Slicing", "Piercing"],
-    "highGuard": {"deal": "2", "isFollowUp": false},
-    "fallingSwing": {"deal": "1", "isFollowUp": false},
-    "thrust": {"deal": "2", "isFollowUp": false},
-    "sweepingCut": {"deal": "2", "isFollowUp": false},
-    "risingAttack": {"deal": "1", "isFollowUp": false},
-    "lowGuard": {"deal": "0", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Slicing",
+      "Piercing"
+    ],
+    "highGuard": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "0",
+      "isFollowUp": false
+    },
     "extraText": "After upgrading to this signature, this character may place down any Falling Swing melee cards from their melee hand treating them as Critical Hits. (Resolve those cards as exact copies of this signature.)",
     "endStepEffect": "This model may move 1\"."
   },

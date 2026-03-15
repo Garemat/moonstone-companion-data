@@ -2,10 +2,12 @@
   "id": 48,
   "name": "Stereotypically Evil Laughter",
   "version": 2,
-  "factions": ["SHADES"],
+  "factions": [
+    "SHADES"
+  ],
   "tags": [],
   "timing": "Play at the start of an Arcane Ability action, before Arcane Cards are drawn.",
   "description": "If the Arcane Ability is made by a friendly character, gain +2 Arcane Stat for the duration of the action. If the Arcane Ability is made by an enemy character, the enemy loses -2 Arcane Stat for the duration of the action. If at least one friendly *Elrich* is in play, gain/lose +/-3 Arcane Stat instead of +/-2.",
-  "shareCode": "AAB",
+  "shareCode": "BDAEI",
   "imageName": "stereotypicallyevillaughter"
 }

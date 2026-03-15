@@ -2,10 +2,13 @@
   "id": 39,
   "name": "Pirate's Booty",
   "version": 2,
-  "factions": ["DOMINION", "SHADES"],
+  "factions": [
+    "DOMINION",
+    "SHADES"
+  ],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "For the remainder of the game, *Pirates* you control do not suffer from the Slow Carry rule.",
-  "shareCode": "AAB",
+  "shareCode": "BIADJ",
   "imageName": "piratesbooty"
 }

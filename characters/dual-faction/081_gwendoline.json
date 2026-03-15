@@ -2,17 +2,29 @@
   "id": 81,
   "name": "Gwendoline, Leshavult Priestess",
   "version": 2,
-  "factions": ["DOMINION", "LESHAVULT"],
+  "factions": [
+    "DOMINION",
+    "LESHAVULT"
+  ],
   "health": 6,
-  "energyTrack": [1, 2, 3, 5, 6],
-  "keywords": ["Faerie", "Cultist"],
+  "energyTrack": [
+    1,
+    2,
+    3,
+    5,
+    6
+  ],
+  "keywords": [
+    "Faerie",
+    "Cultist"
+  ],
   "melee": 2,
   "meleeRange": 1,
   "arcane": 5,
   "evade": -2,
   "baseSize": "30mm",
   "imageName": "gwendoline",
-  "shareCode": "AAB",
+  "shareCode": "AHAIB",
   "slicingDamageBuff": -2,
   "piercingDamageBuff": -2,
   "impactDamageBuff": -2,
@@ -28,12 +40,30 @@
     "name": "Dreamglade Glamour",
     "upgradeFor": "High Guard",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "The enemy cannot make a Melee Attack action targeting this character until end of turn."
   },
@@ -69,11 +99,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target (friendly model) restores X+1 Wds, then move it X\".",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     },
@@ -89,11 +129,21 @@
       "arcaneOutcomes": [
         {
           "text": "Move target X+2\" directly towards this character.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

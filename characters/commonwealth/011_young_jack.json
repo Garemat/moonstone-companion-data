@@ -2,17 +2,27 @@
   "id": 11,
   "name": "Young Jack",
   "version": 2,
-  "factions": ["COMMONWEALTH"],
+  "factions": [
+    "COMMONWEALTH"
+  ],
   "health": 7,
-  "energyTrack": [1, 2, 3],
-  "keywords": ["Gnome", "Noble", "Militia"],
+  "energyTrack": [
+    1,
+    2,
+    3
+  ],
+  "keywords": [
+    "Gnome",
+    "Noble",
+    "Militia"
+  ],
   "melee": 4,
   "meleeRange": 1,
   "arcane": 2,
   "evade": 0,
   "baseSize": "30mm",
   "imageName": "young_jack",
-  "shareCode": "AAB",
+  "shareCode": "AAABB",
   "slicingDamageBuff": 2,
   "piercingDamageBuff": 1,
   "impactDamageBuff": 0,
@@ -27,13 +37,33 @@
   "signatureMove": {
     "name": "Shield Bash",
     "upgradeFor": "Low Guard",
-    "possibleDamageTypes": ["Impact"],
-    "highGuard": {"deal": "1", "isFollowUp": false},
-    "fallingSwing": {"deal": "2", "isFollowUp": false},
-    "thrust": {"deal": "0", "isFollowUp": false},
-    "sweepingCut": {"deal": "2", "isFollowUp": false},
-    "risingAttack": {"deal": "2", "isFollowUp": false},
-    "lowGuard": {"deal": "1", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Impact"
+    ],
+    "highGuard": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "0",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "1",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "Move this model 1\" directly towards the enemy, then if base contact is made, move the enemy 1\" directly away."
   },
@@ -77,15 +107,30 @@
       "arcaneOutcomes": [
         {
           "text": "This model restores X Wds.",
-          "validCards": [{"colour": "Blue", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Blue",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model gains X energy.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This model suffers 3 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

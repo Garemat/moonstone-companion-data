@@ -2,17 +2,27 @@
   "id": 59,
   "name": "Vespa",
   "version": 1,
-  "factions": ["DOMINION"],
+  "factions": [
+    "DOMINION"
+  ],
   "health": 8,
-  "energyTrack": [1, 4, 7],
-  "keywords": ["Faerie", "Animal", "Soldier"],
+  "energyTrack": [
+    1,
+    4,
+    7
+  ],
+  "keywords": [
+    "Faerie",
+    "Animal",
+    "Soldier"
+  ],
   "melee": 3,
   "meleeRange": 2,
   "arcane": 4,
   "evade": 0,
   "baseSize": "40mm",
   "imageName": "vespa",
-  "shareCode": "AAB",
+  "shareCode": "ABAFJ",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 2,
   "impactDamageBuff": 0,
@@ -27,13 +37,33 @@
   "signatureMove": {
     "name": "Strike from Above",
     "upgradeFor": "Falling Swing",
-    "possibleDamageTypes": ["Piercing"],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "2", "isFollowUp": false},
-    "thrust": {"deal": "2", "isFollowUp": false},
-    "sweepingCut": {"deal": "2", "isFollowUp": false},
-    "risingAttack": {"deal": "1", "isFollowUp": false},
-    "lowGuard": {"deal": "0", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Piercing"
+    ],
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "0",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": ""
   },
@@ -80,11 +110,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X Piercing Dmg.",
-          "validCards": [{"colour": "Green", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Green",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character suffers 1 Wd.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

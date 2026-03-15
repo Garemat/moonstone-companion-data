@@ -2,11 +2,14 @@
   "id": 41,
   "name": "Raiding Party",
   "version": 2,
-  "factions": ["LESHAVULT","DOMINION"],
+  "factions": [
+    "LESHAVULT",
+    "DOMINION"
+  ],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "For the remainder of the game, the first Melee Attack action made by a character you control each turn deals +2 Dmg.",
   "extraDescription": "This Dmg bonus only applies when you are the active player making a Melee Attack action and not when the defender during a round of melee. It also only applies to the first Melee Attack action taken by a friendly character in a turn. Subsequent Melee Attacks from other friendly characters do not benefit from the bonus.",
-  "shareCode": "AAB",
+  "shareCode": "BHAEB",
   "imageName": "raidingparty"
 }

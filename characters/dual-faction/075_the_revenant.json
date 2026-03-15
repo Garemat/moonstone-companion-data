@@ -2,17 +2,28 @@
   "id": 75,
   "name": "The Revenant",
   "version": 2,
-  "factions": ["DOMINION", "LESHAVULT"],
+  "factions": [
+    "DOMINION",
+    "LESHAVULT"
+  ],
   "health": 7,
-  "energyTrack": [3, 5, 7],
-  "keywords": ["Human", "Noble", "Spirit"],
+  "energyTrack": [
+    3,
+    5,
+    7
+  ],
+  "keywords": [
+    "Human",
+    "Noble",
+    "Spirit"
+  ],
   "melee": 3,
   "meleeRange": 1,
   "arcane": 4,
   "evade": 0,
   "baseSize": "30mm",
   "imageName": "revenant",
-  "shareCode": "AAB",
+  "shareCode": "AHAHF",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -27,13 +38,33 @@
   "signatureMove": {
     "name": "Destiny Fulfilled",
     "upgradeFor": "Thrust",
-    "possibleDamageTypes": ["Piercing"],
-    "highGuard": {"deal": "1", "isFollowUp": false},
-    "fallingSwing": {"deal": "3", "isFollowUp": false},
-    "thrust": {"deal": "4", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "3", "isFollowUp": false},
-    "lowGuard": {"deal": "2", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Piercing"
+    ],
+    "highGuard": {
+      "deal": "1",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "4",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "3",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "2",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "If the enemy is slain, this character is Removed from Play."
   },
@@ -77,11 +108,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X Magical Dmg and gains Slow until end of turn.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "This character restores 1 Wd. The target restores 2 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

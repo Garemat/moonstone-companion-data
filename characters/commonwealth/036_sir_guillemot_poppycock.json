@@ -2,17 +2,25 @@
   "id": 36,
   "name": "Sir Guillemot Poppycock",
   "version": 1,
-  "factions": ["COMMONWEALTH"],
+  "factions": [
+    "COMMONWEALTH"
+  ],
   "health": 9,
-  "energyTrack": [1, 4],
-  "keywords": ["Human", "Noble"],
+  "energyTrack": [
+    1,
+    4
+  ],
+  "keywords": [
+    "Human",
+    "Noble"
+  ],
   "melee": 4,
   "meleeRange": 2,
   "arcane": 0,
   "evade": 1,
   "baseSize": "30mm",
   "imageName": "sir_guillemot_poppycock",
-  "shareCode": "AAB",
+  "shareCode": "AAADG",
   "slicingDamageBuff": null,
   "piercingDamageBuff": null,
   "impactDamageBuff": 2,
@@ -27,13 +35,33 @@
   "signatureMove": {
     "name": "Knee Smasher",
     "upgradeFor": "Sweeping Cut",
-    "possibleDamageTypes": ["Impact"],
-    "highGuard": {"deal": "2", "isFollowUp": false},
-    "fallingSwing": {"deal": "2", "isFollowUp": false},
-    "thrust": {"deal": "2", "isFollowUp": false},
-    "sweepingCut": {"deal": "2", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "possibleDamageTypes": [
+      "Impact"
+    ],
+    "highGuard": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "2",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "If the enemy suffered 1 or more Wds during this round of Melee then it cannot take a Jog action until end of turn."
   },

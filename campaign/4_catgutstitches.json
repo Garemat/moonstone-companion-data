@@ -2,11 +2,14 @@
   "id": 4,
   "name": "Catgut Stitches",
   "version": 2,
-  "factions": ["COMMONWEALTH", "DOMINION"],
+  "factions": [
+    "COMMONWEALTH",
+    "DOMINION"
+  ],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "Place a slain model you control in base contact with a friendly *Wizard* or *Cleric*. Restore half its health rounding up. It has no energy but may activate this turn.",
   "extraDescription": "The character is no longer slain and is able to activate in each following turn as normal.",
-  "shareCode": "AAB",
+  "shareCode": "BEAAE",
   "imageName": "catgutstitches"
 }

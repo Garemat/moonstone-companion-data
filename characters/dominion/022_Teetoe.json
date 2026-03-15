@@ -2,17 +2,27 @@
   "id": 24,
   "name": "Teetoe",
   "version": 1,
-  "factions": ["DOMINION"],
+  "factions": [
+    "DOMINION"
+  ],
   "health": 6,
-  "energyTrack": [1, 2, 3, 4, 5],
-  "keywords": ["Faerie"],
+  "energyTrack": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "keywords": [
+    "Faerie"
+  ],
   "melee": 4,
   "meleeRange": 1,
   "arcane": 5,
   "evade": -2,
   "baseSize": "30mm",
   "imageName": "teetoe",
-  "shareCode": "AAB",
+  "shareCode": "ABACE",
   "slicingDamageBuff": -1,
   "piercingDamageBuff": -1,
   "impactDamageBuff": -1,
@@ -28,12 +38,30 @@
     "name": "Can't Hit Me!",
     "upgradeFor": "High Guard",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "Your opponent's attack deals {Null} damage to you this round.",
     "endStepEffect": ""
   },

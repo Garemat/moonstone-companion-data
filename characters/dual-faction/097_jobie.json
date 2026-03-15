@@ -2,17 +2,27 @@
   "id": 97,
   "name": "Jobie",
   "version": 1,
-  "factions": ["DOMINION", "SHADES"],
+  "factions": [
+    "DOMINION",
+    "SHADES"
+  ],
   "health": 5,
-  "energyTrack": [1, 3, 5],
-  "keywords": ["Goblin", "Rogue"],
+  "energyTrack": [
+    1,
+    3,
+    5
+  ],
+  "keywords": [
+    "Goblin",
+    "Rogue"
+  ],
   "melee": 2,
   "meleeRange": 1,
   "arcane": 3,
   "evade": -1,
   "baseSize": "30mm",
   "imageName": "jobie",
-  "shareCode": "AAB",
+  "shareCode": "AIAJH",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -28,12 +38,30 @@
     "name": "Play Dead",
     "upgradeFor": "Low Guard",
     "possibleDamageTypes": [],
-    "highGuard": {"deal": "Null", "isFollowUp": false},
-    "fallingSwing": {"deal": "Null", "isFollowUp": false},
-    "thrust": {"deal": "Null", "isFollowUp": false},
-    "sweepingCut": {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "Null", "isFollowUp": false},
-    "lowGuard": {"deal": "Null", "isFollowUp": false},
+    "highGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "fallingSwing": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "thrust": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "sweepingCut": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "risingAttack": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
+    "lowGuard": {
+      "deal": "Null",
+      "isFollowUp": false
+    },
     "extraText": "",
     "endStepEffect": "Enemy characters cannot target this model with actions until this model next performs an action or the end of the turn, whichever comes first."
   },
@@ -74,11 +102,21 @@
       "arcaneOutcomes": [
         {
           "text": "Target suffers X Impact Dmg. Regardless of its depth value or enemy engagements.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Pink",
+              "value": "X"
+            }
+          ]
         },
         {
           "text": "If the target is slain, the target loses possession of one Moonstone they are carrying. Place it in base contact with the target at depth value of 1.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [
+            {
+              "colour": "Catastrophe",
+              "value": "X"
+            }
+          ]
         }
       ]
     }

@@ -2,10 +2,13 @@
   "id": 54,
   "name": "Treacherous Tuition",
   "version": 2,
-  "factions": ["LESHAVULT","DOMINION"],
+  "factions": [
+    "LESHAVULT",
+    "DOMINION"
+  ],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "For the remainder of the game, whenever a friendly *Wizard* uses an Arcane Ability they suffer 1 Wd and reduce the energy cost of the ability by -1, to a minimum of (1).",
-  "shareCode": "AAB",
+  "shareCode": "BHAFE",
   "imageName": "treacheroustuition"
 }
