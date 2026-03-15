@@ -1,26 +1,98 @@
 # moonstone-companion-data
 
-This is the temporary data repository for character json data that is loaded into [moonstone-companion application](https://github.com/Garemat/moonstone-companion)
+Data repository for the [moonstone-companion](https://github.com/Garemat/moonstone-companion) app. Character, upgrade, and campaign card JSON files are aggregated into a versioned `compendium.json` release artifact consumed by the app at build time.
 
-This repository will be made redudant once an API layer is introduced, but currently it is used to bundle and produce the compedium releases. 
+Character portrait images are bundled as a separate `character_images.zip` artifact and are an optional download within the app.
 
-The data releases are seperated into different aggregated json objects to make maintence easier in the repo, and management easier in the app.
+---
 
-Character image files are also bundled as a seperate artifact as an optional additional download through the app
-TODO: Add the remaining images for characters
+## Local Development
 
-When updating files ensuring you're testing before raising a PR (As the pipeline will not allow merges)
+**Prerequisites**
 
+- Python 3.8+
+- Node.js 20+ and npm
+
+**Setup**
+
+```bash
+git clone https://github.com/Garemat/moonstone-companion-data.git
+cd moonstone-companion-data
+npm install        # installs Prettier, husky, lint-staged and wires up pre-commit hooks
 ```
-python3 scripts/aggregate.py
-python3 scripts/lint_data.py
+
+**Validate your changes**
+
+```bash
+python3 scripts/aggregate.py     # builds build/compendium.json from source files
+python3 scripts/lint_data.py     # validates structure, share codes, and faction data
 ```
 
-For testing data with a local app setup, I'd reccomend symlinking the build folder with ${location_of_app_repo}/app/src/main/assets/
-The app requires all three files in order to skip auto pulling the latest release at build
+Both steps run automatically as a pre-commit hook — you don't need to run them manually before committing.
+
+**Testing against a local app build**
+
+Symlink the `build/` folder to the app's assets directory so the app picks up your local compendium at build time without downloading a release:
+
+```bash
+ln -sf $(pwd)/build/compendium.json \
+  ../moonstone-companion/app/src/main/assets/compendium.json
+```
+
+---
+
+## Contributing
+
+1. Create a branch from `main`
+2. Make your changes to the relevant JSON files
+3. Run `npm install` if you haven't already — this wires up the pre-commit hooks
+4. Commit your changes — the hooks will auto-format JSON with Prettier and validate the full dataset before the commit completes
+5. Open a PR against `main` and fill in the PR template
+
+**Share codes are auto-generated — do not edit them manually.** Run `python3 scripts/generate_share_codes.py` if you add a new item or change its faction, then commit the updated file. The lint step will catch any mismatches.
+
+**JSON formatting is enforced by Prettier.** Run `npx prettier --write "**/*.json"` to fix formatting, or let the pre-commit hook do it automatically on staged files.
+
+---
+
+## Share Code Format
+
+Every compendium item has a stable 5-character `shareCode` field used for troupe sharing, import/export, and multiplayer sync.
+
+| Position | Meaning | Values |
+|----------|---------|--------|
+| 1 | Type | `A` = Character, `B` = Campaign card, `C` = Upgrade card |
+| 2 | Faction | `A`–`D` single faction, `E`–`J` dual faction, `K` = all four |
+| 3–5 | ID | 3-digit decimal ID, each digit encoded `A`=0 … `J`=9 |
+
+**Faction codes**
+
+| Code | Factions |
+|------|----------|
+| `A` | Commonwealth |
+| `B` | Dominion |
+| `C` | Leshavult |
+| `D` | Shades |
+| `E` | Commonwealth + Dominion |
+| `F` | Commonwealth + Leshavult |
+| `G` | Commonwealth + Shades |
+| `H` | Dominion + Leshavult |
+| `I` | Dominion + Shades |
+| `J` | Leshavult + Shades |
+| `K` | All four factions |
+
+**Examples**
+
+| Item | ID | Factions | Share Code |
+|------|----|----------|------------|
+| Baron Von Fancyhat | 1 | Commonwealth | `AAAAB` |
+| Boris | 64 | Commonwealth + Leshavult | `AFAGE` |
+| Nordic Tattoos | 34 | Commonwealth + Shades | `CGADE` |
+| Birthright | 1 | Commonwealth + Dominion | `BEAAB` |
+
+---
 
 ## Campaign JSON
-Each Campign card follows a pretty simple json
 
 ```json
 {
@@ -30,32 +102,32 @@ Each Campign card follows a pretty simple json
   "factions": ["COMMONWEALTH"],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
-  "description": "For the remainder of the game, the first time a friendly *Noble* would suffer Dmg each turn, you may have a friendly Non-*Noble* within 4\" suffer that Dmg instead.",
-  "shareCode": "AAB",
+  "description": "Rules text.",
+  "shareCode": "BEAAB",
   "imageName": "card_name"
 }
 ```
+
 ## Upgrade JSON
 
 ```json
 {
   "id": 1,
-  "name": "A Pirate's life for me!",
+  "name": "Upgrade Name",
   "version": 1,
   "factions": ["COMMONWEALTH"],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "extraDescription": "This character gains the Pirate keyword.",
   "abilities": [],
-  "shareCode": "AAB",
-  "imageName": "apirateslifeforme"
+  "shareCode": "CAAAB",
+  "imageName": "upgrade_name"
 }
-
 ```
 
 ## Character JSON Template
 
-Each character lives in `characters/{faction}/{id}_{name}.json`. Use the template below when adding a new character. All fields are required unless noted.
+Each character lives in `characters/{faction}/{id}_{name}.json`. All fields are required unless noted.
 
 ```json
 {
@@ -72,7 +144,7 @@ Each character lives in `characters/{faction}/{id}_{name}.json`. Use the templat
   "evade": 0,
   "baseSize": "30mm",
   "imageName": "character_name",
-  "shareCode": "AAB",
+  "shareCode": "AAAAA",
   "slicingDamageBuff": 0,
   "piercingDamageBuff": 0,
   "impactDamageBuff": 0,
@@ -88,12 +160,12 @@ Each character lives in `characters/{faction}/{id}_{name}.json`. Use the templat
     "name": "Sig Move Name",
     "upgradeFor": "High Guard",
     "possibleDamageTypes": ["Slicing"],
-    "highGuard":    {"deal": "2", "isFollowUp": false},
-    "fallingSwing": {"deal": "1", "isFollowUp": false},
-    "thrust":       {"deal": "2", "isFollowUp": false},
-    "sweepingCut":  {"deal": "Null", "isFollowUp": false},
-    "risingAttack": {"deal": "1", "isFollowUp": true},
-    "lowGuard":     {"deal": "Null", "isFollowUp": false},
+    "highGuard": { "deal": "2", "isFollowUp": false },
+    "fallingSwing": { "deal": "1", "isFollowUp": false },
+    "thrust": { "deal": "2", "isFollowUp": false },
+    "sweepingCut": { "deal": "Null", "isFollowUp": false },
+    "risingAttack": { "deal": "1", "isFollowUp": true },
+    "lowGuard": { "deal": "Null", "isFollowUp": false },
     "extraText": "Any rules text that applies during the melee round (not at End Step).",
     "endStepEffect": "Any End Step Effect text, or empty string if none."
   },
@@ -129,15 +201,19 @@ Each character lives in `characters/{faction}/{id}_{name}.json`. Use the templat
       "arcaneOutcomes": [
         {
           "text": "Effect when a matching card is flipped.",
-          "validCards": [{"colour": "Pink", "value": "X"}]
+          "validCards": [{ "colour": "Pink", "value": "X" }]
         },
         {
           "text": "Effect for a fixed-value outcome.",
-          "validCards": [{"colour": "Green", "value": "2"}, {"colour": "Blue", "value": "2"}, {"colour": "Pink", "value": "2"}]
+          "validCards": [
+            { "colour": "Green", "value": "2" },
+            { "colour": "Blue", "value": "2" },
+            { "colour": "Pink", "value": "2" }
+          ]
         },
         {
           "text": "This character suffers 3 Wds.",
-          "validCards": [{"colour": "Catastrophe", "value": "X"}]
+          "validCards": [{ "colour": "Catastrophe", "value": "X" }]
         }
       ]
     }
@@ -145,7 +221,7 @@ Each character lives in `characters/{faction}/{id}_{name}.json`. Use the templat
 }
 ```
 
-### Notes
+### Field Notes
 
 | Field | Notes |
 |-------|-------|
@@ -153,8 +229,8 @@ Each character lives in `characters/{faction}/{id}_{name}.json`. Use the templat
 | `energyTrack` | Starting energy positions, e.g. `[1, 3, 6]`. Use `[999]` for characters that can never gain energy (Thralls, Echo). |
 | `meleeRange` | Numeric inches only, e.g. `1` for 1", `2` for 2". |
 | `imageName` | Snake_case name without ID prefix or extension, e.g. `"old_polly"`. |
-| `slicingDamageBuff` | Net passive bonus to Slicing melee damage output. `null` for null values.  |
-| `dealsMagicalDamage` | `true` only if base melee attacks are Magical |
+| `slicingDamageBuff` | Net passive bonus to Slicing melee damage output. `null` for null values. |
+| `dealsMagicalDamage` | `true` only if base melee attacks are Magical. |
 | `allDamageMitigation` | Use when a passive reduces ALL damage types. Individual fields cover specific types. |
 | `summonsCharacterIds` | IDs of characters this model can place/summon via abilities. |
 | `isUnselectableInTroupe` | `true` for Thralls and summoned-only characters. |
@@ -165,7 +241,11 @@ Each character lives in `characters/{faction}/{id}_{name}.json`. Use the templat
 | `abilityType` | `"Passive"`, `"Active"`, or `"Arcane"`. Active and Arcane both require `energyCost`, `range`, `pulse`. |
 | `validCards` colours | `"Green"`, `"Blue"`, `"Pink"`, `"Catastrophe"`. |
 | `validCards` value | `"X"` for variable-value outcomes; `"1"`, `"2"`, `"3"` etc. for fixed-value outcomes (any colour at that value). |
-| `transformsInto` ID | This is a unqiue field currently for anya, which allows her to transform between states. |
+| `transformsInto` | ID of the character this model transforms into (currently unique to Anya). |
+| `shareCode` | Auto-generated — run `python3 scripts/generate_share_codes.py` after adding or changing a character's faction. |
+
+---
 
 # License & Attribution
-This project uses assets from Goblin King Games’ publicly available store and website. These assets are provided for non-commercial use only and must remain free to use. Please credit Goblin King Games when using these assets.
+
+This project uses assets from Goblin King Games' publicly available store and website. These assets are provided for non-commercial use only and must remain free to use. Please credit Goblin King Games when using these assets.
