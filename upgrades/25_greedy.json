@@ -2,7 +2,7 @@
   "id": 25,
   "name": "Greedy",
   "version": 1,
-  "factions": [],
+  "factions": ["COMMONWEALTH","DOMINION"],
   "allowedKeywords": [
     "Mercenary"
   ],

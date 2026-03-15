@@ -2,7 +2,7 @@
   "id": 11,
   "name": "Cursed Heirloom",
   "version": 1,
-  "factions": [],
+  "factions": ["DOMINION", "SHADES"],
   "allowedKeywords": [],
   "restrictedKeywords": [
     "Giant",

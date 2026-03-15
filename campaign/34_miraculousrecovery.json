@@ -2,7 +2,7 @@
   "id": 34,
   "name": "Miraculous Recovery",
   "version": 2,
-  "factions": [],
+  "factions": ["LESHAVULT","DOMINION"],
   "tags": [],
   "timing": "Play at the start of any Replenish Step.",
   "description": "Target character restores all Wds.",

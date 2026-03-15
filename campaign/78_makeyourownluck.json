@@ -2,7 +2,7 @@
   "id": 78,
   "name": "Make Your Own Luck",
   "version": 2,
-  "factions": [],
+  "factions": ["COMMONWEALTH", "LESHAVULT","DOMINION", "SHADES"],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "Search the Arcane Deck and remove one card. Shuffle the deck, then place the removed card on top of the deck.\n\n**Lose 1 Victory Point**.",

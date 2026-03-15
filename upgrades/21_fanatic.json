@@ -2,7 +2,7 @@
   "id": 21,
   "name": "Fanatic",
   "version": 1,
-  "factions": [],
+  "factions": ["LESHAVULT","DOMINION"],
   "allowedKeywords": [],
   "restrictedKeywords": [
     "Noble"

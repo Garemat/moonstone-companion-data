@@ -2,7 +2,7 @@
   "id": 22,
   "name": "Fill yer Boots!",
   "version": 2,
-  "factions": [],
+  "factions": ["COMMONWEALTH", "DOMINION"],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "For the remainder of the game, when a *Mercenary* you control performs a Harvest action, they may drop the Moonstone's depth value by 2, instead of 1.",

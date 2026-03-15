@@ -2,7 +2,7 @@
   "id": 61,
   "name": "Woodlot Amulet",
   "version": 1,
-  "factions": [],
+  "factions": ["LESHAVULT"],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [

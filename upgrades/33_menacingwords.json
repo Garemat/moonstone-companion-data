@@ -2,7 +2,7 @@
   "id": 33,
   "name": "Menacing Words",
   "version": 1,
-  "factions": [],
+  "factions": ["LESHAVULT","DOMINION"],
   "allowedKeywords": [],
   "restrictedKeywords": [
     "Giant",

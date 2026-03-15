@@ -2,7 +2,7 @@
   "id": 29,
   "name": "Little Trickster",
   "version": 1,
-  "factions": [],
+  "factions": ["DOMINION"],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [

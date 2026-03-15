@@ -2,7 +2,7 @@
   "id": 9,
   "name": "Conscripted",
   "version": 1,
-  "factions": [],
+  "factions": ["COMMONWEALTH", "DOMINION"],
   "allowedKeywords": [],
   "restrictedKeywords": [
     "Wizard"

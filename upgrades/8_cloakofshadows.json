@@ -2,7 +2,7 @@
   "id": 8,
   "name": "Cloak of Shadows",
   "version": 1,
-  "factions": [],
+  "factions": ["LESHAVULT","DOMINION"],
   "allowedKeywords": [
     "Human",
     "Faun",

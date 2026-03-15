@@ -2,7 +2,7 @@
   "id": 17,
   "name": "Enchanted Weapon",
   "version": 1,
-  "factions": [],
+  "factions": ["LESHAVULT","DOMINION"],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [

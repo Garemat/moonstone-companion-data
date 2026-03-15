@@ -2,7 +2,7 @@
   "id": 50,
   "name": "Spord of Honour",
   "version": 1,
-  "factions": [],
+  "factions": ["COMMONWEALTH", "SHADES"],
   "allowedKeywords": [],
   "restrictedKeywords": [
     "Giant",

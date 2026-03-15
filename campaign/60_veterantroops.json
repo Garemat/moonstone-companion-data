@@ -2,7 +2,7 @@
   "id": 60,
   "name": "Veteran Troops",
   "version": 2,
-  "factions": [],
+  "factions": ["COMMONWEALTH", "LESHAVULT"],
   "tags": [],
   "timing": "Play at the beginning of any turn.",
   "description": "For the remainder of the game, at the start of each Replenish Step, friendly *Soldiers* and *Mercenaries* restore 2 Wds.",

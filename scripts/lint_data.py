@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-Lint the aggregated data JSON files produced by the build step.
-Reads build/characters.json, build/upgrades.json, build/campaign.json.
-Exits with code 1 if any errors are found.
+Lint the aggregated compendium.json produced by the build step.
+Reads build/compendium.json and exits with code 1 if any errors are found.
 """
 
 import json
 import sys
 
 VALID_FACTIONS = {"COMMONWEALTH", "DOMINION", "LESHAVULT", "SHADES"}
+VALID_ABILITY_TYPES = {"Passive", "Active", "Arcane"}
 
 errors = []
 
@@ -55,22 +55,52 @@ def check_factions(p: str, factions, required_non_empty: bool = True) -> None:
         error(p, f"unknown faction(s): {bad}")
 
 
-# ── characters.json ────────────────────────────────────────────────────────────
+def check_abilities(p: str, abilities) -> None:
+    if not isinstance(abilities, list):
+        error(p, "'abilities' must be a list")
+        return
+    for j, ab in enumerate(abilities):
+        ap = f"{p} ability[{j}]"
+        if "name" not in ab:
+            error(ap, "missing required field 'name'")
+        ability_type = ab.get("abilityType")
+        if ability_type not in VALID_ABILITY_TYPES:
+            error(ap, f"'abilityType' must be one of {VALID_ABILITY_TYPES}, got {ability_type!r}")
+        if ability_type in ("Active", "Arcane"):
+            for field in ("energyCost", "range"):
+                if field not in ab:
+                    error(ap, f"missing required field '{field}' for {ability_type} ability")
+        if "arcaneOutcomes" in ab and not isinstance(ab["arcaneOutcomes"], list):
+            error(ap, "'arcaneOutcomes' must be a list")
 
-with open("build/characters.json") as f:
-    characters = json.load(f)
+
+# ── compendium.json ─────────────────────────────────────────────────────────────
+
+with open("build/compendium.json") as f:
+    compendium = json.load(f)
+
+if "version" not in compendium:
+    errors.append("  [compendium] missing required field 'version'")
+else:
+    print(f"compendium version: {compendium['version']}")
+
+characters = compendium.get("characters", [])
+upgrades = compendium.get("upgrades", [])
+campaign = compendium.get("campaign", [])
+
+# ── characters ─────────────────────────────────────────────────────────────────
 
 seen_char_ids: dict = {}
 for i, c in enumerate(characters):
     p = f"characters[{i}] id={c.get('id', '?')} name={c.get('name', '?')!r}"
 
-    for field in ("id", "name", "factions", "health"):
+    for field in ("id", "name", "factions", "health", "abilities", "keywords"):
         if field not in c:
             error(p, f"missing required field '{field}'")
 
     check_id(p, c.get("id"), seen_char_ids)
-
     check_factions(p, c.get("factions", []))
+    check_abilities(p, c.get("abilities", []))
 
     health = c.get("health")
     if health is not None:
@@ -82,12 +112,9 @@ for i, c in enumerate(characters):
     if sig is not None and "name" not in sig:
         error(p, "signatureMove missing 'name'")
 
-print(f"characters.json : {len(characters)} entries, {len(seen_char_ids)} unique ids")
+print(f"characters       : {len(characters)} entries, {len(seen_char_ids)} unique ids")
 
-# ── upgrades.json ──────────────────────────────────────────────────────────────
-
-with open("build/upgrades.json") as f:
-    upgrades = json.load(f)
+# ── upgrades ───────────────────────────────────────────────────────────────────
 
 seen_upgrade_ids: dict = {}
 for i, u in enumerate(upgrades):
@@ -98,12 +125,9 @@ for i, u in enumerate(upgrades):
     check_id(p, u.get("id"), seen_upgrade_ids)
     check_factions(p, u.get("factions", []))
 
-print(f"upgrades.json   : {len(upgrades)} entries")
+print(f"upgrades         : {len(upgrades)} entries")
 
-# ── campaign.json ──────────────────────────────────────────────────────────────
-
-with open("build/campaign.json") as f:
-    campaign = json.load(f)
+# ── campaign ───────────────────────────────────────────────────────────────────
 
 seen_campaign_ids: dict = {}
 for i, card in enumerate(campaign):
@@ -114,7 +138,7 @@ for i, card in enumerate(campaign):
     check_id(p, card.get("id"), seen_campaign_ids)
     check_factions(p, card.get("factions", []))
 
-print(f"campaign.json   : {len(campaign)} entries")
+print(f"campaign         : {len(campaign)} entries")
 
 # ── Report ─────────────────────────────────────────────────────────────────────
 

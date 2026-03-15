@@ -2,7 +2,7 @@
   "id": 7,
   "name": "Bunny Foot",
   "version": 1,
-  "factions": [],
+  "factions": ["COMMONWEALTH", "LESHAVULT"],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "abilities": [

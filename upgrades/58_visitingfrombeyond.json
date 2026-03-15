@@ -2,7 +2,7 @@
   "id": 58,
   "name": "Visiting from Beyond",
   "version": 1,
-  "factions": [],
+  "factions": ["LESHAVULT", "SHADES"],
   "allowedKeywords": [],
   "restrictedKeywords": [],
   "extraDescription": "This character gains the Spirit keyword.",

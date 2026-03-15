@@ -2,7 +2,7 @@
   "id": 17,
   "name": "Erudition",
   "version": 2,
-  "factions": [],
+  "factions": ["COMMONWEALTH", "LESHAVULT"],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "For the remainder of the game *Wizards* and *Clerics* you control gain +1 Arcane Stat.",

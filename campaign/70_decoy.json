@@ -2,7 +2,7 @@
   "id": 70,
   "name": "Decoy",
   "version": 2,
-  "factions": [],
+  "factions": ["COMMONWEALTH", "LESHAVULT","DOMINION", "SHADES"],
   "tags": [],
   "timing": "Play after the game.",
   "description": "If you *Won* this game: **Gain 1 Machination Point**.",

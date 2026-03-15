@@ -2,7 +2,7 @@
   "id": 64,
   "name": "Your Time is Up",
   "version": 2,
-  "factions": [],
+  "factions": ["SHADES"],
   "tags": [],
   "timing": "Play during the Activation Step, before or after any action.",
   "description": "Choose a character that has already activated. The character immediately resolves a Discard Step, including discarding all energy, and resolving other effects that resolve in the Discard Step.",
