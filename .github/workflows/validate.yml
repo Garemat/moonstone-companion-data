@@ -16,6 +16,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Pin scripts to main
+        run: |
+          git fetch origin main
+          git checkout origin/main -- scripts/
+
       - name: Validate PR Template
         if: inputs.pr_body != ''
         env:
