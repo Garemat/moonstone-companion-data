@@ -1,5 +1,13 @@
 {
+  "scripts": {
+    "prepare": "husky"
+  },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.0",
     "prettier": "^3.0.0"
+  },
+  "lint-staged": {
+    "*.json": "prettier --write"
   }
 }
