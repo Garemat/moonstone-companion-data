@@ -6,6 +6,6 @@ on:
 
 jobs:
   lint:
-    uses: garemat/moonstone-companion-data/.github/workflows/validate.yml@main
+    uses: garemat/lunachron-data/.github/workflows/validate.yml@main
     with:
       pr_body: ${{ github.event.pull_request.body }}
